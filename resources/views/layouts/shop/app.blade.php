@@ -426,7 +426,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                             <div class="h1-logo no-margin">
                                                 <a href="http://bionic.doradothemes.com/">
                                                     <img class="logo img-responsive"
-                                                        src="../img/bionic-store-logo-1507612767.jpg"
+                                                        src="https://picsum.photos/60/60?random={{ mt_rand(1, 100) }}"
                                                         alt="Bionic Store">
                                                 </a>
                                             </div>
@@ -454,7 +454,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                                 <div class="mobile-logo-menu hidden-lg hidden-md">
                                                     <a href="http://bionic.doradothemes.com/" title="Bionic Store">
                                                         <img class="logo img-responsive"
-                                                            src="../themes/dor_bionic1/assets/dorado/img/logo-menu.png"
+                                                            src="https://picsum.photos/60/60?random={{ mt_rand(1, 100) }}"
                                                             alt="Bionic Store" />
                                                     </a>
                                                 </div>
@@ -732,7 +732,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                                                                 class="widget-html block menu-category-image-top">
                                                                                 <div class="widget-inner block_content">
                                                                                     <div class="cate-image-menu"><img
-                                                                                            src="../img/cms/dorado/menu/cate01.png"
+                                                                                            src="https://picsum.photos/350/215?random={{ mt_rand(1, 100) }}"
                                                                                             alt="" width="350"
                                                                                             height="215" /></div>
                                                                                 </div>
@@ -745,7 +745,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                                                                 class="widget-html block menu-category-image-top">
                                                                                 <div class="widget-inner block_content">
                                                                                     <div class="cate-image-menu"><img
-                                                                                            src="../img/cms/dorado/menu/cate02.png"
+                                                                                            src="https://picsum.photos/350/215?random={{ mt_rand(1, 100) }}"
                                                                                             alt="" width="350"
                                                                                             height="215" /></div>
                                                                                 </div>
@@ -758,7 +758,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                                                                 class="widget-html block menu-category-image-top">
                                                                                 <div class="widget-inner block_content">
                                                                                     <div class="cate-image-menu"><img
-                                                                                            src="../img/cms/dorado/menu/cate03.png"
+                                                                                            src="https://picsum.photos/350/215?random={{ mt_rand(1, 100) }}"
                                                                                             alt="" width="350"
                                                                                             height="215" /></div>
                                                                                 </div>
@@ -771,7 +771,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                                                                 class="widget-html block menu-category-image-top">
                                                                                 <div class="widget-inner block_content">
                                                                                     <div class="cate-image-menu"><img
-                                                                                            src="../img/cms/dorado/menu/cate05.png"
+                                                                                            src="https://picsum.photos/350/215?random={{ mt_rand(1, 100) }}"
                                                                                             alt="" width="350"
                                                                                             height="215" /></div>
                                                                                 </div>
@@ -784,7 +784,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                                                                 class="widget-html block menu-category-image-top">
                                                                                 <div class="widget-inner block_content">
                                                                                     <div class="cate-image-menu"><img
-                                                                                            src="../img/cms/dorado/menu/cate04.png"
+                                                                                            src="https://picsum.photos/350/215?random={{ mt_rand(1, 100) }}"
                                                                                             alt="" width="350"
                                                                                             height="215" /></div>
                                                                                 </div>
@@ -797,7 +797,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                                                                 class="widget-html block menu-category-image-top">
                                                                                 <div class="widget-inner block_content">
                                                                                     <div class="cate-image-menu"><img
-                                                                                            src="../img/cms/dorado/menu/cate06.png"
+                                                                                            src="https://picsum.photos/350/215?random={{ mt_rand(1, 100) }}"
                                                                                             alt="" width="350"
                                                                                             height="215" /></div>
                                                                                 </div>
@@ -1778,190 +1778,10 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                     <nav class="header-nav">
                                         <div class="hidden-sm-down-">
                                             <div class="right-nav">
-                                                <div class="nav-search-button hidden"><button type="button"><i
-                                                            class="pe-7s-search"></i></button></div>
-                                                <div class="user-info selection-options-wrapper">
-                                                    <label class="hidden">Account</label>
-                                                    <span class="line-selected hidden"><i class="pe-7s-user"></i> <span
-                                                            class="select-hidden hidden">Account</span></span>
-                                                    <ul class="toogle_content">
-                                                        <li><a class="link-myaccount" href="my-account"
-                                                                title="View my customer account"><i
-                                                                    class="pe-7s-users"></i>My account</a></li>
-                                                        <li><a class="link-wishlist wishlist_block"
-                                                                href="logincefa.html" title="My wishlist"><i
-                                                                    class="pe-7s-like"></i>My wishlist</a></li>
-                                                        <li><a class="link-mycart" href="cart75f4.html?action=show"
-                                                                title="My cart">
-                                                                <i class="pe-7s-cart"></i>My cart</a></li>
-                                                        <li><a href="#" onclick="return false" class="smartLogin"><i
-                                                                    class="pe-7s-key"></i>Sign in popup</a></li>
-                                                        <li><a href="#" onclick="return false" class="smartRegister"><i
-                                                                    class="pe-7s-add-user"></i>Sign up popup</a></li>
-                                                    </ul>
-                                                </div>
 
-                                                <div class="dor-block-selection">
-                                                    <div class="nav-setting-button"><button type="button"><i
-                                                                class="pe-7s-config"></i></button></div>
-                                                    <div class="dor-setting-lists">
-                                                        <div id="_desktop_language_selector">
-                                                            <div
-                                                                class="language-selector-wrapper selection-options-wrapper">
-                                                                <label class="hidden">Language</label>
-                                                                <span class="line-selected hidden"><i
-                                                                        class="material-icons">&#xE894;</i>
-                                                                    English</span>
-                                                                <div class="language-selector dropdown js-dropdown">
-                                                                    <ul class="dropdown-menu hidden-sm-down">
-                                                                        <li class="current">
-                                                                            <img alt="en" height="11"
-                                                                                src="../img/l/1.jpg" width="16" />
-                                                                            <a href="3-shop.html"
-                                                                                class="dropdown-item">English</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <img alt="es" height="11"
-                                                                                src="../img/l/3.jpg" width="16" />
-                                                                            <a href="http://bionic.doradothemes.com/es/3-shop"
-                                                                                class="dropdown-item">Español</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <img alt="fr" height="11"
-                                                                                src="../img/l/6.jpg" width="16" />
-                                                                            <a href="http://bionic.doradothemes.com/fr/3-shop"
-                                                                                class="dropdown-item">Français</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <img alt="it" height="11"
-                                                                                src="../img/l/7.jpg" width="16" />
-                                                                            <a href="http://bionic.doradothemes.com/it/3-shop"
-                                                                                class="dropdown-item">Italiano</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <img alt="pl" height="11"
-                                                                                src="../img/l/8.jpg" width="16" />
-                                                                            <a href="http://bionic.doradothemes.com/pl/3-shop"
-                                                                                class="dropdown-item">Polski</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <img alt="ar" height="11"
-                                                                                src="../img/l/9.jpg" width="16" />
-                                                                            <a href="http://bionic.doradothemes.com/ar/3-shop"
-                                                                                class="dropdown-item">اللغة العربية</a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div id="_desktop_currency_selector">
-                                                            <div
-                                                                class="currency-selector dropdown js-dropdown selection-options-wrapper">
-                                                                <label class="hidden">Currency</label>
-                                                                <span class="line-selected hidden"><i
-                                                                        class="material-icons">&#xE263;</i> USD</span>
-                                                                <ul class="dropdown-menu hidden-sm-down"
-                                                                    data-aria-labelledby="dLabel">
-                                                                    <li>
-                                                                        <a title="United Arab Emirates Dirham"
-                                                                            rel="nofollow"
-                                                                            href="3-shopc56f.html?SubmitCurrency=1&amp;id_currency=4"
-                                                                            class="dropdown-item">AED - AED</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a title="Euro" rel="nofollow"
-                                                                            href="3-shop6edc.html?SubmitCurrency=1&amp;id_currency=2"
-                                                                            class="dropdown-item">€ - EUR</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a title="Polish Zloty" rel="nofollow"
-                                                                            href="3-shopfcc6.html?SubmitCurrency=1&amp;id_currency=3"
-                                                                            class="dropdown-item">zł - PLN</a>
-                                                                    </li>
-                                                                    <li class="current">
-                                                                        <a title="US Dollar" rel="nofollow"
-                                                                            href="3-shope3c8.html?SubmitCurrency=1&amp;id_currency=1"
-                                                                            class="dropdown-item">$ - USD</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
+<div>User</div>
+<div>Cart</div>
 
-                                                        <div id="_mobile_language_selector"></div>
-                                                        <div id="_mobile_currency_selector"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="nav-cart">
-                                                    <div id="_desktop_cart">
-                                                        <div class="blockcart cart-preview"
-                                                            data-refresh-url="//bionic.doradothemes.com/en/module/ps_shoppingcart/ajax">
-                                                            <div class="header">
-                                                                <a rel="nofollow" href="cart75f4.html?action=show">
-                                                                    <i class="pe-7s-cart"></i>
-                                                                    <span class="hidden-sm-down hidden">Cart</span>
-                                                                    <span class="cart-products-count">0</span>
-                                                                </a>
-                                                            </div>
-                                                            <div class="body none-minicart">
-                                                                <button type="button" id="close-mini-cart"><i
-                                                                        class="pe-7s-close"></i></button>
-                                                                <div class="header-title-mini-cart">
-                                                                    <div class="header-mini-cart-text">
-                                                                        <h2>Bionic</h2>
-                                                                    </div>
-                                                                </div>
-                                                                <div id="cart-mini-content-lists"
-                                                                    class="scroll-div-cart">
-                                                                    <ul class="minicart-product-lists">
-                                                                    </ul>
-                                                                    <div class="mini-cart-footer">
-                                                                        <div class="cart-subtotals">
-                                                                            <div class="products">
-                                                                                <span class="label">Subtotal</span>
-                                                                                <span class="value">$0.00</span>
-                                                                            </div>
-                                                                            <div class="shipping">
-                                                                                <span class="label">Shipping</span>
-                                                                                <span class="value">Free</span>
-                                                                            </div>
-                                                                            <div class="tax">
-                                                                                <span class="label">Taxes</span>
-                                                                                <span class="value">$0.00</span>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="cart-total">
-                                                                            <span class="label">Total</span>
-                                                                            <span class="value">$0.00</span>
-                                                                        </div>
-                                                                        <div class="button-act-minicart">
-                                                                            <a rel="nofollow"
-                                                                                href="cart75f4.html?action=show"
-                                                                                class="mini-cart-view clearfix">View
-                                                                                cart</a>
-                                                                            <a rel="nofollow" href="cart.html"
-                                                                                class="mini-cart-checkout clearfix">Checkout</a>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="no-item-cart">
-                                                                        <span class="no-items">There are no more items
-                                                                            in your cart</span>
-                                                                    </div>
-
-                                                                    <div class="no-item-cart-ajax hidden">
-                                                                        <span class="no-items">There are no more items
-                                                                            in your cart</span>
-                                                                    </div>
-
-                                                                    <div id="custom-block-mini-cart">
-
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="pull-xs-right" id="_mobile_cart"></div>
-                                                </div>
                                             </div>
                                         </div>
                                         <div class="hidden-md-up text-xs-center mobile hidden">
@@ -2014,7 +1834,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                             <div class="mobile-logo-menu hidden-lg hidden-md">
                                                 <a href="http://bionic.doradothemes.com/" title="Bionic Store">
                                                     <img class="logo img-responsive"
-                                                        src="../themes/dor_bionic1/assets/dorado/img/logo-menu.png"
+                                                        src="https://picsum.photos/60/60?random={{ mt_rand(1, 100) }}"
                                                         alt="Bionic Store" />
                                                 </a>
                                             </div>
@@ -2558,12 +2378,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                             </div>
                             <!-- /pos search module TOP -->
 
-                            <div class="header-total-feat">
-                                <a href="logincefa.html" class="total-wishlist"><span><i
-                                            class="material-icons"></i></span><strong>0</strong></a>
-                                <a href="module/dorcompare/compare.html" class="total-compare"><span><i
-                                            class="material-icons"></i></span><strong>0</strong></a>
-                            </div>
+
                             <a href="order-tracking.html" class="order-tracking-top-link"><i
                                     class="material-icons">&#xE558;</i><span>Track Your Order</span></a>
                         </div>
@@ -2616,730 +2431,11 @@ cellphone, laptop, headphone, smartwatch, TV!">
             <div class="container">
                 <div class="row">
 
-                    <div id="left-column" class="col-xs-12 col-sm-4 col-md-3">
 
 
 
-                        <div class="block-categories hidden-sm-down">
-                            <ul class="category-top-menu">
-                                <li><a class="text-uppercase h6" href="3-shop.html">Shop</a></li>
-                                <li>
-                                    <ul class="category-sub-menu">
-                                        <li data-depth="0"><a href="4-cellphone.html">Cellphone</a>
-                                            <div class="navbar-toggler collapse-icons" data-toggle="collapse"
-                                                data-target="#exCollapsingNavbar4"><i
-                                                    class="material-icons add">&#xE145;</i><i
-                                                    class="material-icons remove">&#xE15B;</i></div>
-                                            <div class="collapse" id="exCollapsingNavbar4">
-                                                <ul class="category-sub-menu">
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="18-apple-mobiles">Apple Mobiles</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="19-samsung-mobiles.html">Samsung Mobiles</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="20-huawei-mobiles">Huawei Mobiles</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="21-nokia-mobiles.html">Nokia Mobiles</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="22-pixel-mobiles.html">Pixel Mobiles</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="23-sony-mobiles.html">Sony Mobiles</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="24-htc-mobiles.html">HTC Mobiles</a></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li data-depth="0"><a href="8-computers-tablets.html">Computers &amp;
-                                                Tablets</a>
-                                            <div class="navbar-toggler collapse-icons" data-toggle="collapse"
-                                                data-target="#exCollapsingNavbar8"><i
-                                                    class="material-icons add">&#xE145;</i><i
-                                                    class="material-icons remove">&#xE15B;</i></div>
-                                            <div class="collapse" id="exCollapsingNavbar8">
-                                                <ul class="category-sub-menu">
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="9-laptops.html">Laptops</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="10-desktops.html">Desktops</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="11-ultrabooks.html">Ultrabooks</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="14-tablets.html">Tablets</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="15-all-in-one.html">All In One</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="16-keyboard-mouse.html">Keyboard &amp; Mouse</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="17-monitors-cards.html">Monitors &amp; Cards</a></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li data-depth="0"><a href="5-smartwatch.html">Smartwatch</a>
-                                            <div class="navbar-toggler collapse-icons" data-toggle="collapse"
-                                                data-target="#exCollapsingNavbar5"><i
-                                                    class="material-icons add">&#xE145;</i><i
-                                                    class="material-icons remove">&#xE15B;</i></div>
-                                            <div class="collapse" id="exCollapsingNavbar5">
-                                                <ul class="category-sub-menu">
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="25-apple-watches.html">Apple Watches</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="26-samsung-watches.html">Samsung Watches</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="27-moto-360-watches.html">Moto 360 Watches</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="28-sony-watches.html">Sony Watches</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="29-asus-zenwatch.html">ASUS ZenWatch</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="30-huawei-watches.html">Huawei Watches</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="31-pebble-time.html">Pebble Time</a></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li data-depth="0"><a href="7-accessories.html">Accessories</a>
-                                            <div class="navbar-toggler collapse-icons" data-toggle="collapse"
-                                                data-target="#exCollapsingNavbar7"><i
-                                                    class="material-icons add">&#xE145;</i><i
-                                                    class="material-icons remove">&#xE15B;</i></div>
-                                            <div class="collapse" id="exCollapsingNavbar7">
-                                                <ul class="category-sub-menu">
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="46-mobiles.html">Mobiles</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="47-tablets.html">Tablets</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="48-laptops.html">Laptops</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="49-computers.html">Computers</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="50-televisions.html">Televisions</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="51-macbook.html">Macbook</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="52-surface.html">Surface</a></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li data-depth="0"><a href="12-televisions.html">Televisions</a>
-                                            <div class="navbar-toggler collapse-icons" data-toggle="collapse"
-                                                data-target="#exCollapsingNavbar12"><i
-                                                    class="material-icons add">&#xE145;</i><i
-                                                    class="material-icons remove">&#xE15B;</i></div>
-                                            <div class="collapse" id="exCollapsingNavbar12">
-                                                <ul class="category-sub-menu">
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="32-samsung-electronics.html">Samsung Electronics</a>
-                                                    </li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="33-lg-electronics.html">LG Electronics</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="34-sony-electronics.html">Sony Electronics</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="35-tcl-electronics.html">TCL Electronics</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="36-sharp-electronics.html">Sharp Electronics</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="37-leeco-electronics.html">LeEco Electronics</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="38-toshiba-electronics.html">Toshiba Electronics</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li data-depth="0"><a href="13-headphones.html">Headphones</a>
-                                            <div class="navbar-toggler collapse-icons" data-toggle="collapse"
-                                                data-target="#exCollapsingNavbar13"><i
-                                                    class="material-icons add">&#xE145;</i><i
-                                                    class="material-icons remove">&#xE15B;</i></div>
-                                            <div class="collapse" id="exCollapsingNavbar13">
-                                                <ul class="category-sub-menu">
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="39-apple-beat.html">Apple Beat</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="40-sennheiser.html">Sennheiser</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="41-samsung.html">Samsung</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="42-panasonic.html">Panasonic</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="43-sound-intone.html">Sound Intone</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="44-jelly-comb.html">Jelly Comb</a></li>
-                                                    <li data-depth="1"><a class="category-sub-link"
-                                                            href="45-amazonbasics.html">AmazonBasics</a></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="dorFilterPriceRange">
-                            <div class="dorFilterInner">
-                                <div class="dor-filter-price">
-                                    <h3 class="title_block">Filter by price</h3>
 
-                                    <div id="slider-range"></div>
-                                    <div class="amount-price-show">
-                                        <span class="txt-price">Price:</span>
-                                        <span class="pull-right" id="amount"></span>
-                                    </div>
-                                    <div class="value-range">
-                                        <input id="amount1" type="hidden" />
-                                        <input id="amount2" type="hidden" />
-                                        <input name="submit_range" value="Filter" type="submit" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="search_filters_wrapper" class="hidden-sm-down">
-                            <div id="search_filter_controls" class="hidden-md-up">
-                                <span id="_mobile_search_filters_clear_all"></span>
-                                <button class="btn btn-secondary ok">
-                                    <i class="material-icons">&#xE876;</i>
-                                    OK
-                                </button>
-                            </div>
-                            <div id="search_filters">
-
-
-                                <h4 class="text-uppercase h6 hidden-sm-down">Filter By</h4>
-
-
-
-                                <div id="_desktop_search_filters_clear_all" class="hidden-sm-down clear-all-wrapper">
-                                    <button data-search-url="http://bionic.doradothemes.com/en/3-shop?cate_type=2"
-                                        class="btn btn-tertiary js-search-filters-clear-all">
-                                        <i class="material-icons">&#xE14C;</i>
-                                        Clear all
-                                    </button>
-                                </div>
-
-
-
-
-                                <section class="facet clearfix dor-facet-manufacturer">
-                                    <h1 class="h6 facet-title hidden-sm-down">Brand</h1>
-                                    <div class="title hidden-md-up" data-target="#facet_17936" data-toggle="collapse">
-                                        <h1 class="h6 facet-title">Brand</h1>
-                                        <span class="pull-xs-right">
-                                            <span class="navbar-toggler collapse-icons">
-                                                <i class="material-icons add">&#xE313;</i>
-                                                <i class="material-icons remove">&#xE316;</i>
-                                            </span>
-                                        </span>
-                                    </div>
-
-
-
-                                    <ul id="facet_17936" class="collapse">
-                                        <li class="dor-field">
-                                            <label class="facet-label">
-                                                <span class="custom-checkbox">
-                                                    <input
-                                                        data-search-url="http://bionic.doradothemes.com/en/3-shop?cate_type=2&amp;q=Brand-Apple"
-                                                        type="checkbox">
-                                                    <span class="ps-shown-by-js"><i
-                                                            class="material-icons checkbox-checked">&#xE5CA;</i></span>
-                                                </span>
-
-                                                <a href="3-shop9171.html?cate_type=2&amp;q=Brand-Apple"
-                                                    class="_gray-darker search-link js-search-link" rel="nofollow">
-                                                    Apple
-                                                    <span class="magnitude">(7)</span>
-                                                </a>
-                                            </label>
-                                        </li>
-                                        <li class="dor-field">
-                                            <label class="facet-label">
-                                                <span class="custom-checkbox">
-                                                    <input
-                                                        data-search-url="http://bionic.doradothemes.com/en/3-shop?cate_type=2&amp;q=Brand-Huawei"
-                                                        type="checkbox">
-                                                    <span class="ps-shown-by-js"><i
-                                                            class="material-icons checkbox-checked">&#xE5CA;</i></span>
-                                                </span>
-
-                                                <a href="3-shopa9a2.html?cate_type=2&amp;q=Brand-Huawei"
-                                                    class="_gray-darker search-link js-search-link" rel="nofollow">
-                                                    Huawei
-                                                    <span class="magnitude">(3)</span>
-                                                </a>
-                                            </label>
-                                        </li>
-                                        <li class="dor-field">
-                                            <label class="facet-label">
-                                                <span class="custom-checkbox">
-                                                    <input
-                                                        data-search-url="http://bionic.doradothemes.com/en/3-shop?cate_type=2&amp;q=Brand-LG"
-                                                        type="checkbox">
-                                                    <span class="ps-shown-by-js"><i
-                                                            class="material-icons checkbox-checked">&#xE5CA;</i></span>
-                                                </span>
-
-                                                <a href="3-shop6405.html?cate_type=2&amp;q=Brand-LG"
-                                                    class="_gray-darker search-link js-search-link" rel="nofollow">
-                                                    LG
-                                                    <span class="magnitude">(2)</span>
-                                                </a>
-                                            </label>
-                                        </li>
-                                        <li class="dor-field">
-                                            <label class="facet-label">
-                                                <span class="custom-checkbox">
-                                                    <input
-                                                        data-search-url="http://bionic.doradothemes.com/en/3-shop?cate_type=2&amp;q=Brand-Microsoft"
-                                                        type="checkbox">
-                                                    <span class="ps-shown-by-js"><i
-                                                            class="material-icons checkbox-checked">&#xE5CA;</i></span>
-                                                </span>
-
-                                                <a href="3-shopca3c.html?cate_type=2&amp;q=Brand-Microsoft"
-                                                    class="_gray-darker search-link js-search-link" rel="nofollow">
-                                                    Microsoft
-                                                    <span class="magnitude">(5)</span>
-                                                </a>
-                                            </label>
-                                        </li>
-                                        <li class="dor-field">
-                                            <label class="facet-label">
-                                                <span class="custom-checkbox">
-                                                    <input
-                                                        data-search-url="http://bionic.doradothemes.com/en/3-shop?cate_type=2&amp;q=Brand-Others"
-                                                        type="checkbox">
-                                                    <span class="ps-shown-by-js"><i
-                                                            class="material-icons checkbox-checked">&#xE5CA;</i></span>
-                                                </span>
-
-                                                <a href="3-shop5891.html?cate_type=2&amp;q=Brand-Others"
-                                                    class="_gray-darker search-link js-search-link" rel="nofollow">
-                                                    Others
-                                                    <span class="magnitude">(7)</span>
-                                                </a>
-                                            </label>
-                                        </li>
-                                        <li class="dor-field">
-                                            <label class="facet-label">
-                                                <span class="custom-checkbox">
-                                                    <input
-                                                        data-search-url="http://bionic.doradothemes.com/en/3-shop?cate_type=2&amp;q=Brand-Samsung"
-                                                        type="checkbox">
-                                                    <span class="ps-shown-by-js"><i
-                                                            class="material-icons checkbox-checked">&#xE5CA;</i></span>
-                                                </span>
-
-                                                <a href="3-shopbae9.html?cate_type=2&amp;q=Brand-Samsung"
-                                                    class="_gray-darker search-link js-search-link" rel="nofollow">
-                                                    Samsung
-                                                    <span class="magnitude">(4)</span>
-                                                </a>
-                                            </label>
-                                        </li>
-                                        <li class="dor-field">
-                                            <label class="facet-label">
-                                                <span class="custom-checkbox">
-                                                    <input
-                                                        data-search-url="http://bionic.doradothemes.com/en/3-shop?cate_type=2&amp;q=Brand-Sony"
-                                                        type="checkbox">
-                                                    <span class="ps-shown-by-js"><i
-                                                            class="material-icons checkbox-checked">&#xE5CA;</i></span>
-                                                </span>
-
-                                                <a href="3-shopace5.html?cate_type=2&amp;q=Brand-Sony"
-                                                    class="_gray-darker search-link js-search-link" rel="nofollow">
-                                                    Sony
-                                                    <span class="magnitude">(2)</span>
-                                                </a>
-                                            </label>
-                                        </li>
-                                    </ul>
-
-
-                                </section>
-
-                                <section class="facet clearfix dor-facet-price">
-                                    <h1 class="h6 facet-title hidden-sm-down">Price</h1>
-                                    <div class="title hidden-md-up" data-target="#facet_51369" data-toggle="collapse">
-                                        <h1 class="h6 facet-title">Price</h1>
-                                        <span class="pull-xs-right">
-                                            <span class="navbar-toggler collapse-icons">
-                                                <i class="material-icons add">&#xE313;</i>
-                                                <i class="material-icons remove">&#xE316;</i>
-                                            </span>
-                                        </span>
-                                    </div>
-
-
-
-                                    <ul id="facet_51369" class="collapse">
-                                        <li class="dor-field">
-                                            <label class="facet-label">
-                                                <span class="custom-checkbox">
-                                                    <input
-                                                        data-search-url="http://bionic.doradothemes.com/en/3-shop?cate_type=2&amp;q=Price-%24-400-416"
-                                                        type="radio" name="filter Price">
-                                                    <span class="ps-shown-by-js"></span>
-                                                </span>
-
-                                                <a href="3-shop9905.html?cate_type=2&amp;q=Price-%24-400-416"
-                                                    class="_gray-darker search-link js-search-link" rel="nofollow">
-                                                    $400.00 - $416.00
-                                                    <span class="magnitude">(1)</span>
-                                                </a>
-                                            </label>
-                                        </li>
-                                        <li class="dor-field">
-                                            <label class="facet-label">
-                                                <span class="custom-checkbox">
-                                                    <input
-                                                        data-search-url="http://bionic.doradothemes.com/en/3-shop?cate_type=2&amp;q=Price-%24-450-468"
-                                                        type="radio" name="filter Price">
-                                                    <span class="ps-shown-by-js"></span>
-                                                </span>
-
-                                                <a href="3-shopa676.html?cate_type=2&amp;q=Price-%24-450-468"
-                                                    class="_gray-darker search-link js-search-link" rel="nofollow">
-                                                    $450.00 - $468.00
-                                                    <span class="magnitude">(1)</span>
-                                                </a>
-                                            </label>
-                                        </li>
-                                        <li class="dor-field">
-                                            <label class="facet-label">
-                                                <span class="custom-checkbox">
-                                                    <input
-                                                        data-search-url="http://bionic.doradothemes.com/en/3-shop?cate_type=2&amp;q=Price-%24-480-936"
-                                                        type="radio" name="filter Price">
-                                                    <span class="ps-shown-by-js"></span>
-                                                </span>
-
-                                                <a href="3-shopa65b.html?cate_type=2&amp;q=Price-%24-480-936"
-                                                    class="_gray-darker search-link js-search-link" rel="nofollow">
-                                                    $480.00 - $936.00
-                                                    <span class="magnitude">(18)</span>
-                                                </a>
-                                            </label>
-                                        </li>
-                                        <li class="dor-field">
-                                            <label class="facet-label">
-                                                <span class="custom-checkbox">
-                                                    <input
-                                                        data-search-url="http://bionic.doradothemes.com/en/3-shop?cate_type=2&amp;q=Price-%24-800-1165"
-                                                        type="radio" name="filter Price">
-                                                    <span class="ps-shown-by-js"></span>
-                                                </span>
-
-                                                <a href="3-shop1525.html?cate_type=2&amp;q=Price-%24-800-1165"
-                                                    class="_gray-darker search-link js-search-link" rel="nofollow">
-                                                    $800.00 - $1,165.00
-                                                    <span class="magnitude">(6)</span>
-                                                </a>
-                                            </label>
-                                        </li>
-                                        <li class="dor-field">
-                                            <label class="facet-label">
-                                                <span class="custom-checkbox">
-                                                    <input
-                                                        data-search-url="http://bionic.doradothemes.com/en/3-shop?cate_type=2&amp;q=Price-%24-1050-1092"
-                                                        type="radio" name="filter Price">
-                                                    <span class="ps-shown-by-js"></span>
-                                                </span>
-
-                                                <a href="3-shop3185.html?cate_type=2&amp;q=Price-%24-1050-1092"
-                                                    class="_gray-darker search-link js-search-link" rel="nofollow">
-                                                    $1,050.00 - $1,092.00
-                                                    <span class="magnitude">(1)</span>
-                                                </a>
-                                            </label>
-                                        </li>
-                                        <li class="dor-field">
-                                            <label class="facet-label">
-                                                <span class="custom-checkbox">
-                                                    <input
-                                                        data-search-url="http://bionic.doradothemes.com/en/3-shop?cate_type=2&amp;q=Price-%24-1200-1248"
-                                                        type="radio" name="filter Price">
-                                                    <span class="ps-shown-by-js"></span>
-                                                </span>
-
-                                                <a href="3-shopc9f9.html?cate_type=2&amp;q=Price-%24-1200-1248"
-                                                    class="_gray-darker search-link js-search-link" rel="nofollow">
-                                                    $1,200.00 - $1,248.00
-                                                    <span class="magnitude">(2)</span>
-                                                </a>
-                                            </label>
-                                        </li>
-                                        <li class="dor-field">
-                                            <label class="facet-label">
-                                                <span class="custom-checkbox">
-                                                    <input
-                                                        data-search-url="http://bionic.doradothemes.com/en/3-shop?cate_type=2&amp;q=Price-%24-1250-1300"
-                                                        type="radio" name="filter Price">
-                                                    <span class="ps-shown-by-js"></span>
-                                                </span>
-
-                                                <a href="3-shop9640.html?cate_type=2&amp;q=Price-%24-1250-1300"
-                                                    class="_gray-darker search-link js-search-link" rel="nofollow">
-                                                    $1,250.00 - $1,300.00
-                                                    <span class="magnitude">(1)</span>
-                                                </a>
-                                            </label>
-                                        </li>
-                                        <li class="dor-field">
-                                            <label class="facet-label">
-                                                <span class="custom-checkbox">
-                                                    <input
-                                                        data-search-url="http://bionic.doradothemes.com/en/3-shop?cate_type=2&amp;q=Price-%24-1400-1456"
-                                                        type="radio" name="filter Price">
-                                                    <span class="ps-shown-by-js"></span>
-                                                </span>
-
-                                                <a href="3-shopddc4.html?cate_type=2&amp;q=Price-%24-1400-1456"
-                                                    class="_gray-darker search-link js-search-link" rel="nofollow">
-                                                    $1,400.00 - $1,456.00
-                                                    <span class="magnitude">(1)</span>
-                                                </a>
-                                            </label>
-                                        </li>
-                                    </ul>
-
-
-                                </section>
-
-                                <section class="facet clearfix dor-facet-attribute_group">
-                                    <h1 class="h6 facet-title hidden-sm-down">Color</h1>
-                                    <div class="title hidden-md-up" data-target="#facet_67889" data-toggle="collapse">
-                                        <h1 class="h6 facet-title">Color</h1>
-                                        <span class="pull-xs-right">
-                                            <span class="navbar-toggler collapse-icons">
-                                                <i class="material-icons add">&#xE313;</i>
-                                                <i class="material-icons remove">&#xE316;</i>
-                                            </span>
-                                        </span>
-                                    </div>
-
-
-
-                                    <ul id="facet_67889" class="collapse">
-                                        <li class="dor-color">
-                                            <label class="facet-label">
-                                                <span class="custom-checkbox">
-                                                    <input
-                                                        data-search-url="http://bionic.doradothemes.com/en/3-shop?cate_type=2&amp;q=Color-Grey"
-                                                        type="checkbox">
-                                                    <span class="color" style="background-color:#AAB2BD"></span>
-                                                </span>
-
-                                                <a href="3-shop47b7.html?cate_type=2&amp;q=Color-Grey"
-                                                    class="_gray-darker search-link js-search-link" rel="nofollow">
-                                                    Grey
-                                                    <span class="magnitude">(24)</span>
-                                                </a>
-                                            </label>
-                                        </li>
-                                        <li class="dor-color">
-                                            <label class="facet-label">
-                                                <span class="custom-checkbox">
-                                                    <input
-                                                        data-search-url="3-shopd737.html?cate_type=2&amp;q=Color-White"
-                                                        type="checkbox">
-                                                    <span class="color" style="background-color:#ffffff"></span>
-                                                </span>
-
-                                                <a href="3-shopd737.html?cate_type=2&amp;q=Color-White"
-                                                    class="_gray-darker search-link js-search-link" rel="nofollow">
-                                                    White
-                                                    <span class="magnitude">(30)</span>
-                                                </a>
-                                            </label>
-                                        </li>
-                                        <li class="dor-color">
-                                            <label class="facet-label">
-                                                <span class="custom-checkbox">
-                                                    <input
-                                                        data-search-url="3-shop7255.html?cate_type=2&amp;q=Color-Black"
-                                                        type="checkbox">
-                                                    <span class="color" style="background-color:#434A54"></span>
-                                                </span>
-
-                                                <a href="3-shop7255.html?cate_type=2&amp;q=Color-Black"
-                                                    class="_gray-darker search-link js-search-link" rel="nofollow">
-                                                    Black
-                                                    <span class="magnitude">(30)</span>
-                                                </a>
-                                            </label>
-                                        </li>
-                                        <li class="dor-color">
-                                            <label class="facet-label">
-                                                <span class="custom-checkbox">
-                                                    <input
-                                                        data-search-url="3-shop42b3.html?cate_type=2&amp;q=Color-Yellow"
-                                                        type="checkbox">
-                                                    <span class="color" style="background-color:#F1C40F"></span>
-                                                </span>
-
-                                                <a href="3-shop42b3.html?cate_type=2&amp;q=Color-Yellow"
-                                                    class="_gray-darker search-link js-search-link" rel="nofollow">
-                                                    Yellow
-                                                    <span class="magnitude">(2)</span>
-                                                </a>
-                                            </label>
-                                        </li>
-                                        <li class="dor-color">
-                                            <label class="facet-label">
-                                                <span class="custom-checkbox">
-                                                    <input
-                                                        data-search-url="3-shop303f.html?cate_type=2&amp;q=Color-Pink"
-                                                        type="checkbox">
-                                                    <span class="color" style="background-color:#FCCACD"></span>
-                                                </span>
-
-                                                <a href="3-shop303f.html?cate_type=2&amp;q=Color-Pink"
-                                                    class="_gray-darker search-link js-search-link" rel="nofollow">
-                                                    Pink
-                                                    <span class="magnitude">(22)</span>
-                                                </a>
-                                            </label>
-                                        </li>
-                                    </ul>
-
-
-                                </section>
-
-                                <section class="facet clearfix dor-facet-feature">
-                                    <h1 class="h6 facet-title hidden-sm-down">RAM</h1>
-                                    <div class="title hidden-md-up" data-target="#facet_99673" data-toggle="collapse">
-                                        <h1 class="h6 facet-title">RAM</h1>
-                                        <span class="pull-xs-right">
-                                            <span class="navbar-toggler collapse-icons">
-                                                <i class="material-icons add">&#xE313;</i>
-                                                <i class="material-icons remove">&#xE316;</i>
-                                            </span>
-                                        </span>
-                                    </div>
-
-
-
-                                    <ul id="facet_99673" class="collapse">
-                                        <li class="dor-field">
-                                            <label class="facet-label">
-                                                <span class="custom-checkbox">
-                                                    <input data-search-url="3-shop0b56.html?cate_type=2&amp;q=RAM-3GB"
-                                                        type="checkbox">
-                                                    <span class="ps-shown-by-js"><i
-                                                            class="material-icons checkbox-checked">&#xE5CA;</i></span>
-                                                </span>
-
-                                                <a href="3-shop0b56.html?cate_type=2&amp;q=RAM-3GB"
-                                                    class="_gray-darker search-link js-search-link" rel="nofollow">
-                                                    3GB
-                                                    <span class="magnitude">(2)</span>
-                                                </a>
-                                            </label>
-                                        </li>
-                                        <li class="dor-field">
-                                            <label class="facet-label">
-                                                <span class="custom-checkbox">
-                                                    <input data-search-url="3-shop9604.html?cate_type=2&amp;q=RAM-4GB"
-                                                        type="checkbox">
-                                                    <span class="ps-shown-by-js"><i
-                                                            class="material-icons checkbox-checked">&#xE5CA;</i></span>
-                                                </span>
-
-                                                <a href="3-shop9604.html?cate_type=2&amp;q=RAM-4GB"
-                                                    class="_gray-darker search-link js-search-link" rel="nofollow">
-                                                    4GB
-                                                    <span class="magnitude">(25)</span>
-                                                </a>
-                                            </label>
-                                        </li>
-                                        <li class="dor-field">
-                                            <label class="facet-label">
-                                                <span class="custom-checkbox">
-                                                    <input data-search-url="3-shop258b.html?cate_type=2&amp;q=RAM-6GB"
-                                                        type="checkbox">
-                                                    <span class="ps-shown-by-js"><i
-                                                            class="material-icons checkbox-checked">&#xE5CA;</i></span>
-                                                </span>
-
-                                                <a href="3-shop258b.html?cate_type=2&amp;q=RAM-6GB"
-                                                    class="_gray-darker search-link js-search-link" rel="nofollow">
-                                                    6GB
-                                                    <span class="magnitude">(4)</span>
-                                                </a>
-                                            </label>
-                                        </li>
-                                    </ul>
-
-
-                                </section>
-                            </div>
-
-                        </div>
-                        <div class="dorCompareLeftSidebar">
-                            <div class="dorCompareLeftInner">
-                                <div class="section-title">
-                                    <h2 class="title_block">Compare Products <span class="counter qty hidden">0
-                                            items</span></h2>
-                                </div>
-
-                                <div class="list-compare-left">
-                                    <ul>
-                                        <li class="empty">You have no items to compare.</li>
-                                    </ul>
-                                </div>
-                                <div class="actions-footer-sidebar compare-hide">
-                                    <a href="module/dorcompare/compare.html"
-                                        class="dor-sidebar-compare"><span>Compare</span></a>
-                                    <a href="#" onclick="return false" class="dor-sidebar-compare-clear"><span>Clear
-                                            all</span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="dor-tabsidebar-product-category">
-                            <div class="dor-tabsidebar-product-category-wrapper">
-                                <ul role="tablist" class="nav nav-tabs dorTabAjaxSidebar" id="dorTabAjaxSidebar"
-                                    data-defaulttab="special_product"
-                                    data-ajaxurl="http://bionic.doradothemes.com/modules/dor_ajaxtabsidebar_product/productcategory-ajax.php">
-                                    <li class="first_item  active " data-rel="tab_special_product">
-                                        <div class="section-title">
-                                            <h2 class="title_block"><a aria-expanded="false" data-toggle="tab"
-                                                    id="cate-tab-data-special_product-tab"
-                                                    href="#cate-tab-data-special_product">Special</a></h2>
-                                        </div>
-                                    </li>
-
-
-                                </ul>
-                                <div class="tab-content" id="dorTabSidebarProductCategoryContent">
-                                    <div aria-labelledby="cate-tab-data-special_product-tab"
-                                        id="cate-tab-data-special_product" class="tab-pane fade  active  in">
-                                        <div class="productTabContent_special_product dor-content-items">
-                                        </div>
-                                        <div class="view-all">
-                                            <a class="btn btn-scale btn-go-cate" href="prices-drop.html"><span><span
-                                                        class="fa fa-long-arrow-right">&nbsp;</span></span>View All</a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Block tags module -->
-                        <div id="tags_block_left" class="block tags_block clearfix">
-                            <h4 class="title_block">Tag Products</h4>
-                            <p class="block_content clearfix">
-                                No tags have been specified yet.
-                            </p>
-                        </div>
-                        <!-- /Block tags module -->
-
-                    </div>
-
-
-
-                    <div id="content-wrapper" class="left-column col-xs-12 col-sm-8 col-md-9">
+                    <div id="content-wrapper" class="left-column col-12">
 
                         <section id="main">
 
@@ -3358,7 +2454,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                     </div>
                                 </div>
                                 <div class="category-cover">
-                                    <img src="../c/3-category_default/shop.jpg" alt="">
+                                    <img src="https://picsum.photos/1200/400?random={{ mt_rand(1, 100) }}" alt="">
                                 </div>
                             </div>
                             <div class="text-xs-center hidden-md-up">
@@ -3366,3157 +2462,1354 @@ cellphone, laptop, headphone, smartwatch, TV!">
                             </div>
 
 
-                            <section id="products">
+                        </section>
 
-                                <div>
 
-                                    <div id="js-product-list-top" class="row products-selection">
-                                        <div class="clearfix">
-                                            <div class="dor-display-cate">
-                                                <div class="show-display-control">
-                                                    <a href="#" rel="nofollow" class="displayGrid" data-id="grid"
-                                                        data-toggle="tooltip" data-placement="top" title=""
-                                                        data-original-title="Grid"><i
-                                                            class="material-icons">&#xE42A;</i></a>
-                                                    <a href="#" rel="nofollow" class="displayList " data-id="list"
-                                                        data-toggle="tooltip" data-placement="top" title=""
-                                                        data-original-title="List"><i
-                                                            class="material-icons">&#xE8EF;</i></a>
-                                                </div>
+                        <section id="products">
+
+                            <div>
+
+                                <div id="js-product-list-top" class="row products-selection">
+                                    <div class="clearfix">
+                                        <div class="dor-display-cate">
+                                            <div class="show-display-control">
+                                                <a href="#" rel="nofollow" class="displayGrid active" data-id="grid"
+                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="Grid"><i class="material-icons"></i></a>
+                                                <a href="#" rel="nofollow" class="displayList" data-id="list"
+                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="List"><i class="material-icons"></i></a>
                                             </div>
-                                            <div class="col-md-3 hidden-sm-down total-products">
-                                                <p>There are 15 products.</p>
-                                            </div>
-                                            <div class="col-md-5">
-                                                <div class="row">
+                                        </div>
+                                        <div class="col-md-3 hidden-sm-down total-products">
+                                            <p>There are 25 products.</p>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="row">
 
 
-                                                    <span class="col-sm-4 col-md-5 hidden-sm-down sort-by">Sort
-                                                        by:</span>
-                                                    <div
-                                                        class="col-sm-8 col-xs-8 col-md-7 products-sort-order dropdown">
-                                                        <a class="select-title" rel="nofollow" data-toggle="dropdown"
-                                                            aria-haspopup="true" aria-expanded="false">
-                                                            Relevance <i
-                                                                class="material-icons pull-xs-right">&#xE5C5;</i>
+                                                <span class="col-sm-4 col-md-5 hidden-sm-down sort-by">Sort by:</span>
+                                                <div class="col-sm-8 col-xs-8 col-md-7 products-sort-order dropdown">
+                                                    <a class="select-title" rel="nofollow" data-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
+                                                        Relevance <i class="material-icons pull-xs-right"></i>
+                                                    </a>
+                                                    <div class="dropdown-menu">
+                                                        <a rel="nofollow"
+                                                            href="http://bionic.doradothemes.com/store2/en/3-shop?cate_type=1&amp;order=product.position.asc"
+                                                            class="select-list current js-search-link">
+                                                            Relevance
                                                         </a>
-                                                        <div class="dropdown-menu">
-                                                            <a rel="nofollow"
-                                                                href="3-shop85c0.html?cate_type=2&amp;order=product.position.asc"
-                                                                class="select-list current js-search-link">
-                                                                Relevance
-                                                            </a>
-                                                            <a rel="nofollow"
-                                                                href="3-shope3e6.html?cate_type=2&amp;order=product.name.asc"
-                                                                class="select-list js-search-link">
-                                                                Name, A to Z
-                                                            </a>
-                                                            <a rel="nofollow"
-                                                                href="3-shop3b2d.html?cate_type=2&amp;order=product.name.desc"
-                                                                class="select-list js-search-link">
-                                                                Name, Z to A
-                                                            </a>
-                                                            <a rel="nofollow"
-                                                                href="3-shopea27.html?cate_type=2&amp;order=product.price.asc"
-                                                                class="select-list js-search-link">
-                                                                Price, low to high
-                                                            </a>
-                                                            <a rel="nofollow"
-                                                                href="3-shop6a78.html?cate_type=2&amp;order=product.price.desc"
-                                                                class="select-list js-search-link">
-                                                                Price, high to low
-                                                            </a>
-                                                        </div>
-                                                    </div>
-
-
-                                                    <div class="col-sm-3 col-xs-4 hidden-md-up filter-button">
-                                                        <button id="search_filter_toggler" class="btn btn-secondary">
-                                                            Filter
-                                                        </button>
+                                                        <a rel="nofollow"
+                                                            href="http://bionic.doradothemes.com/store2/en/3-shop?cate_type=1&amp;order=product.name.asc"
+                                                            class="select-list js-search-link">
+                                                            Name, A to Z
+                                                        </a>
+                                                        <a rel="nofollow"
+                                                            href="http://bionic.doradothemes.com/store2/en/3-shop?cate_type=1&amp;order=product.name.desc"
+                                                            class="select-list js-search-link">
+                                                            Name, Z to A
+                                                        </a>
+                                                        <a rel="nofollow"
+                                                            href="http://bionic.doradothemes.com/store2/en/3-shop?cate_type=1&amp;order=product.price.asc"
+                                                            class="select-list js-search-link">
+                                                            Price, low to high
+                                                        </a>
+                                                        <a rel="nofollow"
+                                                            href="http://bionic.doradothemes.com/store2/en/3-shop?cate_type=1&amp;order=product.price.desc"
+                                                            class="select-list js-search-link">
+                                                            Price, high to low
+                                                        </a>
                                                     </div>
                                                 </div>
+
+
+                                                <div class="col-sm-3 col-xs-4 hidden-md-up filter-button">
+                                                    <button id="search_filter_toggler" class="btn btn-secondary">
+                                                        Filter
+                                                    </button>
+                                                </div>
                                             </div>
-                                            <div class="col-sm-12 hidden-md-up text-xs-center showing">
-                                                Showing 1-15 of 31 item(s)
-                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 hidden-md-up text-xs-center showing">
+                                            Showing 1-25 of 31 item(s)
                                         </div>
                                     </div>
-
                                 </div>
 
-
-                                <div class="hidden-sm-down">
-                                    <section id="js-active-search-filters" class="hide">
-
-                                        <h1 class="h6 active-filter-title">Active filters</h1>
+                            </div>
 
 
-                                    </section>
+                            <div class="hidden-sm-down">
+                                <section id="js-active-search-filters" class="hide">
 
-                                </div>
-
-
-                                <div>
-
-                                    <div id="js-product-list">
-                                        <div class="products row">
+                                    <h1 class="h6 active-filter-title">Active filters</h1>
 
 
-                                            <article class="ajax_block_product product-miniature js-product-miniature"
-                                                data-id-product="1" data-id-product-attribute="195" itemscope
-                                                itemtype="http://schema.org/Product">
-                                                <div class="product-container">
-                                                    <div class="dor-display-product-info">
-                                                        <div class="left-block">
-                                                            <div class="product-image-container">
+                                </section>
 
-                                                                <a href="shop/1-195-apple-iphone-x-2017.html#/8-color-white/25-storage-128gb"
-                                                                    class="thumbnail product-thumbnail product_img_link">
-                                                                    <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
-                                                                        style="min-height: 10px;"
-                                                                        data-lazy="../32-home_default/apple-iphone-x-2017.jpg"
-                                                                        data-src="../32-home_default/apple-iphone-x-2017.jpg"
-                                                                        alt=""
-                                                                        data-full-size-image-url="../32-large_default/apple-iphone-x-2017.jpg"
-                                                                        width="600" height="800">
-                                                                    <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
-                                                                        style="min-height: 10px;"
-                                                                        data-lazy="../36-home_default/apple-iphone-x-2017.jpg"
-                                                                        data-src="../36-home_default/apple-iphone-x-2017.jpg"
-                                                                        alt=""
-                                                                        data-full-size-image-url="../36-large_default/apple-iphone-x-2017.jpg"
-                                                                        width="600" height="800">
+                            </div>
+
+
+                            <div>
+
+                                <div id="js-product-list">
+                                    <div class="products row">
+
+
+                                        <article class="ajax_block_product product-miniature js-product-miniature"
+                                            data-id-product="9" data-id-product-attribute="49" itemscope=""
+                                            itemtype="http://schema.org/Product">
+                                            <div class="product-container">
+                                                <div class="dor-display-product-info">
+                                                    <div class="left-block">
+                                                        <div class="product-image-container">
+
+                                                            <a href="http://bionic.doradothemes.com/store2/en/shop/9-49-apple-macbook-pro-2017.html#/1-storage-16gb/11-color-black"
+                                                                class="thumbnail product-thumbnail product_img_link">
+                                                                <img class="img-responsive thumbnail-image-1 lazy owl-lazy loaded"
+                                                                    style="min-height: 10px;"
+                                                                    data-lazy="http://bionic.doradothemes.com/store2/50-home_default/apple-macbook-pro-2017.jpg"
+                                                                    data-src="http://bionic.doradothemes.com/store2/50-home_default/apple-macbook-pro-2017.jpg"
+                                                                    alt=""
+                                                                    data-full-size-image-url="http://bionic.doradothemes.com/store2/50-large_default/apple-macbook-pro-2017.jpg"
+                                                                    width="600" height="800" data-ll-status="loaded"
+                                                                    src="http://bionic.doradothemes.com/store2/50-home_default/apple-macbook-pro-2017.jpg">
+                                                                <img class="img-responsive thumbnail-image-2 lazy owl-lazy loaded"
+                                                                    style="min-height: 10px;"
+                                                                    data-lazy="http://bionic.doradothemes.com/store2/52-home_default/apple-macbook-pro-2017.jpg"
+                                                                    data-src="http://bionic.doradothemes.com/store2/52-home_default/apple-macbook-pro-2017.jpg"
+                                                                    alt=""
+                                                                    data-full-size-image-url="http://bionic.doradothemes.com/store2/52-large_default/apple-macbook-pro-2017.jpg"
+                                                                    width="600" height="800" data-ll-status="loaded"
+                                                                    src="http://bionic.doradothemes.com/store2/52-home_default/apple-macbook-pro-2017.jpg">
+                                                            </a>
+
+
+                                                            <div class="box-items">
+                                                                <a class="new-box box-status"
+                                                                    href="http://bionic.doradothemes.com/store2/en/shop/9-apple-macbook-pro-2017.html">
+                                                                    <span class="new-label">New</span>
                                                                 </a>
+                                                                <a class="sale-box box-status"
+                                                                    href="http://bionic.doradothemes.com/store2/en/shop/9-apple-macbook-pro-2017.html">
+                                                                    <span class="sale-label">Sale!</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
 
+                                                        <div class="show-btn-products">
 
-                                                                <div class="box-items">
-                                                                    <a class="new-box box-status"
-                                                                        href="shop/1-195-apple-iphone-x-2017.html">
-                                                                        <span class="new-label">New</span>
-                                                                    </a>
-                                                                    <a class="sale-box box-status"
-                                                                        href="shop/1-195-apple-iphone-x-2017.html">
-                                                                        <span class="sale-label">Sale!</span>
-                                                                    </a>
+                                                            <div class="control-action-buttons">
+                                                                <div class="action-button">
+                                                                    <ul>
+
+                                                                        <li class="icon-line-quickview">
+                                                                            <a href="#"
+                                                                                class="quick-view countdown-view-detail"
+                                                                                data-link-action="quickview"
+                                                                                data-toggle="tooltip" title=""
+                                                                                data-original-title="View detail">
+                                                                                <i class="material-icons"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
                                                                 </div>
                                                             </div>
+                                                        </div>
+                                                    </div>
 
-                                                            <div class="show-btn-products">
+                                                    <div class="right-block">
+                                                        <div class="product-cate"><span>Shop</span></div>
 
-                                                                <div class="control-action-buttons">
-                                                                    <div class="action-button">
-                                                                        <ul>
+                                                        <h5 class="product-title-item" itemprop="name"><a
+                                                                href="http://bionic.doradothemes.com/store2/en/shop/9-49-apple-macbook-pro-2017.html#/1-storage-16gb/11-color-black"
+                                                                class="product-name">Apple Macbook Pro 2017</a></h5>
 
-                                                                            <li class="icon-line-quickview">
-                                                                                <a href="#"
-                                                                                    class="quick-view countdown-view-detail"
-                                                                                    data-link-action="quickview"
-                                                                                    data-toggle="tooltip"
-                                                                                    title="View detail">
-                                                                                    <i
-                                                                                        class="material-icons">&#xE8B6;</i>
-                                                                                </a>
-                                                                            </li>
-                                                                        </ul>
+                                                        <div class="review-price-product">
+                                                            <div class="hook-reviews">
+
+                                                                <div class="comments_note">
+                                                                    <div class="star_content clearfix">
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
                                                                     </div>
+                                                                    <div class="dor-num-reviews hidden">
+                                                                        <span>0 Review</span>
+                                                                        <i>/</i><a href="#" class="add-your-review">Add
+                                                                            Your Review</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="dor-show-value-product clearfix">
+
+                                                                <div class="content_price">
+                                                                    <div class="product-price-and-shipping">
+
+
+                                                                        <span class="regular-price">$1,200.00</span>
+                                                                        <span class="discount-percentage"
+                                                                            style="top: 13.75px;">-50%</span>
+
+
+                                                                        <span itemprop="price"
+                                                                            class="price">$600.00</span>
+
+
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="highlighted-informations hidden-sm-down">
+
+                                                                    <div class="variant-links">
+                                                                        <a href="http://bionic.doradothemes.com/store2/en/shop/9-47-apple-macbook-pro-2017.html#/3-storage-64gb/8-color-white"
+                                                                            class="color" title="White"
+                                                                            style="background-color: rgb(255, 255, 255); color: rgb(34, 34, 34);"><span
+                                                                                class="sr-only">White</span></a>
+                                                                        <a href="http://bionic.doradothemes.com/store2/en/shop/9-46-apple-macbook-pro-2017.html#/3-storage-64gb/11-color-black"
+                                                                            class="color" title="Black"
+                                                                            style="background-color: rgb(67, 74, 84); color: rgb(221, 221, 221);"><span
+                                                                                class="sr-only">Black</span></a>
+                                                                        <a href="http://bionic.doradothemes.com/store2/en/shop/9-48-apple-macbook-pro-2017.html#/3-storage-64gb/16-color-yellow"
+                                                                            class="color" title="Yellow"
+                                                                            style="background-color: rgb(241, 196, 15); color: rgb(34, 34, 34);"><span
+                                                                                class="sr-only">Yellow</span></a>
+                                                                        <span class="js-count count"></span>
+                                                                    </div>
+
                                                                 </div>
                                                             </div>
                                                         </div>
 
-                                                        <div class="right-block">
-                                                            <div class="product-cate"><span>Shop</span></div>
-
-                                                            <h5 class="product-title-item" itemprop="name"><a
-                                                                    href="shop/1-195-apple-iphone-x-2017.html#/8-color-white/25-storage-128gb"
-                                                                    class="product-name">Apple iPhone X 2017</a></h5>
-
-                                                            <div class="review-price-product">
-                                                                <div class="hook-reviews">
-
-                                                                    <div class="comments_note">
-                                                                        <div class="star_content clearfix">
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                        </div>
-                                                                        <div class="dor-num-reviews hidden">
-                                                                            <span>0 Review</span>
-                                                                            <i>/</i><a href="#"
-                                                                                class="add-your-review">Add Your
-                                                                                Review</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="dor-show-value-product clearfix">
-
-                                                                    <div class="content_price">
-                                                                        <div class="product-price-and-shipping">
-
-
-                                                                            <span itemprop="price"
-                                                                                class="price">$1,100.00</span>
-
-
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div
-                                                                        class="highlighted-informations hidden-sm-down">
-
-                                                                        <div class="variant-links">
-                                                                            <a href="shop/1-195-apple-iphone-x-2017.html#/8-color-white/25-storage-128gb"
-                                                                                class="color" title="White"
-                                                                                style="background-color: #ffffff"><span
-                                                                                    class="sr-only">White</span></a>
-                                                                            <a href="shop/1-194-apple-iphone-x-2017.html#/11-color-black/25-storage-128gb"
-                                                                                class="color" title="Black"
-                                                                                style="background-color: #434A54"><span
-                                                                                    class="sr-only">Black</span></a>
-                                                                            <a href="shop/1-196-apple-iphone-x-2017.html#/24-color-pink/25-storage-128gb"
-                                                                                class="color" title="Pink"
-                                                                                style="background-color: #FCCACD"><span
-                                                                                    class="sr-only">Pink</span></a>
-                                                                            <span class="js-count count"></span>
-                                                                        </div>
-
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="product-description-short hidden"
-                                                                itemprop="description">
-                                                                <p>Apple takes a complete product life cycle approach to
-                                                                    determining our environmental impact.</p>
-                                                                <p style="font-size:14px;font-weight:400;">
-                                                                    <strong>iPhone X embodies Apple’s continuing
-                                                                        environmental progress. It is designed with the
-                                                                        following features to reduce environmental
-                                                                        impact:</strong>
-                                                                </p>
-                                                                <ul>
-                                                                    <li>Mercury-free</li>
-                                                                    <li>Arsenic-free display glass</li>
-                                                                    <li>Brominated flame retardant–free</li>
-                                                                    <li>PVC-free</li>
-                                                                    <li>Beryllium-free</li>
-                                                                    <li>Highly recyclable stainless steel</li>
-                                                                </ul>
-                                                            </div>
-
+                                                        <div class="product-description-short hidden"
+                                                            itemprop="description">
+                                                            <p>Apple takes a complete product life cycle approach to
+                                                                determining our environmental impact.</p>
+                                                            <p style="font-size:14px;font-weight:400;"><strong>Macbook
+                                                                    Pro 2017 embodies Apple’s continuing environmental
+                                                                    progress. It is designed with the following features
+                                                                    to reduce environmental impact:</strong></p>
+                                                            <ul>
+                                                                <li>Mercury-free</li>
+                                                                <li>Arsenic-free display glass</li>
+                                                                <li>Brominated flame retardant–free</li>
+                                                                <li>PVC-free</li>
+                                                                <li>Beryllium-free</li>
+                                                                <li>Highly recyclable stainless steel</li>
+                                                            </ul>
                                                         </div>
-
-                                                        <ul class="product-flags hidden">
-                                                            <li class="on-sale">On sale!</li>
-                                                            <li class="new">New</li>
-                                                        </ul>
 
                                                     </div>
-                                                    <div class="product-more-options">
-                                                        <form action="http://bionic.doradothemes.com/en/cart"
-                                                            method="post" class="dor-addcart-button">
-                                                            <div class="add">
-                                                                <input type="hidden" name="token"
-                                                                    value="34b11c3ac3b44ecd83062701f9ddcf1b">
-                                                                <input name="id_product" value="1" type="hidden">
-                                                                <input type="hidden" name="id_customization" value="0">
-                                                                <a href="cart.html"
-                                                                    class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
-                                                                    data-button-action="add-to-cart"
-                                                                    data-title="Add to cart">
-                                                                    <i class="material-icons shopping-cart">&#xE547;</i>
-                                                                    <span class="hidden">Add to cart</span>
+
+                                                    <ul class="product-flags hidden">
+                                                        <li class="on-sale">On sale!</li>
+                                                        <li class="new" style="top: 1.25px;">New</li>
+                                                    </ul>
+
+                                                </div>
+                                                <div class="product-more-options">
+                                                    <form action="http://bionic.doradothemes.com/store2/en/cart"
+                                                        method="post" class="dor-addcart-button">
+                                                        <div class="add">
+                                                            <input type="hidden" name="token"
+                                                                value="34b11c3ac3b44ecd83062701f9ddcf1b">
+                                                            <input name="id_product" value="9" type="hidden">
+                                                            <input type="hidden" name="id_customization" value="0">
+                                                            <a href="http://bionic.doradothemes.com/store2/en/cart"
+                                                                class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
+                                                                data-button-action="add-to-cart"
+                                                                data-title="Add to cart">
+                                                                <i class="material-icons shopping-cart"></i>
+                                                                <span class="hidden">Add to cart</span>
+                                                            </a>
+                                                        </div>
+                                                    </form>
+                                                    <div class="option-quick-add">
+                                                        <div class="icon-line-wishlist-fel">
+                                                            <div class="dor-wishlist">
+                                                                <a class="addToDorWishlist" href="#"
+                                                                    onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Add to Wishlist">
+                                                                    <i class="material-icons"></i>
+                                                                    <span class="wishlist-txt">Wishlist</span>
                                                                 </a>
                                                             </div>
-                                                        </form>
-                                                        <div class="option-quick-add">
-                                                            <div class="icon-line-wishlist-fel">
-                                                                <div class="dor-wishlist">
-                                                                    <a class="addToDorWishlist" href="#"
-                                                                        onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
-                                                                        data-toggle="tooltip" data-placement="top"
-                                                                        title="" data-original-title="Add to Wishlist">
-                                                                        <i class="material-icons">&#xE87E;</i>
-                                                                        <span class="wishlist-txt">Wishlist</span>
-                                                                    </a>
-                                                                </div>
+                                                        </div>
+                                                        <div class="icon-line-compare-fel">
+                                                            <div class="compare">
+                                                                <a class="add_to_compare"
+                                                                    href="http://bionic.doradothemes.com/store2/en/shop/9-apple-macbook-pro-2017.html"
+                                                                    data-productid="9" data-toggle="tooltip" title=""
+                                                                    data-original-title="Add compare"><i
+                                                                        class="fa fa-random"></i><span
+                                                                        class="compare-button-txt">Compare</span></a>
                                                             </div>
-                                                            <div class="icon-line-compare-fel">
-                                                                <div class="compare">
-                                                                    <a class="add_to_compare"
-                                                                        href="shop/1-195-apple-iphone-x-2017.html"
-                                                                        data-productid="1" data-toggle="tooltip"
-                                                                        title="" data-original-title="Add compare"><i
-                                                                            class="fa fa-random"></i><span
-                                                                            class="compare-button-txt">Compare</span></a>
-                                                                </div>
 
-                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </article>
-
-
-
-
-                                            <article class="ajax_block_product product-miniature js-product-miniature"
-                                                data-id-product="2" data-id-product-attribute="7" itemscope
-                                                itemtype="http://schema.org/Product">
-                                                <div class="product-container">
-                                                    <div class="dor-display-product-info">
-                                                        <div class="left-block">
-                                                            <div class="product-image-container">
-
-                                                                <a href="shop/2-7-lg-v30-premium.html#/1-storage-16gb/11-color-black"
-                                                                    class="thumbnail product-thumbnail product_img_link">
-                                                                    <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
-                                                                        style="min-height: 10px;"
-                                                                        data-lazy="../37-home_default/lg-v30-premium.jpg"
-                                                                        data-src="../37-home_default/lg-v30-premium.jpg"
-                                                                        alt=""
-                                                                        data-full-size-image-url="../37-large_default/lg-v30-premium.jpg"
-                                                                        width="600" height="800">
-                                                                    <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
-                                                                        style="min-height: 10px;"
-                                                                        data-lazy="../38-home_default/lg-v30-premium.jpg"
-                                                                        data-src="../38-home_default/lg-v30-premium.jpg"
-                                                                        alt=""
-                                                                        data-full-size-image-url="../38-large_default/lg-v30-premium.jpg"
-                                                                        width="600" height="800">
-                                                                </a>
-
-
-                                                                <div class="box-items">
-                                                                    <a class="new-box box-status"
-                                                                        href="shop/2-lg-v30-premium.html">
-                                                                        <span class="new-label">New</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="show-btn-products">
-
-                                                                <div class="control-action-buttons">
-                                                                    <div class="action-button">
-                                                                        <ul>
-
-                                                                            <li class="icon-line-quickview">
-                                                                                <a href="#"
-                                                                                    class="quick-view countdown-view-detail"
-                                                                                    data-link-action="quickview"
-                                                                                    data-toggle="tooltip"
-                                                                                    title="View detail">
-                                                                                    <i
-                                                                                        class="material-icons">&#xE8B6;</i>
-                                                                                </a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="right-block">
-                                                            <div class="product-cate"><span>Shop</span></div>
-
-                                                            <h5 class="product-title-item" itemprop="name"><a
-                                                                    href="shop/2-7-lg-v30-premium.html#/1-storage-16gb/11-color-black"
-                                                                    class="product-name">LG V30 Premium</a></h5>
-
-                                                            <div class="review-price-product">
-                                                                <div class="hook-reviews">
-
-                                                                    <div class="comments_note">
-                                                                        <div class="star_content clearfix">
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                        </div>
-                                                                        <div class="dor-num-reviews hidden">
-                                                                            <span>0 Review</span>
-                                                                            <i>/</i><a href="#"
-                                                                                class="add-your-review">Add Your
-                                                                                Review</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="dor-show-value-product clearfix">
-
-                                                                    <div class="content_price">
-                                                                        <div class="product-price-and-shipping">
-
-
-                                                                            <span itemprop="price"
-                                                                                class="price">$990.00</span>
-
-
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div
-                                                                        class="highlighted-informations hidden-sm-down">
-
-                                                                        <div class="variant-links">
-                                                                            <a href="shop/2-8-lg-v30-premium.html#/1-storage-16gb/8-color-white"
-                                                                                class="color" title="White"
-                                                                                style="background-color: #ffffff"><span
-                                                                                    class="sr-only">White</span></a>
-                                                                            <a href="shop/2-7-lg-v30-premium.html#/1-storage-16gb/11-color-black"
-                                                                                class="color" title="Black"
-                                                                                style="background-color: #434A54"><span
-                                                                                    class="sr-only">Black</span></a>
-                                                                            <span class="js-count count"></span>
-                                                                        </div>
-
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="product-description-short hidden"
-                                                                itemprop="description">
-                                                                <p>Apple takes a complete product life cycle approach to
-                                                                    determining our environmental impact.</p>
-                                                                <p style="font-size:14px;font-weight:400;"><strong>LG
-                                                                        V30 embodies Apple’s continuing environmental
-                                                                        progress. It is designed with the following
-                                                                        features to reduce environmental
-                                                                        impact:</strong></p>
-                                                                <ul>
-                                                                    <li>Mercury-free</li>
-                                                                    <li>Arsenic-free display glass</li>
-                                                                    <li>Brominated flame retardant–free</li>
-                                                                    <li>PVC-free</li>
-                                                                    <li>Beryllium-free</li>
-                                                                    <li>Highly recyclable stainless steel</li>
-                                                                </ul>
-                                                            </div>
-
-                                                        </div>
-
-                                                        <ul class="product-flags hidden">
-                                                            <li class="new">New</li>
-                                                        </ul>
-
-                                                    </div>
-                                                    <div class="product-more-options">
-                                                        <form action="http://bionic.doradothemes.com/en/cart"
-                                                            method="post" class="dor-addcart-button">
-                                                            <div class="add">
-                                                                <input type="hidden" name="token"
-                                                                    value="34b11c3ac3b44ecd83062701f9ddcf1b">
-                                                                <input name="id_product" value="2" type="hidden">
-                                                                <input type="hidden" name="id_customization" value="0">
-                                                                <a href="cart.html"
-                                                                    class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
-                                                                    data-button-action="add-to-cart"
-                                                                    data-title="Add to cart">
-                                                                    <i class="material-icons shopping-cart">&#xE547;</i>
-                                                                    <span class="hidden">Add to cart</span>
-                                                                </a>
-                                                            </div>
-                                                        </form>
-                                                        <div class="option-quick-add">
-                                                            <div class="icon-line-wishlist-fel">
-                                                                <div class="dor-wishlist">
-                                                                    <a class="addToDorWishlist" href="#"
-                                                                        onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
-                                                                        data-toggle="tooltip" data-placement="top"
-                                                                        title="" data-original-title="Add to Wishlist">
-                                                                        <i class="material-icons">&#xE87E;</i>
-                                                                        <span class="wishlist-txt">Wishlist</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="icon-line-compare-fel">
-                                                                <div class="compare">
-                                                                    <a class="add_to_compare"
-                                                                        href="shop/2-lg-v30-premium.html"
-                                                                        data-productid="2" data-toggle="tooltip"
-                                                                        title="" data-original-title="Add compare"><i
-                                                                            class="fa fa-random"></i><span
-                                                                            class="compare-button-txt">Compare</span></a>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-
-
-
-                                            <article class="ajax_block_product product-miniature js-product-miniature"
-                                                data-id-product="3" data-id-product-attribute="85" itemscope
-                                                itemtype="http://schema.org/Product">
-                                                <div class="product-container">
-                                                    <div class="dor-display-product-info">
-                                                        <div class="left-block">
-                                                            <div class="product-image-container">
-
-                                                                <a href="shop/3-85-samsung-galaxy-note8.html#/8-color-white/25-storage-128gb"
-                                                                    class="thumbnail product-thumbnail product_img_link">
-                                                                    <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
-                                                                        style="min-height: 10px;"
-                                                                        data-lazy="../42-home_default/samsung-galaxy-note8.jpg"
-                                                                        data-src="../42-home_default/samsung-galaxy-note8.jpg"
-                                                                        alt=""
-                                                                        data-full-size-image-url="../42-large_default/samsung-galaxy-note8.jpg"
-                                                                        width="600" height="800">
-                                                                    <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
-                                                                        style="min-height: 10px;"
-                                                                        data-lazy="../45-home_default/samsung-galaxy-note8.jpg"
-                                                                        data-src="../45-home_default/samsung-galaxy-note8.jpg"
-                                                                        alt=""
-                                                                        data-full-size-image-url="../45-large_default/samsung-galaxy-note8.jpg"
-                                                                        width="600" height="800">
-                                                                </a>
-
-
-                                                                <div class="box-items">
-                                                                    <a class="new-box box-status"
-                                                                        href="shop/3-85-samsung-galaxy-note8.html">
-                                                                        <span class="new-label">New</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="show-btn-products">
-
-                                                                <div class="control-action-buttons">
-                                                                    <div class="action-button">
-                                                                        <ul>
-
-                                                                            <li class="icon-line-quickview">
-                                                                                <a href="#"
-                                                                                    class="quick-view countdown-view-detail"
-                                                                                    data-link-action="quickview"
-                                                                                    data-toggle="tooltip"
-                                                                                    title="View detail">
-                                                                                    <i
-                                                                                        class="material-icons">&#xE8B6;</i>
-                                                                                </a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="right-block">
-                                                            <div class="product-cate"><span>Shop</span></div>
-
-                                                            <h5 class="product-title-item" itemprop="name"><a
-                                                                    href="shop/3-85-samsung-galaxy-note8.html#/8-color-white/25-storage-128gb"
-                                                                    class="product-name">Samsung Galaxy Note8</a></h5>
-
-                                                            <div class="review-price-product">
-                                                                <div class="hook-reviews">
-
-                                                                    <div class="comments_note">
-                                                                        <div class="star_content clearfix">
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                        </div>
-                                                                        <div class="dor-num-reviews hidden">
-                                                                            <span>0 Review</span>
-                                                                            <i>/</i><a href="#"
-                                                                                class="add-your-review">Add Your
-                                                                                Review</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="dor-show-value-product clearfix">
-
-                                                                    <div class="content_price">
-                                                                        <div class="product-price-and-shipping">
-
-
-                                                                            <span itemprop="price"
-                                                                                class="price">$890.00</span>
-
-
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div
-                                                                        class="highlighted-informations hidden-sm-down">
-
-                                                                        <div class="variant-links">
-                                                                            <a href="shop/3-78-samsung-galaxy-note8.html#/3-storage-64gb/5-color-grey"
-                                                                                class="color" title="Grey"
-                                                                                style="background-color: #AAB2BD"><span
-                                                                                    class="sr-only">Grey</span></a>
-                                                                            <a href="shop/3-79-samsung-galaxy-note8.html#/3-storage-64gb/8-color-white"
-                                                                                class="color" title="White"
-                                                                                style="background-color: #ffffff"><span
-                                                                                    class="sr-only">White</span></a>
-                                                                            <a href="shop/3-77-samsung-galaxy-note8.html#/3-storage-64gb/11-color-black"
-                                                                                class="color" title="Black"
-                                                                                style="background-color: #434A54"><span
-                                                                                    class="sr-only">Black</span></a>
-                                                                            <span class="js-count count"></span>
-                                                                        </div>
-
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="product-description-short hidden"
-                                                                itemprop="description">
-                                                                <p>Samsung takes a complete product life cycle approach
-                                                                    to determining our environmental impact.</p>
-                                                                <p style="font-size:14px;font-weight:400;"><strong>Note8
-                                                                        embodies Samsung’s continuing environmental
-                                                                        progress. It is designed with the following
-                                                                        features to reduce environmental
-                                                                        impact:</strong></p>
-                                                                <ul>
-                                                                    <li>Mercury-free</li>
-                                                                    <li>Arsenic-free display glass</li>
-                                                                    <li>Brominated flame retardant–free</li>
-                                                                    <li>PVC-free</li>
-                                                                    <li>Beryllium-free</li>
-                                                                    <li>Highly recyclable stainless steel</li>
-                                                                </ul>
-                                                            </div>
-
-                                                        </div>
-
-                                                        <ul class="product-flags hidden">
-                                                            <li class="new">New</li>
-                                                        </ul>
-
-                                                    </div>
-                                                    <div class="product-more-options">
-                                                        <form action="http://bionic.doradothemes.com/en/cart"
-                                                            method="post" class="dor-addcart-button">
-                                                            <div class="add">
-                                                                <input type="hidden" name="token"
-                                                                    value="34b11c3ac3b44ecd83062701f9ddcf1b">
-                                                                <input name="id_product" value="3" type="hidden">
-                                                                <input type="hidden" name="id_customization" value="0">
-                                                                <a href="cart.html"
-                                                                    class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
-                                                                    data-button-action="add-to-cart"
-                                                                    data-title="Add to cart">
-                                                                    <i class="material-icons shopping-cart">&#xE547;</i>
-                                                                    <span class="hidden">Add to cart</span>
-                                                                </a>
-                                                            </div>
-                                                        </form>
-                                                        <div class="option-quick-add">
-                                                            <div class="icon-line-wishlist-fel">
-                                                                <div class="dor-wishlist">
-                                                                    <a class="addToDorWishlist" href="#"
-                                                                        onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
-                                                                        data-toggle="tooltip" data-placement="top"
-                                                                        title="" data-original-title="Add to Wishlist">
-                                                                        <i class="material-icons">&#xE87E;</i>
-                                                                        <span class="wishlist-txt">Wishlist</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="icon-line-compare-fel">
-                                                                <div class="compare">
-                                                                    <a class="add_to_compare"
-                                                                        href="shop/3-85-samsung-galaxy-note8.html"
-                                                                        data-productid="3" data-toggle="tooltip"
-                                                                        title="" data-original-title="Add compare"><i
-                                                                            class="fa fa-random"></i><span
-                                                                            class="compare-button-txt">Compare</span></a>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-
-
-
-                                            <article class="ajax_block_product product-miniature js-product-miniature"
-                                                data-id-product="4" data-id-product-attribute="43" itemscope
-                                                itemtype="http://schema.org/Product">
-                                                <div class="product-container">
-                                                    <div class="dor-display-product-info">
-                                                        <div class="left-block">
-                                                            <div class="product-image-container">
-
-                                                                <a href="shop/4-43-apple-iphone8.html#/1-storage-16gb/24-color-pink"
-                                                                    class="thumbnail product-thumbnail product_img_link">
-                                                                    <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
-                                                                        style="min-height: 10px;"
-                                                                        data-lazy="../47-home_default/apple-iphone8.jpg"
-                                                                        data-src="../47-home_default/apple-iphone8.jpg"
-                                                                        alt=""
-                                                                        data-full-size-image-url="../47-large_default/apple-iphone8.jpg"
-                                                                        width="600" height="800">
-                                                                    <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
-                                                                        style="min-height: 10px;"
-                                                                        data-lazy="../49-home_default/apple-iphone8.jpg"
-                                                                        data-src="../49-home_default/apple-iphone8.jpg"
-                                                                        alt=""
-                                                                        data-full-size-image-url="../49-large_default/apple-iphone8.jpg"
-                                                                        width="600" height="800">
-                                                                </a>
-
-
-                                                                <div class="box-items">
-                                                                    <a class="new-box box-status"
-                                                                        href="shop/4-43-apple-iphone8.html">
-                                                                        <span class="new-label">New</span>
-                                                                    </a>
-                                                                    <a class="sale-box box-status"
-                                                                        href="shop/4-43-apple-iphone8.html">
-                                                                        <span class="sale-label">Sale!</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="show-btn-products">
-
-                                                                <div class="control-action-buttons">
-                                                                    <div class="action-button">
-                                                                        <ul>
-
-                                                                            <li class="icon-line-quickview">
-                                                                                <a href="#"
-                                                                                    class="quick-view countdown-view-detail"
-                                                                                    data-link-action="quickview"
-                                                                                    data-toggle="tooltip"
-                                                                                    title="View detail">
-                                                                                    <i
-                                                                                        class="material-icons">&#xE8B6;</i>
-                                                                                </a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="right-block">
-                                                            <div class="product-cate"><span>Shop</span></div>
-
-                                                            <h5 class="product-title-item" itemprop="name"><a
-                                                                    href="shop/4-43-apple-iphone8.html#/1-storage-16gb/24-color-pink"
-                                                                    class="product-name">Apple iPhone8</a></h5>
-
-                                                            <div class="review-price-product">
-                                                                <div class="hook-reviews">
-
-                                                                    <div class="comments_note">
-                                                                        <div class="star_content clearfix">
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                        </div>
-                                                                        <div class="dor-num-reviews hidden">
-                                                                            <span>0 Review</span>
-                                                                            <i>/</i><a href="#"
-                                                                                class="add-your-review">Add Your
-                                                                                Review</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="dor-show-value-product clearfix">
-
-                                                                    <div class="content_price">
-                                                                        <div class="product-price-and-shipping">
-
-
-                                                                            <span itemprop="price"
-                                                                                class="price">$899.00</span>
-
-
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div
-                                                                        class="highlighted-informations hidden-sm-down">
-
-                                                                        <div class="variant-links">
-                                                                            <a href="shop/4-56-apple-iphone8.html#/8-color-white/25-storage-128gb"
-                                                                                class="color" title="White"
-                                                                                style="background-color: #ffffff"><span
-                                                                                    class="sr-only">White</span></a>
-                                                                            <a href="shop/4-55-apple-iphone8.html#/11-color-black/25-storage-128gb"
-                                                                                class="color" title="Black"
-                                                                                style="background-color: #434A54"><span
-                                                                                    class="sr-only">Black</span></a>
-                                                                            <a href="shop/4-43-apple-iphone8.html#/1-storage-16gb/24-color-pink"
-                                                                                class="color" title="Pink"
-                                                                                style="background-color: #FCCACD"><span
-                                                                                    class="sr-only">Pink</span></a>
-                                                                            <span class="js-count count"></span>
-                                                                        </div>
-
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="product-description-short hidden"
-                                                                itemprop="description">
-                                                                <p>Apple takes a complete product life cycle approach to
-                                                                    determining our environmental impact.</p>
-                                                                <p style="font-size:14px;font-weight:400;">
-                                                                    <strong>iPhone X embodies Apple’s continuing
-                                                                        environmental progress. It is designed with the
-                                                                        following features to reduce environmental
-                                                                        impact:</strong>
-                                                                </p>
-                                                                <ul>
-                                                                    <li>Mercury-free</li>
-                                                                    <li>Arsenic-free display glass</li>
-                                                                    <li>Brominated flame retardant–free</li>
-                                                                    <li>PVC-free</li>
-                                                                    <li>Beryllium-free</li>
-                                                                    <li>Highly recyclable stainless steel</li>
-                                                                </ul>
-                                                            </div>
-
-                                                        </div>
-
-                                                        <ul class="product-flags hidden">
-                                                            <li class="on-sale">On sale!</li>
-                                                            <li class="new">New</li>
-                                                        </ul>
-
-                                                    </div>
-                                                    <div class="product-more-options">
-                                                        <form action="http://bionic.doradothemes.com/en/cart"
-                                                            method="post" class="dor-addcart-button">
-                                                            <div class="add">
-                                                                <input type="hidden" name="token"
-                                                                    value="34b11c3ac3b44ecd83062701f9ddcf1b">
-                                                                <input name="id_product" value="4" type="hidden">
-                                                                <input type="hidden" name="id_customization" value="0">
-                                                                <a href="cart.html"
-                                                                    class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
-                                                                    data-button-action="add-to-cart"
-                                                                    data-title="Add to cart">
-                                                                    <i class="material-icons shopping-cart">&#xE547;</i>
-                                                                    <span class="hidden">Add to cart</span>
-                                                                </a>
-                                                            </div>
-                                                        </form>
-                                                        <div class="option-quick-add">
-                                                            <div class="icon-line-wishlist-fel">
-                                                                <div class="dor-wishlist">
-                                                                    <a class="addToDorWishlist" href="#"
-                                                                        onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
-                                                                        data-toggle="tooltip" data-placement="top"
-                                                                        title="" data-original-title="Add to Wishlist">
-                                                                        <i class="material-icons">&#xE87E;</i>
-                                                                        <span class="wishlist-txt">Wishlist</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="icon-line-compare-fel">
-                                                                <div class="compare">
-                                                                    <a class="add_to_compare"
-                                                                        href="shop/4-43-apple-iphone8.html"
-                                                                        data-productid="4" data-toggle="tooltip"
-                                                                        title="" data-original-title="Add compare"><i
-                                                                            class="fa fa-random"></i><span
-                                                                            class="compare-button-txt">Compare</span></a>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-
-
-
-                                            <article class="ajax_block_product product-miniature js-product-miniature"
-                                                data-id-product="5" data-id-product-attribute="89" itemscope
-                                                itemtype="http://schema.org/Product">
-                                                <div class="product-container">
-                                                    <div class="dor-display-product-info">
-                                                        <div class="left-block">
-                                                            <div class="product-image-container">
-
-                                                                <a href="shop/5-89-microsoft-lumia-8800.html#/2-storage-32gb/11-color-black"
-                                                                    class="thumbnail product-thumbnail product_img_link">
-                                                                    <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
-                                                                        style="min-height: 10px;"
-                                                                        data-lazy="../28-home_default/microsoft-lumia-8800.jpg"
-                                                                        data-src="../28-home_default/microsoft-lumia-8800.jpg"
-                                                                        alt=""
-                                                                        data-full-size-image-url="../28-large_default/microsoft-lumia-8800.jpg"
-                                                                        width="600" height="800">
-                                                                    <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
-                                                                        style="min-height: 10px;"
-                                                                        data-lazy="../29-home_default/microsoft-lumia-8800.jpg"
-                                                                        data-src="../29-home_default/microsoft-lumia-8800.jpg"
-                                                                        alt=""
-                                                                        data-full-size-image-url="../29-large_default/microsoft-lumia-8800.jpg"
-                                                                        width="600" height="800">
-                                                                </a>
-
-
-                                                                <div class="box-items">
-                                                                    <a class="new-box box-status"
-                                                                        href="shop/5-89-microsoft-lumia-8800.html">
-                                                                        <span class="new-label">New</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="show-btn-products">
-
-                                                                <div class="control-action-buttons">
-                                                                    <div class="action-button">
-                                                                        <ul>
-
-                                                                            <li class="icon-line-quickview">
-                                                                                <a href="#"
-                                                                                    class="quick-view countdown-view-detail"
-                                                                                    data-link-action="quickview"
-                                                                                    data-toggle="tooltip"
-                                                                                    title="View detail">
-                                                                                    <i
-                                                                                        class="material-icons">&#xE8B6;</i>
-                                                                                </a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="right-block">
-                                                            <div class="product-cate"><span>Shop</span></div>
-
-                                                            <h5 class="product-title-item" itemprop="name"><a
-                                                                    href="shop/5-89-microsoft-lumia-8800.html#/2-storage-32gb/11-color-black"
-                                                                    class="product-name">Microsoft Lumia 8800</a></h5>
-
-                                                            <div class="review-price-product">
-                                                                <div class="hook-reviews">
-
-                                                                    <div class="comments_note">
-                                                                        <div class="star_content clearfix">
-                                                                            <div class="star star_on"></div>
-                                                                            <div class="star star_on"></div>
-                                                                            <div class="star star_on"></div>
-                                                                            <div class="star star_on"></div>
-                                                                            <div class="star star_on"></div>
-                                                                        </div>
-                                                                        <div class="dor-num-reviews hidden">
-                                                                            <span>1 Review</span>
-                                                                            <i>/</i><a href="#"
-                                                                                class="add-your-review">Add Your
-                                                                                Review</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="dor-show-value-product clearfix">
-
-                                                                    <div class="content_price">
-                                                                        <div class="product-price-and-shipping">
-
-
-                                                                            <span class="regular-price">$799.00</span>
-                                                                            <span class="discount-percentage">-5%</span>
-
-
-                                                                            <span itemprop="price"
-                                                                                class="price">$759.05</span>
-
-
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div
-                                                                        class="highlighted-informations hidden-sm-down">
-
-                                                                        <div class="variant-links">
-                                                                            <a href="shop/5-88-microsoft-lumia-8800.html#/3-storage-64gb/5-color-grey"
-                                                                                class="color" title="Grey"
-                                                                                style="background-color: #AAB2BD"><span
-                                                                                    class="sr-only">Grey</span></a>
-                                                                            <a href="shop/5-87-microsoft-lumia-8800.html#/3-storage-64gb/8-color-white"
-                                                                                class="color" title="White"
-                                                                                style="background-color: #ffffff"><span
-                                                                                    class="sr-only">White</span></a>
-                                                                            <a href="shop/5-86-microsoft-lumia-8800.html#/3-storage-64gb/11-color-black"
-                                                                                class="color" title="Black"
-                                                                                style="background-color: #434A54"><span
-                                                                                    class="sr-only">Black</span></a>
-                                                                            <span class="js-count count"></span>
-                                                                        </div>
-
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="product-description-short hidden"
-                                                                itemprop="description">
-                                                                <p>Microsoft takes a complete product life cycle
-                                                                    approach to determining our environmental impact.
-                                                                </p>
-                                                                <p style="font-size:14px;font-weight:400;"><strong>Lumia
-                                                                        embodies Microsoft’s continuing environmental
-                                                                        progress. It is designed with the following
-                                                                        features to reduce environmental
-                                                                        impact:</strong></p>
-                                                                <ul>
-                                                                    <li>Mercury-free</li>
-                                                                    <li>Arsenic-free display glass</li>
-                                                                    <li>Brominated flame retardant–free</li>
-                                                                    <li>PVC-free</li>
-                                                                    <li>Beryllium-free</li>
-                                                                    <li>Highly recyclable stainless steel</li>
-                                                                </ul>
-                                                            </div>
-
-                                                        </div>
-
-                                                        <ul class="product-flags hidden">
-                                                            <li class="discount">Reduced price</li>
-                                                            <li class="new">New</li>
-                                                        </ul>
-
-                                                    </div>
-                                                    <div class="product-more-options">
-                                                        <form action="http://bionic.doradothemes.com/en/cart"
-                                                            method="post" class="dor-addcart-button">
-                                                            <div class="add">
-                                                                <input type="hidden" name="token"
-                                                                    value="34b11c3ac3b44ecd83062701f9ddcf1b">
-                                                                <input name="id_product" value="5" type="hidden">
-                                                                <input type="hidden" name="id_customization" value="0">
-                                                                <a href="cart.html"
-                                                                    class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
-                                                                    data-button-action="add-to-cart"
-                                                                    data-title="Add to cart">
-                                                                    <i class="material-icons shopping-cart">&#xE547;</i>
-                                                                    <span class="hidden">Add to cart</span>
-                                                                </a>
-                                                            </div>
-                                                        </form>
-                                                        <div class="option-quick-add">
-                                                            <div class="icon-line-wishlist-fel">
-                                                                <div class="dor-wishlist">
-                                                                    <a class="addToDorWishlist" href="#"
-                                                                        onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
-                                                                        data-toggle="tooltip" data-placement="top"
-                                                                        title="" data-original-title="Add to Wishlist">
-                                                                        <i class="material-icons">&#xE87E;</i>
-                                                                        <span class="wishlist-txt">Wishlist</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="icon-line-compare-fel">
-                                                                <div class="compare">
-                                                                    <a class="add_to_compare"
-                                                                        href="shop/5-89-microsoft-lumia-8800.html"
-                                                                        data-productid="5" data-toggle="tooltip"
-                                                                        title="" data-original-title="Add compare"><i
-                                                                            class="fa fa-random"></i><span
-                                                                            class="compare-button-txt">Compare</span></a>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-
-
-
-                                            <article class="ajax_block_product product-miniature js-product-miniature"
-                                                data-id-product="6" data-id-product-attribute="96" itemscope
-                                                itemtype="http://schema.org/Product">
-                                                <div class="product-container">
-                                                    <div class="dor-display-product-info">
-                                                        <div class="left-block">
-                                                            <div class="product-image-container">
-
-                                                                <a href="shop/6-96-apple-ipad-mini-2018.html#/3-storage-64gb/11-color-black"
-                                                                    class="thumbnail product-thumbnail product_img_link">
-                                                                    <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
-                                                                        style="min-height: 10px;"
-                                                                        data-lazy="../30-home_default/apple-ipad-mini-2018.jpg"
-                                                                        data-src="../30-home_default/apple-ipad-mini-2018.jpg"
-                                                                        alt=""
-                                                                        data-full-size-image-url="../30-large_default/apple-ipad-mini-2018.jpg"
-                                                                        width="600" height="800">
-                                                                    <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
-                                                                        style="min-height: 10px;"
-                                                                        data-lazy="../31-home_default/apple-ipad-mini-2018.jpg"
-                                                                        data-src="../31-home_default/apple-ipad-mini-2018.jpg"
-                                                                        alt=""
-                                                                        data-full-size-image-url="../31-large_default/apple-ipad-mini-2018.jpg"
-                                                                        width="600" height="800">
-                                                                </a>
-
-
-                                                                <div class="box-items">
-                                                                    <a class="new-box box-status"
-                                                                        href="shop/6-96-apple-ipad-mini-2018.html">
-                                                                        <span class="new-label">New</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="show-btn-products">
-
-                                                                <div class="control-action-buttons">
-                                                                    <div class="action-button">
-                                                                        <ul>
-
-                                                                            <li class="icon-line-quickview">
-                                                                                <a href="#"
-                                                                                    class="quick-view countdown-view-detail"
-                                                                                    data-link-action="quickview"
-                                                                                    data-toggle="tooltip"
-                                                                                    title="View detail">
-                                                                                    <i
-                                                                                        class="material-icons">&#xE8B6;</i>
-                                                                                </a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="right-block">
-                                                            <div class="product-cate"><span>Shop</span></div>
-
-                                                            <h5 class="product-title-item" itemprop="name"><a
-                                                                    href="shop/6-96-apple-ipad-mini-2018.html#/3-storage-64gb/11-color-black"
-                                                                    class="product-name">Apple iPad Mini 2018</a></h5>
-
-                                                            <div class="review-price-product">
-                                                                <div class="hook-reviews">
-
-                                                                    <div class="comments_note">
-                                                                        <div class="star_content clearfix">
-                                                                            <div class="star star_on"></div>
-                                                                            <div class="star star_on"></div>
-                                                                            <div class="star star_on"></div>
-                                                                            <div class="star star_on"></div>
-                                                                            <div class="star"></div>
-                                                                        </div>
-                                                                        <div class="dor-num-reviews hidden">
-                                                                            <span>1 Review</span>
-                                                                            <i>/</i><a href="#"
-                                                                                class="add-your-review">Add Your
-                                                                                Review</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="dor-show-value-product clearfix">
-
-                                                                    <div class="content_price">
-                                                                        <div class="product-price-and-shipping">
-
-
-                                                                            <span itemprop="price"
-                                                                                class="price">$800.00</span>
-
-
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div
-                                                                        class="highlighted-informations hidden-sm-down">
-
-                                                                        <div class="variant-links">
-                                                                            <a href="shop/6-93-apple-ipad-mini-2018.html#/8-color-white/25-storage-128gb"
-                                                                                class="color" title="White"
-                                                                                style="background-color: #ffffff"><span
-                                                                                    class="sr-only">White</span></a>
-                                                                            <a href="shop/6-92-apple-ipad-mini-2018.html#/11-color-black/25-storage-128gb"
-                                                                                class="color" title="Black"
-                                                                                style="background-color: #434A54"><span
-                                                                                    class="sr-only">Black</span></a>
-                                                                            <span class="js-count count"></span>
-                                                                        </div>
-
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="product-description-short hidden"
-                                                                itemprop="description">
-                                                                <p>Apple takes a complete product life cycle approach to
-                                                                    determining our environmental impact.</p>
-                                                                <p style="font-size:14px;font-weight:400;"><strong>iPad
-                                                                        Mini embodies Apple’s continuing environmental
-                                                                        progress. It is designed with the following
-                                                                        features to reduce environmental
-                                                                        impact:</strong></p>
-                                                                <ul>
-                                                                    <li>Mercury-free</li>
-                                                                    <li>Arsenic-free display glass</li>
-                                                                    <li>Brominated flame retardant–free</li>
-                                                                    <li>PVC-free</li>
-                                                                    <li>Beryllium-free</li>
-                                                                    <li>Highly recyclable stainless steel</li>
-                                                                </ul>
-                                                            </div>
-
-                                                        </div>
-
-                                                        <ul class="product-flags hidden">
-                                                            <li class="new">New</li>
-                                                        </ul>
-
-                                                    </div>
-                                                    <div class="product-more-options">
-                                                        <form action="http://bionic.doradothemes.com/en/cart"
-                                                            method="post" class="dor-addcart-button">
-                                                            <div class="add">
-                                                                <input type="hidden" name="token"
-                                                                    value="34b11c3ac3b44ecd83062701f9ddcf1b">
-                                                                <input name="id_product" value="6" type="hidden">
-                                                                <input type="hidden" name="id_customization" value="0">
-                                                                <a href="cart.html"
-                                                                    class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
-                                                                    data-button-action="add-to-cart"
-                                                                    data-title="Add to cart">
-                                                                    <i class="material-icons shopping-cart">&#xE547;</i>
-                                                                    <span class="hidden">Add to cart</span>
-                                                                </a>
-                                                            </div>
-                                                        </form>
-                                                        <div class="option-quick-add">
-                                                            <div class="icon-line-wishlist-fel">
-                                                                <div class="dor-wishlist">
-                                                                    <a class="addToDorWishlist" href="#"
-                                                                        onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
-                                                                        data-toggle="tooltip" data-placement="top"
-                                                                        title="" data-original-title="Add to Wishlist">
-                                                                        <i class="material-icons">&#xE87E;</i>
-                                                                        <span class="wishlist-txt">Wishlist</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="icon-line-compare-fel">
-                                                                <div class="compare">
-                                                                    <a class="add_to_compare"
-                                                                        href="shop/6-96-apple-ipad-mini-2018.html"
-                                                                        data-productid="6" data-toggle="tooltip"
-                                                                        title="" data-original-title="Add compare"><i
-                                                                            class="fa fa-random"></i><span
-                                                                            class="compare-button-txt">Compare</span></a>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-
-
-
-                                            <article class="ajax_block_product product-miniature js-product-miniature"
-                                                data-id-product="7" data-id-product-attribute="34" itemscope
-                                                itemtype="http://schema.org/Product">
-                                                <div class="product-container">
-                                                    <div class="dor-display-product-info">
-                                                        <div class="left-block">
-                                                            <div class="product-image-container">
-
-                                                                <a href="shop/7-34-apple-iphone-6.html#/1-storage-16gb/16-color-yellow"
-                                                                    class="thumbnail product-thumbnail product_img_link">
-                                                                    <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
-                                                                        style="min-height: 10px;"
-                                                                        data-lazy="../24-home_default/apple-iphone-6.jpg"
-                                                                        data-src="../24-home_default/apple-iphone-6.jpg"
-                                                                        alt=""
-                                                                        data-full-size-image-url="../24-large_default/apple-iphone-6.jpg"
-                                                                        width="600" height="800">
-                                                                    <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
-                                                                        style="min-height: 10px;"
-                                                                        data-lazy="../25-home_default/apple-iphone-6.jpg"
-                                                                        data-src="../25-home_default/apple-iphone-6.jpg"
-                                                                        alt=""
-                                                                        data-full-size-image-url="../25-large_default/apple-iphone-6.jpg"
-                                                                        width="600" height="800">
-                                                                </a>
-
-
-                                                                <div class="box-items">
-                                                                    <a class="new-box box-status"
-                                                                        href="shop/7-34-apple-iphone-6.html">
-                                                                        <span class="new-label">New</span>
-                                                                    </a>
-                                                                    <a class="sale-box box-status"
-                                                                        href="shop/7-34-apple-iphone-6.html">
-                                                                        <span class="sale-label">Sale!</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="show-btn-products">
-
-                                                                <div class="control-action-buttons">
-                                                                    <div class="action-button">
-                                                                        <ul>
-
-                                                                            <li class="icon-line-quickview">
-                                                                                <a href="#"
-                                                                                    class="quick-view countdown-view-detail"
-                                                                                    data-link-action="quickview"
-                                                                                    data-toggle="tooltip"
-                                                                                    title="View detail">
-                                                                                    <i
-                                                                                        class="material-icons">&#xE8B6;</i>
-                                                                                </a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="right-block">
-                                                            <div class="product-cate"><span>Shop</span></div>
-
-                                                            <h5 class="product-title-item" itemprop="name"><a
-                                                                    href="shop/7-34-apple-iphone-6.html#/1-storage-16gb/16-color-yellow"
-                                                                    class="product-name">Apple iPhone 6</a></h5>
-
-                                                            <div class="review-price-product">
-                                                                <div class="hook-reviews">
-
-                                                                    <div class="comments_note">
-                                                                        <div class="star_content clearfix">
-                                                                            <div class="star star_on"></div>
-                                                                            <div class="star star_on"></div>
-                                                                            <div class="star star_on"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                        </div>
-                                                                        <div class="dor-num-reviews hidden">
-                                                                            <span>1 Review</span>
-                                                                            <i>/</i><a href="#"
-                                                                                class="add-your-review">Add Your
-                                                                                Review</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="dor-show-value-product clearfix">
-
-                                                                    <div class="content_price">
-                                                                        <div class="product-price-and-shipping">
-
-
-                                                                            <span itemprop="price"
-                                                                                class="price">$760.00</span>
-
-
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div
-                                                                        class="highlighted-informations hidden-sm-down">
-
-                                                                        <div class="variant-links">
-                                                                            <a href="shop/7-62-apple-iphone-6.html#/3-storage-64gb/8-color-white"
-                                                                                class="color" title="White"
-                                                                                style="background-color: #ffffff"><span
-                                                                                    class="sr-only">White</span></a>
-                                                                            <a href="shop/7-61-apple-iphone-6.html#/3-storage-64gb/11-color-black"
-                                                                                class="color" title="Black"
-                                                                                style="background-color: #434A54"><span
-                                                                                    class="sr-only">Black</span></a>
-                                                                            <a href="shop/7-34-apple-iphone-6.html#/1-storage-16gb/16-color-yellow"
-                                                                                class="color" title="Yellow"
-                                                                                style="background-color: #F1C40F"><span
-                                                                                    class="sr-only">Yellow</span></a>
-                                                                            <span class="js-count count"></span>
-                                                                        </div>
-
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="product-description-short hidden"
-                                                                itemprop="description">
-                                                                <p>Apple takes a complete product life cycle approach to
-                                                                    determining our environmental impact.</p>
-                                                                <p style="font-size:14px;font-weight:400;">
-                                                                    <strong>iPhone X embodies Apple’s continuing
-                                                                        environmental progress. It is designed with the
-                                                                        following features to reduce environmental
-                                                                        impact:</strong>
-                                                                </p>
-                                                                <ul>
-                                                                    <li>Mercury-free</li>
-                                                                    <li>Arsenic-free display glass</li>
-                                                                    <li>Brominated flame retardant–free</li>
-                                                                    <li>PVC-free</li>
-                                                                    <li>Beryllium-free</li>
-                                                                    <li>Highly recyclable stainless steel</li>
-                                                                </ul>
-                                                            </div>
-
-                                                        </div>
-
-                                                        <ul class="product-flags hidden">
-                                                            <li class="on-sale">On sale!</li>
-                                                            <li class="new">New</li>
-                                                        </ul>
-
-                                                    </div>
-                                                    <div class="product-more-options">
-                                                        <form action="http://bionic.doradothemes.com/en/cart"
-                                                            method="post" class="dor-addcart-button">
-                                                            <div class="add">
-                                                                <input type="hidden" name="token"
-                                                                    value="34b11c3ac3b44ecd83062701f9ddcf1b">
-                                                                <input name="id_product" value="7" type="hidden">
-                                                                <input type="hidden" name="id_customization" value="0">
-                                                                <a href="cart.html"
-                                                                    class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
-                                                                    data-button-action="add-to-cart"
-                                                                    data-title="Add to cart">
-                                                                    <i class="material-icons shopping-cart">&#xE547;</i>
-                                                                    <span class="hidden">Add to cart</span>
-                                                                </a>
-                                                            </div>
-                                                        </form>
-                                                        <div class="option-quick-add">
-                                                            <div class="icon-line-wishlist-fel">
-                                                                <div class="dor-wishlist">
-                                                                    <a class="addToDorWishlist" href="#"
-                                                                        onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
-                                                                        data-toggle="tooltip" data-placement="top"
-                                                                        title="" data-original-title="Add to Wishlist">
-                                                                        <i class="material-icons">&#xE87E;</i>
-                                                                        <span class="wishlist-txt">Wishlist</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="icon-line-compare-fel">
-                                                                <div class="compare">
-                                                                    <a class="add_to_compare"
-                                                                        href="shop/7-34-apple-iphone-6.html"
-                                                                        data-productid="7" data-toggle="tooltip"
-                                                                        title="" data-original-title="Add compare"><i
-                                                                            class="fa fa-random"></i><span
-                                                                            class="compare-button-txt">Compare</span></a>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-
-
-
-                                            <article class="ajax_block_product product-miniature js-product-miniature"
-                                                data-id-product="9" data-id-product-attribute="49" itemscope
-                                                itemtype="http://schema.org/Product">
-                                                <div class="product-container">
-                                                    <div class="dor-display-product-info">
-                                                        <div class="left-block">
-                                                            <div class="product-image-container">
-
-                                                                <a href="shop/9-49-apple-macbook-pro-2017.html#/1-storage-16gb/11-color-black"
-                                                                    class="thumbnail product-thumbnail product_img_link">
-                                                                    <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
-                                                                        style="min-height: 10px;"
-                                                                        data-lazy="../50-home_default/apple-macbook-pro-2017.jpg"
-                                                                        data-src="../50-home_default/apple-macbook-pro-2017.jpg"
-                                                                        alt=""
-                                                                        data-full-size-image-url="../50-large_default/apple-macbook-pro-2017.jpg"
-                                                                        width="600" height="800">
-                                                                    <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
-                                                                        style="min-height: 10px;"
-                                                                        data-lazy="../52-home_default/apple-macbook-pro-2017.jpg"
-                                                                        data-src="../52-home_default/apple-macbook-pro-2017.jpg"
-                                                                        alt=""
-                                                                        data-full-size-image-url="../52-large_default/apple-macbook-pro-2017.jpg"
-                                                                        width="600" height="800">
-                                                                </a>
-
-
-                                                                <div class="box-items">
-                                                                    <a class="new-box box-status"
-                                                                        href="shop/9-49-apple-macbook-pro-2017.html">
-                                                                        <span class="new-label">New</span>
-                                                                    </a>
-                                                                    <a class="sale-box box-status"
-                                                                        href="shop/9-49-apple-macbook-pro-2017.html">
-                                                                        <span class="sale-label">Sale!</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="show-btn-products">
-
-                                                                <div class="control-action-buttons">
-                                                                    <div class="action-button">
-                                                                        <ul>
-
-                                                                            <li class="icon-line-quickview">
-                                                                                <a href="#"
-                                                                                    class="quick-view countdown-view-detail"
-                                                                                    data-link-action="quickview"
-                                                                                    data-toggle="tooltip"
-                                                                                    title="View detail">
-                                                                                    <i
-                                                                                        class="material-icons">&#xE8B6;</i>
-                                                                                </a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="right-block">
-                                                            <div class="product-cate"><span>Shop</span></div>
-
-                                                            <h5 class="product-title-item" itemprop="name"><a
-                                                                    href="shop/9-49-apple-macbook-pro-2017.html#/1-storage-16gb/11-color-black"
-                                                                    class="product-name">Apple Macbook Pro 2017</a></h5>
-
-                                                            <div class="review-price-product">
-                                                                <div class="hook-reviews">
-
-                                                                    <div class="comments_note">
-                                                                        <div class="star_content clearfix">
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                        </div>
-                                                                        <div class="dor-num-reviews hidden">
-                                                                            <span>0 Review</span>
-                                                                            <i>/</i><a href="#"
-                                                                                class="add-your-review">Add Your
-                                                                                Review</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="dor-show-value-product clearfix">
-
-                                                                    <div class="content_price">
-                                                                        <div class="product-price-and-shipping">
-
-
-                                                                            <span class="regular-price">$1,200.00</span>
-                                                                            <span
-                                                                                class="discount-percentage">-50%</span>
-
-
-                                                                            <span itemprop="price"
-                                                                                class="price">$600.00</span>
-
-
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div
-                                                                        class="highlighted-informations hidden-sm-down">
-
-                                                                        <div class="variant-links">
-                                                                            <a href="shop/9-47-apple-macbook-pro-2017.html#/3-storage-64gb/8-color-white"
-                                                                                class="color" title="White"
-                                                                                style="background-color: #ffffff"><span
-                                                                                    class="sr-only">White</span></a>
-                                                                            <a href="shop/9-46-apple-macbook-pro-2017.html#/3-storage-64gb/11-color-black"
-                                                                                class="color" title="Black"
-                                                                                style="background-color: #434A54"><span
-                                                                                    class="sr-only">Black</span></a>
-                                                                            <a href="shop/9-48-apple-macbook-pro-2017.html#/3-storage-64gb/16-color-yellow"
-                                                                                class="color" title="Yellow"
-                                                                                style="background-color: #F1C40F"><span
-                                                                                    class="sr-only">Yellow</span></a>
-                                                                            <span class="js-count count"></span>
-                                                                        </div>
-
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="product-description-short hidden"
-                                                                itemprop="description">
-                                                                <p>Apple takes a complete product life cycle approach to
-                                                                    determining our environmental impact.</p>
-                                                                <p style="font-size:14px;font-weight:400;">
-                                                                    <strong>Macbook Pro 2017 embodies Apple’s continuing
-                                                                        environmental progress. It is designed with the
-                                                                        following features to reduce environmental
-                                                                        impact:</strong>
-                                                                </p>
-                                                                <ul>
-                                                                    <li>Mercury-free</li>
-                                                                    <li>Arsenic-free display glass</li>
-                                                                    <li>Brominated flame retardant–free</li>
-                                                                    <li>PVC-free</li>
-                                                                    <li>Beryllium-free</li>
-                                                                    <li>Highly recyclable stainless steel</li>
-                                                                </ul>
-                                                            </div>
-
-                                                        </div>
-
-                                                        <ul class="product-flags hidden">
-                                                            <li class="on-sale">On sale!</li>
-                                                            <li class="new">New</li>
-                                                        </ul>
-
-                                                    </div>
-                                                    <div class="product-more-options">
-                                                        <form action="http://bionic.doradothemes.com/en/cart"
-                                                            method="post" class="dor-addcart-button">
-                                                            <div class="add">
-                                                                <input type="hidden" name="token"
-                                                                    value="34b11c3ac3b44ecd83062701f9ddcf1b">
-                                                                <input name="id_product" value="9" type="hidden">
-                                                                <input type="hidden" name="id_customization" value="0">
-                                                                <a href="cart.html"
-                                                                    class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
-                                                                    data-button-action="add-to-cart"
-                                                                    data-title="Add to cart">
-                                                                    <i class="material-icons shopping-cart">&#xE547;</i>
-                                                                    <span class="hidden">Add to cart</span>
-                                                                </a>
-                                                            </div>
-                                                        </form>
-                                                        <div class="option-quick-add">
-                                                            <div class="icon-line-wishlist-fel">
-                                                                <div class="dor-wishlist">
-                                                                    <a class="addToDorWishlist" href="#"
-                                                                        onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
-                                                                        data-toggle="tooltip" data-placement="top"
-                                                                        title="" data-original-title="Add to Wishlist">
-                                                                        <i class="material-icons">&#xE87E;</i>
-                                                                        <span class="wishlist-txt">Wishlist</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="icon-line-compare-fel">
-                                                                <div class="compare">
-                                                                    <a class="add_to_compare"
-                                                                        href="shop/9-49-apple-macbook-pro-2017.html"
-                                                                        data-productid="9" data-toggle="tooltip"
-                                                                        title="" data-original-title="Add compare"><i
-                                                                            class="fa fa-random"></i><span
-                                                                            class="compare-button-txt">Compare</span></a>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-
-
-
-                                            <article class="ajax_block_product product-miniature js-product-miniature"
-                                                data-id-product="10" data-id-product-attribute="98" itemscope
-                                                itemtype="http://schema.org/Product">
-                                                <div class="product-container">
-                                                    <div class="dor-display-product-info">
-                                                        <div class="left-block">
-                                                            <div class="product-image-container">
-
-                                                                <a href="shop/10-98-dell-xps-15-infinityedge.html#/3-storage-64gb/11-color-black"
-                                                                    class="thumbnail product-thumbnail product_img_link">
-                                                                    <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
-                                                                        style="min-height: 10px;"
-                                                                        data-lazy="../55-home_default/dell-xps-15-infinityedge.jpg"
-                                                                        data-src="../55-home_default/dell-xps-15-infinityedge.jpg"
-                                                                        alt=""
-                                                                        data-full-size-image-url="../55-large_default/dell-xps-15-infinityedge.jpg"
-                                                                        width="600" height="800">
-                                                                    <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
-                                                                        style="min-height: 10px;"
-                                                                        data-lazy="../54-home_default/dell-xps-15-infinityedge.jpg"
-                                                                        data-src="../54-home_default/dell-xps-15-infinityedge.jpg"
-                                                                        alt=""
-                                                                        data-full-size-image-url="../54-large_default/dell-xps-15-infinityedge.jpg"
-                                                                        width="600" height="800">
-                                                                </a>
-
-
-                                                                <div class="box-items">
-                                                                    <a class="new-box box-status"
-                                                                        href="shop/10-98-dell-xps-15-infinityedge.html">
-                                                                        <span class="new-label">New</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="show-btn-products">
-
-                                                                <div class="control-action-buttons">
-                                                                    <div class="action-button">
-                                                                        <ul>
-
-                                                                            <li class="icon-line-quickview">
-                                                                                <a href="#"
-                                                                                    class="quick-view countdown-view-detail"
-                                                                                    data-link-action="quickview"
-                                                                                    data-toggle="tooltip"
-                                                                                    title="View detail">
-                                                                                    <i
-                                                                                        class="material-icons">&#xE8B6;</i>
-                                                                                </a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="right-block">
-                                                            <div class="product-cate"><span>Shop</span></div>
-
-                                                            <h5 class="product-title-item" itemprop="name"><a
-                                                                    href="shop/10-98-dell-xps-15-infinityedge.html#/3-storage-64gb/11-color-black"
-                                                                    class="product-name">Dell XPS 15 InfinityEdge</a>
-                                                            </h5>
-
-                                                            <div class="review-price-product">
-                                                                <div class="hook-reviews">
-
-                                                                    <div class="comments_note">
-                                                                        <div class="star_content clearfix">
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                        </div>
-                                                                        <div class="dor-num-reviews hidden">
-                                                                            <span>0 Review</span>
-                                                                            <i>/</i><a href="#"
-                                                                                class="add-your-review">Add Your
-                                                                                Review</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="dor-show-value-product clearfix">
-
-                                                                    <div class="content_price">
-                                                                        <div class="product-price-and-shipping">
-
-
-                                                                            <span class="regular-price">$1,500.00</span>
-                                                                            <span
-                                                                                class="discount-percentage">-30%</span>
-
-
-                                                                            <span itemprop="price"
-                                                                                class="price">$1,050.00</span>
-
-
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div
-                                                                        class="highlighted-informations hidden-sm-down">
-
-                                                                        <div class="variant-links">
-                                                                            <a href="shop/10-101-dell-xps-15-infinityedge.html#/3-storage-64gb/5-color-grey"
-                                                                                class="color" title="Grey"
-                                                                                style="background-color: #AAB2BD"><span
-                                                                                    class="sr-only">Grey</span></a>
-                                                                            <a href="shop/10-104-dell-xps-15-infinityedge.html#/3-storage-64gb/8-color-white"
-                                                                                class="color" title="White"
-                                                                                style="background-color: #ffffff"><span
-                                                                                    class="sr-only">White</span></a>
-                                                                            <a href="shop/10-98-dell-xps-15-infinityedge.html#/3-storage-64gb/11-color-black"
-                                                                                class="color" title="Black"
-                                                                                style="background-color: #434A54"><span
-                                                                                    class="sr-only">Black</span></a>
-                                                                            <a href="shop/10-107-dell-xps-15-infinityedge.html#/3-storage-64gb/24-color-pink"
-                                                                                class="color" title="Pink"
-                                                                                style="background-color: #FCCACD"><span
-                                                                                    class="sr-only">Pink</span></a>
-                                                                            <span class="js-count count"></span>
-                                                                        </div>
-
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="product-description-short hidden"
-                                                                itemprop="description">
-                                                                <p>DoradoThemes takes a complete product life cycle
-                                                                    approach to determining our environmental impact.
-                                                                </p>
-                                                                <p style="font-size:14px;font-weight:400;">
-                                                                    <strong>Bionic embodies DoradoThemes’s continuing
-                                                                        environmental progress. It is designed with the
-                                                                        following features to reduce environmental
-                                                                        impact:</strong>
-                                                                </p>
-                                                                <ul>
-                                                                    <li>Mercury-free</li>
-                                                                    <li>Arsenic-free display glass</li>
-                                                                    <li>Brominated flame retardant–free</li>
-                                                                    <li>PVC-free</li>
-                                                                    <li>Beryllium-free</li>
-                                                                    <li>Highly recyclable stainless steel</li>
-                                                                </ul>
-                                                            </div>
-
-                                                        </div>
-
-                                                        <ul class="product-flags hidden">
-                                                            <li class="discount">Reduced price</li>
-                                                            <li class="new">New</li>
-                                                        </ul>
-
-                                                    </div>
-                                                    <div class="product-more-options">
-                                                        <form action="http://bionic.doradothemes.com/en/cart"
-                                                            method="post" class="dor-addcart-button">
-                                                            <div class="add">
-                                                                <input type="hidden" name="token"
-                                                                    value="34b11c3ac3b44ecd83062701f9ddcf1b">
-                                                                <input name="id_product" value="10" type="hidden">
-                                                                <input type="hidden" name="id_customization" value="0">
-                                                                <a href="cart.html"
-                                                                    class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
-                                                                    data-button-action="add-to-cart"
-                                                                    data-title="Add to cart">
-                                                                    <i class="material-icons shopping-cart">&#xE547;</i>
-                                                                    <span class="hidden">Add to cart</span>
-                                                                </a>
-                                                            </div>
-                                                        </form>
-                                                        <div class="option-quick-add">
-                                                            <div class="icon-line-wishlist-fel">
-                                                                <div class="dor-wishlist">
-                                                                    <a class="addToDorWishlist" href="#"
-                                                                        onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
-                                                                        data-toggle="tooltip" data-placement="top"
-                                                                        title="" data-original-title="Add to Wishlist">
-                                                                        <i class="material-icons">&#xE87E;</i>
-                                                                        <span class="wishlist-txt">Wishlist</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="icon-line-compare-fel">
-                                                                <div class="compare">
-                                                                    <a class="add_to_compare"
-                                                                        href="shop/10-98-dell-xps-15-infinityedge.html"
-                                                                        data-productid="10" data-toggle="tooltip"
-                                                                        title="" data-original-title="Add compare"><i
-                                                                            class="fa fa-random"></i><span
-                                                                            class="compare-button-txt">Compare</span></a>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-
-
-
-                                            <article class="ajax_block_product product-miniature js-product-miniature"
-                                                data-id-product="11" data-id-product-attribute="110" itemscope
-                                                itemtype="http://schema.org/Product">
-                                                <div class="product-container">
-                                                    <div class="dor-display-product-info">
-                                                        <div class="left-block">
-                                                            <div class="product-image-container">
-
-                                                                <a href="shop/11-110-huawei-watch-s2-classic.html#/3-storage-64gb/11-color-black"
-                                                                    class="thumbnail product-thumbnail product_img_link">
-                                                                    <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
-                                                                        style="min-height: 10px;"
-                                                                        data-lazy="../58-home_default/huawei-watch-s2-classic.jpg"
-                                                                        data-src="../58-home_default/huawei-watch-s2-classic.jpg"
-                                                                        alt=""
-                                                                        data-full-size-image-url="../58-large_default/huawei-watch-s2-classic.jpg"
-                                                                        width="600" height="800">
-                                                                    <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
-                                                                        style="min-height: 10px;"
-                                                                        data-lazy="../59-home_default/huawei-watch-s2-classic.jpg"
-                                                                        data-src="../59-home_default/huawei-watch-s2-classic.jpg"
-                                                                        alt=""
-                                                                        data-full-size-image-url="../59-large_default/huawei-watch-s2-classic.jpg"
-                                                                        width="600" height="800">
-                                                                </a>
-
-
-                                                                <div class="box-items">
-                                                                    <a class="new-box box-status"
-                                                                        href="shop/11-huawei-watch-s2-classic.html">
-                                                                        <span class="new-label">New</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="show-btn-products">
-
-                                                                <div class="control-action-buttons">
-                                                                    <div class="action-button">
-                                                                        <ul>
-
-                                                                            <li class="icon-line-quickview">
-                                                                                <a href="#"
-                                                                                    class="quick-view countdown-view-detail"
-                                                                                    data-link-action="quickview"
-                                                                                    data-toggle="tooltip"
-                                                                                    title="View detail">
-                                                                                    <i
-                                                                                        class="material-icons">&#xE8B6;</i>
-                                                                                </a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="right-block">
-                                                            <div class="product-cate"><span>Shop</span></div>
-
-                                                            <h5 class="product-title-item" itemprop="name"><a
-                                                                    href="shop/11-110-huawei-watch-s2-classic.html#/3-storage-64gb/11-color-black"
-                                                                    class="product-name">Huawei Watch S2 Classic</a>
-                                                            </h5>
-
-                                                            <div class="review-price-product">
-                                                                <div class="hook-reviews">
-
-                                                                    <div class="comments_note">
-                                                                        <div class="star_content clearfix">
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                        </div>
-                                                                        <div class="dor-num-reviews hidden">
-                                                                            <span>0 Review</span>
-                                                                            <i>/</i><a href="#"
-                                                                                class="add-your-review">Add Your
-                                                                                Review</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="dor-show-value-product clearfix">
-
-                                                                    <div class="content_price">
-                                                                        <div class="product-price-and-shipping">
-
-
-                                                                            <span itemprop="price"
-                                                                                class="price">$560.00</span>
-
-
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div
-                                                                        class="highlighted-informations hidden-sm-down">
-
-                                                                        <div class="variant-links">
-                                                                            <a href="shop/11-113-huawei-watch-s2-classic.html#/3-storage-64gb/5-color-grey"
-                                                                                class="color" title="Grey"
-                                                                                style="background-color: #AAB2BD"><span
-                                                                                    class="sr-only">Grey</span></a>
-                                                                            <a href="shop/11-116-huawei-watch-s2-classic.html#/3-storage-64gb/8-color-white"
-                                                                                class="color" title="White"
-                                                                                style="background-color: #ffffff"><span
-                                                                                    class="sr-only">White</span></a>
-                                                                            <a href="shop/11-110-huawei-watch-s2-classic.html#/3-storage-64gb/11-color-black"
-                                                                                class="color" title="Black"
-                                                                                style="background-color: #434A54"><span
-                                                                                    class="sr-only">Black</span></a>
-                                                                            <a href="shop/11-119-huawei-watch-s2-classic.html#/3-storage-64gb/24-color-pink"
-                                                                                class="color" title="Pink"
-                                                                                style="background-color: #FCCACD"><span
-                                                                                    class="sr-only">Pink</span></a>
-                                                                            <span class="js-count count"></span>
-                                                                        </div>
-
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="product-description-short hidden"
-                                                                itemprop="description">
-                                                                <p>Huawei takes a complete product life cycle approach
-                                                                    to determining our environmental impact.</p>
-                                                                <p style="font-size:14px;font-weight:400;"><strong>S2
-                                                                        Classic embodies Huawei’s continuing
-                                                                        environmental progress. It is designed with the
-                                                                        following features to reduce environmental
-                                                                        impact:</strong></p>
-                                                                <ul>
-                                                                    <li>Mercury-free</li>
-                                                                    <li>Arsenic-free display glass</li>
-                                                                    <li>Brominated flame retardant–free</li>
-                                                                    <li>PVC-free</li>
-                                                                    <li>Beryllium-free</li>
-                                                                    <li>Highly recyclable stainless steel</li>
-                                                                </ul>
-                                                            </div>
-
-                                                        </div>
-
-                                                        <ul class="product-flags hidden">
-                                                            <li class="new">New</li>
-                                                        </ul>
-
-                                                    </div>
-                                                    <div class="product-more-options">
-                                                        <form action="http://bionic.doradothemes.com/en/cart"
-                                                            method="post" class="dor-addcart-button">
-                                                            <div class="add">
-                                                                <input type="hidden" name="token"
-                                                                    value="34b11c3ac3b44ecd83062701f9ddcf1b">
-                                                                <input name="id_product" value="11" type="hidden">
-                                                                <input type="hidden" name="id_customization" value="0">
-                                                                <a href="cart.html"
-                                                                    class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
-                                                                    data-button-action="add-to-cart"
-                                                                    data-title="Add to cart">
-                                                                    <i class="material-icons shopping-cart">&#xE547;</i>
-                                                                    <span class="hidden">Add to cart</span>
-                                                                </a>
-                                                            </div>
-                                                        </form>
-                                                        <div class="option-quick-add">
-                                                            <div class="icon-line-wishlist-fel">
-                                                                <div class="dor-wishlist">
-                                                                    <a class="addToDorWishlist" href="#"
-                                                                        onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
-                                                                        data-toggle="tooltip" data-placement="top"
-                                                                        title="" data-original-title="Add to Wishlist">
-                                                                        <i class="material-icons">&#xE87E;</i>
-                                                                        <span class="wishlist-txt">Wishlist</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="icon-line-compare-fel">
-                                                                <div class="compare">
-                                                                    <a class="add_to_compare"
-                                                                        href="shop/11-huawei-watch-s2-classic.html"
-                                                                        data-productid="11" data-toggle="tooltip"
-                                                                        title="" data-original-title="Add compare"><i
-                                                                            class="fa fa-random"></i><span
-                                                                            class="compare-button-txt">Compare</span></a>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-
-
-
-                                            <article class="ajax_block_product product-miniature js-product-miniature"
-                                                data-id-product="12" data-id-product-attribute="122" itemscope
-                                                itemtype="http://schema.org/Product">
-                                                <div class="product-container">
-                                                    <div class="dor-display-product-info">
-                                                        <div class="left-block">
-                                                            <div class="product-image-container">
-
-                                                                <a href="shop/12-122-google-pixel-2xl-2017.html#/3-storage-64gb/11-color-black"
-                                                                    class="thumbnail product-thumbnail product_img_link">
-                                                                    <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
-                                                                        style="min-height: 10px;"
-                                                                        data-lazy="../62-home_default/google-pixel-2xl-2017.jpg"
-                                                                        data-src="../62-home_default/google-pixel-2xl-2017.jpg"
-                                                                        alt=""
-                                                                        data-full-size-image-url="../62-large_default/google-pixel-2xl-2017.jpg"
-                                                                        width="600" height="800">
-                                                                    <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
-                                                                        style="min-height: 10px;"
-                                                                        data-lazy="../63-home_default/google-pixel-2xl-2017.jpg"
-                                                                        data-src="../63-home_default/google-pixel-2xl-2017.jpg"
-                                                                        alt=""
-                                                                        data-full-size-image-url="../63-large_default/google-pixel-2xl-2017.jpg"
-                                                                        width="600" height="800">
-                                                                </a>
-
-
-                                                                <div class="box-items">
-                                                                    <a class="new-box box-status"
-                                                                        href="shop/12-122-google-pixel-2xl-2017.html">
-                                                                        <span class="new-label">New</span>
-                                                                    </a>
-                                                                    <a class="sale-box box-status"
-                                                                        href="shop/12-122-google-pixel-2xl-2017.html">
-                                                                        <span class="sale-label">Sale!</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="show-btn-products">
-
-                                                                <div class="control-action-buttons">
-                                                                    <div class="action-button">
-                                                                        <ul>
-
-                                                                            <li class="icon-line-quickview">
-                                                                                <a href="#"
-                                                                                    class="quick-view countdown-view-detail"
-                                                                                    data-link-action="quickview"
-                                                                                    data-toggle="tooltip"
-                                                                                    title="View detail">
-                                                                                    <i
-                                                                                        class="material-icons">&#xE8B6;</i>
-                                                                                </a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="right-block">
-                                                            <div class="product-cate"><span>Shop</span></div>
-
-                                                            <h5 class="product-title-item" itemprop="name"><a
-                                                                    href="shop/12-122-google-pixel-2xl-2017.html#/3-storage-64gb/11-color-black"
-                                                                    class="product-name">Google Pixel 2XL 2017</a></h5>
-
-                                                            <div class="review-price-product">
-                                                                <div class="hook-reviews">
-
-                                                                    <div class="comments_note">
-                                                                        <div class="star_content clearfix">
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                        </div>
-                                                                        <div class="dor-num-reviews hidden">
-                                                                            <span>0 Review</span>
-                                                                            <i>/</i><a href="#"
-                                                                                class="add-your-review">Add Your
-                                                                                Review</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="dor-show-value-product clearfix">
-
-                                                                    <div class="content_price">
-                                                                        <div class="product-price-and-shipping">
-
-
-                                                                            <span itemprop="price"
-                                                                                class="price">$1,000.00</span>
-
-
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div
-                                                                        class="highlighted-informations hidden-sm-down">
-
-                                                                        <div class="variant-links">
-                                                                            <a href="shop/12-125-google-pixel-2xl-2017.html#/3-storage-64gb/5-color-grey"
-                                                                                class="color" title="Grey"
-                                                                                style="background-color: #AAB2BD"><span
-                                                                                    class="sr-only">Grey</span></a>
-                                                                            <a href="shop/12-128-google-pixel-2xl-2017.html#/3-storage-64gb/8-color-white"
-                                                                                class="color" title="White"
-                                                                                style="background-color: #ffffff"><span
-                                                                                    class="sr-only">White</span></a>
-                                                                            <a href="shop/12-122-google-pixel-2xl-2017.html#/3-storage-64gb/11-color-black"
-                                                                                class="color" title="Black"
-                                                                                style="background-color: #434A54"><span
-                                                                                    class="sr-only">Black</span></a>
-                                                                            <a href="shop/12-131-google-pixel-2xl-2017.html#/3-storage-64gb/24-color-pink"
-                                                                                class="color" title="Pink"
-                                                                                style="background-color: #FCCACD"><span
-                                                                                    class="sr-only">Pink</span></a>
-                                                                            <span class="js-count count"></span>
-                                                                        </div>
-
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="product-description-short hidden"
-                                                                itemprop="description">
-                                                                <p>Google takes a complete product life cycle approach
-                                                                    to determining our environmental impact.</p>
-                                                                <p style="font-size:14px;font-weight:400;"><strong>Pixel
-                                                                        2XL embodies </strong><strong>Google’s
-                                                                        continuing environmental progress. It is
-                                                                        designed with the following features to reduce
-                                                                        environmental impact:</strong></p>
-                                                                <ul>
-                                                                    <li>Mercury-free</li>
-                                                                    <li>Arsenic-free display glass</li>
-                                                                    <li>Brominated flame retardant–free</li>
-                                                                    <li>PVC-free</li>
-                                                                    <li>Beryllium-free</li>
-                                                                    <li>Highly recyclable stainless steel</li>
-                                                                </ul>
-                                                            </div>
-
-                                                        </div>
-
-                                                        <ul class="product-flags hidden">
-                                                            <li class="on-sale">On sale!</li>
-                                                            <li class="new">New</li>
-                                                        </ul>
-
-                                                    </div>
-                                                    <div class="product-more-options">
-                                                        <form action="http://bionic.doradothemes.com/en/cart"
-                                                            method="post" class="dor-addcart-button">
-                                                            <div class="add">
-                                                                <input type="hidden" name="token"
-                                                                    value="34b11c3ac3b44ecd83062701f9ddcf1b">
-                                                                <input name="id_product" value="12" type="hidden">
-                                                                <input type="hidden" name="id_customization" value="0">
-                                                                <a href="cart.html"
-                                                                    class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
-                                                                    data-button-action="add-to-cart"
-                                                                    data-title="Add to cart">
-                                                                    <i class="material-icons shopping-cart">&#xE547;</i>
-                                                                    <span class="hidden">Add to cart</span>
-                                                                </a>
-                                                            </div>
-                                                        </form>
-                                                        <div class="option-quick-add">
-                                                            <div class="icon-line-wishlist-fel">
-                                                                <div class="dor-wishlist">
-                                                                    <a class="addToDorWishlist" href="#"
-                                                                        onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
-                                                                        data-toggle="tooltip" data-placement="top"
-                                                                        title="" data-original-title="Add to Wishlist">
-                                                                        <i class="material-icons">&#xE87E;</i>
-                                                                        <span class="wishlist-txt">Wishlist</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="icon-line-compare-fel">
-                                                                <div class="compare">
-                                                                    <a class="add_to_compare"
-                                                                        href="shop/12-122-google-pixel-2xl-2017.html"
-                                                                        data-productid="12" data-toggle="tooltip"
-                                                                        title="" data-original-title="Add compare"><i
-                                                                            class="fa fa-random"></i><span
-                                                                            class="compare-button-txt">Compare</span></a>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-
-
-
-                                            <article class="ajax_block_product product-miniature js-product-miniature"
-                                                data-id-product="13" data-id-product-attribute="134" itemscope
-                                                itemtype="http://schema.org/Product">
-                                                <div class="product-container">
-                                                    <div class="dor-display-product-info">
-                                                        <div class="left-block">
-                                                            <div class="product-image-container">
-
-                                                                <a href="shop/13-134-hp-pavilion-27-all-in-one.html#/3-storage-64gb/11-color-black"
-                                                                    class="thumbnail product-thumbnail product_img_link">
-                                                                    <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
-                                                                        style="min-height: 10px;"
-                                                                        data-lazy="../65-home_default/hp-pavilion-27-all-in-one.jpg"
-                                                                        data-src="../65-home_default/hp-pavilion-27-all-in-one.jpg"
-                                                                        alt=""
-                                                                        data-full-size-image-url="../65-large_default/hp-pavilion-27-all-in-one.jpg"
-                                                                        width="600" height="800">
-                                                                    <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
-                                                                        style="min-height: 10px;"
-                                                                        data-lazy="../66-home_default/hp-pavilion-27-all-in-one.jpg"
-                                                                        data-src="../66-home_default/hp-pavilion-27-all-in-one.jpg"
-                                                                        alt=""
-                                                                        data-full-size-image-url="../66-large_default/hp-pavilion-27-all-in-one.jpg"
-                                                                        width="600" height="800">
-                                                                </a>
-
-
-                                                                <div class="box-items">
-                                                                    <a class="new-box box-status"
-                                                                        href="shop/13-hp-pavilion-27-all-in-one.html">
-                                                                        <span class="new-label">New</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="show-btn-products">
-
-                                                                <div class="control-action-buttons">
-                                                                    <div class="action-button">
-                                                                        <ul>
-
-                                                                            <li class="icon-line-quickview">
-                                                                                <a href="#"
-                                                                                    class="quick-view countdown-view-detail"
-                                                                                    data-link-action="quickview"
-                                                                                    data-toggle="tooltip"
-                                                                                    title="View detail">
-                                                                                    <i
-                                                                                        class="material-icons">&#xE8B6;</i>
-                                                                                </a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="right-block">
-                                                            <div class="product-cate"><span>Shop</span></div>
-
-                                                            <h5 class="product-title-item" itemprop="name"><a
-                                                                    href="shop/13-134-hp-pavilion-27-all-in-one.html#/3-storage-64gb/11-color-black"
-                                                                    class="product-name">HP Pavilion 27 All In One</a>
-                                                            </h5>
-
-                                                            <div class="review-price-product">
-                                                                <div class="hook-reviews">
-
-                                                                    <div class="comments_note">
-                                                                        <div class="star_content clearfix">
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                        </div>
-                                                                        <div class="dor-num-reviews hidden">
-                                                                            <span>0 Review</span>
-                                                                            <i>/</i><a href="#"
-                                                                                class="add-your-review">Add Your
-                                                                                Review</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="dor-show-value-product clearfix">
-
-                                                                    <div class="content_price">
-                                                                        <div class="product-price-and-shipping">
-
-
-                                                                            <span itemprop="price"
-                                                                                class="price">$1,200.00</span>
-
-
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div
-                                                                        class="highlighted-informations hidden-sm-down">
-
-                                                                        <div class="variant-links">
-                                                                            <a href="shop/13-137-hp-pavilion-27-all-in-one.html#/3-storage-64gb/5-color-grey"
-                                                                                class="color" title="Grey"
-                                                                                style="background-color: #AAB2BD"><span
-                                                                                    class="sr-only">Grey</span></a>
-                                                                            <a href="shop/13-140-hp-pavilion-27-all-in-one.html#/3-storage-64gb/8-color-white"
-                                                                                class="color" title="White"
-                                                                                style="background-color: #ffffff"><span
-                                                                                    class="sr-only">White</span></a>
-                                                                            <a href="shop/13-134-hp-pavilion-27-all-in-one.html#/3-storage-64gb/11-color-black"
-                                                                                class="color" title="Black"
-                                                                                style="background-color: #434A54"><span
-                                                                                    class="sr-only">Black</span></a>
-                                                                            <a href="shop/13-143-hp-pavilion-27-all-in-one.html#/3-storage-64gb/24-color-pink"
-                                                                                class="color" title="Pink"
-                                                                                style="background-color: #FCCACD"><span
-                                                                                    class="sr-only">Pink</span></a>
-                                                                            <span class="js-count count"></span>
-                                                                        </div>
-
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="product-description-short hidden"
-                                                                itemprop="description">
-                                                                <p>HP takes a complete product life cycle approach to
-                                                                    determining our environmental impact.</p>
-                                                                <p style="font-size:14px;font-weight:400;"><strong>HP
-                                                                        Pavilion embodies HP’s continuing environmental
-                                                                        progress. It is designed with the following
-                                                                        features to reduce environmental
-                                                                        impact:</strong></p>
-                                                                <ul>
-                                                                    <li>Mercury-free</li>
-                                                                    <li>Arsenic-free display glass</li>
-                                                                    <li>Brominated flame retardant–free</li>
-                                                                    <li>PVC-free</li>
-                                                                    <li>Beryllium-free</li>
-                                                                    <li>Highly recyclable stainless steel</li>
-                                                                </ul>
-                                                            </div>
-
-                                                        </div>
-
-                                                        <ul class="product-flags hidden">
-                                                            <li class="new">New</li>
-                                                        </ul>
-
-                                                    </div>
-                                                    <div class="product-more-options">
-                                                        <form action="http://bionic.doradothemes.com/en/cart"
-                                                            method="post" class="dor-addcart-button">
-                                                            <div class="add">
-                                                                <input type="hidden" name="token"
-                                                                    value="34b11c3ac3b44ecd83062701f9ddcf1b">
-                                                                <input name="id_product" value="13" type="hidden">
-                                                                <input type="hidden" name="id_customization" value="0">
-                                                                <a href="cart.html"
-                                                                    class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
-                                                                    data-button-action="add-to-cart"
-                                                                    data-title="Add to cart">
-                                                                    <i class="material-icons shopping-cart">&#xE547;</i>
-                                                                    <span class="hidden">Add to cart</span>
-                                                                </a>
-                                                            </div>
-                                                        </form>
-                                                        <div class="option-quick-add">
-                                                            <div class="icon-line-wishlist-fel">
-                                                                <div class="dor-wishlist">
-                                                                    <a class="addToDorWishlist" href="#"
-                                                                        onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
-                                                                        data-toggle="tooltip" data-placement="top"
-                                                                        title="" data-original-title="Add to Wishlist">
-                                                                        <i class="material-icons">&#xE87E;</i>
-                                                                        <span class="wishlist-txt">Wishlist</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="icon-line-compare-fel">
-                                                                <div class="compare">
-                                                                    <a class="add_to_compare"
-                                                                        href="shop/13-hp-pavilion-27-all-in-one.html"
-                                                                        data-productid="13" data-toggle="tooltip"
-                                                                        title="" data-original-title="Add compare"><i
-                                                                            class="fa fa-random"></i><span
-                                                                            class="compare-button-txt">Compare</span></a>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-
-
-
-                                            <article class="ajax_block_product product-miniature js-product-miniature"
-                                                data-id-product="14" data-id-product-attribute="146" itemscope
-                                                itemtype="http://schema.org/Product">
-                                                <div class="product-container">
-                                                    <div class="dor-display-product-info">
-                                                        <div class="left-block">
-                                                            <div class="product-image-container">
-
-                                                                <a href="shop/14-146-samsung-gear-s3-classic.html#/3-storage-64gb/11-color-black"
-                                                                    class="thumbnail product-thumbnail product_img_link">
-                                                                    <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
-                                                                        style="min-height: 10px;"
-                                                                        data-lazy="../68-home_default/samsung-gear-s3-classic.jpg"
-                                                                        data-src="../68-home_default/samsung-gear-s3-classic.jpg"
-                                                                        alt=""
-                                                                        data-full-size-image-url="../68-large_default/samsung-gear-s3-classic.jpg"
-                                                                        width="600" height="800">
-                                                                    <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
-                                                                        style="min-height: 10px;"
-                                                                        data-lazy="../69-home_default/samsung-gear-s3-classic.jpg"
-                                                                        data-src="../69-home_default/samsung-gear-s3-classic.jpg"
-                                                                        alt=""
-                                                                        data-full-size-image-url="../69-large_default/samsung-gear-s3-classic.jpg"
-                                                                        width="600" height="800">
-                                                                </a>
-
-
-                                                                <div class="box-items">
-                                                                    <a class="new-box box-status"
-                                                                        href="shop/14-samsung-gear-s3-classic.html">
-                                                                        <span class="new-label">New</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="show-btn-products">
-
-                                                                <div class="control-action-buttons">
-                                                                    <div class="action-button">
-                                                                        <ul>
-
-                                                                            <li class="icon-line-quickview">
-                                                                                <a href="#"
-                                                                                    class="quick-view countdown-view-detail"
-                                                                                    data-link-action="quickview"
-                                                                                    data-toggle="tooltip"
-                                                                                    title="View detail">
-                                                                                    <i
-                                                                                        class="material-icons">&#xE8B6;</i>
-                                                                                </a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="right-block">
-                                                            <div class="product-cate"><span>Shop</span></div>
-
-                                                            <h5 class="product-title-item" itemprop="name"><a
-                                                                    href="shop/14-146-samsung-gear-s3-classic.html#/3-storage-64gb/11-color-black"
-                                                                    class="product-name">Samsung Gear S3 Classic</a>
-                                                            </h5>
-
-                                                            <div class="review-price-product">
-                                                                <div class="hook-reviews">
-
-                                                                    <div class="comments_note">
-                                                                        <div class="star_content clearfix">
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                        </div>
-                                                                        <div class="dor-num-reviews hidden">
-                                                                            <span>0 Review</span>
-                                                                            <i>/</i><a href="#"
-                                                                                class="add-your-review">Add Your
-                                                                                Review</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="dor-show-value-product clearfix">
-
-                                                                    <div class="content_price">
-                                                                        <div class="product-price-and-shipping">
-
-
-                                                                            <span itemprop="price"
-                                                                                class="price">$600.00</span>
-
-
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div
-                                                                        class="highlighted-informations hidden-sm-down">
-
-                                                                        <div class="variant-links">
-                                                                            <a href="shop/14-149-samsung-gear-s3-classic.html#/3-storage-64gb/5-color-grey"
-                                                                                class="color" title="Grey"
-                                                                                style="background-color: #AAB2BD"><span
-                                                                                    class="sr-only">Grey</span></a>
-                                                                            <a href="shop/14-152-samsung-gear-s3-classic.html#/3-storage-64gb/8-color-white"
-                                                                                class="color" title="White"
-                                                                                style="background-color: #ffffff"><span
-                                                                                    class="sr-only">White</span></a>
-                                                                            <a href="shop/14-146-samsung-gear-s3-classic.html#/3-storage-64gb/11-color-black"
-                                                                                class="color" title="Black"
-                                                                                style="background-color: #434A54"><span
-                                                                                    class="sr-only">Black</span></a>
-                                                                            <a href="shop/14-155-samsung-gear-s3-classic.html#/3-storage-64gb/24-color-pink"
-                                                                                class="color" title="Pink"
-                                                                                style="background-color: #FCCACD"><span
-                                                                                    class="sr-only">Pink</span></a>
-                                                                            <span class="js-count count"></span>
-                                                                        </div>
-
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="product-description-short hidden"
-                                                                itemprop="description">
-                                                                <p>Samsung takes a complete product life cycle approach
-                                                                    to determining our environmental impact.</p>
-                                                                <p style="font-size:14px;font-weight:400;"><strong>Gear
-                                                                        S3 embodies Samsung’s continuing environmental
-                                                                        progress. It is designed with the following
-                                                                        features to reduce environmental
-                                                                        impact:</strong></p>
-                                                                <ul>
-                                                                    <li>Mercury-free</li>
-                                                                    <li>Arsenic-free display glass</li>
-                                                                    <li>Brominated flame retardant–free</li>
-                                                                    <li>PVC-free</li>
-                                                                    <li>Beryllium-free</li>
-                                                                    <li>Highly recyclable stainless steel</li>
-                                                                </ul>
-                                                            </div>
-
-                                                        </div>
-
-                                                        <ul class="product-flags hidden">
-                                                            <li class="new">New</li>
-                                                        </ul>
-
-                                                    </div>
-                                                    <div class="product-more-options">
-                                                        <form action="http://bionic.doradothemes.com/en/cart"
-                                                            method="post" class="dor-addcart-button">
-                                                            <div class="add">
-                                                                <input type="hidden" name="token"
-                                                                    value="34b11c3ac3b44ecd83062701f9ddcf1b">
-                                                                <input name="id_product" value="14" type="hidden">
-                                                                <input type="hidden" name="id_customization" value="0">
-                                                                <a href="cart.html"
-                                                                    class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
-                                                                    data-button-action="add-to-cart"
-                                                                    data-title="Add to cart">
-                                                                    <i class="material-icons shopping-cart">&#xE547;</i>
-                                                                    <span class="hidden">Add to cart</span>
-                                                                </a>
-                                                            </div>
-                                                        </form>
-                                                        <div class="option-quick-add">
-                                                            <div class="icon-line-wishlist-fel">
-                                                                <div class="dor-wishlist">
-                                                                    <a class="addToDorWishlist" href="#"
-                                                                        onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
-                                                                        data-toggle="tooltip" data-placement="top"
-                                                                        title="" data-original-title="Add to Wishlist">
-                                                                        <i class="material-icons">&#xE87E;</i>
-                                                                        <span class="wishlist-txt">Wishlist</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="icon-line-compare-fel">
-                                                                <div class="compare">
-                                                                    <a class="add_to_compare"
-                                                                        href="shop/14-samsung-gear-s3-classic.html"
-                                                                        data-productid="14" data-toggle="tooltip"
-                                                                        title="" data-original-title="Add compare"><i
-                                                                            class="fa fa-random"></i><span
-                                                                            class="compare-button-txt">Compare</span></a>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-
-
-
-                                            <article class="ajax_block_product product-miniature js-product-miniature"
-                                                data-id-product="15" data-id-product-attribute="158" itemscope
-                                                itemtype="http://schema.org/Product">
-                                                <div class="product-container">
-                                                    <div class="dor-display-product-info">
-                                                        <div class="left-block">
-                                                            <div class="product-image-container">
-
-                                                                <a href="shop/15-158-macbook-pro-new-2017.html#/3-storage-64gb/11-color-black"
-                                                                    class="thumbnail product-thumbnail product_img_link">
-                                                                    <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
-                                                                        style="min-height: 10px;"
-                                                                        data-lazy="../71-home_default/macbook-pro-new-2017.jpg"
-                                                                        data-src="../71-home_default/macbook-pro-new-2017.jpg"
-                                                                        alt=""
-                                                                        data-full-size-image-url="../71-large_default/macbook-pro-new-2017.jpg"
-                                                                        width="600" height="800">
-                                                                    <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
-                                                                        style="min-height: 10px;"
-                                                                        data-lazy="../72-home_default/macbook-pro-new-2017.jpg"
-                                                                        data-src="../72-home_default/macbook-pro-new-2017.jpg"
-                                                                        alt=""
-                                                                        data-full-size-image-url="../72-large_default/macbook-pro-new-2017.jpg"
-                                                                        width="600" height="800">
-                                                                </a>
-
-
-                                                                <div class="box-items">
-                                                                    <a class="new-box box-status"
-                                                                        href="shop/15-158-macbook-pro-new-2017.html">
-                                                                        <span class="new-label">New</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="show-btn-products">
-
-                                                                <div class="control-action-buttons">
-                                                                    <div class="action-button">
-                                                                        <ul>
-
-                                                                            <li class="icon-line-quickview">
-                                                                                <a href="#"
-                                                                                    class="quick-view countdown-view-detail"
-                                                                                    data-link-action="quickview"
-                                                                                    data-toggle="tooltip"
-                                                                                    title="View detail">
-                                                                                    <i
-                                                                                        class="material-icons">&#xE8B6;</i>
-                                                                                </a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="right-block">
-                                                            <div class="product-cate"><span>Shop</span></div>
-
-                                                            <h5 class="product-title-item" itemprop="name"><a
-                                                                    href="shop/15-158-macbook-pro-new-2017.html#/3-storage-64gb/11-color-black"
-                                                                    class="product-name">Macbook Pro New 2017</a></h5>
-
-                                                            <div class="review-price-product">
-                                                                <div class="hook-reviews">
-
-                                                                    <div class="comments_note">
-                                                                        <div class="star_content clearfix">
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                        </div>
-                                                                        <div class="dor-num-reviews hidden">
-                                                                            <span>0 Review</span>
-                                                                            <i>/</i><a href="#"
-                                                                                class="add-your-review">Add Your
-                                                                                Review</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="dor-show-value-product clearfix">
-
-                                                                    <div class="content_price">
-                                                                        <div class="product-price-and-shipping">
-
-
-                                                                            <span class="regular-price">$2,000.00</span>
-                                                                            <span
-                                                                                class="discount-percentage">-30%</span>
-
-
-                                                                            <span itemprop="price"
-                                                                                class="price">$1,400.00</span>
-
-
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div
-                                                                        class="highlighted-informations hidden-sm-down">
-
-                                                                        <div class="variant-links">
-                                                                            <a href="shop/15-161-macbook-pro-new-2017.html#/3-storage-64gb/5-color-grey"
-                                                                                class="color" title="Grey"
-                                                                                style="background-color: #AAB2BD"><span
-                                                                                    class="sr-only">Grey</span></a>
-                                                                            <a href="shop/15-164-macbook-pro-new-2017.html#/3-storage-64gb/8-color-white"
-                                                                                class="color" title="White"
-                                                                                style="background-color: #ffffff"><span
-                                                                                    class="sr-only">White</span></a>
-                                                                            <a href="shop/15-158-macbook-pro-new-2017.html#/3-storage-64gb/11-color-black"
-                                                                                class="color" title="Black"
-                                                                                style="background-color: #434A54"><span
-                                                                                    class="sr-only">Black</span></a>
-                                                                            <a href="shop/15-167-macbook-pro-new-2017.html#/3-storage-64gb/24-color-pink"
-                                                                                class="color" title="Pink"
-                                                                                style="background-color: #FCCACD"><span
-                                                                                    class="sr-only">Pink</span></a>
-                                                                            <span class="js-count count"></span>
-                                                                        </div>
-
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="product-description-short hidden"
-                                                                itemprop="description">
-                                                                <p>Apple takes a complete product life cycle approach to
-                                                                    determining our environmental impact.</p>
-                                                                <p style="font-size:14px;font-weight:400;">
-                                                                    <strong>Macbook Pro embodies Apple’s continuing
-                                                                        environmental progress. It is designed with the
-                                                                        following features to reduce environmental
-                                                                        impact:</strong>
-                                                                </p>
-                                                                <ul>
-                                                                    <li>Mercury-free</li>
-                                                                    <li>Arsenic-free display glass</li>
-                                                                    <li>Brominated flame retardant–free</li>
-                                                                    <li>PVC-free</li>
-                                                                    <li>Beryllium-free</li>
-                                                                    <li>Highly recyclable stainless steel</li>
-                                                                </ul>
-                                                            </div>
-
-                                                        </div>
-
-                                                        <ul class="product-flags hidden">
-                                                            <li class="discount">Reduced price</li>
-                                                            <li class="new">New</li>
-                                                        </ul>
-
-                                                    </div>
-                                                    <div class="product-more-options">
-                                                        <form action="http://bionic.doradothemes.com/en/cart"
-                                                            method="post" class="dor-addcart-button">
-                                                            <div class="add">
-                                                                <input type="hidden" name="token"
-                                                                    value="34b11c3ac3b44ecd83062701f9ddcf1b">
-                                                                <input name="id_product" value="15" type="hidden">
-                                                                <input type="hidden" name="id_customization" value="0">
-                                                                <a href="cart.html"
-                                                                    class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
-                                                                    data-button-action="add-to-cart"
-                                                                    data-title="Add to cart">
-                                                                    <i class="material-icons shopping-cart">&#xE547;</i>
-                                                                    <span class="hidden">Add to cart</span>
-                                                                </a>
-                                                            </div>
-                                                        </form>
-                                                        <div class="option-quick-add">
-                                                            <div class="icon-line-wishlist-fel">
-                                                                <div class="dor-wishlist">
-                                                                    <a class="addToDorWishlist" href="#"
-                                                                        onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
-                                                                        data-toggle="tooltip" data-placement="top"
-                                                                        title="" data-original-title="Add to Wishlist">
-                                                                        <i class="material-icons">&#xE87E;</i>
-                                                                        <span class="wishlist-txt">Wishlist</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="icon-line-compare-fel">
-                                                                <div class="compare">
-                                                                    <a class="add_to_compare"
-                                                                        href="shop/15-158-macbook-pro-new-2017.html"
-                                                                        data-productid="15" data-toggle="tooltip"
-                                                                        title="" data-original-title="Add compare"><i
-                                                                            class="fa fa-random"></i><span
-                                                                            class="compare-button-txt">Compare</span></a>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-
-
-
-                                            <article class="ajax_block_product product-miniature js-product-miniature"
-                                                data-id-product="16" data-id-product-attribute="170" itemscope
-                                                itemtype="http://schema.org/Product">
-                                                <div class="product-container">
-                                                    <div class="dor-display-product-info">
-                                                        <div class="left-block">
-                                                            <div class="product-image-container">
-
-                                                                <a href="shop/16-170-huawei-mate-10-pro-2017.html#/3-storage-64gb/11-color-black"
-                                                                    class="thumbnail product-thumbnail product_img_link">
-                                                                    <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
-                                                                        style="min-height: 10px;"
-                                                                        data-lazy="../73-home_default/huawei-mate-10-pro-2017.jpg"
-                                                                        data-src="../73-home_default/huawei-mate-10-pro-2017.jpg"
-                                                                        alt=""
-                                                                        data-full-size-image-url="../73-large_default/huawei-mate-10-pro-2017.jpg"
-                                                                        width="600" height="800">
-                                                                    <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
-                                                                        style="min-height: 10px;"
-                                                                        data-lazy="../76-home_default/huawei-mate-10-pro-2017.jpg"
-                                                                        data-src="../76-home_default/huawei-mate-10-pro-2017.jpg"
-                                                                        alt=""
-                                                                        data-full-size-image-url="../76-large_default/huawei-mate-10-pro-2017.jpg"
-                                                                        width="600" height="800">
-                                                                </a>
-
-
-                                                                <div class="box-items">
-                                                                    <a class="new-box box-status"
-                                                                        href="shop/16-170-huawei-mate-10-pro-2017.html">
-                                                                        <span class="new-label">New</span>
-                                                                    </a>
-                                                                    <a class="sale-box box-status"
-                                                                        href="shop/16-170-huawei-mate-10-pro-2017.html">
-                                                                        <span class="sale-label">Sale!</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="show-btn-products">
-
-                                                                <div class="control-action-buttons">
-                                                                    <div class="action-button">
-                                                                        <ul>
-
-                                                                            <li class="icon-line-quickview">
-                                                                                <a href="#"
-                                                                                    class="quick-view countdown-view-detail"
-                                                                                    data-link-action="quickview"
-                                                                                    data-toggle="tooltip"
-                                                                                    title="View detail">
-                                                                                    <i
-                                                                                        class="material-icons">&#xE8B6;</i>
-                                                                                </a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="right-block">
-                                                            <div class="product-cate"><span>Cellphone</span></div>
-
-                                                            <h5 class="product-title-item" itemprop="name"><a
-                                                                    href="shop/16-170-huawei-mate-10-pro-2017.html#/3-storage-64gb/11-color-black"
-                                                                    class="product-name">Huawei Mate 10 Pro 2017</a>
-                                                            </h5>
-
-                                                            <div class="review-price-product">
-                                                                <div class="hook-reviews">
-
-                                                                    <div class="comments_note">
-                                                                        <div class="star_content clearfix">
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                            <div class="star"></div>
-                                                                        </div>
-                                                                        <div class="dor-num-reviews hidden">
-                                                                            <span>0 Review</span>
-                                                                            <i>/</i><a href="#"
-                                                                                class="add-your-review">Add Your
-                                                                                Review</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="dor-show-value-product clearfix">
-
-                                                                    <div class="content_price">
-                                                                        <div class="product-price-and-shipping">
-
-
-                                                                            <span class="regular-price">$1,100.00</span>
-                                                                            <span
-                                                                                class="discount-percentage">-40%</span>
-
-
-                                                                            <span itemprop="price"
-                                                                                class="price">$660.00</span>
-
-
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div
-                                                                        class="highlighted-informations hidden-sm-down">
-
-                                                                        <div class="variant-links">
-                                                                            <a href="shop/16-173-huawei-mate-10-pro-2017.html#/3-storage-64gb/5-color-grey"
-                                                                                class="color" title="Grey"
-                                                                                style="background-color: #AAB2BD"><span
-                                                                                    class="sr-only">Grey</span></a>
-                                                                            <a href="shop/16-176-huawei-mate-10-pro-2017.html#/3-storage-64gb/8-color-white"
-                                                                                class="color" title="White"
-                                                                                style="background-color: #ffffff"><span
-                                                                                    class="sr-only">White</span></a>
-                                                                            <a href="shop/16-170-huawei-mate-10-pro-2017.html#/3-storage-64gb/11-color-black"
-                                                                                class="color" title="Black"
-                                                                                style="background-color: #434A54"><span
-                                                                                    class="sr-only">Black</span></a>
-                                                                            <a href="shop/16-179-huawei-mate-10-pro-2017.html#/3-storage-64gb/24-color-pink"
-                                                                                class="color" title="Pink"
-                                                                                style="background-color: #FCCACD"><span
-                                                                                    class="sr-only">Pink</span></a>
-                                                                            <span class="js-count count"></span>
-                                                                        </div>
-
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="product-description-short hidden"
-                                                                itemprop="description">
-                                                                <p>Huawei takes a complete product life cycle approach
-                                                                    to determining our environmental impact.</p>
-                                                                <p style="font-size:14px;font-weight:400;"><strong>Mate
-                                                                        10 embodies </strong><strong>Huawei’s continuing
-                                                                        environmental progress. It is designed with the
-                                                                        following features to reduce environmental
-                                                                        impact:</strong></p>
-                                                                <ul>
-                                                                    <li>Mercury-free</li>
-                                                                    <li>Arsenic-free display glass</li>
-                                                                    <li>Brominated flame retardant–free</li>
-                                                                    <li>PVC-free</li>
-                                                                    <li>Beryllium-free</li>
-                                                                    <li>Highly recyclable stainless steel</li>
-                                                                </ul>
-                                                            </div>
-
-                                                        </div>
-
-                                                        <ul class="product-flags hidden">
-                                                            <li class="on-sale">On sale!</li>
-                                                            <li class="new">New</li>
-                                                        </ul>
-
-                                                    </div>
-                                                    <div class="product-more-options">
-                                                        <form action="http://bionic.doradothemes.com/en/cart"
-                                                            method="post" class="dor-addcart-button">
-                                                            <div class="add">
-                                                                <input type="hidden" name="token"
-                                                                    value="34b11c3ac3b44ecd83062701f9ddcf1b">
-                                                                <input name="id_product" value="16" type="hidden">
-                                                                <input type="hidden" name="id_customization" value="0">
-                                                                <a href="cart.html"
-                                                                    class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
-                                                                    data-button-action="add-to-cart"
-                                                                    data-title="Add to cart">
-                                                                    <i class="material-icons shopping-cart">&#xE547;</i>
-                                                                    <span class="hidden">Add to cart</span>
-                                                                </a>
-                                                            </div>
-                                                        </form>
-                                                        <div class="option-quick-add">
-                                                            <div class="icon-line-wishlist-fel">
-                                                                <div class="dor-wishlist">
-                                                                    <a class="addToDorWishlist" href="#"
-                                                                        onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
-                                                                        data-toggle="tooltip" data-placement="top"
-                                                                        title="" data-original-title="Add to Wishlist">
-                                                                        <i class="material-icons">&#xE87E;</i>
-                                                                        <span class="wishlist-txt">Wishlist</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="icon-line-compare-fel">
-                                                                <div class="compare">
-                                                                    <a class="add_to_compare"
-                                                                        href="shop/16-170-huawei-mate-10-pro-2017.html"
-                                                                        data-productid="16" data-toggle="tooltip"
-                                                                        title="" data-original-title="Add compare"><i
-                                                                            class="fa fa-random"></i><span
-                                                                            class="compare-button-txt">Compare</span></a>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-
-                                        </div>
-
-
-                                        <nav class="pagination">
-                                            <div class="col-md-4 show-page-text-number">
-
-                                                Showing 1-15 of 31 item(s)
-
                                             </div>
+                                        </article>
 
-                                            <div class="col-md-6">
 
-                                                <ul class="page-list clearfix text-xs-center">
-                                                    <li>
-                                                        <a rel="prev" href="3-shop8d91.html?cate_type=2&amp;page=1"
-                                                            class="previous disabled js-search-link">
-                                                            <i class="material-icons">&#xE314;</i><span
-                                                                class="hidden">Previous</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="current">
-                                                        <a rel="nofollow" href="3-shop8d91.html?cate_type=2&amp;page=1"
-                                                            class="disabled js-search-link">
-                                                            1
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a rel="nofollow" href="3-shop77c3.html?cate_type=2&amp;page=2"
-                                                            class="js-search-link">
-                                                            2
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a rel="nofollow" href="3-shope17a.html?cate_type=2&amp;page=3"
-                                                            class="js-search-link">
-                                                            3
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a rel="next" href="3-shop77c3.html?cate_type=2&amp;page=2"
-                                                            class="next js-search-link">
-                                                            <span class="hidden">Next</span><i
-                                                                class="material-icons">&#xE315;</i>
-                                                        </a>
-                                                    </li>
-                                                </ul>
 
+
+                                        <article class="ajax_block_product product-miniature js-product-miniature"
+                                            data-id-product="10" data-id-product-attribute="98" itemscope=""
+                                            itemtype="http://schema.org/Product">
+                                            <div class="product-container">
+                                                <div class="dor-display-product-info">
+                                                    <div class="left-block">
+                                                        <div class="product-image-container">
+
+                                                            <a href="http://bionic.doradothemes.com/store2/en/shop/10-98-dell-xps-15-infinityedge.html#/3-storage-64gb/11-color-black"
+                                                                class="thumbnail product-thumbnail product_img_link">
+                                                                <img class="img-responsive thumbnail-image-1 lazy owl-lazy loaded"
+                                                                    style="min-height: 10px;"
+                                                                    data-lazy="http://bionic.doradothemes.com/store2/55-home_default/dell-xps-15-infinityedge.jpg"
+                                                                    data-src="http://bionic.doradothemes.com/store2/55-home_default/dell-xps-15-infinityedge.jpg"
+                                                                    alt=""
+                                                                    data-full-size-image-url="http://bionic.doradothemes.com/store2/55-large_default/dell-xps-15-infinityedge.jpg"
+                                                                    width="600" height="800" data-ll-status="loaded"
+                                                                    src="http://bionic.doradothemes.com/store2/55-home_default/dell-xps-15-infinityedge.jpg">
+                                                                <img class="img-responsive thumbnail-image-2 lazy owl-lazy loaded"
+                                                                    style="min-height: 10px;"
+                                                                    data-lazy="http://bionic.doradothemes.com/store2/54-home_default/dell-xps-15-infinityedge.jpg"
+                                                                    data-src="http://bionic.doradothemes.com/store2/54-home_default/dell-xps-15-infinityedge.jpg"
+                                                                    alt=""
+                                                                    data-full-size-image-url="http://bionic.doradothemes.com/store2/54-large_default/dell-xps-15-infinityedge.jpg"
+                                                                    width="600" height="800" data-ll-status="loaded"
+                                                                    src="http://bionic.doradothemes.com/store2/54-home_default/dell-xps-15-infinityedge.jpg">
+                                                            </a>
+
+
+                                                            <div class="box-items">
+                                                                <a class="new-box box-status"
+                                                                    href="http://bionic.doradothemes.com/store2/en/shop/10-dell-xps-15-infinityedge.html">
+                                                                    <span class="new-label">New</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="show-btn-products">
+
+                                                            <div class="control-action-buttons">
+                                                                <div class="action-button">
+                                                                    <ul>
+
+                                                                        <li class="icon-line-quickview">
+                                                                            <a href="#"
+                                                                                class="quick-view countdown-view-detail"
+                                                                                data-link-action="quickview"
+                                                                                data-toggle="tooltip" title=""
+                                                                                data-original-title="View detail">
+                                                                                <i class="material-icons"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="right-block">
+                                                        <div class="product-cate"><span>Shop</span></div>
+
+                                                        <h5 class="product-title-item" itemprop="name"><a
+                                                                href="http://bionic.doradothemes.com/store2/en/shop/10-98-dell-xps-15-infinityedge.html#/3-storage-64gb/11-color-black"
+                                                                class="product-name">Dell XPS 15 InfinityEdge</a></h5>
+
+                                                        <div class="review-price-product">
+                                                            <div class="hook-reviews">
+
+                                                                <div class="comments_note">
+                                                                    <div class="star_content clearfix">
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                    </div>
+                                                                    <div class="dor-num-reviews hidden">
+                                                                        <span>0 Review</span>
+                                                                        <i>/</i><a href="#" class="add-your-review">Add
+                                                                            Your Review</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="dor-show-value-product clearfix">
+
+                                                                <div class="content_price">
+                                                                    <div class="product-price-and-shipping">
+
+
+                                                                        <span class="regular-price">$1,500.00</span>
+                                                                        <span class="discount-percentage"
+                                                                            style="top: 10px;">-30%</span>
+
+
+                                                                        <span itemprop="price"
+                                                                            class="price">$1,050.00</span>
+
+
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="highlighted-informations hidden-sm-down">
+
+                                                                    <div class="variant-links">
+                                                                        <a href="http://bionic.doradothemes.com/store2/en/shop/10-101-dell-xps-15-infinityedge.html#/3-storage-64gb/5-color-grey"
+                                                                            class="color" title="Grey"
+                                                                            style="background-color: rgb(170, 178, 189); color: rgb(34, 34, 34);"><span
+                                                                                class="sr-only">Grey</span></a>
+                                                                        <a href="http://bionic.doradothemes.com/store2/en/shop/10-104-dell-xps-15-infinityedge.html#/3-storage-64gb/8-color-white"
+                                                                            class="color" title="White"
+                                                                            style="background-color: rgb(255, 255, 255); color: rgb(34, 34, 34);"><span
+                                                                                class="sr-only">White</span></a>
+                                                                        <a href="http://bionic.doradothemes.com/store2/en/shop/10-98-dell-xps-15-infinityedge.html#/3-storage-64gb/11-color-black"
+                                                                            class="color" title="Black"
+                                                                            style="background-color: rgb(67, 74, 84); color: rgb(221, 221, 221);"><span
+                                                                                class="sr-only">Black</span></a>
+                                                                        <a href="http://bionic.doradothemes.com/store2/en/shop/10-107-dell-xps-15-infinityedge.html#/3-storage-64gb/24-color-pink"
+                                                                            class="color" title="Pink"
+                                                                            style="background-color: rgb(252, 202, 205); color: rgb(34, 34, 34);"><span
+                                                                                class="sr-only">Pink</span></a>
+                                                                        <span class="js-count count"></span>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="product-description-short hidden"
+                                                            itemprop="description">
+                                                            <p>DoradoThemes takes a complete product life cycle approach
+                                                                to determining our environmental impact.</p>
+                                                            <p style="font-size:14px;font-weight:400;"><strong>Bionic
+                                                                    embodies DoradoThemes’s continuing environmental
+                                                                    progress. It is designed with the following features
+                                                                    to reduce environmental impact:</strong></p>
+                                                            <ul>
+                                                                <li>Mercury-free</li>
+                                                                <li>Arsenic-free display glass</li>
+                                                                <li>Brominated flame retardant–free</li>
+                                                                <li>PVC-free</li>
+                                                                <li>Beryllium-free</li>
+                                                                <li>Highly recyclable stainless steel</li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <ul class="product-flags hidden">
+                                                        <li class="discount">Reduced price</li>
+                                                        <li class="new" style="top: -2.5px;">New</li>
+                                                    </ul>
+
+                                                </div>
+                                                <div class="product-more-options">
+                                                    <form action="http://bionic.doradothemes.com/store2/en/cart"
+                                                        method="post" class="dor-addcart-button">
+                                                        <div class="add">
+                                                            <input type="hidden" name="token"
+                                                                value="34b11c3ac3b44ecd83062701f9ddcf1b">
+                                                            <input name="id_product" value="10" type="hidden">
+                                                            <input type="hidden" name="id_customization" value="0">
+                                                            <a href="http://bionic.doradothemes.com/store2/en/cart"
+                                                                class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
+                                                                data-button-action="add-to-cart"
+                                                                data-title="Add to cart">
+                                                                <i class="material-icons shopping-cart"></i>
+                                                                <span class="hidden">Add to cart</span>
+                                                            </a>
+                                                        </div>
+                                                    </form>
+                                                    <div class="option-quick-add">
+                                                        <div class="icon-line-wishlist-fel">
+                                                            <div class="dor-wishlist">
+                                                                <a class="addToDorWishlist" href="#"
+                                                                    onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Add to Wishlist">
+                                                                    <i class="material-icons"></i>
+                                                                    <span class="wishlist-txt">Wishlist</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="icon-line-compare-fel">
+                                                            <div class="compare">
+                                                                <a class="add_to_compare"
+                                                                    href="http://bionic.doradothemes.com/store2/en/shop/10-dell-xps-15-infinityedge.html"
+                                                                    data-productid="10" data-toggle="tooltip" title=""
+                                                                    data-original-title="Add compare"><i
+                                                                        class="fa fa-random"></i><span
+                                                                        class="compare-button-txt">Compare</span></a>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
+                                        </article>
 
-                                        </nav>
 
-                                        <div id="cate-loadmore" class="hidden">
-                                            <a href="#" class="load-more-data" onclick="return false">Load More</a>
-                                        </div>
-                                        <div class="hidden-md-up text-xs-right up">
-                                            <a href="#header" class="btn btn-secondary">
-                                                Back to top
-                                                <i class="material-icons">&#xE316;</i>
-                                            </a>
-                                        </div>
+
+
+                                        <article class="ajax_block_product product-miniature js-product-miniature"
+                                            data-id-product="11" data-id-product-attribute="110" itemscope=""
+                                            itemtype="http://schema.org/Product">
+                                            <div class="product-container">
+                                                <div class="dor-display-product-info">
+                                                    <div class="left-block">
+                                                        <div class="product-image-container">
+
+                                                            <a href="http://bionic.doradothemes.com/store2/en/shop/11-110-huawei-watch-s2-classic.html#/3-storage-64gb/11-color-black"
+                                                                class="thumbnail product-thumbnail product_img_link">
+                                                                <img class="img-responsive thumbnail-image-1 lazy owl-lazy loaded"
+                                                                    style="min-height: 10px;"
+                                                                    data-lazy="http://bionic.doradothemes.com/store2/58-home_default/huawei-watch-s2-classic.jpg"
+                                                                    data-src="http://bionic.doradothemes.com/store2/58-home_default/huawei-watch-s2-classic.jpg"
+                                                                    alt=""
+                                                                    data-full-size-image-url="http://bionic.doradothemes.com/store2/58-large_default/huawei-watch-s2-classic.jpg"
+                                                                    width="600" height="800" data-ll-status="loaded"
+                                                                    src="http://bionic.doradothemes.com/store2/58-home_default/huawei-watch-s2-classic.jpg">
+                                                                <img class="img-responsive thumbnail-image-2 lazy owl-lazy loaded"
+                                                                    style="min-height: 10px;"
+                                                                    data-lazy="http://bionic.doradothemes.com/store2/59-home_default/huawei-watch-s2-classic.jpg"
+                                                                    data-src="http://bionic.doradothemes.com/store2/59-home_default/huawei-watch-s2-classic.jpg"
+                                                                    alt=""
+                                                                    data-full-size-image-url="http://bionic.doradothemes.com/store2/59-large_default/huawei-watch-s2-classic.jpg"
+                                                                    width="600" height="800" data-ll-status="loaded"
+                                                                    src="http://bionic.doradothemes.com/store2/59-home_default/huawei-watch-s2-classic.jpg">
+                                                            </a>
+
+
+                                                            <div class="box-items">
+                                                                <a class="new-box box-status"
+                                                                    href="http://bionic.doradothemes.com/store2/en/shop/11-huawei-watch-s2-classic.html">
+                                                                    <span class="new-label">New</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="show-btn-products">
+
+                                                            <div class="control-action-buttons">
+                                                                <div class="action-button">
+                                                                    <ul>
+
+                                                                        <li class="icon-line-quickview">
+                                                                            <a href="#"
+                                                                                class="quick-view countdown-view-detail"
+                                                                                data-link-action="quickview"
+                                                                                data-toggle="tooltip" title=""
+                                                                                data-original-title="View detail">
+                                                                                <i class="material-icons"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="right-block">
+                                                        <div class="product-cate"><span>Shop</span></div>
+
+                                                        <h5 class="product-title-item" itemprop="name"><a
+                                                                href="http://bionic.doradothemes.com/store2/en/shop/11-110-huawei-watch-s2-classic.html#/3-storage-64gb/11-color-black"
+                                                                class="product-name">Huawei Watch S2 Classic</a></h5>
+
+                                                        <div class="review-price-product">
+                                                            <div class="hook-reviews">
+
+                                                                <div class="comments_note">
+                                                                    <div class="star_content clearfix">
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                    </div>
+                                                                    <div class="dor-num-reviews hidden">
+                                                                        <span>0 Review</span>
+                                                                        <i>/</i><a href="#" class="add-your-review">Add
+                                                                            Your Review</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="dor-show-value-product clearfix">
+
+                                                                <div class="content_price">
+                                                                    <div class="product-price-and-shipping">
+
+
+                                                                        <span itemprop="price"
+                                                                            class="price">$560.00</span>
+
+
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="highlighted-informations hidden-sm-down">
+
+                                                                    <div class="variant-links">
+                                                                        <a href="http://bionic.doradothemes.com/store2/en/shop/11-113-huawei-watch-s2-classic.html#/3-storage-64gb/5-color-grey"
+                                                                            class="color" title="Grey"
+                                                                            style="background-color: rgb(170, 178, 189); color: rgb(34, 34, 34);"><span
+                                                                                class="sr-only">Grey</span></a>
+                                                                        <a href="http://bionic.doradothemes.com/store2/en/shop/11-116-huawei-watch-s2-classic.html#/3-storage-64gb/8-color-white"
+                                                                            class="color" title="White"
+                                                                            style="background-color: rgb(255, 255, 255); color: rgb(34, 34, 34);"><span
+                                                                                class="sr-only">White</span></a>
+                                                                        <a href="http://bionic.doradothemes.com/store2/en/shop/11-110-huawei-watch-s2-classic.html#/3-storage-64gb/11-color-black"
+                                                                            class="color" title="Black"
+                                                                            style="background-color: rgb(67, 74, 84); color: rgb(221, 221, 221);"><span
+                                                                                class="sr-only">Black</span></a>
+                                                                        <a href="http://bionic.doradothemes.com/store2/en/shop/11-119-huawei-watch-s2-classic.html#/3-storage-64gb/24-color-pink"
+                                                                            class="color" title="Pink"
+                                                                            style="background-color: rgb(252, 202, 205); color: rgb(34, 34, 34);"><span
+                                                                                class="sr-only">Pink</span></a>
+                                                                        <span class="js-count count"></span>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="product-description-short hidden"
+                                                            itemprop="description">
+                                                            <p>Huawei takes a complete product life cycle approach to
+                                                                determining our environmental impact.</p>
+                                                            <p style="font-size:14px;font-weight:400;"><strong>S2
+                                                                    Classic embodies Huawei’s continuing environmental
+                                                                    progress. It is designed with the following features
+                                                                    to reduce environmental impact:</strong></p>
+                                                            <ul>
+                                                                <li>Mercury-free</li>
+                                                                <li>Arsenic-free display glass</li>
+                                                                <li>Brominated flame retardant–free</li>
+                                                                <li>PVC-free</li>
+                                                                <li>Beryllium-free</li>
+                                                                <li>Highly recyclable stainless steel</li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <ul class="product-flags hidden">
+                                                        <li class="new">New</li>
+                                                    </ul>
+
+                                                </div>
+                                                <div class="product-more-options">
+                                                    <form action="http://bionic.doradothemes.com/store2/en/cart"
+                                                        method="post" class="dor-addcart-button">
+                                                        <div class="add">
+                                                            <input type="hidden" name="token"
+                                                                value="34b11c3ac3b44ecd83062701f9ddcf1b">
+                                                            <input name="id_product" value="11" type="hidden">
+                                                            <input type="hidden" name="id_customization" value="0">
+                                                            <a href="http://bionic.doradothemes.com/store2/en/cart"
+                                                                class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
+                                                                data-button-action="add-to-cart"
+                                                                data-title="Add to cart">
+                                                                <i class="material-icons shopping-cart"></i>
+                                                                <span class="hidden">Add to cart</span>
+                                                            </a>
+                                                        </div>
+                                                    </form>
+                                                    <div class="option-quick-add">
+                                                        <div class="icon-line-wishlist-fel">
+                                                            <div class="dor-wishlist">
+                                                                <a class="addToDorWishlist" href="#"
+                                                                    onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Add to Wishlist">
+                                                                    <i class="material-icons"></i>
+                                                                    <span class="wishlist-txt">Wishlist</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="icon-line-compare-fel">
+                                                            <div class="compare">
+                                                                <a class="add_to_compare"
+                                                                    href="http://bionic.doradothemes.com/store2/en/shop/11-huawei-watch-s2-classic.html"
+                                                                    data-productid="11" data-toggle="tooltip" title=""
+                                                                    data-original-title="Add compare"><i
+                                                                        class="fa fa-random"></i><span
+                                                                        class="compare-button-txt">Compare</span></a>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+
+
+
+
+                                        <article class="ajax_block_product product-miniature js-product-miniature"
+                                            data-id-product="12" data-id-product-attribute="122" itemscope=""
+                                            itemtype="http://schema.org/Product">
+                                            <div class="product-container">
+                                                <div class="dor-display-product-info">
+                                                    <div class="left-block">
+                                                        <div class="product-image-container">
+
+                                                            <a href="http://bionic.doradothemes.com/store2/en/shop/12-122-google-pixel-2xl-2017.html#/3-storage-64gb/11-color-black"
+                                                                class="thumbnail product-thumbnail product_img_link">
+                                                                <img class="img-responsive thumbnail-image-1 lazy owl-lazy loaded"
+                                                                    style="min-height: 10px;"
+                                                                    data-lazy="http://bionic.doradothemes.com/store2/62-home_default/google-pixel-2xl-2017.jpg"
+                                                                    data-src="http://bionic.doradothemes.com/store2/62-home_default/google-pixel-2xl-2017.jpg"
+                                                                    alt=""
+                                                                    data-full-size-image-url="http://bionic.doradothemes.com/store2/62-large_default/google-pixel-2xl-2017.jpg"
+                                                                    width="600" height="800" data-ll-status="loaded"
+                                                                    src="http://bionic.doradothemes.com/store2/62-home_default/google-pixel-2xl-2017.jpg">
+                                                                <img class="img-responsive thumbnail-image-2 lazy owl-lazy loaded"
+                                                                    style="min-height: 10px;"
+                                                                    data-lazy="http://bionic.doradothemes.com/store2/63-home_default/google-pixel-2xl-2017.jpg"
+                                                                    data-src="http://bionic.doradothemes.com/store2/63-home_default/google-pixel-2xl-2017.jpg"
+                                                                    alt=""
+                                                                    data-full-size-image-url="http://bionic.doradothemes.com/store2/63-large_default/google-pixel-2xl-2017.jpg"
+                                                                    width="600" height="800" data-ll-status="loaded"
+                                                                    src="http://bionic.doradothemes.com/store2/63-home_default/google-pixel-2xl-2017.jpg">
+                                                            </a>
+
+
+                                                            <div class="box-items">
+                                                                <a class="new-box box-status"
+                                                                    href="http://bionic.doradothemes.com/store2/en/shop/12-google-pixel-2xl-2017.html">
+                                                                    <span class="new-label">New</span>
+                                                                </a>
+                                                                <a class="sale-box box-status"
+                                                                    href="http://bionic.doradothemes.com/store2/en/shop/12-google-pixel-2xl-2017.html">
+                                                                    <span class="sale-label">Sale!</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="show-btn-products">
+
+                                                            <div class="control-action-buttons">
+                                                                <div class="action-button">
+                                                                    <ul>
+
+                                                                        <li class="icon-line-quickview">
+                                                                            <a href="#"
+                                                                                class="quick-view countdown-view-detail"
+                                                                                data-link-action="quickview"
+                                                                                data-toggle="tooltip" title=""
+                                                                                data-original-title="View detail">
+                                                                                <i class="material-icons"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="right-block">
+                                                        <div class="product-cate"><span>Shop</span></div>
+
+                                                        <h5 class="product-title-item" itemprop="name"><a
+                                                                href="http://bionic.doradothemes.com/store2/en/shop/12-122-google-pixel-2xl-2017.html#/3-storage-64gb/11-color-black"
+                                                                class="product-name">Google Pixel 2XL 2017</a></h5>
+
+                                                        <div class="review-price-product">
+                                                            <div class="hook-reviews">
+
+                                                                <div class="comments_note">
+                                                                    <div class="star_content clearfix">
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                    </div>
+                                                                    <div class="dor-num-reviews hidden">
+                                                                        <span>0 Review</span>
+                                                                        <i>/</i><a href="#" class="add-your-review">Add
+                                                                            Your Review</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="dor-show-value-product clearfix">
+
+                                                                <div class="content_price">
+                                                                    <div class="product-price-and-shipping">
+
+
+                                                                        <span itemprop="price"
+                                                                            class="price">$1,000.00</span>
+
+
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="highlighted-informations hidden-sm-down">
+
+                                                                    <div class="variant-links">
+                                                                        <a href="http://bionic.doradothemes.com/store2/en/shop/12-125-google-pixel-2xl-2017.html#/3-storage-64gb/5-color-grey"
+                                                                            class="color" title="Grey"
+                                                                            style="background-color: rgb(170, 178, 189); color: rgb(34, 34, 34);"><span
+                                                                                class="sr-only">Grey</span></a>
+                                                                        <a href="http://bionic.doradothemes.com/store2/en/shop/12-128-google-pixel-2xl-2017.html#/3-storage-64gb/8-color-white"
+                                                                            class="color" title="White"
+                                                                            style="background-color: rgb(255, 255, 255); color: rgb(34, 34, 34);"><span
+                                                                                class="sr-only">White</span></a>
+                                                                        <a href="http://bionic.doradothemes.com/store2/en/shop/12-122-google-pixel-2xl-2017.html#/3-storage-64gb/11-color-black"
+                                                                            class="color" title="Black"
+                                                                            style="background-color: rgb(67, 74, 84); color: rgb(221, 221, 221);"><span
+                                                                                class="sr-only">Black</span></a>
+                                                                        <a href="http://bionic.doradothemes.com/store2/en/shop/12-131-google-pixel-2xl-2017.html#/3-storage-64gb/24-color-pink"
+                                                                            class="color" title="Pink"
+                                                                            style="background-color: rgb(252, 202, 205); color: rgb(34, 34, 34);"><span
+                                                                                class="sr-only">Pink</span></a>
+                                                                        <span class="js-count count"></span>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="product-description-short hidden"
+                                                            itemprop="description">
+                                                            <p>Google takes a complete product life cycle approach to
+                                                                determining our environmental impact.</p>
+                                                            <p style="font-size:14px;font-weight:400;"><strong>Pixel 2XL
+                                                                    embodies </strong><strong>Google’s continuing
+                                                                    environmental progress. It is designed with the
+                                                                    following features to reduce environmental
+                                                                    impact:</strong></p>
+                                                            <ul>
+                                                                <li>Mercury-free</li>
+                                                                <li>Arsenic-free display glass</li>
+                                                                <li>Brominated flame retardant–free</li>
+                                                                <li>PVC-free</li>
+                                                                <li>Beryllium-free</li>
+                                                                <li>Highly recyclable stainless steel</li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <ul class="product-flags hidden">
+                                                        <li class="on-sale">On sale!</li>
+                                                        <li class="new" style="top: 13.75px;">New</li>
+                                                    </ul>
+
+                                                </div>
+                                                <div class="product-more-options">
+                                                    <form action="http://bionic.doradothemes.com/store2/en/cart"
+                                                        method="post" class="dor-addcart-button">
+                                                        <div class="add">
+                                                            <input type="hidden" name="token"
+                                                                value="34b11c3ac3b44ecd83062701f9ddcf1b">
+                                                            <input name="id_product" value="12" type="hidden">
+                                                            <input type="hidden" name="id_customization" value="0">
+                                                            <a href="http://bionic.doradothemes.com/store2/en/cart"
+                                                                class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
+                                                                data-button-action="add-to-cart"
+                                                                data-title="Add to cart">
+                                                                <i class="material-icons shopping-cart"></i>
+                                                                <span class="hidden">Add to cart</span>
+                                                            </a>
+                                                        </div>
+                                                    </form>
+                                                    <div class="option-quick-add">
+                                                        <div class="icon-line-wishlist-fel">
+                                                            <div class="dor-wishlist">
+                                                                <a class="addToDorWishlist" href="#"
+                                                                    onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Add to Wishlist">
+                                                                    <i class="material-icons"></i>
+                                                                    <span class="wishlist-txt">Wishlist</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="icon-line-compare-fel">
+                                                            <div class="compare">
+                                                                <a class="add_to_compare"
+                                                                    href="http://bionic.doradothemes.com/store2/en/shop/12-google-pixel-2xl-2017.html"
+                                                                    data-productid="12" data-toggle="tooltip" title=""
+                                                                    data-original-title="Add compare"><i
+                                                                        class="fa fa-random"></i><span
+                                                                        class="compare-button-txt">Compare</span></a>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+
+
+
+
+                                        <article class="ajax_block_product product-miniature js-product-miniature"
+                                            data-id-product="13" data-id-product-attribute="134" itemscope=""
+                                            itemtype="http://schema.org/Product">
+                                            <div class="product-container">
+                                                <div class="dor-display-product-info">
+                                                    <div class="left-block">
+                                                        <div class="product-image-container">
+
+                                                            <a href="http://bionic.doradothemes.com/store2/en/shop/13-134-hp-pavilion-27-all-in-one.html#/3-storage-64gb/11-color-black"
+                                                                class="thumbnail product-thumbnail product_img_link">
+                                                                <img class="img-responsive thumbnail-image-1 lazy owl-lazy loaded"
+                                                                    style="min-height: 10px;"
+                                                                    data-lazy="http://bionic.doradothemes.com/store2/65-home_default/hp-pavilion-27-all-in-one.jpg"
+                                                                    data-src="http://bionic.doradothemes.com/store2/65-home_default/hp-pavilion-27-all-in-one.jpg"
+                                                                    alt=""
+                                                                    data-full-size-image-url="http://bionic.doradothemes.com/store2/65-large_default/hp-pavilion-27-all-in-one.jpg"
+                                                                    width="600" height="800" data-ll-status="loaded"
+                                                                    src="http://bionic.doradothemes.com/store2/65-home_default/hp-pavilion-27-all-in-one.jpg">
+                                                                <img class="img-responsive thumbnail-image-2 lazy owl-lazy loaded"
+                                                                    style="min-height: 10px;"
+                                                                    data-lazy="http://bionic.doradothemes.com/store2/66-home_default/hp-pavilion-27-all-in-one.jpg"
+                                                                    data-src="http://bionic.doradothemes.com/store2/66-home_default/hp-pavilion-27-all-in-one.jpg"
+                                                                    alt=""
+                                                                    data-full-size-image-url="http://bionic.doradothemes.com/store2/66-large_default/hp-pavilion-27-all-in-one.jpg"
+                                                                    width="600" height="800" data-ll-status="loaded"
+                                                                    src="http://bionic.doradothemes.com/store2/66-home_default/hp-pavilion-27-all-in-one.jpg">
+                                                            </a>
+
+
+                                                            <div class="box-items">
+                                                                <a class="new-box box-status"
+                                                                    href="http://bionic.doradothemes.com/store2/en/shop/13-hp-pavilion-27-all-in-one.html">
+                                                                    <span class="new-label">New</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="show-btn-products">
+
+                                                            <div class="control-action-buttons">
+                                                                <div class="action-button">
+                                                                    <ul>
+
+                                                                        <li class="icon-line-quickview">
+                                                                            <a href="#"
+                                                                                class="quick-view countdown-view-detail"
+                                                                                data-link-action="quickview"
+                                                                                data-toggle="tooltip" title=""
+                                                                                data-original-title="View detail">
+                                                                                <i class="material-icons"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="right-block">
+                                                        <div class="product-cate"><span>Shop</span></div>
+
+                                                        <h5 class="product-title-item" itemprop="name"><a
+                                                                href="http://bionic.doradothemes.com/store2/en/shop/13-134-hp-pavilion-27-all-in-one.html#/3-storage-64gb/11-color-black"
+                                                                class="product-name">HP Pavilion 27 All In One</a></h5>
+
+                                                        <div class="review-price-product">
+                                                            <div class="hook-reviews">
+
+                                                                <div class="comments_note">
+                                                                    <div class="star_content clearfix">
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                    </div>
+                                                                    <div class="dor-num-reviews hidden">
+                                                                        <span>0 Review</span>
+                                                                        <i>/</i><a href="#" class="add-your-review">Add
+                                                                            Your Review</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="dor-show-value-product clearfix">
+
+                                                                <div class="content_price">
+                                                                    <div class="product-price-and-shipping">
+
+
+                                                                        <span itemprop="price"
+                                                                            class="price">$1,200.00</span>
+
+
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="highlighted-informations hidden-sm-down">
+
+                                                                    <div class="variant-links">
+                                                                        <a href="http://bionic.doradothemes.com/store2/en/shop/13-137-hp-pavilion-27-all-in-one.html#/3-storage-64gb/5-color-grey"
+                                                                            class="color" title="Grey"
+                                                                            style="background-color: rgb(170, 178, 189); color: rgb(34, 34, 34);"><span
+                                                                                class="sr-only">Grey</span></a>
+                                                                        <a href="http://bionic.doradothemes.com/store2/en/shop/13-140-hp-pavilion-27-all-in-one.html#/3-storage-64gb/8-color-white"
+                                                                            class="color" title="White"
+                                                                            style="background-color: rgb(255, 255, 255); color: rgb(34, 34, 34);"><span
+                                                                                class="sr-only">White</span></a>
+                                                                        <a href="http://bionic.doradothemes.com/store2/en/shop/13-134-hp-pavilion-27-all-in-one.html#/3-storage-64gb/11-color-black"
+                                                                            class="color" title="Black"
+                                                                            style="background-color: rgb(67, 74, 84); color: rgb(221, 221, 221);"><span
+                                                                                class="sr-only">Black</span></a>
+                                                                        <a href="http://bionic.doradothemes.com/store2/en/shop/13-143-hp-pavilion-27-all-in-one.html#/3-storage-64gb/24-color-pink"
+                                                                            class="color" title="Pink"
+                                                                            style="background-color: rgb(252, 202, 205); color: rgb(34, 34, 34);"><span
+                                                                                class="sr-only">Pink</span></a>
+                                                                        <span class="js-count count"></span>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="product-description-short hidden"
+                                                            itemprop="description">
+                                                            <p>HP takes a complete product life cycle approach to
+                                                                determining our environmental impact.</p>
+                                                            <p style="font-size:14px;font-weight:400;"><strong>HP
+                                                                    Pavilion embodies HP’s continuing environmental
+                                                                    progress. It is designed with the following features
+                                                                    to reduce environmental impact:</strong></p>
+                                                            <ul>
+                                                                <li>Mercury-free</li>
+                                                                <li>Arsenic-free display glass</li>
+                                                                <li>Brominated flame retardant–free</li>
+                                                                <li>PVC-free</li>
+                                                                <li>Beryllium-free</li>
+                                                                <li>Highly recyclable stainless steel</li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <ul class="product-flags hidden">
+                                                        <li class="new">New</li>
+                                                    </ul>
+
+                                                </div>
+                                                <div class="product-more-options">
+                                                    <form action="http://bionic.doradothemes.com/store2/en/cart"
+                                                        method="post" class="dor-addcart-button">
+                                                        <div class="add">
+                                                            <input type="hidden" name="token"
+                                                                value="34b11c3ac3b44ecd83062701f9ddcf1b">
+                                                            <input name="id_product" value="13" type="hidden">
+                                                            <input type="hidden" name="id_customization" value="0">
+                                                            <a href="http://bionic.doradothemes.com/store2/en/cart"
+                                                                class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
+                                                                data-button-action="add-to-cart"
+                                                                data-title="Add to cart">
+                                                                <i class="material-icons shopping-cart"></i>
+                                                                <span class="hidden">Add to cart</span>
+                                                            </a>
+                                                        </div>
+                                                    </form>
+                                                    <div class="option-quick-add">
+                                                        <div class="icon-line-wishlist-fel">
+                                                            <div class="dor-wishlist">
+                                                                <a class="addToDorWishlist" href="#"
+                                                                    onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Add to Wishlist">
+                                                                    <i class="material-icons"></i>
+                                                                    <span class="wishlist-txt">Wishlist</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="icon-line-compare-fel">
+                                                            <div class="compare">
+                                                                <a class="add_to_compare"
+                                                                    href="http://bionic.doradothemes.com/store2/en/shop/13-hp-pavilion-27-all-in-one.html"
+                                                                    data-productid="13" data-toggle="tooltip" title=""
+                                                                    data-original-title="Add compare"><i
+                                                                        class="fa fa-random"></i><span
+                                                                        class="compare-button-txt">Compare</span></a>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+
+
+
+
+                                        <article class="ajax_block_product product-miniature js-product-miniature"
+                                            data-id-product="14" data-id-product-attribute="146" itemscope=""
+                                            itemtype="http://schema.org/Product">
+                                            <div class="product-container">
+                                                <div class="dor-display-product-info">
+                                                    <div class="left-block">
+                                                        <div class="product-image-container">
+
+                                                            <a href="http://bionic.doradothemes.com/store2/en/shop/14-146-samsung-gear-s3-classic.html#/3-storage-64gb/11-color-black"
+                                                                class="thumbnail product-thumbnail product_img_link">
+                                                                <img class="img-responsive thumbnail-image-1 lazy owl-lazy loaded"
+                                                                    style="min-height: 10px;"
+                                                                    data-lazy="http://bionic.doradothemes.com/store2/68-home_default/samsung-gear-s3-classic.jpg"
+                                                                    data-src="http://bionic.doradothemes.com/store2/68-home_default/samsung-gear-s3-classic.jpg"
+                                                                    alt=""
+                                                                    data-full-size-image-url="http://bionic.doradothemes.com/store2/68-large_default/samsung-gear-s3-classic.jpg"
+                                                                    width="600" height="800" data-ll-status="loaded"
+                                                                    src="http://bionic.doradothemes.com/store2/68-home_default/samsung-gear-s3-classic.jpg">
+                                                                <img class="img-responsive thumbnail-image-2 lazy owl-lazy loaded"
+                                                                    style="min-height: 10px;"
+                                                                    data-lazy="http://bionic.doradothemes.com/store2/69-home_default/samsung-gear-s3-classic.jpg"
+                                                                    data-src="http://bionic.doradothemes.com/store2/69-home_default/samsung-gear-s3-classic.jpg"
+                                                                    alt=""
+                                                                    data-full-size-image-url="http://bionic.doradothemes.com/store2/69-large_default/samsung-gear-s3-classic.jpg"
+                                                                    width="600" height="800" data-ll-status="loaded"
+                                                                    src="http://bionic.doradothemes.com/store2/69-home_default/samsung-gear-s3-classic.jpg">
+                                                            </a>
+
+
+                                                            <div class="box-items">
+                                                                <a class="new-box box-status"
+                                                                    href="http://bionic.doradothemes.com/store2/en/shop/14-samsung-gear-s3-classic.html">
+                                                                    <span class="new-label">New</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="show-btn-products">
+
+                                                            <div class="control-action-buttons">
+                                                                <div class="action-button">
+                                                                    <ul>
+
+                                                                        <li class="icon-line-quickview">
+                                                                            <a href="#"
+                                                                                class="quick-view countdown-view-detail"
+                                                                                data-link-action="quickview"
+                                                                                data-toggle="tooltip" title=""
+                                                                                data-original-title="View detail">
+                                                                                <i class="material-icons"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="right-block">
+                                                        <div class="product-cate"><span>Shop</span></div>
+
+                                                        <h5 class="product-title-item" itemprop="name"><a
+                                                                href="http://bionic.doradothemes.com/store2/en/shop/14-146-samsung-gear-s3-classic.html#/3-storage-64gb/11-color-black"
+                                                                class="product-name">Samsung Gear S3 Classic</a></h5>
+
+                                                        <div class="review-price-product">
+                                                            <div class="hook-reviews">
+
+                                                                <div class="comments_note">
+                                                                    <div class="star_content clearfix">
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                    </div>
+                                                                    <div class="dor-num-reviews hidden">
+                                                                        <span>0 Review</span>
+                                                                        <i>/</i><a href="#" class="add-your-review">Add
+                                                                            Your Review</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="dor-show-value-product clearfix">
+
+                                                                <div class="content_price">
+                                                                    <div class="product-price-and-shipping">
+
+
+                                                                        <span itemprop="price"
+                                                                            class="price">$600.00</span>
+
+
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="highlighted-informations hidden-sm-down">
+
+                                                                    <div class="variant-links">
+                                                                        <a href="http://bionic.doradothemes.com/store2/en/shop/14-149-samsung-gear-s3-classic.html#/3-storage-64gb/5-color-grey"
+                                                                            class="color" title="Grey"
+                                                                            style="background-color: rgb(170, 178, 189); color: rgb(34, 34, 34);"><span
+                                                                                class="sr-only">Grey</span></a>
+                                                                        <a href="http://bionic.doradothemes.com/store2/en/shop/14-152-samsung-gear-s3-classic.html#/3-storage-64gb/8-color-white"
+                                                                            class="color" title="White"
+                                                                            style="background-color: rgb(255, 255, 255); color: rgb(34, 34, 34);"><span
+                                                                                class="sr-only">White</span></a>
+                                                                        <a href="http://bionic.doradothemes.com/store2/en/shop/14-146-samsung-gear-s3-classic.html#/3-storage-64gb/11-color-black"
+                                                                            class="color" title="Black"
+                                                                            style="background-color: rgb(67, 74, 84); color: rgb(221, 221, 221);"><span
+                                                                                class="sr-only">Black</span></a>
+                                                                        <a href="http://bionic.doradothemes.com/store2/en/shop/14-155-samsung-gear-s3-classic.html#/3-storage-64gb/24-color-pink"
+                                                                            class="color" title="Pink"
+                                                                            style="background-color: rgb(252, 202, 205); color: rgb(34, 34, 34);"><span
+                                                                                class="sr-only">Pink</span></a>
+                                                                        <span class="js-count count"></span>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="product-description-short hidden"
+                                                            itemprop="description">
+                                                            <p>Samsung takes a complete product life cycle approach to
+                                                                determining our environmental impact.</p>
+                                                            <p style="font-size:14px;font-weight:400;"><strong>Gear S3
+                                                                    embodies Samsung’s continuing environmental
+                                                                    progress. It is designed with the following features
+                                                                    to reduce environmental impact:</strong></p>
+                                                            <ul>
+                                                                <li>Mercury-free</li>
+                                                                <li>Arsenic-free display glass</li>
+                                                                <li>Brominated flame retardant–free</li>
+                                                                <li>PVC-free</li>
+                                                                <li>Beryllium-free</li>
+                                                                <li>Highly recyclable stainless steel</li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <ul class="product-flags hidden">
+                                                        <li class="new">New</li>
+                                                    </ul>
+
+                                                </div>
+                                                <div class="product-more-options">
+                                                    <form action="http://bionic.doradothemes.com/store2/en/cart"
+                                                        method="post" class="dor-addcart-button">
+                                                        <div class="add">
+                                                            <input type="hidden" name="token"
+                                                                value="34b11c3ac3b44ecd83062701f9ddcf1b">
+                                                            <input name="id_product" value="14" type="hidden">
+                                                            <input type="hidden" name="id_customization" value="0">
+                                                            <a href="http://bionic.doradothemes.com/store2/en/cart"
+                                                                class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
+                                                                data-button-action="add-to-cart"
+                                                                data-title="Add to cart">
+                                                                <i class="material-icons shopping-cart"></i>
+                                                                <span class="hidden">Add to cart</span>
+                                                            </a>
+                                                        </div>
+                                                    </form>
+                                                    <div class="option-quick-add">
+                                                        <div class="icon-line-wishlist-fel">
+                                                            <div class="dor-wishlist">
+                                                                <a class="addToDorWishlist" href="#"
+                                                                    onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Add to Wishlist">
+                                                                    <i class="material-icons"></i>
+                                                                    <span class="wishlist-txt">Wishlist</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="icon-line-compare-fel">
+                                                            <div class="compare">
+                                                                <a class="add_to_compare"
+                                                                    href="http://bionic.doradothemes.com/store2/en/shop/14-samsung-gear-s3-classic.html"
+                                                                    data-productid="14" data-toggle="tooltip" title=""
+                                                                    data-original-title="Add compare"><i
+                                                                        class="fa fa-random"></i><span
+                                                                        class="compare-button-txt">Compare</span></a>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+
+
+
                                     </div>
 
+
+                                    <nav class="pagination">
+                                        <div class="col-md-4 show-page-text-number">
+
+                                            Showing 1-25 of 31 item(s)
+
+                                        </div>
+
+                                        <div class="col-md-6">
+
+                                            <ul class="page-list clearfix text-xs-center">
+                                                <li>
+                                                    <a rel="prev"
+                                                        href="http://bionic.doradothemes.com/store2/en/3-shop?cate_type=1&amp;page=1"
+                                                        class="previous disabled js-search-link">
+                                                        <i class="material-icons"></i><span
+                                                            class="hidden">Previous</span>
+                                                    </a>
+                                                </li>
+                                                <li class="current">
+                                                    <a rel="nofollow"
+                                                        href="http://bionic.doradothemes.com/store2/en/3-shop?cate_type=1&amp;page=1"
+                                                        class="disabled js-search-link">
+                                                        1
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a rel="nofollow"
+                                                        href="http://bionic.doradothemes.com/store2/en/3-shop?cate_type=1&amp;page=2"
+                                                        class="js-search-link">
+                                                        2
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a rel="next"
+                                                        href="http://bionic.doradothemes.com/store2/en/3-shop?cate_type=1&amp;page=2"
+                                                        class="next js-search-link">
+                                                        <span class="hidden">Next</span><i class="material-icons"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+
+                                    </nav>
+
+                                    <div id="cate-loadmore" class="hidden">
+                                        <a href="#" class="load-more-data" onclick="return false">Load More</a>
+                                    </div>
+                                    <div class="hidden-md-up text-xs-right up">
+                                        <a href="#header" class="btn btn-secondary">
+                                            Back to top
+                                            <i class="material-icons"></i>
+                                        </a>
+                                    </div>
                                 </div>
 
-                                <div id="js-product-list-bottom">
+                            </div>
+
+                            <div id="js-product-list-bottom">
 
 
 
-                                </div>
-
-                            </section>
+                            </div>
 
                         </section>
 
@@ -6532,217 +3825,6 @@ cellphone, laptop, headphone, smartwatch, TV!">
 
 
 
-            <div id="loginFormSmart" class="dor-formsmart">
-                <span class="button b-close"><span>X</span></span>
-                <form id="login-form" action="http://bionic.doradothemes.com/login" method="post">
-                    <h2 class="title-heading"><img src="../modules/dor_smartuser/img/logo.png" alt=""></h2>
-                    <h3>WELCOME TO OUR WONDERFUL WORLD</h3>
-                    <p class="smart-sign-txt">Did you know that we ship to over <span>24 different countries</span></p>
-
-                    <section>
-                        <input name="back" value="my-account" type="hidden">
-                        <a href="#" class="smart-fb-btn btn"> <i class="fa fa-facebook btn-icon"></i>Login with
-                            Facebook</a>
-                        <p class="line-smart signup"> OR SIGN IN </p>
-                        <div class="form-group row ">
-                            <label class="col-md-3 form-control-label required hidden">
-                                Email
-                            </label>
-                            <div class="col-md-12">
-                                <input class="form-control" name="email" value="" required="" type="email"
-                                    placeholder="Email">
-                            </div>
-                            <div class="col-md-3 form-control-comment"></div>
-                        </div>
-                        <div class="form-group row ">
-                            <label class="col-md-3 form-control-label required hidden">Password</label>
-                            <div class="col-md-12">
-                                <div class="input-group js-parent-focus">
-                                    <input class="form-control js-child-focus js-visible-password" name="password"
-                                        value="" required="" type="password" placeholder="Password">
-                                </div>
-                            </div>
-                            <div class="col-md-3 form-control-comment"></div>
-                        </div>
-                        <div class="smartdor-footer form-footer text-xs-center clearfix">
-                            <input name="submitLogin" value="1" type="hidden">
-                            <button class="btn btn-primary" data-link-action="sign-in" type="submit">
-                                <span class="fa fa-lightbulb-o"></span>Sign in
-                            </button>
-                        </div>
-                        <div class="auth-dor-moreinfo clearfix hidden">
-                            <p>* Denotes mandatory field.</p>
-                            <p>** At least one telephone number is required.</p>
-                        </div>
-                        <div class="dor-button-connect">
-                            <a href="#" onclick="return false" class="smartRegister reActLogReg"><i aria-hidden="true"
-                                    class="fa fa-user-plus"></i> Register</a>
-                            <a rel="nofollow" title="Recover your forgotten password" class="lost_password_smart"
-                                onclick="return false" href="#"><i aria-hidden="true" class="fa fa-key"></i> Forgot your
-                                password?</a>
-                        </div>
-                    </section>
-
-                </form>
-            </div>
-
-            <div id="registerFormSmart" class="dor-formsmart">
-                <span class="button b-close"><span>X</span></span>
-                <form action="http://bionic.doradothemes.com/login?create_account=1" id="customer-form"
-                    class="js-customer-form" method="post">
-                    <h2 class="title-heading"><img src="../modules/dor_smartuser/img/logo.png" alt=""></h2>
-                    <h3>WELCOME TO OUR WONDERFUL WORLD</h3>
-                    <p class="smart-sign-txt">Did you know that we ship to over <span>24 different countries</span></p>
-                    <section>
-                        <input name="id_customer" value="" type="hidden">
-                        <a href="#" class="smart-fb-btn btn"> <i class="fa fa-facebook btn-icon"></i>Register with
-                            Facebook</a>
-                        <p class="line-smart signup"> OR SIGN UP </p>
-                        <div class="form-group row hidden">
-                            <label class="col-md-3 form-control-label">Social title</label>
-                            <div class="col-md-12 form-control-valign">
-                                <label class="radio-inline">
-                                    <span class="custom-radio">
-                                        <input name="id_gender" value="1" type="radio">
-                                        <span></span>
-                                    </span>
-                                    Mr.
-                                </label>
-                                <label class="radio-inline">
-                                    <span class="custom-radio">
-                                        <input name="id_gender" value="2" type="radio">
-                                        <span></span>
-                                    </span>
-                                    Mrs.
-                                </label>
-                            </div>
-                            <div class="col-md-3 form-control-comment"></div>
-                        </div>
-                        <div class="form-group form-group-smart row ">
-                            <div class="col-md-6">
-                                <div class="field-group-smart">
-                                    <input class="form-control" placeholder="First name" name="firstname" value=""
-                                        required="" type="text">
-                                </div>
-                                <div class="col-md-3 form-control-comment"></div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="field-group-smart">
-                                    <input class="form-control" placeholder="Last name" name="lastname" value=""
-                                        required="" type="text">
-                                </div>
-                                <div class="col-md-3 form-control-comment"></div>
-                            </div>
-                        </div>
-                        <div class="form-group row ">
-                            <label class="col-md-3 form-control-label required hidden">Email</label>
-                            <div class="col-md-12">
-                                <input class="form-control" placeholder="Email" name="email" value="" required=""
-                                    type="email">
-                            </div>
-                            <div class="col-md-3 form-control-comment"></div>
-                        </div>
-                        <div class="form-group row ">
-                            <label class="col-md-3 form-control-label required hidden">Password</label>
-                            <div class="col-md-12">
-                                <div class="input-group js-parent-focus">
-                                    <input class="form-control js-child-focus js-visible-password"
-                                        placeholder="Password" name="password" value="" required="" type="password">
-                                </div>
-                            </div>
-                            <div class="col-md-3 form-control-comment"></div>
-                        </div>
-                        <div class="form-group row hidden">
-                            <label class="col-md-3 form-control-label">Birthdate</label>
-                            <div class="col-md-12">
-                                <input class="form-control" name="birthday" value="" placeholder="MM/DD/YYYY"
-                                    type="text">
-                                <span class="form-control-comment">
-                                    (E.g.: 05/31/1970)
-                                </span>
-                            </div>
-                            <div class="col-md-3 form-control-comment">Optional</div>
-                        </div>
-                        <div class="form-group row hidden">
-                            <label class="col-md-3 form-control-label"></label>
-                            <div class="col-md-12 hidden">
-                                <span class="custom-checkbox">
-                                    <input name="optin" value="1" type="checkbox">
-                                    <span><i class="material-icons checkbox-checked"></i></span>
-                                    <label>Receive offers from our partners</label>
-                                </span>
-                            </div>
-                            <div class="col-md-3 form-control-comment"></div>
-                        </div>
-                        <div class="form-group row hidden">
-                            <label class="col-md-3 form-control-label">
-                            </label>
-                            <div class="col-md-12">
-                                <span class="custom-checkbox">
-                                    <input name="newsletter" value="1" type="checkbox">
-                                    <span><i class="material-icons checkbox-checked"></i></span>
-                                    <label>Sign up for our newsletter<br><em>You may unsubscribe at any moment. For that
-                                            purpose, please find our contact info in the legal notice.</em></label>
-                                </span>
-                            </div>
-                            <div class="col-md-3 form-control-comment"></div>
-                        </div>
-                        <div class="smartdor-footer form-footer clearfix">
-                            <input name="submitCreate" value="1" type="hidden">
-                            <label class="col-md-3 form-control-label"></label>
-                            <button class="btn btn-primary form-control-submit pull-xs-left"
-                                data-link-action="save-customer" type="submit">
-                                <i class="fa fa-user-plus"></i>Sign up
-                            </button>
-                        </div>
-                        <div class="dor-button-connect clearfix">
-                            <a href="#" onclick="return false" class="smartLogin reActLogReg"> <i
-                                    class="fa fa-lightbulb-o"></i> Login</a>
-                            <a rel="nofollow" title="Recover your forgotten password" class="lost_password_smart"
-                                onclick="return false" href="#"><i aria-hidden="true" class="fa fa-key"></i> Forgot your
-                                password?</a>
-                        </div>
-                    </section>
-                </form>
-            </div>
-            <div id="smartForgotPass" class="dor-formsmart">
-                <span class="button b-close"><span>X</span></span>
-                <div class="center_column" id="center_column_smart">
-                    <div class="box">
-                        <form action="http://bionic.doradothemes.com/password-recovery" method="post">
-                            <h2 class="title-heading"><img src="../modules/dor_smartuser/img/logo.png" alt=""></h2>
-                            <h3>WELCOME TO OUR WONDERFUL WORLD</h3>
-                            <p class="smart-sign-txt">Did you know that we ship to over <span>24 different
-                                    countries</span></p>
-                            <div class="smartdor-header">
-                                <p>Please enter the email address you used to register. You will receive a temporary
-                                    link to reset your password.</p>
-                            </div>
-                            <section class="form-fields">
-                                <div class="form-group row">
-                                    <label class="col-md-3 form-control-label required hidden">Email address</label>
-                                    <div class="col-md-12">
-                                        <input name="email" id="email" value="" placeholder="Email address"
-                                            class="form-control" required="" type="email">
-                                    </div>
-                                </div>
-                                <div class="smartdor-footer form-footer text-xs-center">
-                                    <button class="form-control-submit btn btn-primary" name="submit" type="submit">
-                                        <i class="fa fa-key" aria-hidden="true"></i> Retrieve Password
-                                    </button>
-                                </div>
-                                <div class="dor-button-connect clearfix">
-                                    <a href="#" onclick="return false" class="smartLogin reActLogReg"> <i
-                                            class="fa fa-lightbulb-o"></i> Login</a>
-                                    <a href="#" onclick="return false" class="smartRegister reActLogReg"><i
-                                            aria-hidden="true" class="fa fa-user-plus"></i> Register</a>
-                                </div>
-                            </section>
-
-                        </form>
-                    </div>
-                </div>
-            </div>
 
 
 
@@ -6750,27 +3832,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                 <div class="container">
                     <div class="row">
                         <div class="footer-newsletter-fields">
-                            <h4><i class="fa fa-send-o" aria-hidden="true"></i>Join Our Newsletter</h4>
-                            <ul id="footer_newsletter_block" class="col-lg-5 col-sm-7 col-xs-10">
-                                <li class="item">
-                                    <form id="newsletter-footer" action="http://bionic.doradothemes.com/#footer"
-                                        method="post">
-                                        <div class="row">
-                                            <div class="col-xs-12">
-                                                <div class="input-wrapper"><input name="email" value=""
-                                                        placeholder="Type your email here" type="text" /></div>
-                                                <input class="btn btn-primary pull-xs-right hidden-xs-down"
-                                                    name="submitNewsletter" value="Subscribe" type="submit" /> <input
-                                                    class="btn btn-primary pull-xs-right hidden-sm-up"
-                                                    name="submitNewsletter" value="OK" type="submit" /> <input
-                                                    name="action" value="0" type="hidden" />
-                                            </div>
-                                        </div>
-                                    </form>
-                                </li>
-                            </ul>
-                            <p>sign up for our newsletter and get <span>25%</span> off your next order. Pretty sweet, we
-                                know</p>
+
                         </div>
                     </div>
                 </div>
@@ -6804,8 +3866,9 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                         </span> </span></div>
                                 <ul class="toggle-footer collapse" id="footer_contact_block">
                                     <li class="item logo-footer"><a href="http://bionic.doradothemes.com/"
-                                            title="Wiliam Store"><img src="../img/cms/dorado/bionic-store-footer.png"
-                                                alt="" width="139" height="34" /></a></li>
+                                            title="Wiliam Store"><img
+                                                src="https://picsum.photos/139/34?random={{ mt_rand(1, 100) }}" alt=""
+                                                width="139" height="34" /></a></li>
                                     <li class="item">
                                         <div class="footer-our-store"><span class="pe-7s-headphones"> </span>
                                             <div class="our-store-info">
@@ -6894,19 +3957,26 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                     <div class="col-lg-6 col-sm-6 col-sx-12 pull-right  footer-payment-line">
                                         <div class="payment">
                                             <ul>
-                                                <li><a href="#"><img src="../img/cms/dorado/payment/payment-01.png"
+                                                <li><a href="#"><img
+                                                            src="https://picsum.photos/46/28?random={{ mt_rand(1, 100) }}"
                                                             alt="" width="46" height="28" /></a></li>
-                                                <li><a href="#"><img src="../img/cms/dorado/payment/payment-02.png"
+                                                <li><a href="#"><img
+                                                            src="https://picsum.photos/46/28?random={{ mt_rand(1, 100) }}"
                                                             alt="" width="46" height="28" /></a></li>
-                                                <li><a href="#"><img src="../img/cms/dorado/payment/payment-03.png"
+                                                <li><a href="#"><img
+                                                            src="https://picsum.photos/46/28?random={{ mt_rand(1, 100) }}"
                                                             alt="" width="46" height="28" /></a></li>
-                                                <li><a href="#"><img src="../img/cms/dorado/payment/payment-04.png"
+                                                <li><a href="#"><img
+                                                            src="https://picsum.photos/46/28?random={{ mt_rand(1, 100) }}"
                                                             alt="" width="46" height="28" /></a></li>
-                                                <li><a href="#"><img src="../img/cms/dorado/payment/payment-05.png"
+                                                <li><a href="#"><img
+                                                            src="https://picsum.photos/46/28?random={{ mt_rand(1, 100) }}"
                                                             alt="" width="46" height="28" /></a></li>
-                                                <li><a href="#"><img src="../img/cms/dorado/payment/payment-06.png"
+                                                <li><a href="#"><img
+                                                            src="https://picsum.photos/46/28?random={{ mt_rand(1, 100) }}"
                                                             alt="" width="46" height="28" /></a></li>
-                                                <li><a href="#"><img src="../img/cms/dorado/payment/payment-07.png"
+                                                <li><a href="#"><img
+                                                            src="https://picsum.photos/46/28?random={{ mt_rand(1, 100) }}"
                                                             alt="" width="46" height="28" /></a></li>
                                             </ul>
                                         </div>
@@ -6958,437 +4028,9 @@ cellphone, laptop, headphone, smartwatch, TV!">
 
     </script>
 
-    <!-- Subscribe Popup 1 -->
-    <section class="subscribe-me">
-        <a href="#close" onclick="return false" class="sb-close-btn close popup-cls b-close"><i
-                class="fa-times fa"></i></a>
-        <div class="modal-content subscribe-1 wht-clr">
-            <div class="login-wrap text-center">
-                <h2><i class="fa fa-send-o" aria-hidden="true"></i>Join Our Newsletter</h2>
-                <p>sign up for our newsletter and get <span>25%</span> off your next order. Pretty sweet, we know</p>
-                <div class="login-form spctop-30">
-                    <form class="subscribe" action="http://bionic.doradothemes.com/en/" method="post">
-                        <div class="form-group">
-                            <input class="inputNew form-control grey newsletter-input" id="dorNewsletter-input"
-                                type="text" name="email" size="18" value="" placeholder="Your email address" />
-                        </div>
-                        <div class="form-group">
-                            <button class="alt fancy-button" type="submit" name="submitNewsletter"> <span
-                                    class="fa fa-envelope"></span> Subscribe </button>
-                            <input type="hidden" name="action" value="0" />
-                        </div>
-                        <div class="form-group checkAgainSubs"><input type="checkbox" name="notShowSubs"> <span>Don't
-                                show this popup again</span></div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- / Subscribe Popup 1 -->
     <div id="to-top" class="to-top"> <i class="fa fa-angle-up"></i> </div>
-    <div class="dor-wrap">
-        <div class="control inactive"><a href="javascript:void(0)"><i class="fa fa-cog fa-spin"></i></a></div>
-        <h2 class="dor-title">Theme Options</h2>
-        <div class="dor-option" id="dor-option-tool">
 
-            <div class="cl-table tool-class-opt" id="dor-opt-header">
-                <div class="cl-tr cl-tr-mode-label">
-                    <div class="cl-tr cl-tr-style-label"><span>Header Skin</span><i class="fa fa-plus-square"></i></div>
-                </div>
-                <div class="cl-tr cl-tr-mode tool-opt-data header-skin-tool clearfix">
-                    <select id="dor_header_skin" class="tool-select-opt fixed-width-xl" name="dor_header_skin">
-                        <option value="">---Choose a skin---</option>
-                        <option value="01">Header 01</option>
-                        <option value="02">Header 02</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="cl-table tool-class-opt" id="dor-opt-headerayout">
-                <div class="cl-tr cl-tr-mode-label">
-                    <div class="cl-tr cl-tr-style-label"><span>Header Float</span><i class="fa fa-minus-square"></i>
-                    </div>
-                </div>
-                <div class="cl-tr cl-tr-mode tool-opt-data clearfix">
-                    <div class="pull-left">
-                        <input class="headerfloat_theme" id="dorHeaderFloatOn" type="radio" value="1"
-                            name="headerfloat_css" checked="checked">On
-                    </div>
-                    <div class="pull-right">
-                        <input class="headerfloat_theme" id="dorHeaderFloatOff" type="radio" value="0"
-                            name="headerfloat_css">Off
-                    </div>
-                </div>
-            </div>
-
-            <div class="cl-table tool-class-opt" id="dor-opt-modelayout">
-                <div class="cl-tr cl-tr-mode-label">
-                    <div class="cl-tr cl-tr-style-label"><span>Mode Layout</span><i class="fa fa-minus-square"></i>
-                    </div>
-                </div>
-                <div class="cl-tr cl-tr-mode tool-opt-data clearfix">
-                    <div class="pull-left">
-                        <input class="mode_theme" id="dorwideFull" type="radio" value="full" name="mode_css"
-                            checked="checked">Full
-                    </div>
-                    <div class="pull-right">
-                        <input class="mode_theme" id="dorboxBox" type="radio" value="boxed" name="mode_css">Box
-                    </div>
-                </div>
-            </div>
-            <div class="cl-table tool-class-opt" id="dor-opt-topbar">
-                <div class="cl-tr cl-tr-mode-label">
-                    <div class="cl-tr cl-tr-style-label"><span>Topbar Color</span><i class="fa fa-minus-square"></i>
-                    </div>
-                </div>
-                <div class="cl-tr cl-tr-mode tool-opt-data clearfix">
-
-                    <div class="form-group row">
-                        <div class="control-label col-lg-12 align-left">
-                            Background Outside Color:
-                        </div>
-                        <div class="col-lg-12 ">
-                            <div class="input-group">
-                                <input type="text" value=" " name="dorTopbarBgOutside" class="color no-alpha"
-                                    data-hex="true" id="dorTopbarBgOutside"
-                                    style="color: black;width: 170px;height: 25px;">
-                                <span class="mColorPickerTrigger input-group-addon" id="icp_color_009"
-                                    style="cursor:pointer;background:none !important;padding:0px;border:none;"
-                                    data-mcolorpicker="true">
-                                    <img align="absmiddle" src="../img/admin/color.png">
-                                </span>
-                                <a href="#" onclick="return false" class="clear-bg label label-success hidden">Clear</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="control-label col-lg-12 align-left">
-                            Text Color:
-                        </div>
-                        <div class="col-lg-12 ">
-                            <div class="input-group">
-                                <input type="text" value=" " name="dorTopbarTxtColor" class="color no-alpha"
-                                    data-hex="true" id="dorTopbarTxtColor"
-                                    style="color: black;width: 170px;height: 25px;">
-                                <span class="mColorPickerTrigger input-group-addon" id="icp_color_009"
-                                    style="cursor:pointer;background:none !important;padding:0px;border:none;"
-                                    data-mcolorpicker="true">
-                                    <img align="absmiddle" src="../img/admin/color.png">
-                                </span>
-                                <a href="#" onclick="return false" class="clear-bg label label-success hidden">Clear</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="control-label col-lg-12 align-left">
-                            Link Color:
-                        </div>
-                        <div class="col-lg-12 ">
-                            <div class="input-group">
-                                <input type="text" value=" " name="dorTopbarLinkColor" class="color no-alpha"
-                                    data-hex="true" id="dorTopbarLinkColor"
-                                    style="color: black;width: 170px;height: 25px;">
-                                <span class="mColorPickerTrigger input-group-addon" id="icp_color_009"
-                                    style="cursor:pointer;background:none !important;padding:0px;border:none;"
-                                    data-mcolorpicker="true">
-                                    <img align="absmiddle" src="../img/admin/color.png">
-                                </span>
-                                <a href="#" onclick="return false" class="clear-bg label label-success hidden">Clear</a>
-                            </div>
-                        </div>
-                    </div>
-                    <button type="button" name="save-topbar-color" id="save-topbar-color"
-                        class="dor-btn-tool">Save</button>
-                </div>
-            </div>
-            <div class="cl-table tool-class-opt" id="dor-opt-advance">
-                <div class="cl-tr cl-tr-mode-label">
-                    <div class="cl-tr cl-tr-style-label"><span>Advance Color</span><i class="fa fa-minus-square"></i>
-                    </div>
-                </div>
-                <div class="cl-tr cl-tr-mode tool-opt-data clearfix">
-                    <div class="form-group row">
-                        <div class="control-label col-lg-12 align-left">
-                            Price Color:
-                        </div>
-                        <div class="col-lg-12 ">
-                            <div class="input-group">
-                                <input type="text" value=" " name="dorPriceColor" class="color no-alpha" data-hex="true"
-                                    id="dorPriceColor" style="color: black;width: 170px;height: 25px;">
-                                <span class="mColorPickerTrigger input-group-addon" id="icp_color_009"
-                                    style="cursor:pointer;background:none !important;padding:0px;border:none;"
-                                    data-mcolorpicker="true">
-                                    <img align="absmiddle" src="../img/admin/color.png">
-                                </span>
-                                <a href="#" onclick="return false" class="clear-bg label label-success hidden">Clear</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="control-label col-lg-12 align-left">
-                            Price Primary Color:
-                        </div>
-                        <div class="col-lg-12 ">
-                            <div class="input-group">
-                                <input type="text" value=" " name="dorPricePrimaryColor" class="color no-alpha"
-                                    data-hex="true" id="dorPricePrimaryColor"
-                                    style="color: black;width: 170px;height: 25px;">
-                                <span class="mColorPickerTrigger input-group-addon" id="icp_color_009"
-                                    style="cursor:pointer;background:none !important;padding:0px;border:none;"
-                                    data-mcolorpicker="true">
-                                    <img align="absmiddle" src="../img/admin/color.png">
-                                </span>
-                                <a href="#" onclick="return false" class="clear-bg label label-success hidden">Clear</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="control-label col-lg-12 align-left">
-                            Old Price Color:
-                        </div>
-                        <div class="col-lg-12 ">
-                            <div class="input-group">
-                                <input type="text" value=" " name="dorOldPriceColor" class="color no-alpha"
-                                    data-hex="true" id="dorOldPriceColor"
-                                    style="color: black;width: 170px;height: 25px;">
-                                <span class="mColorPickerTrigger input-group-addon" id="icp_color_009"
-                                    style="cursor:pointer;background:none !important;padding:0px;border:none;"
-                                    data-mcolorpicker="true">
-                                    <img align="absmiddle" src="../img/admin/color.png">
-                                </span>
-                                <a href="#" onclick="return false" class="clear-bg label label-success hidden">Clear</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="control-label col-lg-12 align-left">
-                            Flag Sale Background:
-                        </div>
-                        <div class="col-lg-12 ">
-                            <div class="input-group">
-                                <input type="text" value=" " name="dorFlagSaleBg" class="color no-alpha" data-hex="true"
-                                    id="dorFlagSaleBg" style="color: black;width: 170px;height: 25px;">
-                                <span class="mColorPickerTrigger input-group-addon" id="icp_color_009"
-                                    style="cursor:pointer;background:none !important;padding:0px;border:none;"
-                                    data-mcolorpicker="true">
-                                    <img align="absmiddle" src="../img/admin/color.png">
-                                </span>
-                                <a href="#" onclick="return false" class="clear-bg label label-success hidden">Clear</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="control-label col-lg-12 align-left">
-                            Flag Sale Color:
-                        </div>
-                        <div class="col-lg-12 ">
-                            <div class="input-group">
-                                <input type="text" value=" " name="dorFlagSaleColor" class="color no-alpha"
-                                    data-hex="true" id="dorFlagSaleColor"
-                                    style="color: black;width: 170px;height: 25px;">
-                                <span class="mColorPickerTrigger input-group-addon" id="icp_color_009"
-                                    style="cursor:pointer;background:none !important;padding:0px;border:none;"
-                                    data-mcolorpicker="true">
-                                    <img align="absmiddle" src="../img/admin/color.png">
-                                </span>
-                                <a href="#" onclick="return false" class="clear-bg label label-success hidden">Clear</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="control-label col-lg-12 align-left">
-                            Flag New Background:
-                        </div>
-                        <div class="col-lg-12 ">
-                            <div class="input-group">
-                                <input type="text" value=" " name="dorFlagNewBg" class="color no-alpha" data-hex="true"
-                                    id="dorFlagNewBg" style="color: black;width: 170px;height: 25px;">
-                                <span class="mColorPickerTrigger input-group-addon" id="icp_color_009"
-                                    style="cursor:pointer;background:none !important;padding:0px;border:none;"
-                                    data-mcolorpicker="true">
-                                    <img align="absmiddle" src="../img/admin/color.png">
-                                </span>
-                                <a href="#" onclick="return false" class="clear-bg label label-success hidden">Clear</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="control-label col-lg-12 align-left">
-                            Flag New Color:
-                        </div>
-                        <div class="col-lg-12 ">
-                            <div class="input-group">
-                                <input type="text" value=" " name="dorFlagNewColor" class="color no-alpha"
-                                    data-hex="true" id="dorFlagNewColor"
-                                    style="color: black;width: 170px;height: 25px;">
-                                <span class="mColorPickerTrigger input-group-addon" id="icp_color_009"
-                                    style="cursor:pointer;background:none !important;padding:0px;border:none;"
-                                    data-mcolorpicker="true">
-                                    <img align="absmiddle" src="../img/admin/color.png">
-                                </span>
-                                <a href="#" onclick="return false" class="clear-bg label label-success hidden">Clear</a>
-                            </div>
-                        </div>
-                    </div>
-                    <button type="button" name="save-adv-option" id="save-dv-option" class="dor-btn-tool">Save</button>
-                </div>
-            </div>
-            <div class="cl-table tool-class-opt hidden" id="dor-opt-font">
-                <div class="cl-tr cl-tr-mode-label">
-                    <div class="cl-tr cl-tr-style-label"><span>Font</span><i class="fa fa-minus-square"></i></div>
-                </div>
-                <div class="cl-tr cl-tr-mode tool-opt-data clearfix">
-                    <select id="dor_font_options" class=" fixed-width-xl tool-select-opt" name="dor_font_options">
-                        <option value="">---Choose a font---</option>
-                        <option value="font1">Open Sans</option>
-                        <option value="font2">Josefin Slab</option>
-                        <option value="font3">Arvo</option>
-                        <option value="font4">Lato</option>
-                        <option value="font5">Vollkorn</option>
-                        <option value="font6">Abril Fatface</option>
-                        <option value="font7">Ubuntu</option>
-                        <option value="font8">PT Sans</option>
-                        <option value="font9">Old Standard TT</option>
-                        <option value="font10">Droid Sans</option>
-                    </select>
-                </div>
-            </div>
-            <div class="cl-wrapper tool-class-opt" id="dor-opt-themecolor">
-                <div class="cl-container">
-                    <div class="cl-tr cl-tr-mode-label">
-                        <div class="cl-tr cl-tr-style-label"><span>Theme color</span><i class="fa fa-minus-square"></i>
-                        </div>
-                    </div>
-                    <div class="cl-table tool-opt-data clearfix">
-                        <div class="cl-tr cl-tr-style box-layout">
-                            <div style="background-color: #008080" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="008080"><a href="javascript:void(0)" title="008080"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #1696ef" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="1696ef"><a href="javascript:void(0)" title="1696ef"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #49cc80" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="49cc80"><a href="javascript:void(0)" title="49cc80"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #52afc6" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="52afc6"><a href="javascript:void(0)" title="52afc6"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #55a9d4" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="55a9d4"><a href="javascript:void(0)" title="55a9d4"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #5d957b" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="5d957b"><a href="javascript:void(0)" title="5d957b"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #77d0e4" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="77d0e4"><a href="javascript:void(0)" title="77d0e4"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #789bbc" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="789bbc"><a href="javascript:void(0)" title="789bbc"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #7aa3a6" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="7aa3a6"><a href="javascript:void(0)" title="7aa3a6"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #800000" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="800000"><a href="javascript:void(0)" title="800000"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #800080" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="800080"><a href="javascript:void(0)" title="800080"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #8eb35a" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="8eb35a"><a href="javascript:void(0)" title="8eb35a"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #9e8673" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="9e8673"><a href="javascript:void(0)" title="9e8673"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #a9f535" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="a9f535"><a href="javascript:void(0)" title="a9f535"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #be61e0" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="be61e0"><a href="javascript:void(0)" title="be61e0"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #e76e62" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="e76e62"><a href="javascript:void(0)" title="e76e62"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #edd9c0" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="edd9c0"><a href="javascript:void(0)" title="edd9c0"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #ef4416" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="ef4416"><a href="javascript:void(0)" title="ef4416"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #efb916" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="efb916"><a href="javascript:void(0)" title="efb916"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #f09748" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="f09748"><a href="javascript:void(0)" title="f09748"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #f49ac1" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="f49ac1"><a href="javascript:void(0)" title="f49ac1"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #FF00FF" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="FF00FF"><a href="javascript:void(0)" title="FF00FF"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cl-table tool-class-opt clearfix" id="dor-opt-bgbody">
-                <div class="cl-tr">
-                    <div class="cl-tr cl-tr-style-label"><span>Background Image body:</span><i
-                            class="fa fa-minus-square"></i></div>
-                    <div class="cl-td-bg tool-opt-data clearfix">
-                        <div class="cl-pattern">
-                            <div class="cl-image pattern1" id="pattern1"></div>
-                            <div class="cl-image pattern2" id="pattern2"></div>
-                            <div class="cl-image pattern3" id="pattern3"></div>
-                            <div class="cl-image pattern4" id="pattern4"></div>
-                            <div class="cl-image pattern5" id="pattern5"></div>
-                            <div class="cl-image pattern6" id="pattern6"></div>
-                            <div class="cl-image pattern7" id="pattern7"></div>
-                            <div class="cl-image pattern8" id="pattern8"></div>
-                            <div class="cl-image pattern9" id="pattern9"></div>
-                            <div class="cl-image pattern10" id="pattern10"></div>
-                            <div class="cl-image pattern11" id="pattern11"></div>
-                            <div class="cl-image pattern12" id="pattern12"></div>
-                            <div class="cl-image pattern13" id="pattern13"></div>
-                            <div class="cl-image pattern14" id="pattern14"></div>
-                            <div class="cl-image pattern15" id="pattern15"></div>
-                            <div class="cl-image pattern16" id="pattern16"></div>
-                            <div class="cl-image pattern17" id="pattern17"></div>
-                            <div class="cl-image pattern18" id="pattern18"></div>
-                            <div class="cl-image pattern19" id="pattern19"></div>
-                            <div class="cl-image pattern20" id="pattern20"></div>
-                            <div class="cl-image pattern21" id="pattern21"></div>
-                            <div class="cl-image pattern22" id="pattern22"></div>
-                            <div class="cl-image pattern23" id="pattern23"></div>
-                            <div class="cl-image pattern24" id="pattern24"></div>
-                            <div class="cl-image pattern25" id="pattern25"></div>
-                            <div class="cl-image pattern26" id="pattern26"></div>
-                            <div class="cl-image pattern27" id="pattern27"></div>
-                            <div class="cl-image pattern28" id="pattern28"></div>
-                            <div class="cl-image pattern29" id="pattern29"></div>
-                            <div class="cl-image pattern30" id="pattern30"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cl-table tool-class-opt" id="dor-opt-footer" style="display:none">
-                <div class="cl-tr cl-tr-mode-label">
-                    <div class="cl-tr cl-tr-style-label"><span>Footer Skin</span><i class="fa fa-plus-square"></i></div>
-                </div>
-                <div class="cl-tr cl-tr-mode tool-opt-data footer-skin-tool clearfix">
-                    <select id="dor_footer_skin" class="tool-select-opt fixed-width-xl" name="dor_footer_skin">
-                        <option value="">---Choose a skin---</option>
-                        <option value="footerskin1">Footer Skin 1</option>
-                        <option value="footerskin2">Footer Skin 2</option>
-                        <option value="footerskin3">Footer Skin 3</option>
-                    </select>
-                </div>
-            </div>
-            <div class="cl-tr cl-row-reset">
-                <button class="btn btn-default cl-reset">Reset</button>
-            </div>
-        </div>
-    </div>
 </body>
 
 
