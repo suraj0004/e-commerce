@@ -65,7 +65,7 @@
                                     <div class="col-sm-8 col-xs-8 col-md-7 products-sort-order dropdown">
                                         <a class="select-title" rel="nofollow" data-toggle="dropdown"
                                             aria-haspopup="true" aria-expanded="false">
-                                            Relevance <i class="fas fa-sort" style="margin-left: 66%;"></i>
+                                            Relevance <i class="fas fa-sort" style="margin-left: 65%;"></i>
                                         </a>
                                         <div class="dropdown-menu">
                                             <a rel="nofollow"
