@@ -1625,8 +1625,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                             <!-- /pos search module TOP -->
 
 
-                            <a href="order-tracking.html" class="order-tracking-top-link"><i
-                                    class="material-icons">&#xE558;</i><span>Track Your Order</span></a>
+                            <a href="order-tracking.html" class="order-tracking-top-link"><i class="fas fa-truck-moving"></i><span>Track Your Order</span></a>
                         </div>
                     </div>
                 </div>
