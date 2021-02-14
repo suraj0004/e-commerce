@@ -383,7 +383,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                             <ul>
                                                 <li class="time-work"><span> Work time:
                                                         Monday - Sunday: 08AM - 06PM</span></li>
-                                                <li class="phone-shop&quot;"><span><i class="material-icons"></i> +06
+                                                <li class="phone-shop"><span><i class="fas fa-phone"></i> +06
                                                         6666 8888</span></li>
                                                 <li class="mail-shop"><span><i class="material-icons"></i>
                                                         support@bionic.com</span></li>
