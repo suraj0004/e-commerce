@@ -48,10 +48,10 @@
                                 <div class="show-display-control">
                                     <a href="#" rel="nofollow" class="displayGrid active" data-id="grid"
                                         data-toggle="tooltip" data-placement="top" title=""
-                                        data-original-title="Grid"><i class="material-icons"></i></a>
+                                        data-original-title="Grid"><i class="fas fa-border-none"></i></a>
                                     <a href="#" rel="nofollow" class="displayList" data-id="list"
                                         data-toggle="tooltip" data-placement="top" title=""
-                                        data-original-title="List"><i class="material-icons"></i></a>
+                                        data-original-title="List"><i class="fas fa-list"></i></a>
                                 </div>
                             </div>
                             <div class="col-md-3 hidden-sm-down total-products">
@@ -65,7 +65,7 @@
                                     <div class="col-sm-8 col-xs-8 col-md-7 products-sort-order dropdown">
                                         <a class="select-title" rel="nofollow" data-toggle="dropdown"
                                             aria-haspopup="true" aria-expanded="false">
-                                            Relevance <i class="material-icons pull-xs-right"></i>
+                                            Relevance <i class="fas fa-sort" style="margin-left: 66%;"></i>
                                         </a>
                                         <div class="dropdown-menu">
                                             <a rel="nofollow"
@@ -1334,7 +1334,7 @@
                                         <a rel="prev"
                                             href="http://bionic.doradothemes.com/store2/en/3-shop?cate_type=1&amp;page=1"
                                             class="previous disabled js-search-link">
-                                            <i class="material-icons"></i><span
+                                            <i class="fas fa-backward"></i><span
                                                 class="hidden">Previous</span>
                                         </a>
                                     </li>
@@ -1356,7 +1356,7 @@
                                         <a rel="next"
                                             href="http://bionic.doradothemes.com/store2/en/3-shop?cate_type=1&amp;page=2"
                                             class="next js-search-link">
-                                            <span class="hidden">Next</span><i class="material-icons"></i>
+                                            <span class="hidden">Next</span><i class="fas fa-forward"></i>
                                         </a>
                                     </li>
                                 </ul>
