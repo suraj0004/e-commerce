@@ -24,4 +24,5 @@ Auth::routes();
 // Shop Module Routes
 Route::group(["middleware"=>["auth","user"]],function () {
     Route::get('/home', [HomeController::class, 'index'])->name('home');
+    Route::get('/contact-us', [HomeController::class, 'contact'])->name('contact');
 });
