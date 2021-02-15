@@ -381,19 +381,19 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                     <div class="dor-topbar-line-wrapper row">
                                         <div class="topbar-infomation col-lg-8 col-sm-8 pull-left">
                                             <ul>
-                                                <li class="time-work"><span> Work time:
+                                                <li class="time-work"><i class="fas fa-briefcase"></i><span> Work time:
                                                         Monday - Sunday: 08AM - 06PM</span></li>
-                                                <li class="phone-shop&quot;"><span><i class="material-icons"></i> +06
+                                                <li class="phone-shop"><span><i class="fas fa-phone"></i> +06
                                                         6666 8888</span></li>
-                                                <li class="mail-shop"><span><i class="material-icons"></i>
+                                                <li class="mail-shop"><span><i class="fas fa-envelope-square"></i>
                                                         support@bionic.com</span></li>
                                             </ul>
                                         </div>
                                         <div class="topbar-infomation-right col-lg-4 col-sm-4 pull-right">
                                             <ul>
-                                                <li class="store-location"><span><i class="material-icons"></i> Store
+                                                <li class="store-location"><span><i class="fas fa-location-arrow"></i> Store
                                                         Location</span></li>
-                                                <li class="free-ship"><span><i class="material-icons"></i> Free
+                                                <li class="free-ship"><span><i class="fas fa-shipping-fast"></i> Free
                                                         Shipping on Orders $100+</span></li>
                                             </ul>
                                         </div>
@@ -1625,8 +1625,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                             <!-- /pos search module TOP -->
 
 
-                            <a href="order-tracking.html" class="order-tracking-top-link"><i
-                                    class="material-icons">&#xE558;</i><span>Track Your Order</span></a>
+                            <a href="order-tracking.html" class="order-tracking-top-link"><i class="fas fa-truck-moving"></i><span>Track Your Order</span></a>
                         </div>
                     </div>
                 </div>
@@ -1726,7 +1725,10 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                                 src="https://picsum.photos/139/34?random={{ mt_rand(1, 100) }}"
                                                 alt="" width="139" height="34" /></a></li>
                                     <li class="item">
-                                        <div class="footer-our-store"><span class="pe-7s-headphones"> </span>
+                                        <div class="footer-our-store"><i class="fas fa-question" style="position: absolute;
+                                            left: 25px;
+                                            top: 77px;
+                                            font-size: 2rem;"></i><span class="pe-7s-headphones"></span>
                                             <div class="our-store-info">
                                                 <h5>Get Question ? Contact Us 24/7</h5>
                                                 <p>(+60) 6789 6789 / 6666 8888</p>
