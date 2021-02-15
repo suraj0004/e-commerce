@@ -11,4 +11,14 @@ class HomeController extends Controller
     {
         return view("admin.home");
     }
+
+    public function showMyProfilePage()
+    {
+        return view("admin.profile");
+    }
+
+    public function showTablePage()
+    {
+        return view('admin.table');
+    }
 }
