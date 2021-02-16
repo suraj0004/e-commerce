@@ -20,8 +20,6 @@ Route::get('/', function () {
 
 Auth::routes();
 
-
-
 // Shop Module Routes
 Route::group(["middleware"=>["auth","user"]],function () {
     Route::get('/home', [HomeController::class, 'index'])->name('home');

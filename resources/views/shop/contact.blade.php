@@ -8,20 +8,9 @@
 @section('content')
     <div class="container">
         <div class="row">
-
-
-
-
             <div id="content-wrapper" class="left-column col-md-12">
-
-
                 <section id="main">
-
-
-
-
                     <section id="content" class="page-content card card-block">
-
 
                         <section id="contact-form-v1" class="contact-form">
                             <h1 class="h1">Contact Us</h1>
@@ -142,16 +131,17 @@
 @endsection
 
 @section('js')
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMH_Sh8EdCWkG1OFhAih3FFhbkRYuo-0U"></script>
-<script src="{{asset('js/jquery.googlemap.js')}}"></script>
-<script type="text/javascript">
-  $(document).ready(function(){
-    $("#mapContact").googleMap();
-    $("#mapContact").addMarker({
-        coords: [48.895651, 2.290569],
-        icon: prestashop.urls.base_url+'img/cms/dorado/icon/market-map.png',
-        url: 'http://doradothemes.com'
-      });
-  });
-</script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMH_Sh8EdCWkG1OFhAih3FFhbkRYuo-0U"></script>
+    <script src="{{ asset('js/jquery.googlemap.js') }}"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#mapContact").googleMap();
+            $("#mapContact").addMarker({
+                coords: [48.895651, 2.290569],
+                icon: prestashop.urls.base_url + 'img/cms/dorado/icon/market-map.png',
+                url: 'http://doradothemes.com'
+            });
+        });
+
+    </script>
 @endsection
