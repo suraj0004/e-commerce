@@ -26,8 +26,8 @@
 
 
 
-    <link rel="icon" type="image/vnd.microsoft.icon" href="http://bionic.doradothemes.com/img/favicon.ico?1507612767">
-    <link rel="shortcut icon" type="image/x-icon" href="http://bionic.doradothemes.com/img/favicon.ico?1507612767">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="{{config('app.url')}}/img/favicon.ico?1507612767">
+    <link rel="shortcut icon" type="image/x-icon" href="{{config('app.url')}}/img/favicon.ico?1507612767">
 
 
 
@@ -47,6 +47,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous" />
+
+
     @yield('css')
 
     <script type="text/javascript">
@@ -351,7 +353,6 @@
 
 
 
-
 </head>
 
 
@@ -451,268 +452,14 @@
                                                             class="material-icons">&#xE14C;</i></span>
                                                 </div>
                                                 <div class="mobile-logo-menu hidden-lg hidden-md">
-                                                    <a href="http://bionic.doradothemes.com/" title="Bionic Store">
+                                                    <a href="{{config('app.url')}}/" title="Bionic Store">
                                                         <img class="logo img-responsive" src="asset('/img/logo-menu.png"
                                                             alt="Bionic Store" />
                                                     </a>
                                                 </div>
                                                 <ul class="nav navbar-nav megamenu">
-                                                    <li class=" parent dropdown aligned-left"><a class="dropdown-toggle"
-                                                            data-toggle="dropdown" target="_self" data-rel="2"
-                                                            href="index.html"><span class="menu-title">Home</span><b
-                                                                class="caret"></b></a><span
-                                                            class="caretmobile hidden"></span>
-                                                        <ul class="dropdown-menu level1 megamenu-content" role="menu"
-                                                            style="width:900px;">
-                                                            <li>
-                                                                <div class="row">
-                                                                    <div class="col-sm-3">
-                                                                        <div class="widget-content">
-                                                                            <div class="widget-links block ">
-                                                                                <div class="widget-heading title_block">
-                                                                                    <a href="#" onclick="return false"
-                                                                                        class="img link-cate-custom">Digitals</a>
-                                                                                    <span
-                                                                                        class="caretmobile hidden"></span>
-                                                                                </div>
-                                                                                <div class="widget-inner block_content">
-                                                                                    <div id="tabs913695038"
-                                                                                        class="panel-group">
-                                                                                        <ul class="nav-links"
-                                                                                            data-id="myTab">
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic.doradothemes.com/"><i
-                                                                                                        class=''></i>Digital
-                                                                                                    Home V1</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic.doradothemes.com/store2/"><i
-                                                                                                        class=''></i>Digital
-                                                                                                    Home V2</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic.doradothemes.com/store3/"><i
-                                                                                                        class=''></i>Digital
-                                                                                                    Home V3</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic.doradothemes.com/store4/"><i
-                                                                                                        class=''></i>Digital
-                                                                                                    Home V4</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic.doradothemes.com/store5/"><i
-                                                                                                        class=''></i>Digital
-                                                                                                    Home V5</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic.doradothemes.com/store6/"><i
-                                                                                                        class=''></i>Digital
-                                                                                                    Home V6</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic.doradothemes.com/store7/"><i
-                                                                                                        class=''></i>Digital
-                                                                                                    Home V7</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic.doradothemes.com/store8/"><i
-                                                                                                        class=''></i>Digital
-                                                                                                    Home V8</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic.doradothemes.com/store9/"><i
-                                                                                                        class=''></i>Digital
-                                                                                                    Home V9</a></li>
-                                                                                        </ul>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-
-
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-sm-3">
-                                                                        <div class="widget-content">
-                                                                            <div class="widget-links block ">
-                                                                                <div class="widget-heading title_block">
-                                                                                    <a href="#" onclick="return false"
-                                                                                        class="img link-cate-custom">Digital
-                                                                                        V2</a>
-                                                                                    <span
-                                                                                        class="caretmobile hidden"></span>
-                                                                                </div>
-                                                                                <div class="widget-inner block_content">
-                                                                                    <div id="tabs1934453908"
-                                                                                        class="panel-group">
-                                                                                        <ul class="nav-links"
-                                                                                            data-id="myTab">
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic-v2.doradothemes.com/en/"><i
-                                                                                                        class=''></i>Digital-2
-                                                                                                    Home 1</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic-v2.doradothemes.com/store2/"><i
-                                                                                                        class=''></i>Digital-2
-                                                                                                    Home 2</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic-v2.doradothemes.com/store3/"><i
-                                                                                                        class=''></i>Digital-2
-                                                                                                    Home 3</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic-v2.doradothemes.com/store4/"><i
-                                                                                                        class=''></i>Digital-2
-                                                                                                    Home 4</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic-v2.doradothemes.com/store5/"><i
-                                                                                                        class=''></i>Digital-2
-                                                                                                    Home 5</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic-v2.doradothemes.com/store6/"><i
-                                                                                                        class=''></i>Digital-2
-                                                                                                    Home 6</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic-v2.doradothemes.com/store7/"><i
-                                                                                                        class=''></i>Digital-2
-                                                                                                    Home 7</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionas.doradothemes.com/electronic1/en/"><i
-                                                                                                        class=''></i>Digital-2
-                                                                                                    Home 8</a></li>
-                                                                                        </ul>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-
-
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-sm-3">
-                                                                        <div class="widget-content">
-                                                                            <div class="widget-links block ">
-                                                                                <div class="widget-heading title_block">
-                                                                                    <a href="#" onclick="return false"
-                                                                                        class="img link-cate-custom">Fashions</a>
-                                                                                    <span
-                                                                                        class="caretmobile hidden"></span>
-                                                                                </div>
-                                                                                <div class="widget-inner block_content">
-                                                                                    <div id="tabs1563951581"
-                                                                                        class="panel-group">
-                                                                                        <ul class="nav-links"
-                                                                                            data-id="myTab">
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic.doradothemes.com/fashion/"><i
-                                                                                                        class=''></i>Fashion
-                                                                                                    Home V1</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic.doradothemes.com/fashion2/"><i
-                                                                                                        class=''></i>Fashion
-                                                                                                    Home V2</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic.doradothemes.com/fashion3/"><i
-                                                                                                        class=''></i>Fashion
-                                                                                                    Home V3</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic.doradothemes.com/fashion4/"><i
-                                                                                                        class=''></i>Fashion
-                                                                                                    Home V4</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic.doradothemes.com/fashion5/"><i
-                                                                                                        class=''></i>Fashion
-                                                                                                    Home V5</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic-market.doradothemes.com/en/"><i
-                                                                                                        class=''></i>Shoes
-                                                                                                    Fashion</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic-market.doradothemes.com/watch/en/"><i
-                                                                                                        class=''></i>Watch
-                                                                                                    Fashion</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionas.doradothemes.com/fashion1/en/"><i
-                                                                                                        class=''></i>Fashion
-                                                                                                    Home V6</a></li>
-                                                                                        </ul>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-
-
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-sm-3">
-                                                                        <div class="widget-content">
-                                                                            <div class="widget-links block ">
-                                                                                <div class="widget-heading title_block">
-                                                                                    <a href="#" onclick="return false"
-                                                                                        class="img link-cate-custom">Organic</a>
-                                                                                    <span
-                                                                                        class="caretmobile hidden"></span>
-                                                                                </div>
-                                                                                <div class="widget-inner block_content">
-                                                                                    <div id="tabs1717591343"
-                                                                                        class="panel-group">
-                                                                                        <ul class="nav-links"
-                                                                                            data-id="myTab">
-
-                                                                                            <li><a
-                                                                                                    href="http://bioeco.dootheme.com/en/"><i
-                                                                                                        class=''></i>Organic
-                                                                                                    Home V1</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bioeco.dootheme.com/store2/en/"><i
-                                                                                                        class=''></i>Organic
-                                                                                                    Home V2</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bioeco.dootheme.com/store3/en/"><i
-                                                                                                        class=''></i>Organic
-                                                                                                    Home V3</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionas.doradothemes.com/en/"><i
-                                                                                                        class=''></i>Organic
-                                                                                                    Home V4</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionas.doradothemes.com/organic2/en/"><i
-                                                                                                        class=''></i>Organic
-                                                                                                    Home V5</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionas.doradothemes.com/organic3/en/"><i
-                                                                                                        class=''></i>Organic
-                                                                                                    Home V6</a></li>
-                                                                                        </ul>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-
-
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
+                                                    <li class=" "><a target="_self" data-rel="7"
+                                                            href="{{route('home')}}"><span class="menu-title">Home</span></a>
                                                     </li>
                                                     <li class=" parent dropdown aligned-fullwidth"><a
                                                             class="dropdown-toggle" data-toggle="dropdown"
@@ -1248,521 +995,10 @@
                                                             </li>
                                                         </ul>
                                                     </li>
-                                                    <li class=" parent dropdown aligned-fullwidth"><a
-                                                            class="dropdown-toggle" data-toggle="dropdown"
-                                                            target="_self" data-rel="4" href="#"><span
-                                                                class="menu-title">Elements</span><b
-                                                                class="caret"></b></a><span
-                                                            class="caretmobile hidden"></span>
-                                                        <ul class="dropdown-menu level1 megamenu-content" role="menu"
-                                                            style="background-image:{{ asset('img/cms/dorado/menu/smartphone_bg.png') }};background-repeat:no-repeat;width:900px;">
-                                                            <li>
-                                                                <div class="row">
-                                                                    <div class="col-sm-3">
-                                                                        <div class="widget-content">
-                                                                            <div class="widget-links block ">
-                                                                                <div class="widget-inner block_content">
-                                                                                    <div id="tabs1112574781"
-                                                                                        class="panel-group">
-                                                                                        <ul class="nav-links"
-                                                                                            data-id="myTab">
 
-                                                                                            <li><a href="#"><i
-                                                                                                        class='fa fa-cubes'></i>Visual
-                                                                                                    Composer ($34
-                                                                                                    saved)</a></li>
-
-                                                                                            <li><a href="#"><i
-                                                                                                        class='fa fa-image'></i>Revolution
-                                                                                                    Slider ($19
-                                                                                                    saved)</a></li>
-
-                                                                                            <li><a href="#"><i
-                                                                                                        class='fa fa-rocket'></i>Blazing
-                                                                                                    Fast Loading
-                                                                                                    Speed</a></li>
-
-                                                                                            <li><a href="#"><i
-                                                                                                        class='fa fa-hand-o-up'></i>One-Click
-                                                                                                    Sample Data</a></li>
-
-                                                                                            <li><a href="#"><i
-                                                                                                        class='fa fa-laptop'></i>Live
-                                                                                                    Customizer</a></li>
-
-                                                                                            <li><a href="#"><i
-                                                                                                        class='fa fa-magic'></i>Unlimited
-                                                                                                    Colors</a></li>
-
-                                                                                            <li><a href="#"><i
-                                                                                                        class='fa fa-desktop'></i>Responsive
-                                                                                                    & Retina</a></li>
-                                                                                        </ul>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-
-
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-sm-3">
-                                                                        <div class="widget-content">
-                                                                            <div class="widget-links block ">
-                                                                                <div class="widget-inner block_content">
-                                                                                    <div id="tabs1470056475"
-                                                                                        class="panel-group">
-                                                                                        <ul class="nav-links"
-                                                                                            data-id="myTab">
-
-                                                                                            <li><a href="#"><i
-                                                                                                        class='fa fa-css3'></i>Smooth
-                                                                                                    CSS3 Animation</a>
-                                                                                            </li>
-
-                                                                                            <li><a href="#"><i
-                                                                                                        class='fa fa-envelope'></i>ContactForm
-                                                                                                    7 Supported</a></li>
-
-                                                                                            <li><a href="#"><i
-                                                                                                        class='fa fa-minus'></i>Sticky
-                                                                                                    Header</a></li>
-
-                                                                                            <li><a href="#"><i
-                                                                                                        class='fa fa-google'></i>600+
-                                                                                                    Google Fonts</a>
-                                                                                            </li>
-
-                                                                                            <li><a href="#"><i
-                                                                                                        class='fa fa-language'></i>WPML
-                                                                                                    Supported</a></li>
-
-                                                                                            <li><a href="#"><i
-                                                                                                        class='fa fa-font'></i>Font
-                                                                                                    Awesome Icons</a>
-                                                                                            </li>
-
-                                                                                            <li><a href="#"><i
-                                                                                                        class='fa fa-html5'></i>Bootstrap
-                                                                                                    3.x Based</a></li>
-                                                                                        </ul>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-
-
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-sm-3">
-                                                                        <div class="widget-content">
-                                                                            <div class="widget-links block ">
-                                                                                <div class="widget-inner block_content">
-                                                                                    <div id="tabs2141350709"
-                                                                                        class="panel-group">
-                                                                                        <ul class="nav-links"
-                                                                                            data-id="myTab">
-
-                                                                                            <li><a href="#"><i
-                                                                                                        class='fa fa-shopping-cart'></i>eCommerce
-                                                                                                    Compatible</a></li>
-
-                                                                                            <li><a href="#"><i
-                                                                                                        class='fa fa-check'></i>Products
-                                                                                                    Compare</a></li>
-
-                                                                                            <li><a href="#"><i
-                                                                                                        class='fa fa-heart'></i>Products
-                                                                                                    Wishlist</a></li>
-
-                                                                                            <li><a href="#"><i
-                                                                                                        class='fa fa-minus'></i>20+
-                                                                                                    Homepage Styles</a>
-                                                                                            </li>
-
-                                                                                            <li><a href="#"><i
-                                                                                                        class='fa fa-minus'></i>4+
-                                                                                                    Header Styles</a>
-                                                                                            </li>
-
-                                                                                            <li><a href="#"><i
-                                                                                                        class='fa fa-newspaper-o'></i>3+
-                                                                                                    News Archive
-                                                                                                    Styles</a></li>
-
-                                                                                            <li><a href="#"><i
-                                                                                                        class='fa fa-columns'></i>3+
-                                                                                                    Contact Page
-                                                                                                    Styles</a></li>
-                                                                                        </ul>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-
-
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class=" parent dropdown aligned-fullwidth"><a
-                                                            class="dropdown-toggle" data-toggle="dropdown"
-                                                            target="_self" data-rel="5" href="#"><span
-                                                                class="menu-title">Pages</span><b
-                                                                class="caret"></b></a><span
-                                                            class="caretmobile hidden"></span>
-                                                        <ul class="dropdown-menu level1 megamenu-content" role="menu"
-                                                            style="width:300px;">
-                                                            <li>
-                                                                <div class="row">
-                                                                    <div class="col-sm-3">
-                                                                        <div class="widget-content">
-                                                                            <div class="widget-links block ">
-                                                                                <div class="widget-heading title_block">
-                                                                                    <a href="#" onclick="return false"
-                                                                                        class="img link-cate-custom">Shop
-                                                                                        Pages</a>
-                                                                                    <span
-                                                                                        class="caretmobile hidden"></span>
-                                                                                </div>
-                                                                                <div class="widget-inner block_content">
-                                                                                    <div id="tabs484820111"
-                                                                                        class="panel-group">
-                                                                                        <ul class="nav-links"
-                                                                                            data-id="myTab">
-
-                                                                                            <li><a
-                                                                                                    href="3-shope7e8.html?cate_type=1"><i
-                                                                                                        class=''></i>1
-                                                                                                    Column</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="3-shop100a.html?cate_type=2"><i
-                                                                                                        class=''></i>2
-                                                                                                    Columns Left</a>
-                                                                                            </li>
-
-                                                                                            <li><a
-                                                                                                    href="3-shop4cd4.html?cate_type=3"><i
-                                                                                                        class=''></i>2
-                                                                                                    Columns Right</a>
-                                                                                            </li>
-
-                                                                                            <li><a
-                                                                                                    href="3-shop00bf.html?cate_type=1&amp;cate_row=4"><i
-                                                                                                        class=''></i>4
-                                                                                                    Products Per Row</a>
-                                                                                            </li>
-
-                                                                                            <li><a
-                                                                                                    href="3-shopd527.html?cate_type=1&amp;cate_row=5"><i
-                                                                                                        class=''></i>5
-                                                                                                    Products Per Row</a>
-                                                                                            </li>
-
-                                                                                            <li><a
-                                                                                                    href="3-shopc232.html?cate_type=1&amp;cate_row=6"><i
-                                                                                                        class=''></i>6
-                                                                                                    Products Per Row</a>
-                                                                                            </li>
-                                                                                        </ul>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-
-
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-sm-3">
-                                                                        <div class="widget-content">
-                                                                            <div class="widget-links block ">
-                                                                                <div class="widget-heading title_block">
-                                                                                    <a href="#" onclick="return false"
-                                                                                        class="img link-cate-custom">Product
-                                                                                        Pages</a>
-                                                                                    <span
-                                                                                        class="caretmobile hidden"></span>
-                                                                                </div>
-                                                                                <div class="widget-inner block_content">
-                                                                                    <div id="tabs239456676"
-                                                                                        class="panel-group">
-                                                                                        <ul class="nav-links"
-                                                                                            data-id="myTab">
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic.doradothemes.com/shop/1-195-apple-iphone-x-2017.html?detail_col=1"><i
-                                                                                                        class=''></i>Standard
-                                                                                                    Product</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic.doradothemes.com/shop/1-195-apple-iphone-x-2017.html?detail_col=2"><i
-                                                                                                        class=''></i>Product
-                                                                                                    Right Sidebar</a>
-                                                                                            </li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic.doradothemes.com/shop/1-195-apple-iphone-x-2017.html?detail_col=3"><i
-                                                                                                        class=''></i>Product
-                                                                                                    Left Sidebar</a>
-                                                                                            </li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic.doradothemes.com/shop/1-195-apple-iphone-x-2017.html?detail_col=4"><i
-                                                                                                        class=''></i>Product
-                                                                                                    Gallery
-                                                                                                    Thumbnail</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic.doradothemes.com/shop/1-195-apple-iphone-x-2017.html?detail_col=5"><i
-                                                                                                        class=''></i>Product
-                                                                                                    With Sticky</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic.doradothemes.com/shop/1-195-apple-iphone-x-2017.html?detail_col=6"><i
-                                                                                                        class=''></i>Product
-                                                                                                    Sticky Right
-                                                                                                    Sidebar</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic.doradothemes.com/shop/1-195-apple-iphone-x-2017.html?detail_col=7"><i
-                                                                                                        class=''></i>Product
-                                                                                                    Sticky Left
-                                                                                                    Sidebar</a></li>
-                                                                                        </ul>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-
-
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-sm-3">
-                                                                        <div class="widget-content">
-                                                                            <div class="widget-links block ">
-                                                                                <div class="widget-heading title_block">
-                                                                                    <a href="#" onclick="return false"
-                                                                                        class="img link-cate-custom">Product
-                                                                                        Elements</a>
-                                                                                    <span
-                                                                                        class="caretmobile hidden"></span>
-                                                                                </div>
-                                                                                <div class="widget-inner block_content">
-                                                                                    <div id="tabs1885168505"
-                                                                                        class="panel-group">
-                                                                                        <ul class="nav-links"
-                                                                                            data-id="myTab">
-
-                                                                                            <li><a href="#"><i
-                                                                                                        class=''></i>Product
-                                                                                                    Thumbnail Bottom</a>
-                                                                                            </li>
-
-                                                                                            <li><a href="#"><i
-                                                                                                        class=''></i>Product
-                                                                                                    Thumbnail Left</a>
-                                                                                            </li>
-
-                                                                                            <li><a href="#"><i
-                                                                                                        class=''></i>Product
-                                                                                                    Thumbnail Right</a>
-                                                                                            </li>
-
-                                                                                            <li><a
-                                                                                                    href="index1cb2.html?info_style=default"><i
-                                                                                                        class=''></i>Product
-                                                                                                    Info Standard</a>
-                                                                                            </li>
-
-                                                                                            <li><a
-                                                                                                    href="indexd2cf.html?info_style=accord1"><i
-                                                                                                        class=''></i>Product
-                                                                                                    Info Accordion 1</a>
-                                                                                            </li>
-
-                                                                                            <li><a
-                                                                                                    href="index0991.html?info_style=accord2"><i
-                                                                                                        class=''></i>Product
-                                                                                                    Info Accordion 2</a>
-                                                                                            </li>
-
-                                                                                            <li><a
-                                                                                                    href="index225e.html?info_style=scroll"><i
-                                                                                                        class=''></i>Product
-                                                                                                    Info Scroll</a></li>
-                                                                                        </ul>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-
-
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-sm-3">
-                                                                        <div class="widget-content">
-                                                                            <div class="widget-links block ">
-                                                                                <div class="widget-heading title_block">
-                                                                                    <a href="#" onclick="return false"
-                                                                                        class="img link-cate-custom">Other
-                                                                                        Pages</a>
-                                                                                    <span
-                                                                                        class="caretmobile hidden"></span>
-                                                                                </div>
-                                                                                <div class="widget-inner block_content">
-                                                                                    <div id="tabs61122742"
-                                                                                        class="panel-group">
-                                                                                        <ul class="nav-links"
-                                                                                            data-id="myTab">
-
-                                                                                            <li><a
-                                                                                                    href="content/4-about-us.html"><i
-                                                                                                        class=''></i>About
-                                                                                                    Us V1</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic.doradothemes.com/content/6-about-us-v2"><i
-                                                                                                        class=''></i>About
-                                                                                                    Us V2</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic.doradothemes.com/content/7-about-us-v3"><i
-                                                                                                        class=''></i>About
-                                                                                                    Us V3</a></li>
-
-                                                                                            <li><a href="#"><i
-                                                                                                        class=''></i>Page
-                                                                                                    Not Found (404)</a>
-                                                                                            </li>
-
-                                                                                            <li><a href="#"><i
-                                                                                                        class=''></i>Under
-                                                                                                    Construction</a>
-                                                                                            </li>
-
-                                                                                            <li><a
-                                                                                                    href="indexb560.html?cart_style=1"><i
-                                                                                                        class=''></i>Mini
-                                                                                                    Cart Standard</a>
-                                                                                            </li>
-
-                                                                                            <li><a
-                                                                                                    href="indexad12.html?cart_style=2"><i
-                                                                                                        class=''></i>Mini
-                                                                                                    Cart Slick</a></li>
-                                                                                        </ul>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-
-
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
                                                     <li class=" "><a target="_self" data-rel="7"
-                                                            href="gallery.html"><span
-                                                                class="menu-title">Gallery</span><span
-                                                                class="menu-label-new">new</span></a></li>
-                                                    <li class=" parent dropdown aligned-right"><a
-                                                            class="dropdown-toggle" data-toggle="dropdown"
-                                                            target="_self" data-rel="6" href="blogs.html"><span
-                                                                class="menu-title">Blogs</span><b
-                                                                class="caret"></b></a><span
-                                                            class="caretmobile hidden"></span>
-                                                        <ul class="dropdown-menu level1 megamenu-content" role="menu"
-                                                            style="width:240px;">
-                                                            <li>
-                                                                <div class="row">
-                                                                    <div class="col-sm-12">
-                                                                        <div class="widget-content">
-                                                                            <div class="widget-links block ">
-                                                                                <div class="widget-inner block_content">
-                                                                                    <div id="tabs1868400132"
-                                                                                        class="panel-group">
-                                                                                        <ul class="nav-links"
-                                                                                            data-id="myTab">
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic.doradothemes.com/blogs.html?type=1"><i
-                                                                                                        class=''></i>Blog
-                                                                                                    Style V1</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic.doradothemes.com/blogs.html?type=2"><i
-                                                                                                        class=''></i>Blog
-                                                                                                    Style V2</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic.doradothemes.com/blogs.html?type=3"><i
-                                                                                                        class=''></i>Blog
-                                                                                                    Style V3</a></li>
-                                                                                        </ul>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-
-
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class=" parent dropdown aligned-right"><a
-                                                            class="dropdown-toggle" data-toggle="dropdown"
-                                                            target="_self" data-rel="8" href="contact-us.html"><span
-                                                                class="menu-title">Contact</span><b
-                                                                class="caret"></b></a><span
-                                                            class="caretmobile hidden"></span>
-                                                        <ul class="dropdown-menu level1 megamenu-content" role="menu"
-                                                            style="width:240px;">
-                                                            <li>
-                                                                <div class="row">
-                                                                    <div class="col-sm-12">
-                                                                        <div class="widget-content">
-                                                                            <div class="widget-links block ">
-                                                                                <div class="widget-inner block_content">
-                                                                                    <div id="tabs1295699148"
-                                                                                        class="panel-group">
-                                                                                        <ul class="nav-links"
-                                                                                            data-id="myTab">
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic.doradothemes.com/contact-us?v=1"><i
-                                                                                                        class=''></i>Contact
-                                                                                                    V1</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic.doradothemes.com/contact-us?v=2"><i
-                                                                                                        class=''></i>Contact
-                                                                                                    V2</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic.doradothemes.com/contact-us?v=3"><i
-                                                                                                        class=''></i>Contact
-                                                                                                    V3</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic.doradothemes.com/contact-us?v=4"><i
-                                                                                                        class=''></i>Contact
-                                                                                                    V4</a></li>
-
-                                                                                            <li><a
-                                                                                                    href="http://bionic.doradothemes.com/contact-us?v=5"><i
-                                                                                                        class=''></i>Contact
-                                                                                                    V5</a></li>
-                                                                                        </ul>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-
-
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
+                                                            href="{{route('contact')}}"><span
+                                                                class="menu-title">Contact Us</span></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -1778,121 +1014,56 @@
                                             <div class="right-nav">
                                                 <div class="nav-search-button hidden"><button type="button"><i
                                                             class="pe-7s-search"></i></button></div>
+
+
                                                 <div class="user-info selection-options-wrapper">
                                                     <label class="hidden">Account</label>
                                                     <span class="line-selected hidden"><i class="far fa-user-circle"
                                                             style="font-size: 3rem;"></i><span
                                                             class="select-hidden hidden">Account</span></span>
                                                     <ul class="toogle_content">
-                                                        <li><a class="link-myaccount" href="my-account"
-                                                                title="View my customer account"><i
-                                                                    class="fas fa-user-circle"></i>My account</a></li>
-                                                        <li><a class="link-wishlist wishlist_block"
-                                                                href="logincefa.html" title="My wishlist"><i
-                                                                    class="far fa-heart"></i>My wishlist</a></li>
-                                                        <li><a class="link-mycart" href="cart75f4.html?action=show"
-                                                                title="My cart">
-                                                                <i class="fas fa-shopping-cart"></i>My cart</a></li>
-                                                        <li><a href="#" onclick="return false" class="smartLogin"><i
-                                                                    class="fas fa-sign-out-alt"></i>Sign in popup</a>
-                                                        </li>
-                                                        <li><a href="#" onclick="return false" class="smartRegister"><i
-                                                                    class="fas fa-sign-in-alt"></i>Sign up popup</a>
-                                                        </li>
+
+
+                                                        @auth
+                                                            <li><a class="link-myaccount" href="my-account"
+                                                                    title="View my customer account"><i
+                                                                        class="fas fa-user-circle"></i>My account</a></li>
+                                                            <li><a class="link-wishlist wishlist_block"
+                                                                    href="logincefa.html" title="My wishlist"><i
+                                                                        class="far fa-heart"></i>My wishlist</a></li>
+                                                            <li>
+                                                                <a class="link-mycart" href="{{ route('logout') }}"
+                                                                    onclick="event.preventDefault();document.getElementById('logout-form').submit();"
+                                                                    title="My cart">
+                                                                    <i class="fas fa-sign-out-alt"></i>Log Out</a>
+
+                                                                <form id="logout-form" action="{{ route('logout') }}"
+                                                                    method="POST" class="d-none">
+                                                                    @csrf
+                                                                </form>
+
+                                                            </li>
+                                                        @endauth
+
+                                                        @guest
+                                                            <li><a href="{{ route('login') }}" class=""><i
+                                                                        class="fas fa-sign-out-alt"></i>Sign in </a>
+                                                            </li>
+                                                            <li><a href="{{ route('register') }}" class=""><i
+                                                                        class="fas fa-sign-in-alt"></i>Sign up </a>
+                                                            </li>
+                                                        @endguest
+
+
+
+
+
                                                     </ul>
                                                 </div>
 
-                                                <div class="dor-block-selection">
-                                                    <div class="nav-setting-button"><button type="button"><i
-                                                                class="fas fa-language"
-                                                                style="font-size: 3rem;"></i></button></div>
-                                                    <div class="dor-setting-lists">
-                                                        <div id="_desktop_language_selector">
-                                                            <div
-                                                                class="language-selector-wrapper selection-options-wrapper">
-                                                                <label class="hidden">Language</label>
-                                                                <span class="line-selected hidden"><i
-                                                                        class="material-icons">&#xE894;</i>
-                                                                    English</span>
-                                                                <div class="language-selector dropdown js-dropdown">
-                                                                    <ul class="dropdown-menu hidden-sm-down">
-                                                                        <li class="current">
-                                                                            <img alt="en" height="11" src="img/l/1.jpg"
-                                                                                width="16" />
-                                                                            <a href="index.html"
-                                                                                class="dropdown-item">English</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <img alt="es" height="11"
-                                                                                src="../img/l/3.jpg" width="16" />
-                                                                            <a href="http://bionic.doradothemes.com/es/"
-                                                                                class="dropdown-item">Español</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <img alt="fr" height="11"
-                                                                                src="../img/l/6.jpg" width="16" />
-                                                                            <a href="http://bionic.doradothemes.com/fr/"
-                                                                                class="dropdown-item">Français</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <img alt="it" height="11"
-                                                                                src="../img/l/7.jpg" width="16" />
-                                                                            <a href="http://bionic.doradothemes.com/it/"
-                                                                                class="dropdown-item">Italiano</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <img alt="pl" height="11"
-                                                                                src="../img/l/8.jpg" width="16" />
-                                                                            <a href="http://bionic.doradothemes.com/pl/"
-                                                                                class="dropdown-item">Polski</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <img alt="ar" height="11"
-                                                                                src="../img/l/9.jpg" width="16" />
-                                                                            <a href="http://bionic.doradothemes.com/ar/"
-                                                                                class="dropdown-item">اللغة العربية</a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div id="_desktop_currency_selector">
-                                                            <div
-                                                                class="currency-selector dropdown js-dropdown selection-options-wrapper">
-                                                                <label class="hidden">Currency</label>
-                                                                <span class="line-selected hidden"><i
-                                                                        class="material-icons">&#xE263;</i> USD</span>
-                                                                <ul class="dropdown-menu hidden-sm-down"
-                                                                    data-aria-labelledby="dLabel">
-                                                                    <li>
-                                                                        <a title="United Arab Emirates Dirham"
-                                                                            rel="nofollow"
-                                                                            href="indexc56f.html?SubmitCurrency=1&amp;id_currency=4"
-                                                                            class="dropdown-item">AED - AED</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a title="Euro" rel="nofollow"
-                                                                            href="index6edc.html?SubmitCurrency=1&amp;id_currency=2"
-                                                                            class="dropdown-item">€ - EUR</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a title="Polish Zloty" rel="nofollow"
-                                                                            href="indexfcc6.html?SubmitCurrency=1&amp;id_currency=3"
-                                                                            class="dropdown-item">zł - PLN</a>
-                                                                    </li>
-                                                                    <li class="current">
-                                                                        <a title="US Dollar" rel="nofollow"
-                                                                            href="indexe3c8.html?SubmitCurrency=1&amp;id_currency=1"
-                                                                            class="dropdown-item">$ - USD</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
 
-                                                        <div id="_mobile_language_selector"></div>
-                                                        <div id="_mobile_currency_selector"></div>
-                                                    </div>
-                                                </div>
+
+
                                                 <div class="nav-cart">
                                                     <div id="_desktop_cart">
                                                         <div class="blockcart cart-preview"
@@ -1991,7 +1162,7 @@
                 <div class="header-piz-line no-padding">
                     <div class="container">
                         <div class="row">
-                            <div id="dor-verticalmenu" class="block block-info nopadding">
+                            <div id="dor-verticalmenu" class="block block-info nopadding closes">
 
                                 <div class="dor-vertical-title">
                                     <div class="vertical-menu-head">
@@ -2015,7 +1186,7 @@
                                                 <span class="btn-close"><i class="material-icons">&#xE14C;</i></span>
                                             </div>
                                             <div class="mobile-logo-menu hidden-lg hidden-md">
-                                                <a href="http://bionic.doradothemes.com/" title="Bionic Store">
+                                                <a href="{{config('app.url')}}/" title="Bionic Store">
                                                     <img class="logo img-responsive" src="asset('/img/logo-menu.png"
                                                         alt="Bionic Store" />
                                                 </a>
@@ -2132,7 +1303,7 @@
                                                                                                 </li>
 
                                                                                                 <li><a
-                                                                                                        href="http://bionic.doradothemes.com/store2/en/3-shop">Chromebooks</a>
+                                                                                                        href="{{config('app.url')}}/store2/en/3-shop">Chromebooks</a>
                                                                                                 </li>
                                                                                             </ul>
                                                                                         </div>
@@ -2559,12 +1730,7 @@
                             </div>
                             <!-- /pos search module TOP -->
 
-                            <div class="header-total-feat">
-                                <a href="logincefa.html" class="total-wishlist"><span><i
-                                            class="fas fa-sign-in-alt"></i></span><strong>0</strong></a>
-                                <a href="module/dorcompare/compare.html" class="total-compare"><span><i
-                                            class="fas fa-compress-arrows-alt"></i></span><strong>0</strong></a>
-                            </div>
+
                             <a href="order-tracking.html" class="order-tracking-top-link"><i
                                     class="fab fa-usps"></i><span>Track Your Order</span></a>
                         </div>
@@ -2586,13 +1752,7 @@
             </div>
         </aside>
 
-        <section id="dor-homeslider">
-            <div id="dorSlideShow" class="homeslider-container" data-interval="1000" data-wrap="true" data-pause="hover"
-                data-arrow="true" data-nav="1"
-                data-ajaxurl="http://bionic.doradothemes.com/modules/dor_imageslider/ajaxSlider.php" data-ajaxload="1">
-            </div>
 
-        </section>
         <!-- Block Banner Show -->
 
         <!-- End Block Banner Show -->
@@ -2617,7 +1777,7 @@
 
             <div id="loginFormSmart" class="dor-formsmart">
                 <span class="button b-close"><span>X</span></span>
-                <form id="login-form" action="http://bionic.doradothemes.com/login" method="post">
+                <form id="login-form" action="{{config('app.url')}}/login" method="post">
                     <h2 class="title-heading"><img src="../modules/dor_smartuser/img/logo.png" alt=""></h2>
                     <h3>WELCOME TO OUR WONDERFUL WORLD</h3>
                     <p class="smart-sign-txt">Did you know that we ship to over <span>24 different countries</span></p>
@@ -2671,7 +1831,7 @@
 
             <div id="registerFormSmart" class="dor-formsmart">
                 <span class="button b-close"><span>X</span></span>
-                <form action="http://bionic.doradothemes.com/login?create_account=1" id="customer-form"
+                <form action="{{config('app.url')}}/login?create_account=1" id="customer-form"
                     class="js-customer-form" method="post">
                     <h2 class="title-heading"><img src="../modules/dor_smartuser/img/logo.png" alt=""></h2>
                     <h3>WELCOME TO OUR WONDERFUL WORLD</h3>
@@ -2792,7 +1952,7 @@
                 <span class="button b-close"><span>X</span></span>
                 <div class="center_column" id="center_column_smart">
                     <div class="box">
-                        <form action="http://bionic.doradothemes.com/password-recovery" method="post">
+                        <form action="{{config('app.url')}}/password-recovery" method="post">
                             <h2 class="title-heading"><img src="../modules/dor_smartuser/img/logo.png" alt=""></h2>
                             <h3>WELCOME TO OUR WONDERFUL WORLD</h3>
                             <p class="smart-sign-txt">Did you know that we ship to over <span>24 different
@@ -2866,7 +2026,7 @@
                             <h4><i class="fa fa-send-o" aria-hidden="true"></i>Join Our Newsletter</h4>
                             <ul id="footer_newsletter_block" class="col-lg-5 col-sm-7 col-xs-10">
                                 <li class="item">
-                                    <form id="newsletter-footer" action="http://bionic.doradothemes.com/#footer"
+                                    <form id="newsletter-footer" action="{{config('app.url')}}/#footer"
                                         method="post">
                                         <div class="row">
                                             <div class="col-xs-12">
@@ -2916,7 +2076,7 @@
                                                 class="material-icons add"></i> <i class="material-icons remove"></i>
                                         </span> </span></div>
                                 <ul class="toggle-footer collapse" id="footer_contact_block">
-                                    <li class="item logo-footer"><a href="http://bionic.doradothemes.com/"
+                                    <li class="item logo-footer"><a href="{{config('app.url')}}/"
                                             title="Wiliam Store"><img src="../img/cms/dorado/bionic-store-footer.png"
                                                 alt="" width="139" height="34" /></a></li>
                                     <li class="item">
@@ -3050,49 +2210,51 @@
 
 
     <script type="text/javascript">
-        $(document).ready(function() {
-            plugins = new Object;
-            plugins.adobe_director = (PluginDetect.getVersion("Shockwave") != null) ? 1 : 0;
-            plugins.adobe_flash = (PluginDetect.getVersion("Flash") != null) ? 1 : 0;
-            plugins.apple_quicktime = (PluginDetect.getVersion("QuickTime") != null) ? 1 : 0;
-            plugins.windows_media = (PluginDetect.getVersion("WindowsMediaPlayer") != null) ? 1 : 0;
-            plugins.sun_java = (PluginDetect.getVersion("java") != null) ? 1 : 0;
-            plugins.real_player = (PluginDetect.getVersion("RealPlayer") != null) ? 1 : 0;
+        // $(document).ready(function() {
+        //     plugins = new Object;
+        //     plugins.adobe_director = (PluginDetect.getVersion("Shockwave") != null) ? 1 : 0;
+        //     plugins.adobe_flash = (PluginDetect.getVersion("Flash") != null) ? 1 : 0;
+        //     plugins.apple_quicktime = (PluginDetect.getVersion("QuickTime") != null) ? 1 : 0;
+        //     plugins.windows_media = (PluginDetect.getVersion("WindowsMediaPlayer") != null) ? 1 : 0;
+        //     plugins.sun_java = (PluginDetect.getVersion("java") != null) ? 1 : 0;
+        //     plugins.real_player = (PluginDetect.getVersion("RealPlayer") != null) ? 1 : 0;
 
-            navinfo = {
-                screen_resolution_x: screen.width,
-                screen_resolution_y: screen.height,
-                screen_color: screen.colorDepth
-            };
-            for (var i in plugins)
-                navinfo[i] = plugins[i];
-            navinfo.type = "navinfo";
-            navinfo.id_guest = "2646530";
-            navinfo.token = "c3d5f9a9aadfd065b0b70711a7d4e6b88c4f7b07";
-            $.post("indexc3cb.html?controller=statistics", navinfo);
-        });
+        //     navinfo = {
+        //         screen_resolution_x: screen.width,
+        //         screen_resolution_y: screen.height,
+        //         screen_color: screen.colorDepth
+        //     };
+        //     for (var i in plugins)
+        //         navinfo[i] = plugins[i];
+        //     navinfo.type = "navinfo";
+        //     navinfo.id_guest = "2646530";
+        //     navinfo.token = "c3d5f9a9aadfd065b0b70711a7d4e6b88c4f7b07";
+        //     $.post("indexc3cb.html?controller=statistics", navinfo);
+        // });
 
     </script>
     <script type="text/javascript">
-        var time_start;
-        $(window).load(
-            function() {
-                time_start = new Date();
-            }
-        );
-        $(window).unload(
-            function() {
-                var time_end = new Date();
-                var pagetime = new Object;
-                pagetime.type = "pagetime";
-                pagetime.id_connections = "2616273";
-                pagetime.id_page = "1";
-                pagetime.time_start = "2021-02-07 04:22:13";
-                pagetime.token = "c74d54f6e35097a8ce4c9e85c809200912546b45";
-                pagetime.time = time_end - time_start;
-                $.post("indexc3cb.html?controller=statistics", pagetime);
-            }
-        );
+        // var time_start;
+        // $(window).load(
+        //     function() {
+        //         time_start = new Date();
+        //     }
+        // );
+        // $(window).unload(
+        //     function() {
+        //         var time_end = new Date();
+        //         var pagetime = new Object;
+        //         pagetime.type = "pagetime";
+        //         pagetime.id_connections = "2616273";
+        //         pagetime.id_page = "1";
+        //         pagetime.time_start = "2021-02-07 04:22:13";
+        //         pagetime.token = "c74d54f6e35097a8ce4c9e85c809200912546b45";
+        //         pagetime.time = time_end - time_start;
+        //         $.post("indexc3cb.html?controller=statistics", pagetime);
+        //     }
+        // );
+
+
 
     </script>
 
@@ -3124,409 +2286,12 @@
     </section>
     <!-- / Subscribe Popup 1 -->
     <div id="to-top" class="to-top"> <i class="fa fa-angle-up"></i> </div>
-    <div class="dor-wrap">
-        <div class="control inactive"><a href="javascript:void(0)"><i class="fa fa-cog fa-spin"></i></a></div>
-        <h2 class="dor-title">Theme Options</h2>
-        <div class="dor-option" id="dor-option-tool">
 
-            <div class="cl-table tool-class-opt" id="dor-opt-header">
-                <div class="cl-tr cl-tr-mode-label">
-                    <div class="cl-tr cl-tr-style-label"><span>Header Skin</span><i class="fa fa-plus-square"></i></div>
-                </div>
-                <div class="cl-tr cl-tr-mode tool-opt-data header-skin-tool clearfix">
-                    <select id="dor_header_skin" class="tool-select-opt fixed-width-xl" name="dor_header_skin">
-                        <option value="">---Choose a skin---</option>
-                        <option value="01">Header 01</option>
-                        <option value="02">Header 02</option>
-                    </select>
-                </div>
-            </div>
 
-            <div class="cl-table tool-class-opt" id="dor-opt-headerayout">
-                <div class="cl-tr cl-tr-mode-label">
-                    <div class="cl-tr cl-tr-style-label"><span>Header Float</span><i class="fa fa-minus-square"></i>
-                    </div>
-                </div>
-                <div class="cl-tr cl-tr-mode tool-opt-data clearfix">
-                    <div class="pull-left">
-                        <input class="headerfloat_theme" id="dorHeaderFloatOn" type="radio" value="1"
-                            name="headerfloat_css" checked="checked">On
-                    </div>
-                    <div class="pull-right">
-                        <input class="headerfloat_theme" id="dorHeaderFloatOff" type="radio" value="0"
-                            name="headerfloat_css">Off
-                    </div>
-                </div>
-            </div>
 
-            <div class="cl-table tool-class-opt" id="dor-opt-modelayout">
-                <div class="cl-tr cl-tr-mode-label">
-                    <div class="cl-tr cl-tr-style-label"><span>Mode Layout</span><i class="fa fa-minus-square"></i>
-                    </div>
-                </div>
-                <div class="cl-tr cl-tr-mode tool-opt-data clearfix">
-                    <div class="pull-left">
-                        <input class="mode_theme" id="dorwideFull" type="radio" value="full" name="mode_css"
-                            checked="checked">Full
-                    </div>
-                    <div class="pull-right">
-                        <input class="mode_theme" id="dorboxBox" type="radio" value="boxed" name="mode_css">Box
-                    </div>
-                </div>
-            </div>
-            <div class="cl-table tool-class-opt" id="dor-opt-topbar">
-                <div class="cl-tr cl-tr-mode-label">
-                    <div class="cl-tr cl-tr-style-label"><span>Topbar Color</span><i class="fa fa-minus-square"></i>
-                    </div>
-                </div>
-                <div class="cl-tr cl-tr-mode tool-opt-data clearfix">
 
-                    <div class="form-group row">
-                        <div class="control-label col-lg-12 align-left">
-                            Background Outside Color:
-                        </div>
-                        <div class="col-lg-12 ">
-                            <div class="input-group">
-                                <input type="text" value=" " name="dorTopbarBgOutside" class="color no-alpha"
-                                    data-hex="true" id="dorTopbarBgOutside"
-                                    style="color: black;width: 170px;height: 25px;">
-                                <span class="mColorPickerTrigger input-group-addon" id="icp_color_009"
-                                    style="cursor:pointer;background:none !important;padding:0px;border:none;"
-                                    data-mcolorpicker="true">
-                                    <img align="absmiddle" src="../img/admin/color.png">
-                                </span>
-                                <a href="#" onclick="return false" class="clear-bg label label-success hidden">Clear</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="control-label col-lg-12 align-left">
-                            Text Color:
-                        </div>
-                        <div class="col-lg-12 ">
-                            <div class="input-group">
-                                <input type="text" value=" " name="dorTopbarTxtColor" class="color no-alpha"
-                                    data-hex="true" id="dorTopbarTxtColor"
-                                    style="color: black;width: 170px;height: 25px;">
-                                <span class="mColorPickerTrigger input-group-addon" id="icp_color_009"
-                                    style="cursor:pointer;background:none !important;padding:0px;border:none;"
-                                    data-mcolorpicker="true">
-                                    <img align="absmiddle" src="../img/admin/color.png">
-                                </span>
-                                <a href="#" onclick="return false" class="clear-bg label label-success hidden">Clear</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="control-label col-lg-12 align-left">
-                            Link Color:
-                        </div>
-                        <div class="col-lg-12 ">
-                            <div class="input-group">
-                                <input type="text" value=" " name="dorTopbarLinkColor" class="color no-alpha"
-                                    data-hex="true" id="dorTopbarLinkColor"
-                                    style="color: black;width: 170px;height: 25px;">
-                                <span class="mColorPickerTrigger input-group-addon" id="icp_color_009"
-                                    style="cursor:pointer;background:none !important;padding:0px;border:none;"
-                                    data-mcolorpicker="true">
-                                    <img align="absmiddle" src="../img/admin/color.png">
-                                </span>
-                                <a href="#" onclick="return false" class="clear-bg label label-success hidden">Clear</a>
-                            </div>
-                        </div>
-                    </div>
-                    <button type="button" name="save-topbar-color" id="save-topbar-color"
-                        class="dor-btn-tool">Save</button>
-                </div>
-            </div>
-            <div class="cl-table tool-class-opt" id="dor-opt-advance">
-                <div class="cl-tr cl-tr-mode-label">
-                    <div class="cl-tr cl-tr-style-label"><span>Advance Color</span><i class="fa fa-minus-square"></i>
-                    </div>
-                </div>
-                <div class="cl-tr cl-tr-mode tool-opt-data clearfix">
-                    <div class="form-group row">
-                        <div class="control-label col-lg-12 align-left">
-                            Price Color:
-                        </div>
-                        <div class="col-lg-12 ">
-                            <div class="input-group">
-                                <input type="text" value=" " name="dorPriceColor" class="color no-alpha" data-hex="true"
-                                    id="dorPriceColor" style="color: black;width: 170px;height: 25px;">
-                                <span class="mColorPickerTrigger input-group-addon" id="icp_color_009"
-                                    style="cursor:pointer;background:none !important;padding:0px;border:none;"
-                                    data-mcolorpicker="true">
-                                    <img align="absmiddle" src="../img/admin/color.png">
-                                </span>
-                                <a href="#" onclick="return false" class="clear-bg label label-success hidden">Clear</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="control-label col-lg-12 align-left">
-                            Price Primary Color:
-                        </div>
-                        <div class="col-lg-12 ">
-                            <div class="input-group">
-                                <input type="text" value=" " name="dorPricePrimaryColor" class="color no-alpha"
-                                    data-hex="true" id="dorPricePrimaryColor"
-                                    style="color: black;width: 170px;height: 25px;">
-                                <span class="mColorPickerTrigger input-group-addon" id="icp_color_009"
-                                    style="cursor:pointer;background:none !important;padding:0px;border:none;"
-                                    data-mcolorpicker="true">
-                                    <img align="absmiddle" src="../img/admin/color.png">
-                                </span>
-                                <a href="#" onclick="return false" class="clear-bg label label-success hidden">Clear</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="control-label col-lg-12 align-left">
-                            Old Price Color:
-                        </div>
-                        <div class="col-lg-12 ">
-                            <div class="input-group">
-                                <input type="text" value=" " name="dorOldPriceColor" class="color no-alpha"
-                                    data-hex="true" id="dorOldPriceColor"
-                                    style="color: black;width: 170px;height: 25px;">
-                                <span class="mColorPickerTrigger input-group-addon" id="icp_color_009"
-                                    style="cursor:pointer;background:none !important;padding:0px;border:none;"
-                                    data-mcolorpicker="true">
-                                    <img align="absmiddle" src="../img/admin/color.png">
-                                </span>
-                                <a href="#" onclick="return false" class="clear-bg label label-success hidden">Clear</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="control-label col-lg-12 align-left">
-                            Flag Sale Background:
-                        </div>
-                        <div class="col-lg-12 ">
-                            <div class="input-group">
-                                <input type="text" value=" " name="dorFlagSaleBg" class="color no-alpha" data-hex="true"
-                                    id="dorFlagSaleBg" style="color: black;width: 170px;height: 25px;">
-                                <span class="mColorPickerTrigger input-group-addon" id="icp_color_009"
-                                    style="cursor:pointer;background:none !important;padding:0px;border:none;"
-                                    data-mcolorpicker="true">
-                                    <img align="absmiddle" src="../img/admin/color.png">
-                                </span>
-                                <a href="#" onclick="return false" class="clear-bg label label-success hidden">Clear</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="control-label col-lg-12 align-left">
-                            Flag Sale Color:
-                        </div>
-                        <div class="col-lg-12 ">
-                            <div class="input-group">
-                                <input type="text" value=" " name="dorFlagSaleColor" class="color no-alpha"
-                                    data-hex="true" id="dorFlagSaleColor"
-                                    style="color: black;width: 170px;height: 25px;">
-                                <span class="mColorPickerTrigger input-group-addon" id="icp_color_009"
-                                    style="cursor:pointer;background:none !important;padding:0px;border:none;"
-                                    data-mcolorpicker="true">
-                                    <img align="absmiddle" src="../img/admin/color.png">
-                                </span>
-                                <a href="#" onclick="return false" class="clear-bg label label-success hidden">Clear</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="control-label col-lg-12 align-left">
-                            Flag New Background:
-                        </div>
-                        <div class="col-lg-12 ">
-                            <div class="input-group">
-                                <input type="text" value=" " name="dorFlagNewBg" class="color no-alpha" data-hex="true"
-                                    id="dorFlagNewBg" style="color: black;width: 170px;height: 25px;">
-                                <span class="mColorPickerTrigger input-group-addon" id="icp_color_009"
-                                    style="cursor:pointer;background:none !important;padding:0px;border:none;"
-                                    data-mcolorpicker="true">
-                                    <img align="absmiddle" src="../img/admin/color.png">
-                                </span>
-                                <a href="#" onclick="return false" class="clear-bg label label-success hidden">Clear</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="control-label col-lg-12 align-left">
-                            Flag New Color:
-                        </div>
-                        <div class="col-lg-12 ">
-                            <div class="input-group">
-                                <input type="text" value=" " name="dorFlagNewColor" class="color no-alpha"
-                                    data-hex="true" id="dorFlagNewColor"
-                                    style="color: black;width: 170px;height: 25px;">
-                                <span class="mColorPickerTrigger input-group-addon" id="icp_color_009"
-                                    style="cursor:pointer;background:none !important;padding:0px;border:none;"
-                                    data-mcolorpicker="true">
-                                    <img align="absmiddle" src="../img/admin/color.png">
-                                </span>
-                                <a href="#" onclick="return false" class="clear-bg label label-success hidden">Clear</a>
-                            </div>
-                        </div>
-                    </div>
-                    <button type="button" name="save-adv-option" id="save-dv-option" class="dor-btn-tool">Save</button>
-                </div>
-            </div>
-            <div class="cl-table tool-class-opt hidden" id="dor-opt-font">
-                <div class="cl-tr cl-tr-mode-label">
-                    <div class="cl-tr cl-tr-style-label"><span>Font</span><i class="fa fa-minus-square"></i></div>
-                </div>
-                <div class="cl-tr cl-tr-mode tool-opt-data clearfix">
-                    <select id="dor_font_options" class=" fixed-width-xl tool-select-opt" name="dor_font_options">
-                        <option value="">---Choose a font---</option>
-                        <option value="font1">Open Sans</option>
-                        <option value="font2">Josefin Slab</option>
-                        <option value="font3">Arvo</option>
-                        <option value="font4">Lato</option>
-                        <option value="font5">Vollkorn</option>
-                        <option value="font6">Abril Fatface</option>
-                        <option value="font7">Ubuntu</option>
-                        <option value="font8">PT Sans</option>
-                        <option value="font9">Old Standard TT</option>
-                        <option value="font10">Droid Sans</option>
-                    </select>
-                </div>
-            </div>
-            <div class="cl-wrapper tool-class-opt" id="dor-opt-themecolor">
-                <div class="cl-container">
-                    <div class="cl-tr cl-tr-mode-label">
-                        <div class="cl-tr cl-tr-style-label"><span>Theme color</span><i class="fa fa-minus-square"></i>
-                        </div>
-                    </div>
-                    <div class="cl-table tool-opt-data clearfix">
-                        <div class="cl-tr cl-tr-style box-layout">
-                            <div style="background-color: #008080" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="008080"><a href="javascript:void(0)" title="008080"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #1696ef" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="1696ef"><a href="javascript:void(0)" title="1696ef"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #49cc80" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="49cc80"><a href="javascript:void(0)" title="49cc80"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #52afc6" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="52afc6"><a href="javascript:void(0)" title="52afc6"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #55a9d4" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="55a9d4"><a href="javascript:void(0)" title="55a9d4"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #5d957b" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="5d957b"><a href="javascript:void(0)" title="5d957b"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #77d0e4" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="77d0e4"><a href="javascript:void(0)" title="77d0e4"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #789bbc" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="789bbc"><a href="javascript:void(0)" title="789bbc"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #7aa3a6" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="7aa3a6"><a href="javascript:void(0)" title="7aa3a6"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #800000" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="800000"><a href="javascript:void(0)" title="800000"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #800080" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="800080"><a href="javascript:void(0)" title="800080"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #8eb35a" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="8eb35a"><a href="javascript:void(0)" title="8eb35a"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #9e8673" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="9e8673"><a href="javascript:void(0)" title="9e8673"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #a9f535" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="a9f535"><a href="javascript:void(0)" title="a9f535"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #be61e0" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="be61e0"><a href="javascript:void(0)" title="be61e0"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #e76e62" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="e76e62"><a href="javascript:void(0)" title="e76e62"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #edd9c0" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="edd9c0"><a href="javascript:void(0)" title="edd9c0"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #ef4416" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="ef4416"><a href="javascript:void(0)" title="ef4416"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #efb916" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="efb916"><a href="javascript:void(0)" title="efb916"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #f09748" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="f09748"><a href="javascript:void(0)" title="f09748"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #f49ac1" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="f49ac1"><a href="javascript:void(0)" title="f49ac1"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                            <div style="background-color: #FF00FF" class="cl-td-l cl-td-layout cl-td-layoutcolor"
-                                id="FF00FF"><a href="javascript:void(0)" title="FF00FF"><span class="cl2"></span><span
-                                        class="cl1"></span></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cl-table tool-class-opt clearfix" id="dor-opt-bgbody">
-                <div class="cl-tr">
-                    <div class="cl-tr cl-tr-style-label"><span>Background Image body:</span><i
-                            class="fa fa-minus-square"></i></div>
-                    <div class="cl-td-bg tool-opt-data clearfix">
-                        <div class="cl-pattern">
-                            <div class="cl-image pattern1" id="pattern1"></div>
-                            <div class="cl-image pattern2" id="pattern2"></div>
-                            <div class="cl-image pattern3" id="pattern3"></div>
-                            <div class="cl-image pattern4" id="pattern4"></div>
-                            <div class="cl-image pattern5" id="pattern5"></div>
-                            <div class="cl-image pattern6" id="pattern6"></div>
-                            <div class="cl-image pattern7" id="pattern7"></div>
-                            <div class="cl-image pattern8" id="pattern8"></div>
-                            <div class="cl-image pattern9" id="pattern9"></div>
-                            <div class="cl-image pattern10" id="pattern10"></div>
-                            <div class="cl-image pattern11" id="pattern11"></div>
-                            <div class="cl-image pattern12" id="pattern12"></div>
-                            <div class="cl-image pattern13" id="pattern13"></div>
-                            <div class="cl-image pattern14" id="pattern14"></div>
-                            <div class="cl-image pattern15" id="pattern15"></div>
-                            <div class="cl-image pattern16" id="pattern16"></div>
-                            <div class="cl-image pattern17" id="pattern17"></div>
-                            <div class="cl-image pattern18" id="pattern18"></div>
-                            <div class="cl-image pattern19" id="pattern19"></div>
-                            <div class="cl-image pattern20" id="pattern20"></div>
-                            <div class="cl-image pattern21" id="pattern21"></div>
-                            <div class="cl-image pattern22" id="pattern22"></div>
-                            <div class="cl-image pattern23" id="pattern23"></div>
-                            <div class="cl-image pattern24" id="pattern24"></div>
-                            <div class="cl-image pattern25" id="pattern25"></div>
-                            <div class="cl-image pattern26" id="pattern26"></div>
-                            <div class="cl-image pattern27" id="pattern27"></div>
-                            <div class="cl-image pattern28" id="pattern28"></div>
-                            <div class="cl-image pattern29" id="pattern29"></div>
-                            <div class="cl-image pattern30" id="pattern30"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cl-table tool-class-opt" id="dor-opt-footer" style="display:none">
-                <div class="cl-tr cl-tr-mode-label">
-                    <div class="cl-tr cl-tr-style-label"><span>Footer Skin</span><i class="fa fa-plus-square"></i></div>
-                </div>
-                <div class="cl-tr cl-tr-mode tool-opt-data footer-skin-tool clearfix">
-                    <select id="dor_footer_skin" class="tool-select-opt fixed-width-xl" name="dor_footer_skin">
-                        <option value="">---Choose a skin---</option>
-                        <option value="footerskin1">Footer Skin 1</option>
-                        <option value="footerskin2">Footer Skin 2</option>
-                        <option value="footerskin3">Footer Skin 3</option>
-                    </select>
-                </div>
-            </div>
-            <div class="cl-tr cl-row-reset">
-                <button class="btn btn-default cl-reset">Reset</button>
-            </div>
-        </div>
-    </div>
+
+
     @yield('js')
 </body>
 
