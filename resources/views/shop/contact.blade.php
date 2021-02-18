@@ -146,8 +146,7 @@
     $("#mapContact").googleMap();
     $("#mapContact").addMarker({
         coords: [48.895651, 2.290569],
-        icon: prestashop.urls.base_url+'img/cms/dorado/icon/market-map.png',
-        url: 'http://doradothemes.com'
+        url: 'http://localhost:8000'
       });
   });
 </script>

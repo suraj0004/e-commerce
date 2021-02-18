@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminModule\HomeController;
+use App\Http\Controllers\AdminModule\TagController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,5 +20,12 @@ Route::group(["middleware"=>["auth","admin"]],function () {
     Route::get('/my-profile', [HomeController::class, 'showMyProfilePage'])->name('my-profile');
 
     Route::get('/table',  [HomeController::class, 'showTablePage'])->name('tablePage');
+
+    Route::get("/tags",[TagController::class, 'index'])->name("tag.show");
+
+    Route::post('/add-tag',[TagController::class, 'store'])->name("tag.add");
+    Route::post('/update-tag',[TagController::class, 'update'])->name("tag.update");
+    Route::post('/delete-tag/{id}',[TagController::class, 'delete'])->name("tag.delete");
+
 
 });

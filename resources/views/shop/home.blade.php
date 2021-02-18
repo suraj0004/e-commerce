@@ -8,19 +8,16 @@
                     <div class="dor-banner-home-inner">
                         <div class="dor-banner-home-wrapper">
                             <div class="dor-banner-home-item col-lg-4 col-sm-4 col-xs-12">
-                                <div class="dor-banner-data"><a href="#"><img
-                                            data-src="http://bionic.doradothemes.com/img/cms/dorado/home-banner-01.jpg"
-                                            alt="" class="lazy" width="403" height="210" /></a></div>
+                                <div class="dor-banner-data"><a href="#"><img data-src="{{ asset('img/7.jpg') }}" alt=""
+                                            class="lazy" width="403" height="210" /></a></div>
                             </div>
                             <div class="dor-banner-home-item col-lg-4 col-sm-4 col-xs-12">
-                                <div class="dor-banner-data"><a href="#"><img
-                                            data-src="http://bionic.doradothemes.com/img/cms/dorado/home-banner-02.jpg"
-                                            alt="" class="lazy" width="403" height="210" /></a></div>
+                                <div class="dor-banner-data"><a href="#"><img data-src="{{ asset('img/8.jpg') }}" alt=""
+                                            class="lazy" width="403" height="210" /></a></div>
                             </div>
                             <div class="dor-banner-home-item col-lg-4 col-sm-4 col-xs-12">
-                                <div class="dor-banner-data"><a href="#"><img
-                                            data-src="http://bionic.doradothemes.com/img/cms/dorado/home-banner-03.jpg"
-                                            alt="" class="lazy" width="403" height="210" /></a></div>
+                                <div class="dor-banner-data"><a href="#"><img data-src="{{ asset('img/9.jpg') }}" alt=""
+                                            class="lazy" width="403" height="210" /></a></div>
                             </div>
                         </div>
                     </div>
@@ -42,8 +39,8 @@
                         <ul role="tablist" class="nav nav-tabs" id="dorTabAjax" data-defaulttab="new_product"
                             data-ajaxurl="http://bionic.doradothemes.com/modules/dor_ajaxtabproductcategory/productcategory-ajax.php">
                             <li class="first_item  active " data-rel="tab_new_product">
-                                <a aria-expanded="false" data-toggle="tab" id="cate-tab-data-new_product-tab"
-                                    href="#cate-tab-data-new_product">New Arrivals</a>
+                                <a aria-expanded="false" data-toggle="tab" id="new-arrivals-tab" href="#new-arrivals">New
+                                    Arrivals</a>
                             </li>
                             <li class=" " data-rel="tab_feature_product">
                                 <a aria-expanded="false" data-toggle="tab" id="cate-tab-data-feature_product-tab"
@@ -60,20 +57,766 @@
 
 
                         </ul>
-                        <div class="tab-content" id="dorTabProductCategoryContent">
-                            <div aria-labelledby="cate-tab-data-new_product-tab" id="cate-tab-data-new_product"
-                                class="tab-pane fade  active  in">
-                                <div class="productTabContent_new_product dor-content-items">
-                                    <div class="row">
+                        <div class="tab-content" id="">
+                            <div aria-labelledby="new-arrivals-tab" id="new-arrivals" class="tab-pane fade  active  in row">
+
+                                <div id="js-product-list">
+                                    <div class="products row">
+
+
+                                        <article class="col-md-4 ajax_block_product product-miniature js-product-miniature"
+                                            data-id-product="1" data-id-product-attribute="195" itemscope
+                                            itemtype="http://schema.org/Product">
+                                            <div class="product-container">
+                                                <div class="dor-display-product-info">
+                                                    <div class="left-block">
+                                                        <div class="product-image-container">
+
+                                                            <a href="shop/1-195-apple-iphone-x-2017.html#/8-color-white/25-storage-128gb"
+                                                                class="thumbnail product-thumbnail product_img_link">
+                                                                <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
+                                                                    style="min-height: 10px;"
+                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
+                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
+                                                                    alt=""
+                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
+                                                                    width="600" height="800">
+                                                                <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
+                                                                    style="min-height: 10px;"
+                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
+                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
+                                                                    alt=""
+                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
+                                                                    width="600" height="800">
+                                                            </a>
+
+
+                                                            <div class="box-items">
+                                                                <a class="new-box box-status"
+                                                                    href="shop/1-195-apple-iphone-x-2017.html">
+                                                                    <span class="new-label">New</span>
+                                                                </a>
+                                                                <a class="sale-box box-status"
+                                                                    href="shop/1-195-apple-iphone-x-2017.html">
+                                                                    <span class="sale-label">Sale!</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="show-btn-products">
+
+                                                            <div class="control-action-buttons">
+                                                                <div class="action-button">
+                                                                    <ul>
+
+                                                                        <li class="icon-line-quickview">
+                                                                            <a href="#"
+                                                                                class="quick-view countdown-view-detail"
+                                                                                data-link-action="quickview"
+                                                                                data-toggle="tooltip" title="View detail">
+                                                                                <i class="material-icons">&#xE8B6;</i>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="right-block">
+                                                        <div class="product-cate"><span>Shop</span></div>
+
+                                                        <h5 class="product-title-item" itemprop="name"><a
+                                                                href="shop/1-195-apple-iphone-x-2017.html#/8-color-white/25-storage-128gb"
+                                                                class="product-name">Apple iPhone X 2017</a></h5>
+
+                                                        <div class="review-price-product">
+                                                            <div class="hook-reviews">
+
+                                                                <div class="comments_note">
+                                                                    <div class="star_content clearfix">
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                    </div>
+                                                                    <div class="dor-num-reviews hidden">
+                                                                        <span>0 Review</span>
+                                                                        <i>/</i><a href="#" class="add-your-review">Add Your
+                                                                            Review</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="dor-show-value-product clearfix">
+
+                                                                <div class="content_price">
+                                                                    <div class="product-price-and-shipping">
+
+
+                                                                        <span itemprop="price"
+                                                                            class="price">$1,100.00</span>
+
+
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="highlighted-informations hidden-sm-down">
+
+                                                                    <div class="variant-links">
+                                                                        <a href="shop/1-195-apple-iphone-x-2017.html#/8-color-white/25-storage-128gb"
+                                                                            class="color" title="White"
+                                                                            style="background-color: #ffffff"><span
+                                                                                class="sr-only">White</span></a>
+                                                                        <a href="shop/1-194-apple-iphone-x-2017.html#/11-color-black/25-storage-128gb"
+                                                                            class="color" title="Black"
+                                                                            style="background-color: #434A54"><span
+                                                                                class="sr-only">Black</span></a>
+                                                                        <a href="shop/1-196-apple-iphone-x-2017.html#/24-color-pink/25-storage-128gb"
+                                                                            class="color" title="Pink"
+                                                                            style="background-color: #FCCACD"><span
+                                                                                class="sr-only">Pink</span></a>
+                                                                        <span class="js-count count"></span>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="product-description-short hidden"
+                                                            itemprop="description">
+                                                            <p>Apple takes a complete product life cycle approach to
+                                                                determining our environmental impact.</p>
+                                                            <p style="font-size:14px;font-weight:400;"><strong>iPhone X
+                                                                    embodies Apple’s continuing environmental progress. It
+                                                                    is designed with the following features to reduce
+                                                                    environmental impact:</strong></p>
+                                                            <ul>
+                                                                <li>Mercury-free</li>
+                                                                <li>Arsenic-free display glass</li>
+                                                                <li>Brominated flame retardant–free</li>
+                                                                <li>PVC-free</li>
+                                                                <li>Beryllium-free</li>
+                                                                <li>Highly recyclable stainless steel</li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <ul class="product-flags hidden">
+                                                        <li class="on-sale">On sale!</li>
+                                                        <li class="new">New</li>
+                                                    </ul>
+
+                                                </div>
+                                                <div class="product-more-options">
+                                                    <form action="http://bionic.doradothemes.com/en/cart" method="post"
+                                                        class="dor-addcart-button">
+                                                        <div class="add">
+                                                            <input type="hidden" name="token"
+                                                                value="34b11c3ac3b44ecd83062701f9ddcf1b">
+                                                            <input name="id_product" value="1" type="hidden">
+                                                            <input type="hidden" name="id_customization" value="0">
+                                                            <a href="cart.html"
+                                                                class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
+                                                                data-button-action="add-to-cart" data-title="Add to cart">
+                                                                <i class="material-icons shopping-cart">&#xE547;</i>
+                                                                <span class="hidden">Add to cart</span>
+                                                            </a>
+                                                        </div>
+                                                    </form>
+                                                    <div class="option-quick-add">
+                                                        <div class="icon-line-wishlist-fel">
+                                                            <div class="dor-wishlist">
+                                                                <a class="addToDorWishlist" href="#"
+                                                                    onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Add to Wishlist">
+                                                                    <i class="material-icons">&#xE87E;</i>
+                                                                    <span class="wishlist-txt">Wishlist</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="icon-line-compare-fel">
+                                                            <div class="compare">
+                                                                <a class="add_to_compare"
+                                                                    href="shop/1-195-apple-iphone-x-2017.html"
+                                                                    data-productid="1" data-toggle="tooltip" title=""
+                                                                    data-original-title="Add compare"><i
+                                                                        class="fa fa-random"></i><span
+                                                                        class="compare-button-txt">Compare</span></a>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+
+
+
+
+                                        <article class="col-md-4  ajax_block_product product-miniature js-product-miniature"
+                                            data-id-product="2" data-id-product-attribute="7" itemscope
+                                            itemtype="http://schema.org/Product">
+                                            <div class="product-container">
+                                                <div class="dor-display-product-info">
+                                                    <div class="left-block">
+                                                        <div class="product-image-container">
+
+                                                            <a href="shop/2-7-lg-v30-premium.html#/1-storage-16gb/11-color-black"
+                                                                class="thumbnail product-thumbnail product_img_link">
+                                                                <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
+                                                                    style="min-height: 10px;"
+                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
+                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}" alt=""
+                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
+                                                                    width="600" height="800">
+                                                                <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
+                                                                    style="min-height: 10px;"
+                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
+                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}" alt=""
+                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
+                                                                    width="600" height="800">
+                                                            </a>
+
+
+                                                            <div class="box-items">
+                                                                <a class="new-box box-status"
+                                                                    href="shop/2-lg-v30-premium.html">
+                                                                    <span class="new-label">New</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="show-btn-products">
+
+                                                            <div class="control-action-buttons">
+                                                                <div class="action-button">
+                                                                    <ul>
+
+                                                                        <li class="icon-line-quickview">
+                                                                            <a href="#"
+                                                                                class="quick-view countdown-view-detail"
+                                                                                data-link-action="quickview"
+                                                                                data-toggle="tooltip" title="View detail">
+                                                                                <i class="material-icons">&#xE8B6;</i>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="right-block">
+                                                        <div class="product-cate"><span>Shop</span></div>
+
+                                                        <h5 class="product-title-item" itemprop="name"><a
+                                                                href="shop/2-7-lg-v30-premium.html#/1-storage-16gb/11-color-black"
+                                                                class="product-name">LG V30 Premium</a></h5>
+
+                                                        <div class="review-price-product">
+                                                            <div class="hook-reviews">
+
+                                                                <div class="comments_note">
+                                                                    <div class="star_content clearfix">
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                    </div>
+                                                                    <div class="dor-num-reviews hidden">
+                                                                        <span>0 Review</span>
+                                                                        <i>/</i><a href="#" class="add-your-review">Add Your
+                                                                            Review</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="dor-show-value-product clearfix">
+
+                                                                <div class="content_price">
+                                                                    <div class="product-price-and-shipping">
+
+
+                                                                        <span itemprop="price" class="price">$990.00</span>
+
+
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="highlighted-informations hidden-sm-down">
+
+                                                                    <div class="variant-links">
+                                                                        <a href="shop/2-8-lg-v30-premium.html#/1-storage-16gb/8-color-white"
+                                                                            class="color" title="White"
+                                                                            style="background-color: #ffffff"><span
+                                                                                class="sr-only">White</span></a>
+                                                                        <a href="shop/2-7-lg-v30-premium.html#/1-storage-16gb/11-color-black"
+                                                                            class="color" title="Black"
+                                                                            style="background-color: #434A54"><span
+                                                                                class="sr-only">Black</span></a>
+                                                                        <span class="js-count count"></span>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="product-description-short hidden"
+                                                            itemprop="description">
+                                                            <p>Apple takes a complete product life cycle approach to
+                                                                determining our environmental impact.</p>
+                                                            <p style="font-size:14px;font-weight:400;"><strong>LG V30
+                                                                    embodies Apple’s continuing environmental progress. It
+                                                                    is designed with the following features to reduce
+                                                                    environmental impact:</strong></p>
+                                                            <ul>
+                                                                <li>Mercury-free</li>
+                                                                <li>Arsenic-free display glass</li>
+                                                                <li>Brominated flame retardant–free</li>
+                                                                <li>PVC-free</li>
+                                                                <li>Beryllium-free</li>
+                                                                <li>Highly recyclable stainless steel</li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <ul class="product-flags hidden">
+                                                        <li class="new">New</li>
+                                                    </ul>
+
+                                                </div>
+                                                <div class="product-more-options">
+                                                    <form action="http://bionic.doradothemes.com/en/cart" method="post"
+                                                        class="dor-addcart-button">
+                                                        <div class="add">
+                                                            <input type="hidden" name="token"
+                                                                value="34b11c3ac3b44ecd83062701f9ddcf1b">
+                                                            <input name="id_product" value="2" type="hidden">
+                                                            <input type="hidden" name="id_customization" value="0">
+                                                            <a href="cart.html"
+                                                                class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
+                                                                data-button-action="add-to-cart" data-title="Add to cart">
+                                                                <i class="material-icons shopping-cart">&#xE547;</i>
+                                                                <span class="hidden">Add to cart</span>
+                                                            </a>
+                                                        </div>
+                                                    </form>
+                                                    <div class="option-quick-add">
+                                                        <div class="icon-line-wishlist-fel">
+                                                            <div class="dor-wishlist">
+                                                                <a class="addToDorWishlist" href="#"
+                                                                    onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Add to Wishlist">
+                                                                    <i class="material-icons">&#xE87E;</i>
+                                                                    <span class="wishlist-txt">Wishlist</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="icon-line-compare-fel">
+                                                            <div class="compare">
+                                                                <a class="add_to_compare" href="shop/2-lg-v30-premium.html"
+                                                                    data-productid="2" data-toggle="tooltip" title=""
+                                                                    data-original-title="Add compare"><i
+                                                                        class="fa fa-random"></i><span
+                                                                        class="compare-button-txt">Compare</span></a>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+
+
+
+
+                                        <article class="col-md-4 ajax_block_product product-miniature js-product-miniature"
+                                            data-id-product="3" data-id-product-attribute="85" itemscope
+                                            itemtype="http://schema.org/Product">
+                                            <div class="product-container">
+                                                <div class="dor-display-product-info">
+                                                    <div class="left-block">
+                                                        <div class="product-image-container">
+
+                                                            <a href="shop/3-85-samsung-galaxy-note8.html#/8-color-white/25-storage-128gb"
+                                                                class="thumbnail product-thumbnail product_img_link">
+                                                                <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
+                                                                    style="min-height: 10px;"
+                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
+                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
+                                                                    alt=""
+                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
+                                                                    width="600" height="800">
+                                                                <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
+                                                                    style="min-height: 10px;"
+                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
+                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
+                                                                    alt=""
+                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
+                                                                    width="600" height="800">
+                                                            </a>
+
+
+                                                            <div class="box-items">
+                                                                <a class="new-box box-status"
+                                                                    href="shop/3-85-samsung-galaxy-note8.html">
+                                                                    <span class="new-label">New</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="show-btn-products">
+
+                                                            <div class="control-action-buttons">
+                                                                <div class="action-button">
+                                                                    <ul>
+
+                                                                        <li class="icon-line-quickview">
+                                                                            <a href="#"
+                                                                                class="quick-view countdown-view-detail"
+                                                                                data-link-action="quickview"
+                                                                                data-toggle="tooltip" title="View detail">
+                                                                                <i class="material-icons">&#xE8B6;</i>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="right-block">
+                                                        <div class="product-cate"><span>Shop</span></div>
+
+                                                        <h5 class="product-title-item" itemprop="name"><a
+                                                                href="shop/3-85-samsung-galaxy-note8.html#/8-color-white/25-storage-128gb"
+                                                                class="product-name">Samsung Galaxy Note8</a></h5>
+
+                                                        <div class="review-price-product">
+                                                            <div class="hook-reviews">
+
+                                                                <div class="comments_note">
+                                                                    <div class="star_content clearfix">
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                    </div>
+                                                                    <div class="dor-num-reviews hidden">
+                                                                        <span>0 Review</span>
+                                                                        <i>/</i><a href="#" class="add-your-review">Add Your
+                                                                            Review</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="dor-show-value-product clearfix">
+
+                                                                <div class="content_price">
+                                                                    <div class="product-price-and-shipping">
+
+
+                                                                        <span itemprop="price" class="price">$890.00</span>
+
+
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="highlighted-informations hidden-sm-down">
+
+                                                                    <div class="variant-links">
+                                                                        <a href="shop/3-78-samsung-galaxy-note8.html#/3-storage-64gb/5-color-grey"
+                                                                            class="color" title="Grey"
+                                                                            style="background-color: #AAB2BD"><span
+                                                                                class="sr-only">Grey</span></a>
+                                                                        <a href="shop/3-79-samsung-galaxy-note8.html#/3-storage-64gb/8-color-white"
+                                                                            class="color" title="White"
+                                                                            style="background-color: #ffffff"><span
+                                                                                class="sr-only">White</span></a>
+                                                                        <a href="shop/3-77-samsung-galaxy-note8.html#/3-storage-64gb/11-color-black"
+                                                                            class="color" title="Black"
+                                                                            style="background-color: #434A54"><span
+                                                                                class="sr-only">Black</span></a>
+                                                                        <span class="js-count count"></span>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="product-description-short hidden"
+                                                            itemprop="description">
+                                                            <p>Samsung takes a complete product life cycle approach to
+                                                                determining our environmental impact.</p>
+                                                            <p style="font-size:14px;font-weight:400;"><strong>Note8
+                                                                    embodies Samsung’s continuing environmental progress. It
+                                                                    is designed with the following features to reduce
+                                                                    environmental impact:</strong></p>
+                                                            <ul>
+                                                                <li>Mercury-free</li>
+                                                                <li>Arsenic-free display glass</li>
+                                                                <li>Brominated flame retardant–free</li>
+                                                                <li>PVC-free</li>
+                                                                <li>Beryllium-free</li>
+                                                                <li>Highly recyclable stainless steel</li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <ul class="product-flags hidden">
+                                                        <li class="new">New</li>
+                                                    </ul>
+
+                                                </div>
+                                                <div class="product-more-options">
+                                                    <form action="http://bionic.doradothemes.com/en/cart" method="post"
+                                                        class="dor-addcart-button">
+                                                        <div class="add">
+                                                            <input type="hidden" name="token"
+                                                                value="34b11c3ac3b44ecd83062701f9ddcf1b">
+                                                            <input name="id_product" value="3" type="hidden">
+                                                            <input type="hidden" name="id_customization" value="0">
+                                                            <a href="cart.html"
+                                                                class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
+                                                                data-button-action="add-to-cart" data-title="Add to cart">
+                                                                <i class="material-icons shopping-cart">&#xE547;</i>
+                                                                <span class="hidden">Add to cart</span>
+                                                            </a>
+                                                        </div>
+                                                    </form>
+                                                    <div class="option-quick-add">
+                                                        <div class="icon-line-wishlist-fel">
+                                                            <div class="dor-wishlist">
+                                                                <a class="addToDorWishlist" href="#"
+                                                                    onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Add to Wishlist">
+                                                                    <i class="material-icons">&#xE87E;</i>
+                                                                    <span class="wishlist-txt">Wishlist</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="icon-line-compare-fel">
+                                                            <div class="compare">
+                                                                <a class="add_to_compare"
+                                                                    href="shop/3-85-samsung-galaxy-note8.html"
+                                                                    data-productid="3" data-toggle="tooltip" title=""
+                                                                    data-original-title="Add compare"><i
+                                                                        class="fa fa-random"></i><span
+                                                                        class="compare-button-txt">Compare</span></a>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+
+
+
+
+                                        <article class="col-md-4 ajax_block_product product-miniature js-product-miniature"
+                                            data-id-product="4" data-id-product-attribute="43" itemscope
+                                            itemtype="http://schema.org/Product">
+                                            <div class="product-container">
+                                                <div class="dor-display-product-info">
+                                                    <div class="left-block">
+                                                        <div class="product-image-container">
+
+                                                            <a href="shop/4-43-apple-iphone8.html#/1-storage-16gb/24-color-pink"
+                                                                class="thumbnail product-thumbnail product_img_link">
+                                                                <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
+                                                                    style="min-height: 10px;"
+                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
+                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}" alt=""
+                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
+                                                                    width="600" height="800">
+                                                                <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
+                                                                    style="min-height: 10px;"
+                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
+                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}" alt=""
+                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
+                                                                    width="600" height="800">
+                                                            </a>
+
+
+                                                            <div class="box-items">
+                                                                <a class="new-box box-status"
+                                                                    href="shop/4-43-apple-iphone8.html">
+                                                                    <span class="new-label">New</span>
+                                                                </a>
+                                                                <a class="sale-box box-status"
+                                                                    href="shop/4-43-apple-iphone8.html">
+                                                                    <span class="sale-label">Sale!</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="show-btn-products">
+
+                                                            <div class="control-action-buttons">
+                                                                <div class="action-button">
+                                                                    <ul>
+
+                                                                        <li class="icon-line-quickview">
+                                                                            <a href="#"
+                                                                                class="quick-view countdown-view-detail"
+                                                                                data-link-action="quickview"
+                                                                                data-toggle="tooltip" title="View detail">
+                                                                                <i class="material-icons">&#xE8B6;</i>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="right-block">
+                                                        <div class="product-cate"><span>Shop</span></div>
+
+                                                        <h5 class="product-title-item" itemprop="name"><a
+                                                                href="shop/4-43-apple-iphone8.html#/1-storage-16gb/24-color-pink"
+                                                                class="product-name">Apple iPhone8</a></h5>
+
+                                                        <div class="review-price-product">
+                                                            <div class="hook-reviews">
+
+                                                                <div class="comments_note">
+                                                                    <div class="star_content clearfix">
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                        <div class="star"></div>
+                                                                    </div>
+                                                                    <div class="dor-num-reviews hidden">
+                                                                        <span>0 Review</span>
+                                                                        <i>/</i><a href="#" class="add-your-review">Add Your
+                                                                            Review</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="dor-show-value-product clearfix">
+
+                                                                <div class="content_price">
+                                                                    <div class="product-price-and-shipping">
+
+
+                                                                        <span itemprop="price" class="price">$899.00</span>
+
+
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="highlighted-informations hidden-sm-down">
+
+                                                                    <div class="variant-links">
+                                                                        <a href="shop/4-56-apple-iphone8.html#/8-color-white/25-storage-128gb"
+                                                                            class="color" title="White"
+                                                                            style="background-color: #ffffff"><span
+                                                                                class="sr-only">White</span></a>
+                                                                        <a href="shop/4-55-apple-iphone8.html#/11-color-black/25-storage-128gb"
+                                                                            class="color" title="Black"
+                                                                            style="background-color: #434A54"><span
+                                                                                class="sr-only">Black</span></a>
+                                                                        <a href="shop/4-43-apple-iphone8.html#/1-storage-16gb/24-color-pink"
+                                                                            class="color" title="Pink"
+                                                                            style="background-color: #FCCACD"><span
+                                                                                class="sr-only">Pink</span></a>
+                                                                        <span class="js-count count"></span>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="product-description-short hidden"
+                                                            itemprop="description">
+                                                            <p>Apple takes a complete product life cycle approach to
+                                                                determining our environmental impact.</p>
+                                                            <p style="font-size:14px;font-weight:400;"><strong>iPhone X
+                                                                    embodies Apple’s continuing environmental progress. It
+                                                                    is designed with the following features to reduce
+                                                                    environmental impact:</strong></p>
+                                                            <ul>
+                                                                <li>Mercury-free</li>
+                                                                <li>Arsenic-free display glass</li>
+                                                                <li>Brominated flame retardant–free</li>
+                                                                <li>PVC-free</li>
+                                                                <li>Beryllium-free</li>
+                                                                <li>Highly recyclable stainless steel</li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <ul class="product-flags hidden">
+                                                        <li class="on-sale">On sale!</li>
+                                                        <li class="new">New</li>
+                                                    </ul>
+
+                                                </div>
+                                                <div class="product-more-options">
+                                                    <form action="http://bionic.doradothemes.com/en/cart" method="post"
+                                                        class="dor-addcart-button">
+                                                        <div class="add">
+                                                            <input type="hidden" name="token"
+                                                                value="34b11c3ac3b44ecd83062701f9ddcf1b">
+                                                            <input name="id_product" value="4" type="hidden">
+                                                            <input type="hidden" name="id_customization" value="0">
+                                                            <a href="cart.html"
+                                                                class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
+                                                                data-button-action="add-to-cart" data-title="Add to cart">
+                                                                <i class="material-icons shopping-cart">&#xE547;</i>
+                                                                <span class="hidden">Add to cart</span>
+                                                            </a>
+                                                        </div>
+                                                    </form>
+                                                    <div class="option-quick-add">
+                                                        <div class="icon-line-wishlist-fel">
+                                                            <div class="dor-wishlist">
+                                                                <a class="addToDorWishlist" href="#"
+                                                                    onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Add to Wishlist">
+                                                                    <i class="material-icons">&#xE87E;</i>
+                                                                    <span class="wishlist-txt">Wishlist</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="icon-line-compare-fel">
+                                                            <div class="compare">
+                                                                <a class="add_to_compare"
+                                                                    href="shop/4-43-apple-iphone8.html" data-productid="4"
+                                                                    data-toggle="tooltip" title=""
+                                                                    data-original-title="Add compare"><i
+                                                                        class="fa fa-random"></i><span
+                                                                        class="compare-button-txt">Compare</span></a>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+
+
+
+
+
+
+
                                     </div>
                                 </div>
-                                <a href="#" class="load-more-tab dor-icon-float-away hidden" data-page="2" data-limit="4"
-                                    data-ajax="http://bionic.doradothemes.com/modules/dor_ajaxtabproductcategory/productcategory-ajax.php"
-                                    onclick="return false" data-toggle="tooltip" data-placement="top"
-                                    data-original-title="Load more...">
-                                    <span class="clt-left"></span><span><i class="fa fa-plus"></i></span><span
-                                        class="clt-right"></span>
-                                </a>
+
+
                             </div>
                             <div aria-labelledby="cate-tab-data-feature_product-tab" id="cate-tab-data-feature_product"
                                 class="tab-pane fade  in">
