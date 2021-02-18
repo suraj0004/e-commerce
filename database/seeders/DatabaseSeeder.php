@@ -26,6 +26,14 @@ class DatabaseSeeder extends Seeder
                 "email" => "admin@gmail.com",
             ])->create();
 
+        //user
+        User::factory()
+        ->state([
+            "role_id" => User::ROLES["USER"],
+            "status" => User::STATUS["ACTIVE"],
+            "email" => "user@gmail.com",
+        ])->create();
+
         // users
         User::factory()
             ->count(5)
