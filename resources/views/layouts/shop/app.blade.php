@@ -427,7 +427,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                     <div class="main-logo-wrapper">
                                         <div class="item-logo" id="_desktop_logo">
                                             <div class="h1-logo no-margin">
-                                                <a href="http://bionic.doradothemes.com/">
+                                                <a href="http://localhost:8000/">
                                                     <img class="logo img-responsive"
                                                         src="https://picsum.photos/60/60?random={{ mt_rand(1, 100) }}"
                                                         alt="Bionic Store">
@@ -455,7 +455,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                                             class="material-icons">&#xE14C;</i></span>
                                                 </div>
                                                 <div class="mobile-logo-menu hidden-lg hidden-md">
-                                                    <a href="http://bionic.doradothemes.com/" title="Bionic Store">
+                                                    <a href="http://localhost:8000/" title="Bionic Store">
                                                         <img class="logo img-responsive"
                                                             src="https://picsum.photos/60/60?random={{ mt_rand(1, 100) }}"
                                                             alt="Bionic Store" />
@@ -1078,7 +1078,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                                 <span class="btn-close"><i class="material-icons">&#xE14C;</i></span>
                                             </div>
                                             <div class="mobile-logo-menu hidden-lg hidden-md">
-                                                <a href="http://bionic.doradothemes.com/" title="Bionic Store">
+                                                <a href="http://localhost:8000/" title="Bionic Store">
                                                     <img class="logo img-responsive"
                                                         src="https://picsum.photos/60/60?random={{ mt_rand(1, 100) }}"
                                                         alt="Bionic Store" />
@@ -1196,7 +1196,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                                                                                 </li>
 
                                                                                                 <li><a
-                                                                                                        href="http://bionic.doradothemes.com/store2/en/3-shop">Chromebooks</a>
+                                                                                                        href="http://localhost:8000/store2/en/3-shop">Chromebooks</a>
                                                                                                 </li>
                                                                                             </ul>
                                                                                         </div>
@@ -1494,7 +1494,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                             <!-- pos search module TOP -->
                             <div id="dor_search_top"
                                 class="center_column col-lg-4 col-md-4 col-xs-12 col-sm-12 clearfix">
-                                <form method="get" action="http://bionic.doradothemes.com/en/search" id="searchbox"
+                                <form method="get" action="http://localhost:8000/en/search" id="searchbox"
                                     class="form-inline">
                                     <div class="dor_search form-group">
                                         <input class="search_query form-control" type="text" id="dor_query_top"
@@ -1720,7 +1720,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                                 class="material-icons add"></i> <i class="material-icons remove"></i>
                                         </span> </span></div>
                                 <ul class="toggle-footer collapse" id="footer_contact_block">
-                                    <li class="item logo-footer"><a href="http://bionic.doradothemes.com/"
+                                    <li class="item logo-footer"><a href="http://localhost:8000/"
                                             title="Wiliam Store"><img
                                                 src="https://picsum.photos/139/34?random={{ mt_rand(1, 100) }}"
                                                 alt="" width="139" height="34" /></a></li>
@@ -1928,8 +1928,8 @@ cellphone, laptop, headphone, smartwatch, TV!">
 
 
 
-    <link rel="icon" type="image/vnd.microsoft.icon" href="http://bionic.doradothemes.com/img/favicon.ico?1507612767">
-    <link rel="shortcut icon" type="image/x-icon" href="http://bionic.doradothemes.com/img/favicon.ico?1507612767">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="http://localhost:8000/img/favicon.ico?1507612767">
+    <link rel="shortcut icon" type="image/x-icon" href="http://localhost:8000/img/favicon.ico?1507612767">
 
 
 
@@ -2351,7 +2351,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                                             class="material-icons">&#xE14C;</i></span>
                                                 </div>
                                                 <div class="mobile-logo-menu hidden-lg hidden-md">
-                                                    <a href="http://bionic.doradothemes.com/" title="Bionic Store">
+                                                    <a href="http://localhost:8000/" title="Bionic Store">
                                                         <img class="logo img-responsive" src="asset('/img/logo-menu.png"
                                                             alt="Bionic Store" />
                                                     </a>
@@ -2382,47 +2382,47 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                                                                             data-id="myTab">
 
                                                                                             <li><a
-                                                                                                    href="http://bionic.doradothemes.com/"><i
+                                                                                                    href="http://localhost:8000/"><i
                                                                                                         class=''></i>Digital
                                                                                                     Home V1</a></li>
 
                                                                                             <li><a
-                                                                                                    href="http://bionic.doradothemes.com/store2/"><i
+                                                                                                    href="http://localhost:8000/store2/"><i
                                                                                                         class=''></i>Digital
                                                                                                     Home V2</a></li>
 
                                                                                             <li><a
-                                                                                                    href="http://bionic.doradothemes.com/store3/"><i
+                                                                                                    href="http://localhost:8000/store3/"><i
                                                                                                         class=''></i>Digital
                                                                                                     Home V3</a></li>
 
                                                                                             <li><a
-                                                                                                    href="http://bionic.doradothemes.com/store4/"><i
+                                                                                                    href="http://localhost:8000/store4/"><i
                                                                                                         class=''></i>Digital
                                                                                                     Home V4</a></li>
 
                                                                                             <li><a
-                                                                                                    href="http://bionic.doradothemes.com/store5/"><i
+                                                                                                    href="http://localhost:8000/store5/"><i
                                                                                                         class=''></i>Digital
                                                                                                     Home V5</a></li>
 
                                                                                             <li><a
-                                                                                                    href="http://bionic.doradothemes.com/store6/"><i
+                                                                                                    href="http://localhost:8000/store6/"><i
                                                                                                         class=''></i>Digital
                                                                                                     Home V6</a></li>
 
                                                                                             <li><a
-                                                                                                    href="http://bionic.doradothemes.com/store7/"><i
+                                                                                                    href="http://localhost:8000/store7/"><i
                                                                                                         class=''></i>Digital
                                                                                                     Home V7</a></li>
 
                                                                                             <li><a
-                                                                                                    href="http://bionic.doradothemes.com/store8/"><i
+                                                                                                    href="http://localhost:8000/store8/"><i
                                                                                                         class=''></i>Digital
                                                                                                     Home V8</a></li>
 
                                                                                             <li><a
-                                                                                                    href="http://bionic.doradothemes.com/store9/"><i
+                                                                                                    href="http://localhost:8000/store9/"><i
                                                                                                         class=''></i>Digital
                                                                                                     Home V9</a></li>
                                                                                         </ul>
@@ -2512,27 +2512,27 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                                                                             data-id="myTab">
 
                                                                                             <li><a
-                                                                                                    href="http://bionic.doradothemes.com/fashion/"><i
+                                                                                                    href="http://localhost:8000/fashion/"><i
                                                                                                         class=''></i>Fashion
                                                                                                     Home V1</a></li>
 
                                                                                             <li><a
-                                                                                                    href="http://bionic.doradothemes.com/fashion2/"><i
+                                                                                                    href="http://localhost:8000/fashion2/"><i
                                                                                                         class=''></i>Fashion
                                                                                                     Home V2</a></li>
 
                                                                                             <li><a
-                                                                                                    href="http://bionic.doradothemes.com/fashion3/"><i
+                                                                                                    href="http://localhost:8000/fashion3/"><i
                                                                                                         class=''></i>Fashion
                                                                                                     Home V3</a></li>
 
                                                                                             <li><a
-                                                                                                    href="http://bionic.doradothemes.com/fashion4/"><i
+                                                                                                    href="http://localhost:8000/fashion4/"><i
                                                                                                         class=''></i>Fashion
                                                                                                     Home V4</a></li>
 
                                                                                             <li><a
-                                                                                                    href="http://bionic.doradothemes.com/fashion5/"><i
+                                                                                                    href="http://localhost:8000/fashion5/"><i
                                                                                                         class=''></i>Fashion
                                                                                                     Home V5</a></li>
 
@@ -3388,41 +3388,41 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                                                                             data-id="myTab">
 
                                                                                             <li><a
-                                                                                                    href="http://bionic.doradothemes.com/shop/1-195-apple-iphone-x-2017.html?detail_col=1"><i
+                                                                                                    href="http://localhost:8000/shop/1-195-apple-iphone-x-2017.html?detail_col=1"><i
                                                                                                         class=''></i>Standard
                                                                                                     Product</a></li>
 
                                                                                             <li><a
-                                                                                                    href="http://bionic.doradothemes.com/shop/1-195-apple-iphone-x-2017.html?detail_col=2"><i
+                                                                                                    href="http://localhost:8000/shop/1-195-apple-iphone-x-2017.html?detail_col=2"><i
                                                                                                         class=''></i>Product
                                                                                                     Right Sidebar</a>
                                                                                             </li>
 
                                                                                             <li><a
-                                                                                                    href="http://bionic.doradothemes.com/shop/1-195-apple-iphone-x-2017.html?detail_col=3"><i
+                                                                                                    href="http://localhost:8000/shop/1-195-apple-iphone-x-2017.html?detail_col=3"><i
                                                                                                         class=''></i>Product
                                                                                                     Left Sidebar</a>
                                                                                             </li>
 
                                                                                             <li><a
-                                                                                                    href="http://bionic.doradothemes.com/shop/1-195-apple-iphone-x-2017.html?detail_col=4"><i
+                                                                                                    href="http://localhost:8000/shop/1-195-apple-iphone-x-2017.html?detail_col=4"><i
                                                                                                         class=''></i>Product
                                                                                                     Gallery
                                                                                                     Thumbnail</a></li>
 
                                                                                             <li><a
-                                                                                                    href="http://bionic.doradothemes.com/shop/1-195-apple-iphone-x-2017.html?detail_col=5"><i
+                                                                                                    href="http://localhost:8000/shop/1-195-apple-iphone-x-2017.html?detail_col=5"><i
                                                                                                         class=''></i>Product
                                                                                                     With Sticky</a></li>
 
                                                                                             <li><a
-                                                                                                    href="http://bionic.doradothemes.com/shop/1-195-apple-iphone-x-2017.html?detail_col=6"><i
+                                                                                                    href="http://localhost:8000/shop/1-195-apple-iphone-x-2017.html?detail_col=6"><i
                                                                                                         class=''></i>Product
                                                                                                     Sticky Right
                                                                                                     Sidebar</a></li>
 
                                                                                             <li><a
-                                                                                                    href="http://bionic.doradothemes.com/shop/1-195-apple-iphone-x-2017.html?detail_col=7"><i
+                                                                                                    href="http://localhost:8000/shop/1-195-apple-iphone-x-2017.html?detail_col=7"><i
                                                                                                         class=''></i>Product
                                                                                                     Sticky Left
                                                                                                     Sidebar</a></li>
@@ -3517,12 +3517,12 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                                                                                     Us V1</a></li>
 
                                                                                             <li><a
-                                                                                                    href="http://bionic.doradothemes.com/content/6-about-us-v2"><i
+                                                                                                    href="http://localhost:8000/content/6-about-us-v2"><i
                                                                                                         class=''></i>About
                                                                                                     Us V2</a></li>
 
                                                                                             <li><a
-                                                                                                    href="http://bionic.doradothemes.com/content/7-about-us-v3"><i
+                                                                                                    href="http://localhost:8000/content/7-about-us-v3"><i
                                                                                                         class=''></i>About
                                                                                                     Us V3</a></li>
 
@@ -3582,17 +3582,17 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                                                                             data-id="myTab">
 
                                                                                             <li><a
-                                                                                                    href="http://bionic.doradothemes.com/blogs.html?type=1"><i
+                                                                                                    href="http://localhost:8000/blogs.html?type=1"><i
                                                                                                         class=''></i>Blog
                                                                                                     Style V1</a></li>
 
                                                                                             <li><a
-                                                                                                    href="http://bionic.doradothemes.com/blogs.html?type=2"><i
+                                                                                                    href="http://localhost:8000/blogs.html?type=2"><i
                                                                                                         class=''></i>Blog
                                                                                                     Style V2</a></li>
 
                                                                                             <li><a
-                                                                                                    href="http://bionic.doradothemes.com/blogs.html?type=3"><i
+                                                                                                    href="http://localhost:8000/blogs.html?type=3"><i
                                                                                                         class=''></i>Blog
                                                                                                     Style V3</a></li>
                                                                                         </ul>
@@ -3627,27 +3627,27 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                                                                             data-id="myTab">
 
                                                                                             <li><a
-                                                                                                    href="http://bionic.doradothemes.com/contact-us?v=1"><i
+                                                                                                    href="http://localhost:8000/contact-us?v=1"><i
                                                                                                         class=''></i>Contact
                                                                                                     V1</a></li>
 
                                                                                             <li><a
-                                                                                                    href="http://bionic.doradothemes.com/contact-us?v=2"><i
+                                                                                                    href="http://localhost:8000/contact-us?v=2"><i
                                                                                                         class=''></i>Contact
                                                                                                     V2</a></li>
 
                                                                                             <li><a
-                                                                                                    href="http://bionic.doradothemes.com/contact-us?v=3"><i
+                                                                                                    href="http://localhost:8000/contact-us?v=3"><i
                                                                                                         class=''></i>Contact
                                                                                                     V3</a></li>
 
                                                                                             <li><a
-                                                                                                    href="http://bionic.doradothemes.com/contact-us?v=4"><i
+                                                                                                    href="http://localhost:8000/contact-us?v=4"><i
                                                                                                         class=''></i>Contact
                                                                                                     V4</a></li>
 
                                                                                             <li><a
-                                                                                                    href="http://bionic.doradothemes.com/contact-us?v=5"><i
+                                                                                                    href="http://localhost:8000/contact-us?v=5"><i
                                                                                                         class=''></i>Contact
                                                                                                     V5</a></li>
                                                                                         </ul>
@@ -3715,31 +3715,31 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                                                         <li>
                                                                             <img alt="es" height="11"
                                                                                 src="../img/l/3.jpg" width="16" />
-                                                                            <a href="http://bionic.doradothemes.com/es/"
+                                                                            <a href="http://localhost:8000/es/"
                                                                                 class="dropdown-item">Español</a>
                                                                         </li>
                                                                         <li>
                                                                             <img alt="fr" height="11"
                                                                                 src="../img/l/6.jpg" width="16" />
-                                                                            <a href="http://bionic.doradothemes.com/fr/"
+                                                                            <a href="http://localhost:8000/fr/"
                                                                                 class="dropdown-item">Français</a>
                                                                         </li>
                                                                         <li>
                                                                             <img alt="it" height="11"
                                                                                 src="../img/l/7.jpg" width="16" />
-                                                                            <a href="http://bionic.doradothemes.com/it/"
+                                                                            <a href="http://localhost:8000/it/"
                                                                                 class="dropdown-item">Italiano</a>
                                                                         </li>
                                                                         <li>
                                                                             <img alt="pl" height="11"
                                                                                 src="../img/l/8.jpg" width="16" />
-                                                                            <a href="http://bionic.doradothemes.com/pl/"
+                                                                            <a href="http://localhost:8000/pl/"
                                                                                 class="dropdown-item">Polski</a>
                                                                         </li>
                                                                         <li>
                                                                             <img alt="ar" height="11"
                                                                                 src="../img/l/9.jpg" width="16" />
-                                                                            <a href="http://bionic.doradothemes.com/ar/"
+                                                                            <a href="http://localhost:8000/ar/"
                                                                                 class="dropdown-item">اللغة العربية</a>
                                                                         </li>
                                                                     </ul>
@@ -3904,7 +3904,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                                 <span class="btn-close"><i class="material-icons">&#xE14C;</i></span>
                                             </div>
                                             <div class="mobile-logo-menu hidden-lg hidden-md">
-                                                <a href="http://bionic.doradothemes.com/" title="Bionic Store">
+                                                <a href="http://localhost:8000/" title="Bionic Store">
                                                     <img class="logo img-responsive" src="asset('/img/logo-menu.png"
                                                         alt="Bionic Store" />
                                                 </a>
@@ -4021,7 +4021,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                                                                                 </li>
 
                                                                                                 <li><a
-                                                                                                        href="http://bionic.doradothemes.com/store2/en/3-shop">Chromebooks</a>
+                                                                                                        href="http://localhost:8000/store2/en/3-shop">Chromebooks</a>
                                                                                                 </li>
                                                                                             </ul>
                                                                                         </div>
@@ -4475,7 +4475,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
         <section id="dor-homeslider">
             <div id="dorSlideShow" class="homeslider-container" data-interval="1000" data-wrap="true" data-pause="hover"
                 data-arrow="true" data-nav="1"
-                data-ajaxurl="http://bionic.doradothemes.com/modules/dor_imageslider/ajaxSlider.php" data-ajaxload="1">
+                data-ajaxurl="http://localhost:8000/modules/dor_imageslider/ajaxSlider.php" data-ajaxload="1">
             </div>
 
         </section>
@@ -4488,17 +4488,17 @@ cellphone, laptop, headphone, smartwatch, TV!">
                             <div class="dor-banner-home-wrapper">
                                 <div class="dor-banner-home-item col-lg-4 col-sm-4 col-xs-12">
                                     <div class="dor-banner-data"><a href="#"><img
-                                                data-src="http://bionic.doradothemes.com/img/cms/dorado/home-banner-01.jpg"
+                                                data-src="http://localhost:8000/img/cms/dorado/home-banner-01.jpg"
                                                 alt="" class="lazy" width="403" height="210" /></a></div>
                                 </div>
                                 <div class="dor-banner-home-item col-lg-4 col-sm-4 col-xs-12">
                                     <div class="dor-banner-data"><a href="#"><img
-                                                data-src="http://bionic.doradothemes.com/img/cms/dorado/home-banner-02.jpg"
+                                                data-src="http://localhost:8000/img/cms/dorado/home-banner-02.jpg"
                                                 alt="" class="lazy" width="403" height="210" /></a></div>
                                 </div>
                                 <div class="dor-banner-home-item col-lg-4 col-sm-4 col-xs-12">
                                     <div class="dor-banner-data"><a href="#"><img
-                                                data-src="http://bionic.doradothemes.com/img/cms/dorado/home-banner-03.jpg"
+                                                data-src="http://localhost:8000/img/cms/dorado/home-banner-03.jpg"
                                                 alt="" class="lazy" width="403" height="210" /></a></div>
                                 </div>
                             </div>
@@ -4521,7 +4521,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                         </div>
                         <div class="dor-tab-product-category-wrapper">
                             <ul role="tablist" class="nav nav-tabs" id="dorTabAjax" data-defaulttab="new_product"
-                                data-ajaxurl="http://bionic.doradothemes.com/modules/dor_ajaxtabproductcategory/productcategory-ajax.php">
+                                data-ajaxurl="http://localhost:8000/modules/dor_ajaxtabproductcategory/productcategory-ajax.php">
                                 <li class="first_item  active " data-rel="tab_new_product">
                                     <a aria-expanded="false" data-toggle="tab" id="cate-tab-data-new_product-tab"
                                         href="#cate-tab-data-new_product">New Arrivals</a>
@@ -4550,7 +4550,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                     </div>
                                     <a href="#" class="load-more-tab dor-icon-float-away hidden" data-page="2"
                                         data-limit="4"
-                                        data-ajax="http://bionic.doradothemes.com/modules/dor_ajaxtabproductcategory/productcategory-ajax.php"
+                                        data-ajax="http://localhost:8000/modules/dor_ajaxtabproductcategory/productcategory-ajax.php"
                                         onclick="return false" data-toggle="tooltip" data-placement="top"
                                         data-original-title="Load more...">
                                         <span class="clt-left"></span><span><i class="fa fa-plus"></i></span><span
@@ -4565,7 +4565,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                     </div>
                                     <a href="#" class="load-more-tab dor-icon-float-away hidden" data-page="2"
                                         data-limit="4"
-                                        data-ajax="http://bionic.doradothemes.com/modules/dor_ajaxtabproductcategory/productcategory-ajax.php"
+                                        data-ajax="http://localhost:8000/modules/dor_ajaxtabproductcategory/productcategory-ajax.php"
                                         onclick="return false" data-toggle="tooltip" data-placement="top"
                                         data-original-title="Load more...">
                                         <span class="clt-left"></span><span><i class="fa fa-plus"></i></span><span
@@ -4580,7 +4580,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                     </div>
                                     <a href="#" class="load-more-tab dor-icon-float-away hidden" data-page="2"
                                         data-limit="4"
-                                        data-ajax="http://bionic.doradothemes.com/modules/dor_ajaxtabproductcategory/productcategory-ajax.php"
+                                        data-ajax="http://localhost:8000/modules/dor_ajaxtabproductcategory/productcategory-ajax.php"
                                         onclick="return false" data-toggle="tooltip" data-placement="top"
                                         data-original-title="Load more...">
                                         <span class="clt-left"></span><span><i class="fa fa-plus"></i></span><span
@@ -4595,7 +4595,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                     </div>
                                     <a href="#" class="load-more-tab dor-icon-float-away hidden" data-page="2"
                                         data-limit="4"
-                                        data-ajax="http://bionic.doradothemes.com/modules/dor_ajaxtabproductcategory/productcategory-ajax.php"
+                                        data-ajax="http://localhost:8000/modules/dor_ajaxtabproductcategory/productcategory-ajax.php"
                                         onclick="return false" data-toggle="tooltip" data-placement="top"
                                         data-original-title="Load more...">
                                         <span class="clt-left"></span><span><i class="fa fa-plus"></i></span><span
@@ -4614,7 +4614,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
             <div class="container">
                 <div class="row">
                     <div id="countdown-data" class="gst-row row-carbon-fiber ovh col-lg-9 col-sm-9 col-xs-12"
-                        data-ajaxurl="http://bionic.doradothemes.com/modules/dor_dailydeals/dailydeals-ajax.php">
+                        data-ajaxurl="http://localhost:8000/modules/dor_dailydeals/dailydeals-ajax.php">
                         <div class="dailydeal-content">
                         </div>
                     </div>
@@ -4624,10 +4624,10 @@ cellphone, laptop, headphone, smartwatch, TV!">
                             <div class="dor-banner-deal-item-inner">
                                 <div class="dor-banner-deal-item-wrapper">
                                     <div class="item-deal-banner"><a href="#'"><img
-                                                data-src="http://bionic.doradothemes.com/img/cms/dorado/Banner-main-01.jpg"
+                                                data-src="http://localhost:8000/img/cms/dorado/Banner-main-01.jpg"
                                                 alt="" class="owl-lazy" width="450" height="699" /></a></div>
                                     <div class="item-deal-banner"><a href="#'"><img
-                                                data-src="http://bionic.doradothemes.com/img/cms/dorado/Banner-main-02.jpg"
+                                                data-src="http://localhost:8000/img/cms/dorado/Banner-main-02.jpg"
                                                 alt="" class="owl-lazy" width="450" height="699" /></a></div>
                                 </div>
                             </div>
@@ -4644,10 +4644,10 @@ cellphone, laptop, headphone, smartwatch, TV!">
                         <div class="dor-banner-small-inner">
                             <div class="dor-banner-small-wrapper">
                                 <div class="dor-banner-small-item"><a href="#"><img
-                                            data-src="http://bionic.doradothemes.com/img/cms/dorado/Banner-Small-02.jpg"
+                                            data-src="http://localhost:8000/img/cms/dorado/Banner-Small-02.jpg"
                                             alt="" class="lazy" width="630" height="180" /></a></div>
                                 <div class="dor-banner-small-item"><a href="#"><img
-                                            data-src="http://bionic.doradothemes.com/img/cms/dorado/Banner-Small-01.jpg"
+                                            data-src="http://localhost:8000/img/cms/dorado/Banner-Small-01.jpg"
                                             alt="" class="lazy" width="630" height="180" /></a></div>
                             </div>
                         </div>
@@ -4657,7 +4657,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
             </div>
         </div>
         <div id="dorTopProductCategory" class="dorTopProductCategory clearfix show-hover2"
-            data-defaulttab="http://bionic.doradothemes.com/modules/dor_topproductcategory/topproductcategory-ajax.php"
+            data-defaulttab="http://localhost:8000/modules/dor_topproductcategory/topproductcategory-ajax.php"
             data-cateId="4">
             <div class="container">
                 <div class="row">
@@ -4673,16 +4673,16 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                             <div class="image-banner-top-wrapper">
                                                 <ul>
                                                     <li>
-                                                        <div class="image-top-banner"><img data-src="http://bionic.doradothemes.com/img/cms/dorado/category/banner-cate-1-3.jpg
+                                                        <div class="image-top-banner"><img data-src="http://localhost:8000/img/cms/dorado/category/banner-cate-1-3.jpg
 " alt="" class="owl-lazy"></div>
                                                     </li>
                                                     <li>
-                                                        <div class="image-top-banner"><img data-src="http://bionic.doradothemes.com/img/cms/dorado/category/banner-cate-1.jpg
+                                                        <div class="image-top-banner"><img data-src="http://localhost:8000/img/cms/dorado/category/banner-cate-1.jpg
 " alt="" class="owl-lazy"></div>
                                                     </li>
                                                     <li>
                                                         <div class="image-top-banner"><img
-                                                                data-src="http://bionic.doradothemes.com/img/cms/dorado/category/banner-cate-1-2.jpg"
+                                                                data-src="http://localhost:8000/img/cms/dorado/category/banner-cate-1-2.jpg"
                                                                 alt="" class="owl-lazy"></div>
                                                     </li>
                                                 </ul>
@@ -4707,7 +4707,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
         </div>
 
         <div id="dorTopProductCategory2" class="dorTopProductCategory clearfix show-hover2"
-            data-defaulttab="http://bionic.doradothemes.com/modules/dor_topproductcategory2/topproductcategory-ajax.php"
+            data-defaulttab="http://localhost:8000/modules/dor_topproductcategory2/topproductcategory-ajax.php"
             data-cateId="8">
             <div class="container">
                 <div class="row">
@@ -4723,16 +4723,16 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                             <div class="image-banner-top-wrapper">
                                                 <ul>
                                                     <li>
-                                                        <div class="image-top-banner"><img data-src="http://bionic.doradothemes.com/img/cms/dorado/category/banner-cate-2.jpg
+                                                        <div class="image-top-banner"><img data-src="http://localhost:8000/img/cms/dorado/category/banner-cate-2.jpg
 " alt="" class="owl-lazy"></div>
                                                     </li>
                                                     <li>
-                                                        <div class="image-top-banner"><img data-src="http://bionic.doradothemes.com/img/cms/dorado/category/banner-cate-2-3.jpg
+                                                        <div class="image-top-banner"><img data-src="http://localhost:8000/img/cms/dorado/category/banner-cate-2-3.jpg
 " alt="" class="owl-lazy"></div>
                                                     </li>
                                                     <li>
                                                         <div class="image-top-banner"><img
-                                                                data-src="http://bionic.doradothemes.com/img/cms/dorado/category/banner-cate-2-2.jpg"
+                                                                data-src="http://localhost:8000/img/cms/dorado/category/banner-cate-2-2.jpg"
                                                                 alt="" class="owl-lazy"></div>
                                                     </li>
                                                 </ul>
@@ -4767,7 +4767,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                 </h3>
                             </div>
                             <div class="tab_category_container dor-nav-dots dorButtonArrow" data-ajaxload="1"
-                                data-ajaxurl="http://bionic.doradothemes.com/modules/dor_categories/ajax.php">
+                                data-ajaxurl="http://localhost:8000/modules/dor_categories/ajax.php">
                             </div> <!-- .tab_container -->
                         </div>
                     </div>
@@ -4786,7 +4786,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                 <div class="protab-lists">
                                     <div class="pro-tab-head">
                                         <ul role="tablist" class="nav nav-tabs" id="dorTabAjaxPro"
-                                            data-ajaxurl="http://bionic.doradothemes.com/modules/dor_tabproductcategory_pro/productcategory-ajax.php">
+                                            data-ajaxurl="http://localhost:8000/modules/dor_tabproductcategory_pro/productcategory-ajax.php">
                                             <li><a class="first_item " aria-expanded="false" data-toggle="tab"
                                                     id="cate-tab-data-pro-4-tab"
                                                     href="#cate-tab-data-pro-4"><span>Cellphone</span></a></li>
@@ -4879,7 +4879,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                     <div class="dor-biz-inner">
                         <div class="dor-biz-product">
                             <div class="biz-contents row"
-                                data-ajaxurl="http://bionic.doradothemes.com/modules/dor_bizproduct/bizproduct-ajax.php">
+                                data-ajaxurl="http://localhost:8000/modules/dor_bizproduct/bizproduct-ajax.php">
                                 <ul class="tab-biz-control hidden-lg hidden-sm hidden-md col-sm-12 col-sx-12">
                                     <li><a href="#bizData-toprated_product"
                                             class="biz-tabtitle dor-underline-from-center active"><span>Top
@@ -4943,28 +4943,28 @@ cellphone, laptop, headphone, smartwatch, TV!">
                             <div class="brands-lists-inner">
                                 <ul>
                                     <li class="brand-item"><a href="#"><img
-                                                data-src="http://bionic.doradothemes.com/img/cms/dorado/brand/brands-1.png"
+                                                data-src="http://localhost:8000/img/cms/dorado/brand/brands-1.png"
                                                 alt="" class="owl-lazy" width="130" height="26" /></a></li>
                                     <li class="brand-item"><a href="#"><img
-                                                data-src="http://bionic.doradothemes.com/img/cms/dorado/brand/brands-2.png"
+                                                data-src="http://localhost:8000/img/cms/dorado/brand/brands-2.png"
                                                 alt="" class="owl-lazy" width="130" height="29" /></a></li>
                                     <li class="brand-item"><a href="#"><img
-                                                data-src="http://bionic.doradothemes.com/img/cms/dorado/brand/brands-3.png"
+                                                data-src="http://localhost:8000/img/cms/dorado/brand/brands-3.png"
                                                 alt="" class="owl-lazy" width="130" height="32" /></a></li>
                                     <li class="brand-item"><a href="#"><img
-                                                data-src="http://bionic.doradothemes.com/img/cms/dorado/brand/brands-4.png"
+                                                data-src="http://localhost:8000/img/cms/dorado/brand/brands-4.png"
                                                 alt="" class="owl-lazy" width="130" height="24" /></a></li>
                                     <li class="brand-item"><a href="#"><img
-                                                data-src="http://bionic.doradothemes.com/img/cms/dorado/brand/brands-5.png"
+                                                data-src="http://localhost:8000/img/cms/dorado/brand/brands-5.png"
                                                 alt="" class="owl-lazy" width="130" height="16" /></a></li>
                                     <li class="brand-item"><a href="#"><img
-                                                data-src="http://bionic.doradothemes.com/img/cms/dorado/brand/brands-6.png"
+                                                data-src="http://localhost:8000/img/cms/dorado/brand/brands-6.png"
                                                 alt="" class="owl-lazy" width="130" height="33" /></a></li>
                                     <li class="brand-item"><a href="#"><img
-                                                data-src="http://bionic.doradothemes.com/img/cms/dorado/brand/brands-7.png"
+                                                data-src="http://localhost:8000/img/cms/dorado/brand/brands-7.png"
                                                 alt="" class="owl-lazy" width="130" height="34" /></a></li>
                                     <li class="brand-item"><a href="#"><img
-                                                data-src="http://bionic.doradothemes.com/img/cms/dorado/brand/brands-8.png"
+                                                data-src="http://localhost:8000/img/cms/dorado/brand/brands-8.png"
                                                 alt="" class="owl-lazy" width="140" height="18" /></a></li>
                                 </ul>
                             </div>
@@ -4981,7 +4981,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                     <div class="row">
                         <h3 class="title-dor-viewed"><span>Recently viewed products</span></h3>
                         <div class="dor-home-viewed-products dor-viewedproducts-inner"
-                            data-ajaxurl="http://bionic.doradothemes.com/modules/dor_viewedproducts/viewedproducts-ajax.php">
+                            data-ajaxurl="http://localhost:8000/modules/dor_viewedproducts/viewedproducts-ajax.php">
                             <div class="dor-home-viewed-products-inner">
                                 <div class="dor-home-viewed-products-wrapper dor-viewedproducts-data">
                                 </div>
@@ -4996,7 +4996,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
             <div class="container">
                 <div class="row">
                     <div class="dorblogHomeAjax"
-                        data-url="http://bionic.doradothemes.com/modules/smartbloghomelatestnews/ajax.php">
+                        data-url="http://localhost:8000/modules/smartbloghomelatestnews/ajax.php">
 
                     </div>
                 </div>
@@ -5128,7 +5128,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
 
             <div id="loginFormSmart" class="dor-formsmart">
                 <span class="button b-close"><span>X</span></span>
-                <form id="login-form" action="http://bionic.doradothemes.com/login" method="post">
+                <form id="login-form" action="http://localhost:8000/login" method="post">
                     <h2 class="title-heading"><img src="../modules/dor_smartuser/img/logo.png" alt=""></h2>
                     <h3>WELCOME TO OUR WONDERFUL WORLD</h3>
                     <p class="smart-sign-txt">Did you know that we ship to over <span>24 different countries</span></p>
@@ -5182,7 +5182,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
 
             <div id="registerFormSmart" class="dor-formsmart">
                 <span class="button b-close"><span>X</span></span>
-                <form action="http://bionic.doradothemes.com/login?create_account=1" id="customer-form"
+                <form action="http://localhost:8000/login?create_account=1" id="customer-form"
                     class="js-customer-form" method="post">
                     <h2 class="title-heading"><img src="../modules/dor_smartuser/img/logo.png" alt=""></h2>
                     <h3>WELCOME TO OUR WONDERFUL WORLD</h3>
@@ -5303,7 +5303,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                 <span class="button b-close"><span>X</span></span>
                 <div class="center_column" id="center_column_smart">
                     <div class="box">
-                        <form action="http://bionic.doradothemes.com/password-recovery" method="post">
+                        <form action="http://localhost:8000/password-recovery" method="post">
                             <h2 class="title-heading"><img src="../modules/dor_smartuser/img/logo.png" alt=""></h2>
                             <h3>WELCOME TO OUR WONDERFUL WORLD</h3>
                             <p class="smart-sign-txt">Did you know that we ship to over <span>24 different
@@ -5378,7 +5378,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                             <h4><i class="fa fa-send-o" aria-hidden="true"></i>Join Our Newsletter</h4>
                             <ul id="footer_newsletter_block" class="col-lg-5 col-sm-7 col-xs-10">
                                 <li class="item">
-                                    <form id="newsletter-footer" action="http://bionic.doradothemes.com/#footer"
+                                    <form id="newsletter-footer" action="http://localhost:8000/#footer"
                                         method="post">
                                         <div class="row">
                                             <div class="col-xs-12">
@@ -5428,7 +5428,7 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                                 class="material-icons add"></i> <i class="material-icons remove"></i>
                                         </span> </span></div>
                                 <ul class="toggle-footer collapse" id="footer_contact_block">
-                                    <li class="item logo-footer"><a href="http://bionic.doradothemes.com/"
+                                    <li class="item logo-footer"><a href="http://localhost:8000/"
                                             title="Wiliam Store"><img src="../img/cms/dorado/bionic-store-footer.png"
                                                 alt="" width="139" height="34" /></a></li>
                                     <li class="item">

@@ -69,27 +69,27 @@
                                         </a>
                                         <div class="dropdown-menu">
                                             <a rel="nofollow"
-                                                href="http://bionic.doradothemes.com/store2/en/3-shop?cate_type=1&amp;order=product.position.asc"
+                                                href="http://localhost:8000/store2/en/3-shop?cate_type=1&amp;order=product.position.asc"
                                                 class="select-list current js-search-link">
                                                 Relevance
                                             </a>
                                             <a rel="nofollow"
-                                                href="http://bionic.doradothemes.com/store2/en/3-shop?cate_type=1&amp;order=product.name.asc"
+                                                href="http://localhost:8000/store2/en/3-shop?cate_type=1&amp;order=product.name.asc"
                                                 class="select-list js-search-link">
                                                 Name, A to Z
                                             </a>
                                             <a rel="nofollow"
-                                                href="http://bionic.doradothemes.com/store2/en/3-shop?cate_type=1&amp;order=product.name.desc"
+                                                href="http://localhost:8000/store2/en/3-shop?cate_type=1&amp;order=product.name.desc"
                                                 class="select-list js-search-link">
                                                 Name, Z to A
                                             </a>
                                             <a rel="nofollow"
-                                                href="http://bionic.doradothemes.com/store2/en/3-shop?cate_type=1&amp;order=product.price.asc"
+                                                href="http://localhost:8000/store2/en/3-shop?cate_type=1&amp;order=product.price.asc"
                                                 class="select-list js-search-link">
                                                 Price, low to high
                                             </a>
                                             <a rel="nofollow"
-                                                href="http://bionic.doradothemes.com/store2/en/3-shop?cate_type=1&amp;order=product.price.desc"
+                                                href="http://localhost:8000/store2/en/3-shop?cate_type=1&amp;order=product.price.desc"
                                                 class="select-list js-search-link">
                                                 Price, high to low
                                             </a>
@@ -138,34 +138,34 @@
                                         <div class="left-block">
                                             <div class="product-image-container">
 
-                                                <a href="http://bionic.doradothemes.com/store2/en/shop/9-49-apple-macbook-pro-2017.html#/1-storage-16gb/11-color-black"
+                                                <a href="http://localhost:8000/store2/en/shop/9-49-apple-macbook-pro-2017.html#/1-storage-16gb/11-color-black"
                                                     class="thumbnail product-thumbnail product_img_link">
                                                     <img class="img-responsive thumbnail-image-1 lazy owl-lazy loaded"
                                                         style="min-height: 10px;"
-                                                        data-lazy="http://bionic.doradothemes.com/store2/50-home_default/apple-macbook-pro-2017.jpg"
-                                                        data-src="http://bionic.doradothemes.com/store2/50-home_default/apple-macbook-pro-2017.jpg"
+                                                        data-lazy="http://localhost:8000/store2/50-home_default/apple-macbook-pro-2017.jpg"
+                                                        data-src="http://localhost:8000/store2/50-home_default/apple-macbook-pro-2017.jpg"
                                                         alt=""
-                                                        data-full-size-image-url="http://bionic.doradothemes.com/store2/50-large_default/apple-macbook-pro-2017.jpg"
+                                                        data-full-size-image-url="http://localhost:8000/store2/50-large_default/apple-macbook-pro-2017.jpg"
                                                         width="600" height="800" data-ll-status="loaded"
-                                                        src="http://bionic.doradothemes.com/store2/50-home_default/apple-macbook-pro-2017.jpg">
+                                                        src="http://localhost:8000/store2/50-home_default/apple-macbook-pro-2017.jpg">
                                                     <img class="img-responsive thumbnail-image-2 lazy owl-lazy loaded"
                                                         style="min-height: 10px;"
-                                                        data-lazy="http://bionic.doradothemes.com/store2/52-home_default/apple-macbook-pro-2017.jpg"
-                                                        data-src="http://bionic.doradothemes.com/store2/52-home_default/apple-macbook-pro-2017.jpg"
+                                                        data-lazy="http://localhost:8000/store2/52-home_default/apple-macbook-pro-2017.jpg"
+                                                        data-src="http://localhost:8000/store2/52-home_default/apple-macbook-pro-2017.jpg"
                                                         alt=""
-                                                        data-full-size-image-url="http://bionic.doradothemes.com/store2/52-large_default/apple-macbook-pro-2017.jpg"
+                                                        data-full-size-image-url="http://localhost:8000/store2/52-large_default/apple-macbook-pro-2017.jpg"
                                                         width="600" height="800" data-ll-status="loaded"
-                                                        src="http://bionic.doradothemes.com/store2/52-home_default/apple-macbook-pro-2017.jpg">
+                                                        src="http://localhost:8000/store2/52-home_default/apple-macbook-pro-2017.jpg">
                                                 </a>
 
 
                                                 <div class="box-items">
                                                     <a class="new-box box-status"
-                                                        href="http://bionic.doradothemes.com/store2/en/shop/9-apple-macbook-pro-2017.html">
+                                                        href="http://localhost:8000/store2/en/shop/9-apple-macbook-pro-2017.html">
                                                         <span class="new-label">New</span>
                                                     </a>
                                                     <a class="sale-box box-status"
-                                                        href="http://bionic.doradothemes.com/store2/en/shop/9-apple-macbook-pro-2017.html">
+                                                        href="http://localhost:8000/store2/en/shop/9-apple-macbook-pro-2017.html">
                                                         <span class="sale-label">Sale!</span>
                                                     </a>
                                                 </div>
@@ -196,7 +196,7 @@
                                             <div class="product-cate"><span>Shop</span></div>
 
                                             <h5 class="product-title-item" itemprop="name"><a
-                                                    href="http://bionic.doradothemes.com/store2/en/shop/9-49-apple-macbook-pro-2017.html#/1-storage-16gb/11-color-black"
+                                                    href="http://localhost:8000/store2/en/shop/9-49-apple-macbook-pro-2017.html#/1-storage-16gb/11-color-black"
                                                     class="product-name">Apple Macbook Pro 2017</a></h5>
 
                                             <div class="review-price-product">
@@ -238,15 +238,15 @@
                                                     <div class="highlighted-informations hidden-sm-down">
 
                                                         <div class="variant-links">
-                                                            <a href="http://bionic.doradothemes.com/store2/en/shop/9-47-apple-macbook-pro-2017.html#/3-storage-64gb/8-color-white"
+                                                            <a href="http://localhost:8000/store2/en/shop/9-47-apple-macbook-pro-2017.html#/3-storage-64gb/8-color-white"
                                                                 class="color" title="White"
                                                                 style="background-color: rgb(255, 255, 255); color: rgb(34, 34, 34);"><span
                                                                     class="sr-only">White</span></a>
-                                                            <a href="http://bionic.doradothemes.com/store2/en/shop/9-46-apple-macbook-pro-2017.html#/3-storage-64gb/11-color-black"
+                                                            <a href="http://localhost:8000/store2/en/shop/9-46-apple-macbook-pro-2017.html#/3-storage-64gb/11-color-black"
                                                                 class="color" title="Black"
                                                                 style="background-color: rgb(67, 74, 84); color: rgb(221, 221, 221);"><span
                                                                     class="sr-only">Black</span></a>
-                                                            <a href="http://bionic.doradothemes.com/store2/en/shop/9-48-apple-macbook-pro-2017.html#/3-storage-64gb/16-color-yellow"
+                                                            <a href="http://localhost:8000/store2/en/shop/9-48-apple-macbook-pro-2017.html#/3-storage-64gb/16-color-yellow"
                                                                 class="color" title="Yellow"
                                                                 style="background-color: rgb(241, 196, 15); color: rgb(34, 34, 34);"><span
                                                                     class="sr-only">Yellow</span></a>
@@ -284,14 +284,14 @@
 
                                     </div>
                                     <div class="product-more-options">
-                                        <form action="http://bionic.doradothemes.com/store2/en/cart"
+                                        <form action="http://localhost:8000/store2/en/cart"
                                             method="post" class="dor-addcart-button">
                                             <div class="add">
                                                 <input type="hidden" name="token"
                                                     value="34b11c3ac3b44ecd83062701f9ddcf1b">
                                                 <input name="id_product" value="9" type="hidden">
                                                 <input type="hidden" name="id_customization" value="0">
-                                                <a href="http://bionic.doradothemes.com/store2/en/cart"
+                                                <a href="http://localhost:8000/store2/en/cart"
                                                     class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
                                                     data-button-action="add-to-cart"
                                                     data-title="Add to cart">
@@ -315,7 +315,7 @@
                                             <div class="icon-line-compare-fel">
                                                 <div class="compare">
                                                     <a class="add_to_compare"
-                                                        href="http://bionic.doradothemes.com/store2/en/shop/9-apple-macbook-pro-2017.html"
+                                                        href="http://localhost:8000/store2/en/shop/9-apple-macbook-pro-2017.html"
                                                         data-productid="9" data-toggle="tooltip" title=""
                                                         data-original-title="Add compare"><i
                                                             class="fa fa-random"></i><span
@@ -339,30 +339,30 @@
                                         <div class="left-block">
                                             <div class="product-image-container">
 
-                                                <a href="http://bionic.doradothemes.com/store2/en/shop/10-98-dell-xps-15-infinityedge.html#/3-storage-64gb/11-color-black"
+                                                <a href="http://localhost:8000/store2/en/shop/10-98-dell-xps-15-infinityedge.html#/3-storage-64gb/11-color-black"
                                                     class="thumbnail product-thumbnail product_img_link">
                                                     <img class="img-responsive thumbnail-image-1 lazy owl-lazy loaded"
                                                         style="min-height: 10px;"
-                                                        data-lazy="http://bionic.doradothemes.com/store2/55-home_default/dell-xps-15-infinityedge.jpg"
-                                                        data-src="http://bionic.doradothemes.com/store2/55-home_default/dell-xps-15-infinityedge.jpg"
+                                                        data-lazy="http://localhost:8000/store2/55-home_default/dell-xps-15-infinityedge.jpg"
+                                                        data-src="http://localhost:8000/store2/55-home_default/dell-xps-15-infinityedge.jpg"
                                                         alt=""
-                                                        data-full-size-image-url="http://bionic.doradothemes.com/store2/55-large_default/dell-xps-15-infinityedge.jpg"
+                                                        data-full-size-image-url="http://localhost:8000/store2/55-large_default/dell-xps-15-infinityedge.jpg"
                                                         width="600" height="800" data-ll-status="loaded"
-                                                        src="http://bionic.doradothemes.com/store2/55-home_default/dell-xps-15-infinityedge.jpg">
+                                                        src="http://localhost:8000/store2/55-home_default/dell-xps-15-infinityedge.jpg">
                                                     <img class="img-responsive thumbnail-image-2 lazy owl-lazy loaded"
                                                         style="min-height: 10px;"
-                                                        data-lazy="http://bionic.doradothemes.com/store2/54-home_default/dell-xps-15-infinityedge.jpg"
-                                                        data-src="http://bionic.doradothemes.com/store2/54-home_default/dell-xps-15-infinityedge.jpg"
+                                                        data-lazy="http://localhost:8000/store2/54-home_default/dell-xps-15-infinityedge.jpg"
+                                                        data-src="http://localhost:8000/store2/54-home_default/dell-xps-15-infinityedge.jpg"
                                                         alt=""
-                                                        data-full-size-image-url="http://bionic.doradothemes.com/store2/54-large_default/dell-xps-15-infinityedge.jpg"
+                                                        data-full-size-image-url="http://localhost:8000/store2/54-large_default/dell-xps-15-infinityedge.jpg"
                                                         width="600" height="800" data-ll-status="loaded"
-                                                        src="http://bionic.doradothemes.com/store2/54-home_default/dell-xps-15-infinityedge.jpg">
+                                                        src="http://localhost:8000/store2/54-home_default/dell-xps-15-infinityedge.jpg">
                                                 </a>
 
 
                                                 <div class="box-items">
                                                     <a class="new-box box-status"
-                                                        href="http://bionic.doradothemes.com/store2/en/shop/10-dell-xps-15-infinityedge.html">
+                                                        href="http://localhost:8000/store2/en/shop/10-dell-xps-15-infinityedge.html">
                                                         <span class="new-label">New</span>
                                                     </a>
                                                 </div>
@@ -393,7 +393,7 @@
                                             <div class="product-cate"><span>Shop</span></div>
 
                                             <h5 class="product-title-item" itemprop="name"><a
-                                                    href="http://bionic.doradothemes.com/store2/en/shop/10-98-dell-xps-15-infinityedge.html#/3-storage-64gb/11-color-black"
+                                                    href="http://localhost:8000/store2/en/shop/10-98-dell-xps-15-infinityedge.html#/3-storage-64gb/11-color-black"
                                                     class="product-name">Dell XPS 15 InfinityEdge</a></h5>
 
                                             <div class="review-price-product">
@@ -435,19 +435,19 @@
                                                     <div class="highlighted-informations hidden-sm-down">
 
                                                         <div class="variant-links">
-                                                            <a href="http://bionic.doradothemes.com/store2/en/shop/10-101-dell-xps-15-infinityedge.html#/3-storage-64gb/5-color-grey"
+                                                            <a href="http://localhost:8000/store2/en/shop/10-101-dell-xps-15-infinityedge.html#/3-storage-64gb/5-color-grey"
                                                                 class="color" title="Grey"
                                                                 style="background-color: rgb(170, 178, 189); color: rgb(34, 34, 34);"><span
                                                                     class="sr-only">Grey</span></a>
-                                                            <a href="http://bionic.doradothemes.com/store2/en/shop/10-104-dell-xps-15-infinityedge.html#/3-storage-64gb/8-color-white"
+                                                            <a href="http://localhost:8000/store2/en/shop/10-104-dell-xps-15-infinityedge.html#/3-storage-64gb/8-color-white"
                                                                 class="color" title="White"
                                                                 style="background-color: rgb(255, 255, 255); color: rgb(34, 34, 34);"><span
                                                                     class="sr-only">White</span></a>
-                                                            <a href="http://bionic.doradothemes.com/store2/en/shop/10-98-dell-xps-15-infinityedge.html#/3-storage-64gb/11-color-black"
+                                                            <a href="http://localhost:8000/store2/en/shop/10-98-dell-xps-15-infinityedge.html#/3-storage-64gb/11-color-black"
                                                                 class="color" title="Black"
                                                                 style="background-color: rgb(67, 74, 84); color: rgb(221, 221, 221);"><span
                                                                     class="sr-only">Black</span></a>
-                                                            <a href="http://bionic.doradothemes.com/store2/en/shop/10-107-dell-xps-15-infinityedge.html#/3-storage-64gb/24-color-pink"
+                                                            <a href="http://localhost:8000/store2/en/shop/10-107-dell-xps-15-infinityedge.html#/3-storage-64gb/24-color-pink"
                                                                 class="color" title="Pink"
                                                                 style="background-color: rgb(252, 202, 205); color: rgb(34, 34, 34);"><span
                                                                     class="sr-only">Pink</span></a>
@@ -485,14 +485,14 @@
 
                                     </div>
                                     <div class="product-more-options">
-                                        <form action="http://bionic.doradothemes.com/store2/en/cart"
+                                        <form action="http://localhost:8000/store2/en/cart"
                                             method="post" class="dor-addcart-button">
                                             <div class="add">
                                                 <input type="hidden" name="token"
                                                     value="34b11c3ac3b44ecd83062701f9ddcf1b">
                                                 <input name="id_product" value="10" type="hidden">
                                                 <input type="hidden" name="id_customization" value="0">
-                                                <a href="http://bionic.doradothemes.com/store2/en/cart"
+                                                <a href="http://localhost:8000/store2/en/cart"
                                                     class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
                                                     data-button-action="add-to-cart"
                                                     data-title="Add to cart">
@@ -516,7 +516,7 @@
                                             <div class="icon-line-compare-fel">
                                                 <div class="compare">
                                                     <a class="add_to_compare"
-                                                        href="http://bionic.doradothemes.com/store2/en/shop/10-dell-xps-15-infinityedge.html"
+                                                        href="http://localhost:8000/store2/en/shop/10-dell-xps-15-infinityedge.html"
                                                         data-productid="10" data-toggle="tooltip" title=""
                                                         data-original-title="Add compare"><i
                                                             class="fa fa-random"></i><span
@@ -540,30 +540,30 @@
                                         <div class="left-block">
                                             <div class="product-image-container">
 
-                                                <a href="http://bionic.doradothemes.com/store2/en/shop/11-110-huawei-watch-s2-classic.html#/3-storage-64gb/11-color-black"
+                                                <a href="http://localhost:8000/store2/en/shop/11-110-huawei-watch-s2-classic.html#/3-storage-64gb/11-color-black"
                                                     class="thumbnail product-thumbnail product_img_link">
                                                     <img class="img-responsive thumbnail-image-1 lazy owl-lazy loaded"
                                                         style="min-height: 10px;"
-                                                        data-lazy="http://bionic.doradothemes.com/store2/58-home_default/huawei-watch-s2-classic.jpg"
-                                                        data-src="http://bionic.doradothemes.com/store2/58-home_default/huawei-watch-s2-classic.jpg"
+                                                        data-lazy="http://localhost:8000/store2/58-home_default/huawei-watch-s2-classic.jpg"
+                                                        data-src="http://localhost:8000/store2/58-home_default/huawei-watch-s2-classic.jpg"
                                                         alt=""
-                                                        data-full-size-image-url="http://bionic.doradothemes.com/store2/58-large_default/huawei-watch-s2-classic.jpg"
+                                                        data-full-size-image-url="http://localhost:8000/store2/58-large_default/huawei-watch-s2-classic.jpg"
                                                         width="600" height="800" data-ll-status="loaded"
-                                                        src="http://bionic.doradothemes.com/store2/58-home_default/huawei-watch-s2-classic.jpg">
+                                                        src="http://localhost:8000/store2/58-home_default/huawei-watch-s2-classic.jpg">
                                                     <img class="img-responsive thumbnail-image-2 lazy owl-lazy loaded"
                                                         style="min-height: 10px;"
-                                                        data-lazy="http://bionic.doradothemes.com/store2/59-home_default/huawei-watch-s2-classic.jpg"
-                                                        data-src="http://bionic.doradothemes.com/store2/59-home_default/huawei-watch-s2-classic.jpg"
+                                                        data-lazy="http://localhost:8000/store2/59-home_default/huawei-watch-s2-classic.jpg"
+                                                        data-src="http://localhost:8000/store2/59-home_default/huawei-watch-s2-classic.jpg"
                                                         alt=""
-                                                        data-full-size-image-url="http://bionic.doradothemes.com/store2/59-large_default/huawei-watch-s2-classic.jpg"
+                                                        data-full-size-image-url="http://localhost:8000/store2/59-large_default/huawei-watch-s2-classic.jpg"
                                                         width="600" height="800" data-ll-status="loaded"
-                                                        src="http://bionic.doradothemes.com/store2/59-home_default/huawei-watch-s2-classic.jpg">
+                                                        src="http://localhost:8000/store2/59-home_default/huawei-watch-s2-classic.jpg">
                                                 </a>
 
 
                                                 <div class="box-items">
                                                     <a class="new-box box-status"
-                                                        href="http://bionic.doradothemes.com/store2/en/shop/11-huawei-watch-s2-classic.html">
+                                                        href="http://localhost:8000/store2/en/shop/11-huawei-watch-s2-classic.html">
                                                         <span class="new-label">New</span>
                                                     </a>
                                                 </div>
@@ -594,7 +594,7 @@
                                             <div class="product-cate"><span>Shop</span></div>
 
                                             <h5 class="product-title-item" itemprop="name"><a
-                                                    href="http://bionic.doradothemes.com/store2/en/shop/11-110-huawei-watch-s2-classic.html#/3-storage-64gb/11-color-black"
+                                                    href="http://localhost:8000/store2/en/shop/11-110-huawei-watch-s2-classic.html#/3-storage-64gb/11-color-black"
                                                     class="product-name">Huawei Watch S2 Classic</a></h5>
 
                                             <div class="review-price-product">
@@ -631,19 +631,19 @@
                                                     <div class="highlighted-informations hidden-sm-down">
 
                                                         <div class="variant-links">
-                                                            <a href="http://bionic.doradothemes.com/store2/en/shop/11-113-huawei-watch-s2-classic.html#/3-storage-64gb/5-color-grey"
+                                                            <a href="http://localhost:8000/store2/en/shop/11-113-huawei-watch-s2-classic.html#/3-storage-64gb/5-color-grey"
                                                                 class="color" title="Grey"
                                                                 style="background-color: rgb(170, 178, 189); color: rgb(34, 34, 34);"><span
                                                                     class="sr-only">Grey</span></a>
-                                                            <a href="http://bionic.doradothemes.com/store2/en/shop/11-116-huawei-watch-s2-classic.html#/3-storage-64gb/8-color-white"
+                                                            <a href="http://localhost:8000/store2/en/shop/11-116-huawei-watch-s2-classic.html#/3-storage-64gb/8-color-white"
                                                                 class="color" title="White"
                                                                 style="background-color: rgb(255, 255, 255); color: rgb(34, 34, 34);"><span
                                                                     class="sr-only">White</span></a>
-                                                            <a href="http://bionic.doradothemes.com/store2/en/shop/11-110-huawei-watch-s2-classic.html#/3-storage-64gb/11-color-black"
+                                                            <a href="http://localhost:8000/store2/en/shop/11-110-huawei-watch-s2-classic.html#/3-storage-64gb/11-color-black"
                                                                 class="color" title="Black"
                                                                 style="background-color: rgb(67, 74, 84); color: rgb(221, 221, 221);"><span
                                                                     class="sr-only">Black</span></a>
-                                                            <a href="http://bionic.doradothemes.com/store2/en/shop/11-119-huawei-watch-s2-classic.html#/3-storage-64gb/24-color-pink"
+                                                            <a href="http://localhost:8000/store2/en/shop/11-119-huawei-watch-s2-classic.html#/3-storage-64gb/24-color-pink"
                                                                 class="color" title="Pink"
                                                                 style="background-color: rgb(252, 202, 205); color: rgb(34, 34, 34);"><span
                                                                     class="sr-only">Pink</span></a>
@@ -680,14 +680,14 @@
 
                                     </div>
                                     <div class="product-more-options">
-                                        <form action="http://bionic.doradothemes.com/store2/en/cart"
+                                        <form action="http://localhost:8000/store2/en/cart"
                                             method="post" class="dor-addcart-button">
                                             <div class="add">
                                                 <input type="hidden" name="token"
                                                     value="34b11c3ac3b44ecd83062701f9ddcf1b">
                                                 <input name="id_product" value="11" type="hidden">
                                                 <input type="hidden" name="id_customization" value="0">
-                                                <a href="http://bionic.doradothemes.com/store2/en/cart"
+                                                <a href="http://localhost:8000/store2/en/cart"
                                                     class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
                                                     data-button-action="add-to-cart"
                                                     data-title="Add to cart">
@@ -711,7 +711,7 @@
                                             <div class="icon-line-compare-fel">
                                                 <div class="compare">
                                                     <a class="add_to_compare"
-                                                        href="http://bionic.doradothemes.com/store2/en/shop/11-huawei-watch-s2-classic.html"
+                                                        href="http://localhost:8000/store2/en/shop/11-huawei-watch-s2-classic.html"
                                                         data-productid="11" data-toggle="tooltip" title=""
                                                         data-original-title="Add compare"><i
                                                             class="fa fa-random"></i><span
@@ -735,34 +735,34 @@
                                         <div class="left-block">
                                             <div class="product-image-container">
 
-                                                <a href="http://bionic.doradothemes.com/store2/en/shop/12-122-google-pixel-2xl-2017.html#/3-storage-64gb/11-color-black"
+                                                <a href="http://localhost:8000/store2/en/shop/12-122-google-pixel-2xl-2017.html#/3-storage-64gb/11-color-black"
                                                     class="thumbnail product-thumbnail product_img_link">
                                                     <img class="img-responsive thumbnail-image-1 lazy owl-lazy loaded"
                                                         style="min-height: 10px;"
-                                                        data-lazy="http://bionic.doradothemes.com/store2/62-home_default/google-pixel-2xl-2017.jpg"
-                                                        data-src="http://bionic.doradothemes.com/store2/62-home_default/google-pixel-2xl-2017.jpg"
+                                                        data-lazy="http://localhost:8000/store2/62-home_default/google-pixel-2xl-2017.jpg"
+                                                        data-src="http://localhost:8000/store2/62-home_default/google-pixel-2xl-2017.jpg"
                                                         alt=""
-                                                        data-full-size-image-url="http://bionic.doradothemes.com/store2/62-large_default/google-pixel-2xl-2017.jpg"
+                                                        data-full-size-image-url="http://localhost:8000/store2/62-large_default/google-pixel-2xl-2017.jpg"
                                                         width="600" height="800" data-ll-status="loaded"
-                                                        src="http://bionic.doradothemes.com/store2/62-home_default/google-pixel-2xl-2017.jpg">
+                                                        src="http://localhost:8000/store2/62-home_default/google-pixel-2xl-2017.jpg">
                                                     <img class="img-responsive thumbnail-image-2 lazy owl-lazy loaded"
                                                         style="min-height: 10px;"
-                                                        data-lazy="http://bionic.doradothemes.com/store2/63-home_default/google-pixel-2xl-2017.jpg"
-                                                        data-src="http://bionic.doradothemes.com/store2/63-home_default/google-pixel-2xl-2017.jpg"
+                                                        data-lazy="http://localhost:8000/store2/63-home_default/google-pixel-2xl-2017.jpg"
+                                                        data-src="http://localhost:8000/store2/63-home_default/google-pixel-2xl-2017.jpg"
                                                         alt=""
-                                                        data-full-size-image-url="http://bionic.doradothemes.com/store2/63-large_default/google-pixel-2xl-2017.jpg"
+                                                        data-full-size-image-url="http://localhost:8000/store2/63-large_default/google-pixel-2xl-2017.jpg"
                                                         width="600" height="800" data-ll-status="loaded"
-                                                        src="http://bionic.doradothemes.com/store2/63-home_default/google-pixel-2xl-2017.jpg">
+                                                        src="http://localhost:8000/store2/63-home_default/google-pixel-2xl-2017.jpg">
                                                 </a>
 
 
                                                 <div class="box-items">
                                                     <a class="new-box box-status"
-                                                        href="http://bionic.doradothemes.com/store2/en/shop/12-google-pixel-2xl-2017.html">
+                                                        href="http://localhost:8000/store2/en/shop/12-google-pixel-2xl-2017.html">
                                                         <span class="new-label">New</span>
                                                     </a>
                                                     <a class="sale-box box-status"
-                                                        href="http://bionic.doradothemes.com/store2/en/shop/12-google-pixel-2xl-2017.html">
+                                                        href="http://localhost:8000/store2/en/shop/12-google-pixel-2xl-2017.html">
                                                         <span class="sale-label">Sale!</span>
                                                     </a>
                                                 </div>
@@ -793,7 +793,7 @@
                                             <div class="product-cate"><span>Shop</span></div>
 
                                             <h5 class="product-title-item" itemprop="name"><a
-                                                    href="http://bionic.doradothemes.com/store2/en/shop/12-122-google-pixel-2xl-2017.html#/3-storage-64gb/11-color-black"
+                                                    href="http://localhost:8000/store2/en/shop/12-122-google-pixel-2xl-2017.html#/3-storage-64gb/11-color-black"
                                                     class="product-name">Google Pixel 2XL 2017</a></h5>
 
                                             <div class="review-price-product">
@@ -830,19 +830,19 @@
                                                     <div class="highlighted-informations hidden-sm-down">
 
                                                         <div class="variant-links">
-                                                            <a href="http://bionic.doradothemes.com/store2/en/shop/12-125-google-pixel-2xl-2017.html#/3-storage-64gb/5-color-grey"
+                                                            <a href="http://localhost:8000/store2/en/shop/12-125-google-pixel-2xl-2017.html#/3-storage-64gb/5-color-grey"
                                                                 class="color" title="Grey"
                                                                 style="background-color: rgb(170, 178, 189); color: rgb(34, 34, 34);"><span
                                                                     class="sr-only">Grey</span></a>
-                                                            <a href="http://bionic.doradothemes.com/store2/en/shop/12-128-google-pixel-2xl-2017.html#/3-storage-64gb/8-color-white"
+                                                            <a href="http://localhost:8000/store2/en/shop/12-128-google-pixel-2xl-2017.html#/3-storage-64gb/8-color-white"
                                                                 class="color" title="White"
                                                                 style="background-color: rgb(255, 255, 255); color: rgb(34, 34, 34);"><span
                                                                     class="sr-only">White</span></a>
-                                                            <a href="http://bionic.doradothemes.com/store2/en/shop/12-122-google-pixel-2xl-2017.html#/3-storage-64gb/11-color-black"
+                                                            <a href="http://localhost:8000/store2/en/shop/12-122-google-pixel-2xl-2017.html#/3-storage-64gb/11-color-black"
                                                                 class="color" title="Black"
                                                                 style="background-color: rgb(67, 74, 84); color: rgb(221, 221, 221);"><span
                                                                     class="sr-only">Black</span></a>
-                                                            <a href="http://bionic.doradothemes.com/store2/en/shop/12-131-google-pixel-2xl-2017.html#/3-storage-64gb/24-color-pink"
+                                                            <a href="http://localhost:8000/store2/en/shop/12-131-google-pixel-2xl-2017.html#/3-storage-64gb/24-color-pink"
                                                                 class="color" title="Pink"
                                                                 style="background-color: rgb(252, 202, 205); color: rgb(34, 34, 34);"><span
                                                                     class="sr-only">Pink</span></a>
@@ -881,14 +881,14 @@
 
                                     </div>
                                     <div class="product-more-options">
-                                        <form action="http://bionic.doradothemes.com/store2/en/cart"
+                                        <form action="http://localhost:8000/store2/en/cart"
                                             method="post" class="dor-addcart-button">
                                             <div class="add">
                                                 <input type="hidden" name="token"
                                                     value="34b11c3ac3b44ecd83062701f9ddcf1b">
                                                 <input name="id_product" value="12" type="hidden">
                                                 <input type="hidden" name="id_customization" value="0">
-                                                <a href="http://bionic.doradothemes.com/store2/en/cart"
+                                                <a href="http://localhost:8000/store2/en/cart"
                                                     class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
                                                     data-button-action="add-to-cart"
                                                     data-title="Add to cart">
@@ -912,7 +912,7 @@
                                             <div class="icon-line-compare-fel">
                                                 <div class="compare">
                                                     <a class="add_to_compare"
-                                                        href="http://bionic.doradothemes.com/store2/en/shop/12-google-pixel-2xl-2017.html"
+                                                        href="http://localhost:8000/store2/en/shop/12-google-pixel-2xl-2017.html"
                                                         data-productid="12" data-toggle="tooltip" title=""
                                                         data-original-title="Add compare"><i
                                                             class="fa fa-random"></i><span
@@ -936,30 +936,30 @@
                                         <div class="left-block">
                                             <div class="product-image-container">
 
-                                                <a href="http://bionic.doradothemes.com/store2/en/shop/13-134-hp-pavilion-27-all-in-one.html#/3-storage-64gb/11-color-black"
+                                                <a href="http://localhost:8000/store2/en/shop/13-134-hp-pavilion-27-all-in-one.html#/3-storage-64gb/11-color-black"
                                                     class="thumbnail product-thumbnail product_img_link">
                                                     <img class="img-responsive thumbnail-image-1 lazy owl-lazy loaded"
                                                         style="min-height: 10px;"
-                                                        data-lazy="http://bionic.doradothemes.com/store2/65-home_default/hp-pavilion-27-all-in-one.jpg"
-                                                        data-src="http://bionic.doradothemes.com/store2/65-home_default/hp-pavilion-27-all-in-one.jpg"
+                                                        data-lazy="http://localhost:8000/store2/65-home_default/hp-pavilion-27-all-in-one.jpg"
+                                                        data-src="http://localhost:8000/store2/65-home_default/hp-pavilion-27-all-in-one.jpg"
                                                         alt=""
-                                                        data-full-size-image-url="http://bionic.doradothemes.com/store2/65-large_default/hp-pavilion-27-all-in-one.jpg"
+                                                        data-full-size-image-url="http://localhost:8000/store2/65-large_default/hp-pavilion-27-all-in-one.jpg"
                                                         width="600" height="800" data-ll-status="loaded"
-                                                        src="http://bionic.doradothemes.com/store2/65-home_default/hp-pavilion-27-all-in-one.jpg">
+                                                        src="http://localhost:8000/store2/65-home_default/hp-pavilion-27-all-in-one.jpg">
                                                     <img class="img-responsive thumbnail-image-2 lazy owl-lazy loaded"
                                                         style="min-height: 10px;"
-                                                        data-lazy="http://bionic.doradothemes.com/store2/66-home_default/hp-pavilion-27-all-in-one.jpg"
-                                                        data-src="http://bionic.doradothemes.com/store2/66-home_default/hp-pavilion-27-all-in-one.jpg"
+                                                        data-lazy="http://localhost:8000/store2/66-home_default/hp-pavilion-27-all-in-one.jpg"
+                                                        data-src="http://localhost:8000/store2/66-home_default/hp-pavilion-27-all-in-one.jpg"
                                                         alt=""
-                                                        data-full-size-image-url="http://bionic.doradothemes.com/store2/66-large_default/hp-pavilion-27-all-in-one.jpg"
+                                                        data-full-size-image-url="http://localhost:8000/store2/66-large_default/hp-pavilion-27-all-in-one.jpg"
                                                         width="600" height="800" data-ll-status="loaded"
-                                                        src="http://bionic.doradothemes.com/store2/66-home_default/hp-pavilion-27-all-in-one.jpg">
+                                                        src="http://localhost:8000/store2/66-home_default/hp-pavilion-27-all-in-one.jpg">
                                                 </a>
 
 
                                                 <div class="box-items">
                                                     <a class="new-box box-status"
-                                                        href="http://bionic.doradothemes.com/store2/en/shop/13-hp-pavilion-27-all-in-one.html">
+                                                        href="http://localhost:8000/store2/en/shop/13-hp-pavilion-27-all-in-one.html">
                                                         <span class="new-label">New</span>
                                                     </a>
                                                 </div>
@@ -990,7 +990,7 @@
                                             <div class="product-cate"><span>Shop</span></div>
 
                                             <h5 class="product-title-item" itemprop="name"><a
-                                                    href="http://bionic.doradothemes.com/store2/en/shop/13-134-hp-pavilion-27-all-in-one.html#/3-storage-64gb/11-color-black"
+                                                    href="http://localhost:8000/store2/en/shop/13-134-hp-pavilion-27-all-in-one.html#/3-storage-64gb/11-color-black"
                                                     class="product-name">HP Pavilion 27 All In One</a></h5>
 
                                             <div class="review-price-product">
@@ -1027,19 +1027,19 @@
                                                     <div class="highlighted-informations hidden-sm-down">
 
                                                         <div class="variant-links">
-                                                            <a href="http://bionic.doradothemes.com/store2/en/shop/13-137-hp-pavilion-27-all-in-one.html#/3-storage-64gb/5-color-grey"
+                                                            <a href="http://localhost:8000/store2/en/shop/13-137-hp-pavilion-27-all-in-one.html#/3-storage-64gb/5-color-grey"
                                                                 class="color" title="Grey"
                                                                 style="background-color: rgb(170, 178, 189); color: rgb(34, 34, 34);"><span
                                                                     class="sr-only">Grey</span></a>
-                                                            <a href="http://bionic.doradothemes.com/store2/en/shop/13-140-hp-pavilion-27-all-in-one.html#/3-storage-64gb/8-color-white"
+                                                            <a href="http://localhost:8000/store2/en/shop/13-140-hp-pavilion-27-all-in-one.html#/3-storage-64gb/8-color-white"
                                                                 class="color" title="White"
                                                                 style="background-color: rgb(255, 255, 255); color: rgb(34, 34, 34);"><span
                                                                     class="sr-only">White</span></a>
-                                                            <a href="http://bionic.doradothemes.com/store2/en/shop/13-134-hp-pavilion-27-all-in-one.html#/3-storage-64gb/11-color-black"
+                                                            <a href="http://localhost:8000/store2/en/shop/13-134-hp-pavilion-27-all-in-one.html#/3-storage-64gb/11-color-black"
                                                                 class="color" title="Black"
                                                                 style="background-color: rgb(67, 74, 84); color: rgb(221, 221, 221);"><span
                                                                     class="sr-only">Black</span></a>
-                                                            <a href="http://bionic.doradothemes.com/store2/en/shop/13-143-hp-pavilion-27-all-in-one.html#/3-storage-64gb/24-color-pink"
+                                                            <a href="http://localhost:8000/store2/en/shop/13-143-hp-pavilion-27-all-in-one.html#/3-storage-64gb/24-color-pink"
                                                                 class="color" title="Pink"
                                                                 style="background-color: rgb(252, 202, 205); color: rgb(34, 34, 34);"><span
                                                                     class="sr-only">Pink</span></a>
@@ -1076,14 +1076,14 @@
 
                                     </div>
                                     <div class="product-more-options">
-                                        <form action="http://bionic.doradothemes.com/store2/en/cart"
+                                        <form action="http://localhost:8000/store2/en/cart"
                                             method="post" class="dor-addcart-button">
                                             <div class="add">
                                                 <input type="hidden" name="token"
                                                     value="34b11c3ac3b44ecd83062701f9ddcf1b">
                                                 <input name="id_product" value="13" type="hidden">
                                                 <input type="hidden" name="id_customization" value="0">
-                                                <a href="http://bionic.doradothemes.com/store2/en/cart"
+                                                <a href="http://localhost:8000/store2/en/cart"
                                                     class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
                                                     data-button-action="add-to-cart"
                                                     data-title="Add to cart">
@@ -1107,7 +1107,7 @@
                                             <div class="icon-line-compare-fel">
                                                 <div class="compare">
                                                     <a class="add_to_compare"
-                                                        href="http://bionic.doradothemes.com/store2/en/shop/13-hp-pavilion-27-all-in-one.html"
+                                                        href="http://localhost:8000/store2/en/shop/13-hp-pavilion-27-all-in-one.html"
                                                         data-productid="13" data-toggle="tooltip" title=""
                                                         data-original-title="Add compare"><i
                                                             class="fa fa-random"></i><span
@@ -1131,30 +1131,30 @@
                                         <div class="left-block">
                                             <div class="product-image-container">
 
-                                                <a href="http://bionic.doradothemes.com/store2/en/shop/14-146-samsung-gear-s3-classic.html#/3-storage-64gb/11-color-black"
+                                                <a href="http://localhost:8000/store2/en/shop/14-146-samsung-gear-s3-classic.html#/3-storage-64gb/11-color-black"
                                                     class="thumbnail product-thumbnail product_img_link">
                                                     <img class="img-responsive thumbnail-image-1 lazy owl-lazy loaded"
                                                         style="min-height: 10px;"
-                                                        data-lazy="http://bionic.doradothemes.com/store2/68-home_default/samsung-gear-s3-classic.jpg"
-                                                        data-src="http://bionic.doradothemes.com/store2/68-home_default/samsung-gear-s3-classic.jpg"
+                                                        data-lazy="http://localhost:8000/store2/68-home_default/samsung-gear-s3-classic.jpg"
+                                                        data-src="http://localhost:8000/store2/68-home_default/samsung-gear-s3-classic.jpg"
                                                         alt=""
-                                                        data-full-size-image-url="http://bionic.doradothemes.com/store2/68-large_default/samsung-gear-s3-classic.jpg"
+                                                        data-full-size-image-url="http://localhost:8000/store2/68-large_default/samsung-gear-s3-classic.jpg"
                                                         width="600" height="800" data-ll-status="loaded"
-                                                        src="http://bionic.doradothemes.com/store2/68-home_default/samsung-gear-s3-classic.jpg">
+                                                        src="http://localhost:8000/store2/68-home_default/samsung-gear-s3-classic.jpg">
                                                     <img class="img-responsive thumbnail-image-2 lazy owl-lazy loaded"
                                                         style="min-height: 10px;"
-                                                        data-lazy="http://bionic.doradothemes.com/store2/69-home_default/samsung-gear-s3-classic.jpg"
-                                                        data-src="http://bionic.doradothemes.com/store2/69-home_default/samsung-gear-s3-classic.jpg"
+                                                        data-lazy="http://localhost:8000/store2/69-home_default/samsung-gear-s3-classic.jpg"
+                                                        data-src="http://localhost:8000/store2/69-home_default/samsung-gear-s3-classic.jpg"
                                                         alt=""
-                                                        data-full-size-image-url="http://bionic.doradothemes.com/store2/69-large_default/samsung-gear-s3-classic.jpg"
+                                                        data-full-size-image-url="http://localhost:8000/store2/69-large_default/samsung-gear-s3-classic.jpg"
                                                         width="600" height="800" data-ll-status="loaded"
-                                                        src="http://bionic.doradothemes.com/store2/69-home_default/samsung-gear-s3-classic.jpg">
+                                                        src="http://localhost:8000/store2/69-home_default/samsung-gear-s3-classic.jpg">
                                                 </a>
 
 
                                                 <div class="box-items">
                                                     <a class="new-box box-status"
-                                                        href="http://bionic.doradothemes.com/store2/en/shop/14-samsung-gear-s3-classic.html">
+                                                        href="http://localhost:8000/store2/en/shop/14-samsung-gear-s3-classic.html">
                                                         <span class="new-label">New</span>
                                                     </a>
                                                 </div>
@@ -1185,7 +1185,7 @@
                                             <div class="product-cate"><span>Shop</span></div>
 
                                             <h5 class="product-title-item" itemprop="name"><a
-                                                    href="http://bionic.doradothemes.com/store2/en/shop/14-146-samsung-gear-s3-classic.html#/3-storage-64gb/11-color-black"
+                                                    href="http://localhost:8000/store2/en/shop/14-146-samsung-gear-s3-classic.html#/3-storage-64gb/11-color-black"
                                                     class="product-name">Samsung Gear S3 Classic</a></h5>
 
                                             <div class="review-price-product">
@@ -1222,19 +1222,19 @@
                                                     <div class="highlighted-informations hidden-sm-down">
 
                                                         <div class="variant-links">
-                                                            <a href="http://bionic.doradothemes.com/store2/en/shop/14-149-samsung-gear-s3-classic.html#/3-storage-64gb/5-color-grey"
+                                                            <a href="http://localhost:8000/store2/en/shop/14-149-samsung-gear-s3-classic.html#/3-storage-64gb/5-color-grey"
                                                                 class="color" title="Grey"
                                                                 style="background-color: rgb(170, 178, 189); color: rgb(34, 34, 34);"><span
                                                                     class="sr-only">Grey</span></a>
-                                                            <a href="http://bionic.doradothemes.com/store2/en/shop/14-152-samsung-gear-s3-classic.html#/3-storage-64gb/8-color-white"
+                                                            <a href="http://localhost:8000/store2/en/shop/14-152-samsung-gear-s3-classic.html#/3-storage-64gb/8-color-white"
                                                                 class="color" title="White"
                                                                 style="background-color: rgb(255, 255, 255); color: rgb(34, 34, 34);"><span
                                                                     class="sr-only">White</span></a>
-                                                            <a href="http://bionic.doradothemes.com/store2/en/shop/14-146-samsung-gear-s3-classic.html#/3-storage-64gb/11-color-black"
+                                                            <a href="http://localhost:8000/store2/en/shop/14-146-samsung-gear-s3-classic.html#/3-storage-64gb/11-color-black"
                                                                 class="color" title="Black"
                                                                 style="background-color: rgb(67, 74, 84); color: rgb(221, 221, 221);"><span
                                                                     class="sr-only">Black</span></a>
-                                                            <a href="http://bionic.doradothemes.com/store2/en/shop/14-155-samsung-gear-s3-classic.html#/3-storage-64gb/24-color-pink"
+                                                            <a href="http://localhost:8000/store2/en/shop/14-155-samsung-gear-s3-classic.html#/3-storage-64gb/24-color-pink"
                                                                 class="color" title="Pink"
                                                                 style="background-color: rgb(252, 202, 205); color: rgb(34, 34, 34);"><span
                                                                     class="sr-only">Pink</span></a>
@@ -1271,14 +1271,14 @@
 
                                     </div>
                                     <div class="product-more-options">
-                                        <form action="http://bionic.doradothemes.com/store2/en/cart"
+                                        <form action="http://localhost:8000/store2/en/cart"
                                             method="post" class="dor-addcart-button">
                                             <div class="add">
                                                 <input type="hidden" name="token"
                                                     value="34b11c3ac3b44ecd83062701f9ddcf1b">
                                                 <input name="id_product" value="14" type="hidden">
                                                 <input type="hidden" name="id_customization" value="0">
-                                                <a href="http://bionic.doradothemes.com/store2/en/cart"
+                                                <a href="http://localhost:8000/store2/en/cart"
                                                     class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
                                                     data-button-action="add-to-cart"
                                                     data-title="Add to cart">
@@ -1302,7 +1302,7 @@
                                             <div class="icon-line-compare-fel">
                                                 <div class="compare">
                                                     <a class="add_to_compare"
-                                                        href="http://bionic.doradothemes.com/store2/en/shop/14-samsung-gear-s3-classic.html"
+                                                        href="http://localhost:8000/store2/en/shop/14-samsung-gear-s3-classic.html"
                                                         data-productid="14" data-toggle="tooltip" title=""
                                                         data-original-title="Add compare"><i
                                                             class="fa fa-random"></i><span
@@ -1332,7 +1332,7 @@
                                 <ul class="page-list clearfix text-xs-center">
                                     <li>
                                         <a rel="prev"
-                                            href="http://bionic.doradothemes.com/store2/en/3-shop?cate_type=1&amp;page=1"
+                                            href="http://localhost:8000/store2/en/3-shop?cate_type=1&amp;page=1"
                                             class="previous disabled js-search-link">
                                             <i class="fas fa-backward"></i><span
                                                 class="hidden">Previous</span>
@@ -1340,21 +1340,21 @@
                                     </li>
                                     <li class="current">
                                         <a rel="nofollow"
-                                            href="http://bionic.doradothemes.com/store2/en/3-shop?cate_type=1&amp;page=1"
+                                            href="http://localhost:8000/store2/en/3-shop?cate_type=1&amp;page=1"
                                             class="disabled js-search-link">
                                             1
                                         </a>
                                     </li>
                                     <li>
                                         <a rel="nofollow"
-                                            href="http://bionic.doradothemes.com/store2/en/3-shop?cate_type=1&amp;page=2"
+                                            href="http://localhost:8000/store2/en/3-shop?cate_type=1&amp;page=2"
                                             class="js-search-link">
                                             2
                                         </a>
                                     </li>
                                     <li>
                                         <a rel="next"
-                                            href="http://bionic.doradothemes.com/store2/en/3-shop?cate_type=1&amp;page=2"
+                                            href="http://localhost:8000/store2/en/3-shop?cate_type=1&amp;page=2"
                                             class="next js-search-link">
                                             <span class="hidden">Next</span><i class="fas fa-forward"></i>
                                         </a>
