@@ -8,32 +8,17 @@
 
 <head>
 
-
     <meta charset="utf-8">
-
-
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-
-
-
     <title>Shop</title>
     <meta name="description" content="You will find here all products collections.
 This category includes all the basics of your wardrobe and much more:
 cellphone, laptop, headphone, smartwatch, TV!">
     <meta name="keywords" content="">
     <link rel="canonical" href="3-shop.html">
-
-
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-
     <link rel="icon" type="image/vnd.microsoft.icon" href="">
     <link rel="shortcut icon" type="image/x-icon" href="">
-
-
-
     <link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
     <link rel="stylesheet" href="{{ asset('css/theme-main.css') }}" type="text/css" media="all">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -501,42 +486,42 @@ cellphone, laptop, headphone, smartwatch, TV!">
                                                                                             src="https://picsum.photos/350/215?random={{ mt_rand(1, 100) }}"
                                                                                             alt="" width="350"
                                                                                             height="215" /></div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-sm-2">
-                                                                        <div class="widget-content">
-                                                                            <div
-                                                                                class="widget-html block menu-category-image-top">
-                                                                                <div class="widget-inner block_content">
-                                                                                    <div class="cate-image-menu"><img
-                                                                                            src="https://picsum.photos/350/215?random={{ mt_rand(1, 100) }}"
-                                                                                            alt="" width="350"
-                                                                                            height="215" /></div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-sm-2">
-                                                                        <div class="widget-content">
-                                                                            <div
-                                                                                class="widget-html block menu-category-image-top">
-                                                                                <div class="widget-inner block_content">
-                                                                                    <div class="cate-image-menu"><img
-                                                                                            src="https://picsum.photos/350/215?random={{ mt_rand(1, 100) }}"
-                                                                                            alt="" width="350"
-                                                                                            height="215" /></div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-sm-2">
-                                                                        <div class="widget-content">
-                                                                            <div
-                                                                                class="widget-html block menu-category-image-top">
-                                                                                <div class="widget-inner block_content">
-                                                                                    <div class="cate-image-menu"><img
+        </div>
+    </div>
+</div>
+</div>
+<div class="col-sm-2">
+<div class="widget-content">
+    <div
+        class="widget-html block menu-category-image-top">
+        <div class="widget-inner block_content">
+            <div class="cate-image-menu"><img
+                    src="https://picsum.photos/350/215?random={{ mt_rand(1, 100) }}"
+                    alt="" width="350"
+                    height="215" /></div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="col-sm-2">
+<div class="widget-content">
+    <div
+        class="widget-html block menu-category-image-top">
+        <div class="widget-inner block_content">
+            <div class="cate-image-menu"><img
+                    src="https://picsum.photos/350/215?random={{ mt_rand(1, 100) }}"
+                    alt="" width="350"
+                    height="215" /></div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="col-sm-2">
+<div class="widget-content">
+    <div
+        class="widget-html block menu-category-image-top">
+        <div class="widget-inner block_content">
+            <div class="cate-image-menu"><img
                                                                                             src="https://picsum.photos/350/215?random={{ mt_rand(1, 100) }}"
                                                                                             alt="" width="350"
                                                                                             height="215" /></div>
