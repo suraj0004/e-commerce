@@ -8,20 +8,9 @@
 @section('content')
     <div class="container">
         <div class="row">
-
-
-
-
             <div id="content-wrapper" class="left-column col-md-12">
-
-
                 <section id="main">
-
-
-
-
                     <section id="content" class="page-content card card-block">
-
 
                         <section id="contact-form-v1" class="contact-form">
                             <h1 class="h1">Contact Us</h1>

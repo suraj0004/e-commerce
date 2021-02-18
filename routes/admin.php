@@ -16,4 +16,8 @@ use App\Http\Controllers\AdminModule\HomeController;
 
 Route::group(["middleware"=>["auth","admin"]],function () {
     Route::get('/home', [HomeController::class, 'index'])->name('home');
+    Route::get('/my-profile', [HomeController::class, 'showMyProfilePage'])->name('my-profile');
+
+    Route::get('/table',  [HomeController::class, 'showTablePage'])->name('tablePage');
+
 });

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ShopModule\HomeController;
+Use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,8 +19,6 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-
-
 
 // Shop Module Routes
 Route::group(["middleware"=>["auth","user"]],function () {
