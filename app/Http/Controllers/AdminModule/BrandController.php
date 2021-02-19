@@ -13,7 +13,8 @@ class BrandController extends Controller
     {
         $brand = Brand::all();
         return view('admin.brand.brand')->with([
-            'brands'=>$brand
+            'brands'=>$brand,
+            'page'=> 'brand'
         ]);
     }
 
