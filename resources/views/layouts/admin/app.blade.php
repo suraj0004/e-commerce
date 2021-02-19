@@ -48,13 +48,6 @@
 
             </ul>
 
-
-
-
-
-
-
-
             <ul class="navbar-nav ml-auto">
 
                 <li class="nav-item d-none d-sm-inline-block">
@@ -110,7 +103,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="{{ route('admin.tablePage') }}" class="nav-link @if(isset($page) && $page=='brand') active @endif ">
+                            <a href="{{ route('admin.brand.show') }}" class="nav-link @if(isset($page) && $page=='brand') active @endif ">
                                 <i class="fas fa-building"></i>
                                 <p>
                                     Brand

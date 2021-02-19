@@ -15,8 +15,8 @@
                         <section id="contact-form-v1" class="contact-form">
                             <h1 class="h1">Contact Us</h1>
                             <div id="contact-form-style1">
-                                <form action="http:localhost:8000/contact-us" method="post"
-                                    enctype="multipart/form-data" onsubmit="return contact_us_form()">
+                                <form action="http:localhost:8000/contact-us" method="post" enctype="multipart/form-data"
+                                    onsubmit="return contact_us_form()">
                                     <fieldset>
 
                                         <div class="clearfix row">
@@ -41,22 +41,22 @@
                                                             <label for="contactname">Your name</label>
                                                             <input class="form-control grey" type="text" id="contactname"
                                                                 name="contactname" value="" placeholder="" />
-                                                                <div class="text-danger" id="contactname_error"> </div>
+                                                            <div class="text-danger" id="contactname_error"> </div>
 
                                                         </div>
 
                                                         <div class="form-group">
                                                             <label class="form-control-label">Email address</label>
-                                                            <input class="form-control" name="from" type="text" value="" id="email"
-                                                                placeholder="">
-                                                                <div class="text-danger" id="email_error"></div>
+                                                            <input class="form-control" name="from" type="text" value=""
+                                                                id="email" placeholder="">
+                                                            <div class="text-danger" id="email_error"></div>
                                                         </div>
 
                                                         <div class="form-group">
                                                             <label for="contactweb">Website</label>
                                                             <input class="form-control grey" type="text" id="contactweb"
                                                                 name="contactweb" value="" placeholder="" />
-                                                                <div id="contact_web_error" class="text-danger"></div>
+                                                            <div id="contact_web_error" class="text-danger"></div>
                                                         </div>
                                                     </div>
                                                     <div class="form-group-area">
@@ -64,7 +64,7 @@
                                                             <label class="form-control-label">Message</label>
                                                             <textarea id="message" class="form-control" name="message"
                                                                 placeholder="" rows="7"></textarea>
-                                                                <div id="message_error" class="text-danger"></div>
+                                                            <div id="message_error" class="text-danger"></div>
                                                         </div>
                                                     </div>
                                                     <div class="submit">
@@ -139,96 +139,96 @@
 @endsection
 
 @section('js')
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMH_Sh8EdCWkG1OFhAih3FFhbkRYuo-0U"></script>
-<script src="{{asset('js/jquery.googlemap.js')}}"></script>
-<script type="text/javascript">
-  $(document).ready(function(){
-    $("#mapContact").googleMap();
-    $("#mapContact").addMarker({
-        coords: [48.895651, 2.290569],
-        url: 'http://localhost:8000'
-      });
-  });
-</script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMH_Sh8EdCWkG1OFhAih3FFhbkRYuo-0U"></script>
+    <script src="{{ asset('js/jquery.googlemap.js') }}"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#mapContact").googleMap();
+            $("#mapContact").addMarker({
+                coords: [48.895651, 2.290569],
+                url: 'http://localhost:8000'
+            });
+        });
 
-<script>
-    function contact_us_form(){
+    </script>
 
-        var a=document.getElementById("contactname");
-        var b=document.getElementById("email");
-        var c=document.getElementById("contactweb");
-        var d=document.getElementById("message");
-        var pattern= /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-        if(a.value==""){
-            a.style="border:2px solid red;"
+    <script>
+        function contact_us_form() {
 
-            document.getElementById("contactname_error").innerHTML="<h4>please enter your name</h4>";
-            return false
+            var a = document.getElementById("contactname");
+            var b = document.getElementById("email");
+            var c = document.getElementById("contactweb");
+            var d = document.getElementById("message");
+            var pattern = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            if (a.value == "") {
+                a.style = "border:2px solid red;"
 
+                document.getElementById("contactname_error").innerHTML = "<h4>please enter your name</h4>";
+                return false
+
+            }
+            if (a.value.length < 2 || a.value.length > 30) {
+                a.style = "border:2px solid red;"
+                document.getElementById("contactname_error").innerHTML = "length must be between 2 and 30"
+                return false
+            }
+            if (b.value == "") {
+                b.style = "border:2px solid red;"
+                document.getElementById("email_error").innerHTML = "enter your email";
+
+                return false
+            } else if (!pattern.test(b.vlaue)) {
+                b.style = "border:2px solid red;"
+                document.getElementById("email_error").innerHTML = "invalid";
+
+                return false
+
+            }
+
+
+
+
+
+
+            // if((b.value).indexOf('@')<=0){
+            //     b.style="border:2px solid red;"
+            //     document.getElementById("email_error").innerHTML="invalid @ position";
+            //     return false;
+            // }
+            // if((b.value).charAt(b.length-3)!='.'){
+            //     b.style="border:2px solid red;"
+            //     document.getElementById("email_error").innerHTML="invalid . position";
+            //     return false;
+            // }
+
+            // //  }
+            // if(b.value.indexOf('@')<1|| b.value.indexOf('.')<b.value.indexOf('@')+2||b.value.indexOf('.')+2>b.value.length){
+            //     b.style="border:2px solid red;"
+            //     document.getElementById("email_error").innerHTML="invalid email address";
+
+            // }
+            if (c.value == "") {
+                c.style = "border:2px solid red;"
+                document.getElementById("contact_web_error").innerHTML = "please enter your website";
+                return false
+            }
+            if (c.value.length <= 7) {
+                c.style = "border:2px solid red;"
+                document.getElementById("contact_web_error").innerHTML = "please enter correct website";
+                return false
+
+            }
+            if (d.value == "") {
+                d.style = "border:2px solid red;"
+                document.getElementById("message_error").innerHTML = "text area cannot be empty";
+                return false
+            }
+            if ((d.value).length < 10) {
+                d.style = "border:2px solid red;"
+                document.getElementById("message_error").innerHTML = "minimum 10 words are required";
+                return false
+            }
         }
-        if(a.value.length<2 || a.value.length>30){
-            a.style="border:2px solid red;"
-            document.getElementById("contactname_error").innerHTML="length must be between 2 and 30"
-            return false
-        }
-        if(b.value==""){
-            b.style="border:2px solid red;"
-            document.getElementById("email_error").innerHTML="enter your email";
 
-        return false
-        }
-         else if(!pattern.test(b.vlaue))
-         {
-            b.style="border:2px solid red;"
-            document.getElementById("email_error").innerHTML="invalid";
-
-        return false
-
-        }
-
-
-
-
-
-
-        // if((b.value).indexOf('@')<=0){
-        //     b.style="border:2px solid red;"
-        //     document.getElementById("email_error").innerHTML="invalid @ position";
-        //     return false;
-        // }
-        // if((b.value).charAt(b.length-3)!='.'){
-        //     b.style="border:2px solid red;"
-        //     document.getElementById("email_error").innerHTML="invalid . position";
-        //     return false;
-        // }
-
-        // //  }
-        // if(b.value.indexOf('@')<1|| b.value.indexOf('.')<b.value.indexOf('@')+2||b.value.indexOf('.')+2>b.value.length){
-        //     b.style="border:2px solid red;"
-        //     document.getElementById("email_error").innerHTML="invalid email address";
-
-        // }
-        if(c.value==""){
-            c.style="border:2px solid red;"
-            document.getElementById("contact_web_error").innerHTML="please enter your website";
-            return false
-        }
-        if(c.value.length<=7){
-            c.style="border:2px solid red;"
-            document.getElementById("contact_web_error").innerHTML="please enter correct website";
-            return false
-
-        }
-        if(d.value==""){
-            d.style="border:2px solid red;"
-            document.getElementById("message_error").innerHTML="text area cannot be empty";
-            return false
-        }
-        if((d.value).length<10){
-            d.style="border:2px solid red;"
-            document.getElementById("message_error").innerHTML="minimum 10 words are required";
-            return false
-        }
-    }
-</script>
+    </script>
 @endsection
