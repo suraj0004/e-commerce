@@ -129,6 +129,15 @@
                             </a>
                         </li>
 
+                        <li class="nav-item">
+                            <a href="{{ route('admin.image.show') }}" class="nav-link @if(isset($page) && $page=='images') active @endif ">
+                                <i class="fas fa-building"></i>
+                                <p>
+                                    Images
+                                </p>
+                            </a>
+                        </li>
+
 
 
 
