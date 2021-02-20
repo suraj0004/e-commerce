@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminModule\HomeController;
 use App\Http\Controllers\AdminModule\TagController;
 use App\Http\Controllers\AdminModule\BrandController;
+use App\Http\Controllers\AdminModule\ImageController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -38,5 +40,16 @@ Route::group(["middleware"=>["auth","admin"]],function () {
     Route::post('/delete-brand/{id}', [BrandController::class, 'delete'])->name('brand.delete');
 
     Route::post('/update-brand', [BrandController::class, 'update'])->name('brand.update');
+
+
+
+
+    //image routes
+    Route::get('/images', [ImageController::class, 'index'])->name('image.show');
+
+    Route::post('/add-image', [ImageController::class, 'store'])->name('image.add');
+    Route::post('/delete-image/{image_id}', [ImageController::class, 'delete'])->name('image.delete');
+
+    Route::post('/update-image', [ImageController::class, 'update'])->name('image.update');
 
 });
