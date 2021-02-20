@@ -14,14 +14,14 @@ Use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Shop Module Guest/Auth Routes
+Route::get('/', [HomeController::class, 'index']);
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/contact-us', [HomeController::class, 'contact'])->name('contact');
 
 Auth::routes();
 
-// Shop Module Routes
+// Shop Module Auth Routes
 Route::group(["middleware"=>["auth","user"]],function () {
-    Route::get('/home', [HomeController::class, 'index'])->name('home');
-    Route::get('/contact-us', [HomeController::class, 'contact'])->name('contact');
+
 });

@@ -1,6 +1,9 @@
 @extends('layouts.admin.app')
 
 @section('content')
+
+<!-- Content Header (Page header) -->
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">

@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminModule\HomeController;
+use App\Http\Controllers\AdminModule\TagController;
+use App\Http\Controllers\AdminModule\BrandController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,5 +21,22 @@ Route::group(["middleware"=>["auth","admin"]],function () {
     Route::get('/my-profile', [HomeController::class, 'showMyProfilePage'])->name('my-profile');
 
     Route::get('/table',  [HomeController::class, 'showTablePage'])->name('tablePage');
+
+
+    //tag routes
+    Route::get("/tags",[TagController::class, 'index'])->name("tag.show");
+
+    Route::post('/add-tag',[TagController::class, 'store'])->name("tag.add");
+    Route::post('/update-tag',[TagController::class, 'update'])->name("tag.update");
+    Route::post('/delete-tag/{id}',[TagController::class, 'delete'])->name("tag.delete");
+
+
+    //brand routes
+    Route::get('/brand', [BrandController::class, 'index'])->name('brand.show');
+
+    Route::post('/add-brand', [BrandController::class, 'store'])->name('brand.add');
+    Route::post('/delete-brand/{id}', [BrandController::class, 'delete'])->name('brand.delete');
+
+    Route::post('/update-brand', [BrandController::class, 'update'])->name('brand.update');
 
 });

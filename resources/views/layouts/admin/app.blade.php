@@ -45,17 +45,24 @@
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="{{ route('admin.home') }}" class="nav-link">Home</a>
                 </li>
+
+            </ul>
+
+            <ul class="navbar-nav ml-auto">
+
                 <li class="nav-item d-none d-sm-inline-block">
                     <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                        {{ __('Logout') }}
+                        document.getElementById('logout-form').submit();">
+                        <i class="fas fa-sign-out-alt"></i>
                     </a>
 
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                         @csrf
                     </form>
                 </li>
+
             </ul>
+
         </nav>
         <!-- /.navbar -->
 
@@ -87,17 +94,26 @@
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                         <li class="nav-item">
-                            <a href="{{ route('admin.tablePage') }}" class="nav-link">
-                                <i class="nav-icon fas fa-th"></i>
+                            <a href="{{ route('admin.tag.show') }}" class="nav-link @if(isset($page) && $page=='tag') active @endif ">
+                                <i class="fas fa-tags"></i>
                                 <p>
-                                    User
+                                    Tag
                                 </p>
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="{{ route('admin.tablePage') }}" class="nav-link">
-                                <i class="nav-icon fas fa-th"></i>
+                            <a href="{{ route('admin.brand.show') }}" class="nav-link @if(isset($page) && $page=='brand') active @endif ">
+                                <i class="fas fa-building"></i>
+                                <p>
+                                    Brand
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{ route('admin.tablePage') }}" class="nav-link @if(isset($page) && $page=='category') active @endif ">
+                                <i class="fas fa-sitemap"></i>
                                 <p>
                                     Category
                                 </p>
@@ -105,8 +121,8 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="{{ route('admin.tablePage') }}" class="nav-link">
-                                <i class="nav-icon fas fa-th"></i>
+                            <a href="{{ route('admin.tablePage') }}" class="nav-link @if(isset($page) && $page=='product') active @endif ">
+                                <i class="fas fa-boxes"></i>
                                 <p>
                                     Product
                                 </p>
@@ -125,6 +141,21 @@
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper" style="min-height: 100px">
+            <section class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1>
+                                @if (isset($page))
+                                    {{ucfirst($page)}}
+                                @else
+                                    Page Name
+                                @endif
+                            </h1>
+                        </div>
+                    </div>
+                </div><!-- /.container-fluid -->
+            </section>
             @yield('content')
         </div>
         <!-- /.content-wrapper -->
