@@ -17,6 +17,7 @@ class TagController extends Controller
             "page" => "tag"
         ]);
     }
+
     public function store(Request $request)
     {
         Validator::make($request->all(), [
@@ -49,8 +50,7 @@ class TagController extends Controller
 
     public function delete(Request $request, $id)
     {
-        Tag::where('id', $id)
-            ->delete();
+        Tag::where('id', $id)->delete();
         $request->session()->flash('status', 'Tag Deleted successful!');
         return redirect()->back();
     }
