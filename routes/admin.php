@@ -41,9 +41,6 @@ Route::group(["middleware"=>["auth","admin"]],function () {
 
     Route::post('/update-brand', [BrandController::class, 'update'])->name('brand.update');
 
-
-
-
     //image routes
     Route::get('/images', [ImageController::class, 'index'])->name('image.show');
 
