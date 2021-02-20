@@ -37,15 +37,15 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">You can Add/Edit/Delete tags from here.</h3>
+                            <h3 class="card-title">You can Add/Edit/Delete brands from here.</h3>
                             <button type="button" class="btn btn-primary float-right" data-toggle="modal"
-                                data-target="#addTag">
+                                data-target="#addBrand">
                                 <i class="icon fas fa-plus"></i> Add Brand
                             </button>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
-                            <table id="example2" class="table table-bordered table-hover">
+                            <table id="brand_table" class="table table-bordered table-hover">
                                 <thead>
                                     <tr>
                                         <th>Sno.</th>
@@ -94,13 +94,13 @@
 
 
     <!--Add Modal -->
-    <div class="modal fade" id="addTag" tabindex="-1" role="dialog" aria-labelledby="addTagTitle" aria-hidden="true">
+    <div class="modal fade" id="addBrand" tabindex="-1" role="dialog" aria-labelledby="addBrandTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <form method="POST" action="{{ route('admin.brand.add') }}">
                     @csrf
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Add Brand </h5>
+                        <h5 class="modal-title" id="brand_title">Add Brand </h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -129,9 +129,6 @@
         </div>
     </div>
 
-
-
-
     <!--Edit Modal -->
     <div class="modal fade" id="editBrand" tabindex="-1" role="dialog" aria-labelledby="editTagTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -139,7 +136,7 @@
                 <form method="POST" action="{{ route('admin.brand.update') }}">
                     @csrf
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Edit Brand Name</h5>
+                        <h5 class="modal-title" id="brand_title">Edit Brand Name</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -178,7 +175,7 @@
 
     <script>
         $(document).ready(function() {
-            $('#example2').DataTable();
+            $('#brand_table').DataTable();
         });
 
         function showEditModal(id, name, slug) {

@@ -28,7 +28,7 @@ class BrandController extends Controller
         $brand->name = $request->brand_name;
         $brand->slug = $request->slug_name;
         $brand->save();
-        $request->session()->flash('stauts', 'Brand Added Successfully');
+        $request->session()->flash('status', 'Brand Added Successfully');
         return redirect()->back();
     }
 
