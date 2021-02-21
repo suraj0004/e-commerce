@@ -3,6 +3,8 @@
 @section('css')
 
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
 @endsection
 
 
@@ -52,6 +54,7 @@
                                         <th>Weight</th>
                                         <th>Weight Type</th>
                                         <th>Price</th>
+                                        <th>Categories</th>
                                         <th class="text-center">Action(s)</th>
                                     </tr>
                                 </thead>
@@ -65,6 +68,11 @@
                                             <td>{{ $product->weight }}</td>
                                             <td>{{ $product->weight_type }}</td>
                                             <td>{{ $product->price }}</td>
+                                            <td>
+                                                @foreach ($product->categories as $category)
+                                                    <span>{{$category->name}},</span>
+                                                @endforeach
+                                            </td>
                                             <td class="text-center">
                                                 <button type="button" class="btn btn-primary"
                                                     onclick="showEditModal({{ $product->id }},'{{ $product->name }}', '{{$product->slug}}', '{{ $product->quantity }}','{{ $product->weight }}','{{ $product->weight_type }}','{{ $product->price }}') ">
@@ -110,8 +118,29 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body">
 
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="brand_id">Brand Name</label>
+                            <select name="brand_id" id="brand_id" class="form-control">
+                                <option value="" >Select Value</option>
+                                @foreach ($brands as $brand)
+                                    <option value="{{$brand->id}}">{{$brand->name}}</option>
+                                @endforeach
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="category_id">Category Name</label>
+                            <div class="row p-2">
+                                <select name="category_id[]" id="category_id" class="" multiple="multiple" style="width: 100%">
+                                <option value="" >Select Value</option>
+                                @foreach ($categories as $category)
+                                    <option value="{{$category->id}}">{{$category->name}}</option>
+                                @endforeach
+                            </select>
+                            </div>
+                        </div>
                         <div class="form-group">
                             <label for="product_name">Product Name</label>
                             <input type="text" class="form-control" id="product_name" name="product_name"
@@ -228,10 +257,15 @@
 
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js">
     </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script>
         $(document).ready(function() {
             $('#product_table').DataTable();
+            $('#category_id').select2({
+                theme: "classic"
+            });
+
+
         });
 
         function showEditModal(id, name, slug, quantity, weight, weight_type, price) {

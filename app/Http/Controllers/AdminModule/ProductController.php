@@ -6,16 +6,24 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use Illuminate\Support\Facades\Validator;
+use App\Models\Brand;
+use App\Models\Category;
 
 class ProductController extends Controller
 {
 
     public function index()
     {
-        $product = Product::all();
+        $product = Product::with([
+            'categories'
+        ])->get();
+        $brands = Brand::all();
+        $categories = Category::all();
         return view('admin.product.product')->with([
             'products'=>$product,
-            'page'=>'product'
+            'page'=>'product',
+            'brands'=>$brands,
+            'categories'=>$categories
         ]);
     }
 
@@ -23,16 +31,18 @@ class ProductController extends Controller
     {
 
         Validator::make($request->all(), [
+            'brand_id'=>'required|numeric|exists:brands,id',
+            'category_id'=>'required|array',
+            'category_id.*'=>'required|numeric|exists:categories,id',
             'product_name'=> 'required|string|max:250',
-            'slug_name'=>'required|string|max:250',
+            'slug_name'=>'required|string|max:250|unique:categories,slug',
             'product_quantity'=>'required|numeric',
             'product_weight'=>'required|numeric',
             'weight_type'=>'required',
             'product_price'=>'required|numeric'
-
         ])->validate();
         $product = new Product();
-
+        $product->brand_id = $request->brand_id;
         $product->name = $request->product_name;
         $product->slug = $request->slug_name;
         $product->quantity = $request->product_quantity;
@@ -41,6 +51,7 @@ class ProductController extends Controller
         $product->price = $request->product_price;
 
         $product->save();
+        $product->categories()->sync($request->category_id);
         $request->session()->flash('status', 'Product Added Successfully');
         return redirect()->back();
     }
