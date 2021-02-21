@@ -121,7 +121,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="{{ route('admin.tablePage') }}" class="nav-link @if(isset($page) && $page=='product') active @endif ">
+                            <a href="{{ route('admin.product.show') }}" class="nav-link @if(isset($page) && $page=='product') active @endif ">
                                 <i class="fas fa-boxes"></i>
                                 <p>
                                     Product

@@ -1,9 +1,6 @@
 @extends('layouts.admin.app')
 
 @section('css')
-    {{-- <link rel="stylesheet" href="{{ asset('admin/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('admin/plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('admin/plugins/datatables-buttons/css/buttons.bootstrap4.min.css') }}"> --}}
 
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
 @endsection
@@ -130,7 +127,7 @@
     </div>
 
     <!--Edit Modal -->
-    <div class="modal fade" id="editBrand" tabindex="-1" role="dialog" aria-labelledby="editTagTitle" aria-hidden="true">
+    <div class="modal fade" id="editBrand" tabindex="-1" role="dialog" aria-labelledby="editBrandTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <form method="POST" action="{{ route('admin.brand.update') }}">
