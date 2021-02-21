@@ -6,6 +6,7 @@ use App\Http\Controllers\AdminModule\TagController;
 use App\Http\Controllers\AdminModule\BrandController;
 use App\Http\Controllers\AdminModule\ImageController;
 use App\Http\Controllers\AdminModule\CategoryController;
+use App\Http\Controllers\AdminModule\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -55,4 +56,10 @@ Route::group(["middleware"=>["auth","admin"]],function () {
     Route::post('/category/{id}', [CategoryController::class, 'destroy'])->name('category.destroy');
     Route::post('/update-category', [CategoryController::class, 'update'])->name('category.update');
 
+    //Product Route
+    Route::get('/product', [ProductController::class, 'index'])->name('product.show');
+    Route::post('/product', [ProductController::class, 'store'])->name('product.store');
+    Route::post('/product/{id}', [ProductController::class, 'destroy'])->name('product.destroy');
+
+    Route::post('/update-product', [ProductController::class, 'update'])->name('product.update');
 });
