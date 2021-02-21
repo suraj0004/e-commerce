@@ -161,7 +161,7 @@
     </div>
 
     <!--Edit Modal -->
-    <div class="modal fade" id'editProduct" tabindex="-1" role="dialog" aria-labelledby="editProductTitle" aria-hidden="true">
+    <div class="modal fade" id="editProduct" tabindex="-1" role="dialog" aria-labelledby="editProductTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <form method="POST" action="{{ route('admin.product.update') }}">
@@ -235,7 +235,7 @@
         });
 
         function showEditModal(id, name, slug, quantity, weight, weight_type, price) {
-            $('editProduct').modal('show');
+            $('#editProduct').modal('show');
             document.getElementById("edit_product_id").value = id;
             document.getElementById("edit_product_name").value = name;
             document.getElementById("edit_slug_name").value = slug;
