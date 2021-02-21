@@ -22,17 +22,6 @@ class ImageController extends Controller
 
     }
 
-    private function generateRandomString($length = 5)
-    {
-        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-        $charactersLength = strlen($characters);
-        $randomString = '';
-        for ($i = 0; $i < $length; $i++) {
-            $randomString .= $characters[rand(0, $charactersLength - 1)];
-        }
-        return time() . '_' . $randomString;
-    }
-
     public function store(Request $request)
     {
         Validator::make($request->all(), [
@@ -42,7 +31,7 @@ class ImageController extends Controller
 
         foreach ($request->images as $image) {
 
-            $imageName = $this->generateRandomString() . '.' . $image->extension();
+            $imageName = generateRandomString() . '.' . $image->extension();
             Storage::disk('dynamic_images')->putFileAs(null, $image, $imageName);
 
             $row = new Image();
@@ -88,7 +77,7 @@ class ImageController extends Controller
         }
 
         // Upload new image for this ID
-        $imageName = $this->generateRandomString() . '.' . $request->edit_image->extension();
+        $imageName = generateRandomString() . '.' . $request->edit_image->extension();
         Storage::disk('dynamic_images')->putFileAs(null, $request->edit_image, $imageName);
 
         // Updating image name in DB for this ID
