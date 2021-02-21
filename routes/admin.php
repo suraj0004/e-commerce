@@ -5,7 +5,7 @@ use App\Http\Controllers\AdminModule\HomeController;
 use App\Http\Controllers\AdminModule\TagController;
 use App\Http\Controllers\AdminModule\BrandController;
 use App\Http\Controllers\AdminModule\ImageController;
-
+use App\Http\Controllers\AdminModule\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,5 +48,8 @@ Route::group(["middleware"=>["auth","admin"]],function () {
     Route::post('/delete-image/{image_id}', [ImageController::class, 'delete'])->name('image.delete');
 
     Route::post('/update-image', [ImageController::class, 'update'])->name('image.update');
+
+    //Category Routes
+    Route::resource('category', CategoryController::class);
 
 });
