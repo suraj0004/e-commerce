@@ -47,7 +47,7 @@
                             <thead>
                                 <tr>
                                     <th>Sno.</th>
-                                    <th> Image Name</th>
+                                    <th>Image</th>
                                     <th class="text-center">Action(s)</th>
                                 </tr>
                             </thead>
@@ -55,11 +55,11 @@
                                 @foreach ($images as $image)
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
-                                        <td><img src="{{ asset('dynamicImages/'.$image->image)}}" alt="Image" class="img-fluid" ></td>
+                                        <td class="img-responsive text-center"><img src="{{Storage::disk('dynamic_images')->url($image->image)}}" alt="Image" class="img-fluid" width="300"></td>
 
                                         <td class="text-center">
                                             <button type="button" class="btn btn-primary"
-                                                onclick="showEditModal({{ $image->id }},'{{ $image->image }}') ">
+                                                onclick="showEditModal({{ $image->id }}) ">
                                                 <i class="icon fas fa-pen"></i>
                                             </button>
                                             <form class="d-inline"
@@ -98,7 +98,7 @@
             <form method="POST" action="{{ route('admin.image.add') }}" enctype="multipart/form-data">
                 @csrf
                 <div class="modal-header">
-                    <h5 class="modal-title" id="image_title">Add Image </h5>
+                    <h5 class="modal-title" id="image_title">Add Image/Images (You can select multiple images) </h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -106,8 +106,8 @@
                 <div class="modal-body">
 
                     <div class="form-group">
-                        <label for="image_name">Image Name</label>
-                        <input type="file" name="image_name" id="image_name" class="form-control" >
+                        <label for="images[]">Images</label>
+                        <input type="file" name="images[]" id="images[]" class="form-control" multiple >
                     </div>
 
 
@@ -126,10 +126,10 @@
 <div class="modal fade" id="editImage" tabindex="-1" role="dialog" aria-labelledby="editImageTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
-            <form method="POST" action="{{ route('admin.image.update') }}">
+            <form method="POST" action="{{ route('admin.image.update') }}" enctype="multipart/form-data">
                 @csrf
                 <div class="modal-header">
-                    <h5 class="modal-title" id="image_title">Edit Image Name</h5>
+                    <h5 class="modal-title" id="image_title">Edit Image</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -137,8 +137,8 @@
                 <div class="modal-body">
                     <input type="hidden" id="edit_image_id" name="edit_image_id">
                     <div class="form-group">
-                        <label for="edit_image_name">Image Name</label>
-                        <input type="text" class="form-control" id="edit_image_name" name="edit_image_name">
+                        <label for="edit_image">New Image</label>
+                        <input type="file" class="form-control" id="edit_image" name="edit_image" >
                     </div>
 
 
@@ -168,11 +168,9 @@
         $('#image_table').DataTable();
     });
 
-    function showEditModal(id, name) {
+    function showEditModal(id) {
         $('#editImage').modal('show');
         document.getElementById("edit_image_id").value = id;
-        document.getElementById("edit_image_name").value = name;
-
     }
 
 </script>
