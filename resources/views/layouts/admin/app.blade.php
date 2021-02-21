@@ -112,7 +112,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="{{ route('admin.tablePage') }}" class="nav-link @if(isset($page) && $page=='category') active @endif ">
+                            <a href="{{ route('admin.category.show') }}" class="nav-link @if(isset($page) && $page=='category') active @endif ">
                                 <i class="fas fa-sitemap"></i>
                                 <p>
                                     Category

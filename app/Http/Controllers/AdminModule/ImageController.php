@@ -61,7 +61,7 @@ class ImageController extends Controller
 
         if (!$row) {
             return redirect()->back()->withErrors([
-                "error" => "Opps something went wrong",
+                "error" => "Oops something went wrong",
             ]);
         }
 
