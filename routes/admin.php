@@ -50,6 +50,9 @@ Route::group(["middleware"=>["auth","admin"]],function () {
     Route::post('/update-image', [ImageController::class, 'update'])->name('image.update');
 
     //Category Routes
-    Route::resource('category', CategoryController::class);
+    Route::get('/category', [CategoryController::class, 'index'])->name('category.show');
+    Route::post('/category', [CategoryController::class, 'store'])->name('category.store');
+    Route::post('/category/{id}', [CategoryController::class, 'destroy'])->name('category.destroy');
+    Route::post('/update-category', [CategoryController::class, 'update'])->name('category.update');
 
 });
