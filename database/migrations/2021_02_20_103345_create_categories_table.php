@@ -18,6 +18,9 @@ class CreateCategoriesTable extends Migration
             $table->foreignId("parent_id")->default(0);
             $table->string("name");
             $table->string("slug")->unique();
+
+            // $table->foreignId('image_id')->constrained();
+
             $table->timestamps();
         });
     }
