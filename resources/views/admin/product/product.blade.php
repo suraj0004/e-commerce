@@ -55,6 +55,7 @@
                                         <th>Weight Type</th>
                                         <th>Price</th>
                                         <th>Categories</th>
+                                        <th>Tags</th>
                                         <th class="text-center">Action(s)</th>
                                     </tr>
                                 </thead>
@@ -73,9 +74,14 @@
                                                     <span>{{$category->name}},</span>
                                                 @endforeach
                                             </td>
+                                            <td>
+                                                @foreach ($product->tags as $tag)
+                                                    <span>{{$tag->name}},</span>
+                                                @endforeach
+                                            </td>
                                             <td class="text-center">
                                                 <button type="button" class="btn btn-primary"
-                                                    onclick="showEditModal({{ $product->id }},'{{ $product->name }}', '{{$product->slug}}', '{{ $product->quantity }}','{{ $product->weight }}','{{ $product->weight_type }}','{{ $product->price }}') ">
+                                                    onclick="showEditModal({{ $product->id }},'{{ $product->name }}', '{{$product->slug}}', '{{ $product->quantity }}','{{ $product->weight }}','{{ $product->weight_type }}','{{ $product->price }}')">
                                                     <i class="icon fas fa-pen"></i>
                                                 </button>
                                                 <form class="d-inline"
@@ -137,6 +143,18 @@
                                 <option value="" >Select Value</option>
                                 @foreach ($categories as $category)
                                     <option value="{{$category->id}}">{{$category->name}}</option>
+                                @endforeach
+                            </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tag_id">Tag Name</label>
+                            <div class="row p-2">
+                                <select name="tag_id[]" id="tag_id" class="" multiple="multiple" style="width: 100%">
+                                <option value="" >Select Value</option>
+                                @foreach ($tags as $tag)
+                                    <option value="{{$tag->id}}">{{$tag->name}}</option>
                                 @endforeach
                             </select>
                             </div>
@@ -262,6 +280,10 @@
         $(document).ready(function() {
             $('#product_table').DataTable();
             $('#category_id').select2({
+                theme: "classic"
+            });
+
+            $('#tag_id').select2({
                 theme: "classic"
             });
 

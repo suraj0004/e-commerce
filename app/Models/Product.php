@@ -18,4 +18,14 @@ class Product extends Model
     {
         return $this->belongsToMany(Category::class, 'product_category',  'product_id', 'category_id');
     }
+
+    /**
+    * The tags that belong to the Product
+    *
+    * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+    */
+    public function tags()
+    {
+        return $this->belongsToMany(Tag::class, 'product_tags', 'product_id', 'tag_id');
+    }
 }
