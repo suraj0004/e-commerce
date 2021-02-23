@@ -84,20 +84,16 @@
                         <div class="right-content">
                             <ul class="list-main">
                                 <li><i class="ti-location-pin"></i> Store location</li>
-                                <li><i class="ti-alarm-clock"></i> <a href="#">Daily deal</a></li>
                                 @auth
                                 <li><i class="ti-user"></i> <a href="#">My account</a></li>
                                 <li>
                                     <i class="ti-power-off"></i>
-                                    <a href="{{route('logout')}}" onclick="event.preventDefault();
-                                    document.getElementById('logout-form').submit();" >Logout</a>
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
+                                    <a href="{{route('logout')}}" onclick="logout()" >Logout</a>
                                 </li>
                                 @endauth
                                 @guest
-                                <li><i class="ti-power-off"></i><a href="{{route('login')}}">Login/Register</a></li>
+                                <li><i class="ti-power-off"></i><a href="{{route('login')}}">Login</a></li>
+                                <li><i class="fa fa-user-plus" aria-hidden="true"></i><a href="{{route('register')}}">Register</a></li>
                                 @endguest
                             </ul>
                         </div>
@@ -287,23 +283,16 @@
                                         <div class="nav-inner">
                                             <ul class="nav main-menu menu navbar-nav">
                                                 <li class="active"><a href="#">Home</a></li>
-                                                <li><a href="#">Product</a></li>
-                                                <li><a href="#">Service</a></li>
-                                                <li><a href="#">Shop<i class="ti-angle-down"></i><span
-                                                            class="new">New</span></a>
-                                                    <ul class="dropdown">
-                                                        <li><a href="cart.html">Cart</a></li>
-                                                        <li><a href="checkout.html">Checkout</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">Pages</a></li>
-                                                <li><a href="#">Blog<i class="ti-angle-down"></i></a>
-                                                    <ul class="dropdown">
-                                                        <li><a href="blog-single-sidebar.html">Blog Single Sidebar</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
+                                                <li><a href="#">Category</a></li>
+                                                <li><a href="#">Brand</a></li>
                                                 <li><a href="contact.html">Contact Us</a></li>
+                                                @guest
+                                                <li><a href="{{route('login')}}">Login</a></li>
+                                                <li><a href="{{route('register')}}">Register</a></li>
+                                                @endguest
+                                                @auth
+                                                <li><a href="{{route('logout')}}" onclick="logout()">Logout</a></li>
+                                                @endauth
                                             </ul>
                                         </div>
                                     </div>
@@ -548,6 +537,11 @@
                 </div>
             </div>
         </div>
+
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+            @csrf
+        </form>
+
     </footer>
     <!-- /End Footer Area -->
 
@@ -583,6 +577,13 @@
     <script src="{{ asset('js/easing.js') }}"></script>
     <!-- Active JS -->
     <script src="{{ asset('js/active.js') }}"></script>
+
+    <script type="text/javascript">
+    function logout() {
+        event.preventDefault();
+        document.getElementById('logout-form').submit();
+    }
+    </script>
 
     @yield('js')
 </body>
