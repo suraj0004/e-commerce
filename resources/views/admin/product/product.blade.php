@@ -114,7 +114,7 @@
 
     <!--Add Modal -->
     <div class="modal fade" id="addProduct" tabindex="-1" role="dialog" aria-labelledby="addProductTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
             <div class="modal-content">
                 <form method="POST" action="{{ route('admin.product.store') }}">
                     @csrf
@@ -140,7 +140,6 @@
                             <label for="category_id">Category Name</label>
                             <div class="row p-2">
                                 <select name="category_id[]" id="category_id" class="" multiple="multiple" style="width: 100%">
-                                <option value="" >Select Value</option>
                                 @foreach ($categories as $category)
                                     <option value="{{$category->id}}">{{$category->name}}</option>
                                 @endforeach
@@ -152,7 +151,6 @@
                             <label for="tag_id">Tag Name</label>
                             <div class="row p-2">
                                 <select name="tag_id[]" id="tag_id" class="" multiple="multiple" style="width: 100%">
-                                <option value="" >Select Value</option>
                                 @foreach ($tags as $tag)
                                     <option value="{{$tag->id}}">{{$tag->name}}</option>
                                 @endforeach
@@ -163,11 +161,6 @@
                             <label for="product_name">Product Name</label>
                             <input type="text" class="form-control" id="product_name" name="product_name"
                                 placeholder="Enter Product Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="slug_name">Slug Name</label>
-                            <input type="text" class="form-control" id="slug_name" name="slug_name"
-                                placeholder="Enter slug Name">
                         </div>
 
                         <div class="form-group">
@@ -226,10 +219,6 @@
                             <input type="text" class="form-control" id="edit_product_name" name="edit_product_name">
                         </div>
 
-                        <div class="form-group">
-                            <label for="edit_slug_name">Slug Name</label>
-                            <input type="text" class="form-control" id="edit_slug_name" name="edit_slug_name">
-                        </div>
                         <div class="form-group">
                             <label for="edit_product_quantity">Quantity</label>
                             <input type="number" class="form-control" id="edit_product_quantity" name="edit_product_quantity"
