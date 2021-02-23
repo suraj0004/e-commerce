@@ -93,8 +93,14 @@ class ProductController extends Controller
 
     public function destroy(Request $request, $id)
     {
-        Product::where('id', $id)->delete();
-        $request->session()->flash('status', 'Deleted Successfully');
-        return redirect()->back();
+
+        try {
+            Product::where('id', $id)->delete();
+            $request->session()->flash('status', 'Deleted Successfully');
+            return redirect()->back();
+        } catch (\Exception $th) {
+            $request->session()->flash('status', 'Cannot Delete the product');
+            return redirect()->back();
+        }
     }
 }
