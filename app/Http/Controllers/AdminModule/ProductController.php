@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Validator;
 use App\Models\Brand;
 use App\Models\Category;
 use App\Models\Tag;
+use Str;
 
 class ProductController extends Controller
 {
@@ -42,8 +43,7 @@ class ProductController extends Controller
             'category_id.*'=>'required|numeric|exists:categories,id',
             'tag_id'=>'required|array',
             'tag_id.*'=>'required|numeric|exists:tags,id',
-            'product_name'=> 'required|string|max:250',
-            'slug_name'=>'required|string|max:250|unique:categories,slug',
+            'product_name'=> 'required|string|max:250|unique:products,name',
             'product_quantity'=>'required|numeric',
             'product_weight'=>'required|numeric',
             'weight_type'=>'required',
@@ -52,7 +52,7 @@ class ProductController extends Controller
         $product = new Product();
         $product->brand_id = $request->brand_id;
         $product->name = $request->product_name;
-        $product->slug = $request->slug_name;
+        $product->slug = Str::slug($request->product_name);
         $product->quantity = $request->product_quantity;
         $product->weight = $request->product_weight;
         $product->weight_type = $request->weight_type;
@@ -69,8 +69,7 @@ class ProductController extends Controller
     {
         Validator::make($request->all(), [
             'edit_product_id'=>'required|numeric',
-            'edit_product_name'=> 'required|string|max:250',
-            'edit_slug_name'=>'required|string|max:250',
+            'edit_product_name'=> 'required|string|max:250|unique:products,name,'.$request->edit_product_id.',id',
             'edit_product_quantity'=>'required|numeric',
             'edit_product_weight'=>'required|numeric',
             'edit_weight_type'=>'required',
@@ -80,7 +79,7 @@ class ProductController extends Controller
         $product = Product::find($request->edit_product_id);
 
         $product->name = $request->edit_product_name;
-        $product->slug = $request->edit_slug_name;
+        $product->slug = Str::slug($request->edit_product_name) ;
         $product->quantity = $request->edit_product_quantity;
         $product->weight = $request->edit_product_weight;
         $product->weight_type = $request->edit_weight_type;
