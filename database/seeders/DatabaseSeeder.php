@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 use App\Models\User;
+use App\Models\Tag;
+use App\Models\Brand;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -41,6 +43,16 @@ class DatabaseSeeder extends Seeder
                 "role_id" => User::ROLES["USER"],
                 "status" => User::STATUS["ACTIVE"],
             ])
+            ->create();
+
+        //Tags
+        Tag::factory()
+            ->count(50)
+            ->create();
+
+        // Brand
+        Brand::factory()
+            ->count(20)
             ->create();
     }
 }

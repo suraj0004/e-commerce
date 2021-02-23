@@ -259,7 +259,7 @@
     {{-- Images modal for add category --}}
 
     <div class="modal fade" id="images-modal-for-add-category" style="display: none;" aria-hidden="true">
-        <div class="modal-dialog images-modal-for-add-category">
+        <div class="modal-dialog images-modal-for-add-category modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Images</h4>
@@ -298,7 +298,7 @@
       {{-- Images modal for edi category --}}
 
       <div class="modal fade" id="images-modal-for-edit-category" style="display: none;" aria-hidden="true">
-        <div class="modal-dialog images-modal-for-edit-category">
+        <div class="modal-dialog images-modal-for-edit-category modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Images</h4>
