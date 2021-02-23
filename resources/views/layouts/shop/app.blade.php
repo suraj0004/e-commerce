@@ -85,8 +85,20 @@
                             <ul class="list-main">
                                 <li><i class="ti-location-pin"></i> Store location</li>
                                 <li><i class="ti-alarm-clock"></i> <a href="#">Daily deal</a></li>
+                                @auth
                                 <li><i class="ti-user"></i> <a href="#">My account</a></li>
-                                <li><i class="ti-power-off"></i><a href="login.html#">Login</a></li>
+                                <li>
+                                    <i class="ti-power-off"></i>
+                                    <a href="{{route('logout')}}" onclick="event.preventDefault();
+                                    document.getElementById('logout-form').submit();" >Logout</a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </li>
+                                @endauth
+                                @guest
+                                <li><i class="ti-power-off"></i><a href="{{route('login')}}">Login/Register</a></li>
+                                @endguest
                             </ul>
                         </div>
                         <!-- End Top Right -->
@@ -138,12 +150,17 @@
                     <div class="col-lg-2 col-md-3 col-12">
                         <div class="right-bar">
                             <!-- Search Form -->
+
                             <div class="sinlge-bar">
-                                <a href="#" class="single-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="sinlge-bar">
-                                <a href="#" class="single-icon"><i class="fa fa-user-circle-o"
-                                        aria-hidden="true"></i></a>
+                              @auth
+                              <a href="#" class="single-icon"><i class="fa fa-user-circle-o"
+                                aria-hidden="true"></i></a>
+                              @endauth
+
+                              @guest
+                              <a href="{{route('login')}}" class="single-icon"><i class="fa fa-sign-in"
+                                aria-hidden="true"></i></a>
+                              @endguest
                             </div>
                             <div class="sinlge-bar shopping">
                                 <a href="#" class="single-icon"><i class="ti-bag"></i> <span
