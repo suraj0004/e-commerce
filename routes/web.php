@@ -19,9 +19,13 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/contact-us', [HomeController::class, 'contact'])->name('contact');
 
+//shop routes for products
+
 Auth::routes();
 
 // Shop Module Auth Routes
 Route::group(["middleware"=>["auth","user"]],function () {
 
 });
+
+//

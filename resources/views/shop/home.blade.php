@@ -1,3477 +1,1991 @@
 @extends('layouts.shop.app')
 
+@section('css')
+
+@endsection
+
 @section('content')
-    <div class="blockDorado1 blockPosition dor-bg-white">
-        <div class="container">
+
+<!-- Start Small Banner  -->
+    <section class="small-banner section">
+        <div class="container-fluid">
             <div class="row">
-                <div class="dor-banner-home">
-                    <div class="dor-banner-home-inner">
-                        <div class="dor-banner-home-wrapper">
-                            <div class="dor-banner-home-item col-lg-4 col-sm-4 col-xs-12">
-                                <div class="dor-banner-data"><a href="#"><img data-src="{{ asset('img/7.jpg') }}" alt=""
-                                            class="lazy" width="403" height="210" /></a></div>
-                            </div>
-                            <div class="dor-banner-home-item col-lg-4 col-sm-4 col-xs-12">
-                                <div class="dor-banner-data"><a href="#"><img data-src="{{ asset('img/8.jpg') }}" alt=""
-                                            class="lazy" width="403" height="210" /></a></div>
-                            </div>
-                            <div class="dor-banner-home-item col-lg-4 col-sm-4 col-xs-12">
-                                <div class="dor-banner-data"><a href="#"><img data-src="{{ asset('img/9.jpg') }}" alt=""
-                                            class="lazy" width="403" height="210" /></a></div>
-                            </div>
+                <!-- Single Banner  -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="single-banner">
+                        <img src="https://via.placeholder.com/600x370" alt="#">
+                        <div class="content">
+                            <p>Man's Collectons</p>
+                            <h3>Summer travel <br> collection</h3>
+                            <a href="#">Discover Now</a>
                         </div>
                     </div>
                 </div>
-
-            </div>
-        </div>
-    </div>
-    <div class="DorTabProductCate01 blockPosition dor-bg-white">
-        <div class="container">
-            <div class="row">
-                <div id="dor-tab-product-category" class="show-hover2">
-                    <div class="title-header-tab hidden">
-                        <h3>Top Products</h3>
-                        <p>Share your single post here. You can choose the latest posts or other catalogs to show on
-                            your homepage</p>
-                    </div>
-                    <div class="dor-tab-product-category-wrapper">
-                        <ul role="tablist" class="nav nav-tabs" id="dorTabAjax"  data-defaulttab="new_product">
-                            <li class="first_item  active ">
-                                <a aria-expanded="false" data-toggle="tab" id="new_arrivals-tab" href="#new_arrivals">New
-                                    Arrivals</a>
-                            </li>
-                            <li class=" ">
-                                <a aria-expanded="false" data-toggle="tab" id="feature_product-tab"
-                                    href="#feature_product">Featured</a>
-                            </li>
-                            <li class=" " >
-                                <a aria-expanded="false" data-toggle="tab" id="special_product-tab"
-                                    href="#special_product">Must Have</a>
-                            </li>
-                            <li class="last_item ">
-                                <a aria-expanded="false" data-toggle="tab" id="mostview_product-tab"
-                                    href="#mostview_product">Most View</a>
-                            </li>
-
-
-                        </ul>
-                        <div class="tab-content" id="">
-                            <div aria-labelledby="new_arrivals-tab" id="new_arrivals" class="tab-pane fade  active  in row">
-                                <div id="js-product-list">
-                                    <div class="products row">
-
-
-                                        <article class="col-md-3 ajax_block_product product-miniature js-product-miniature"
-                                            data-id-product="1" data-id-product-attribute="195" itemscope
-                                            itemtype="http://schema.org/Product">
-                                            <div class="product-container">
-                                                <div class="dor-display-product-info">
-                                                    <div class="left-block">
-                                                        <div class="product-image-container">
-
-                                                            <a href="shop/1-195-apple-iphone-x-2017.html#/8-color-white/25-storage-128gb"
-                                                                class="thumbnail product-thumbnail product_img_link">
-                                                                <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
-                                                                    style="min-height: 10px;"
-                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    alt=""
-                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    width="600" height="800">
-                                                                <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
-                                                                    style="min-height: 10px;"
-                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    alt=""
-                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    width="600" height="800">
-                                                            </a>
-
-
-                                                            <div class="box-items">
-                                                                <a class="new-box box-status"
-                                                                    href="shop/1-195-apple-iphone-x-2017.html">
-                                                                    <span class="new-label">New</span>
-                                                                </a>
-                                                                <a class="sale-box box-status"
-                                                                    href="shop/1-195-apple-iphone-x-2017.html">
-                                                                    <span class="sale-label">Sale!</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="show-btn-products">
-
-                                                            <div class="control-action-buttons">
-                                                                <div class="action-button">
-                                                                    <ul>
-
-                                                                        <li class="icon-line-quickview">
-                                                                            <a href="#"
-                                                                                class="quick-view countdown-view-detail"
-                                                                                data-link-action="quickview"
-                                                                                data-toggle="tooltip" title="View detail">
-                                                                                <i class="material-icons">&#xE8B6;</i>
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="right-block">
-                                                        <div class="product-cate"><span>Shop</span></div>
-
-                                                        <h5 class="product-title-item" itemprop="name"><a
-                                                                href="shop/1-195-apple-iphone-x-2017.html#/8-color-white/25-storage-128gb"
-                                                                class="product-name">Apple iPhone X 2017</a></h5>
-
-                                                        <div class="review-price-product">
-                                                            <div class="hook-reviews">
-
-                                                                <div class="comments_note">
-                                                                    <div class="star_content clearfix">
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                    </div>
-                                                                    <div class="dor-num-reviews hidden">
-                                                                        <span>0 Review</span>
-                                                                        <i>/</i><a href="#" class="add-your-review">Add Your
-                                                                            Review</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="dor-show-value-product clearfix">
-
-                                                                <div class="content_price">
-                                                                    <div class="product-price-and-shipping">
-
-
-                                                                        <span itemprop="price"
-                                                                            class="price">$1,100.00</span>
-
-
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="highlighted-informations hidden-sm-down">
-
-                                                                    <div class="variant-links">
-                                                                        <a href="shop/1-195-apple-iphone-x-2017.html#/8-color-white/25-storage-128gb"
-                                                                            class="color" title="White"
-                                                                            style="background-color: #ffffff"><span
-                                                                                class="sr-only">White</span></a>
-                                                                        <a href="shop/1-194-apple-iphone-x-2017.html#/11-color-black/25-storage-128gb"
-                                                                            class="color" title="Black"
-                                                                            style="background-color: #434A54"><span
-                                                                                class="sr-only">Black</span></a>
-                                                                        <a href="shop/1-196-apple-iphone-x-2017.html#/24-color-pink/25-storage-128gb"
-                                                                            class="color" title="Pink"
-                                                                            style="background-color: #FCCACD"><span
-                                                                                class="sr-only">Pink</span></a>
-                                                                        <span class="js-count count"></span>
-                                                                    </div>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="product-description-short hidden"
-                                                            itemprop="description">
-                                                            <p>Apple takes a complete product life cycle approach to
-                                                                determining our environmental impact.</p>
-                                                            <p style="font-size:14px;font-weight:400;"><strong>iPhone X
-                                                                    embodies Apple’s continuing environmental progress. It
-                                                                    is designed with the following features to reduce
-                                                                    environmental impact:</strong></p>
-                                                            <ul>
-                                                                <li>Mercury-free</li>
-                                                                <li>Arsenic-free display glass</li>
-                                                                <li>Brominated flame retardant–free</li>
-                                                                <li>PVC-free</li>
-                                                                <li>Beryllium-free</li>
-                                                                <li>Highly recyclable stainless steel</li>
-                                                            </ul>
-                                                        </div>
-
-                                                    </div>
-
-                                                    <ul class="product-flags hidden">
-                                                        <li class="on-sale">On sale!</li>
-                                                        <li class="new">New</li>
-                                                    </ul>
-
-                                                </div>
-                                                <div class="product-more-options">
-                                                    <form action="http://bionic.doradothemes.com/en/cart" method="post"
-                                                        class="dor-addcart-button">
-                                                        <div class="add">
-                                                            <input type="hidden" name="token"
-                                                                value="34b11c3ac3b44ecd83062701f9ddcf1b">
-                                                            <input name="id_product" value="1" type="hidden">
-                                                            <input type="hidden" name="id_customization" value="0">
-                                                            <a href="cart.html"
-                                                                class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
-                                                                data-button-action="add-to-cart" data-title="Add to cart">
-                                                                <i class="material-icons shopping-cart">&#xE547;</i>
-                                                                <span class="hidden">Add to cart</span>
-                                                            </a>
-                                                        </div>
-                                                    </form>
-                                                    <div class="option-quick-add">
-                                                        <div class="icon-line-wishlist-fel">
-                                                            <div class="dor-wishlist">
-                                                                <a class="addToDorWishlist" href="#"
-                                                                    onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
-                                                                    data-toggle="tooltip" data-placement="top" title=""
-                                                                    data-original-title="Add to Wishlist">
-                                                                    <i class="material-icons">&#xE87E;</i>
-                                                                    <span class="wishlist-txt">Wishlist</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="icon-line-compare-fel">
-                                                            <div class="compare">
-                                                                <a class="add_to_compare"
-                                                                    href="shop/1-195-apple-iphone-x-2017.html"
-                                                                    data-productid="1" data-toggle="tooltip" title=""
-                                                                    data-original-title="Add compare"><i
-                                                                        class="fa fa-random"></i><span
-                                                                        class="compare-button-txt">Compare</span></a>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-
-
-
-
-                                        <article class="col-md-3  ajax_block_product product-miniature js-product-miniature"
-                                            data-id-product="2" data-id-product-attribute="7" itemscope
-                                            itemtype="http://schema.org/Product">
-                                            <div class="product-container">
-                                                <div class="dor-display-product-info">
-                                                    <div class="left-block">
-                                                        <div class="product-image-container">
-
-                                                            <a href="shop/2-7-lg-v30-premium.html#/1-storage-16gb/11-color-black"
-                                                                class="thumbnail product-thumbnail product_img_link">
-                                                                <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
-                                                                    style="min-height: 10px;"
-                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}" alt=""
-                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    width="600" height="800">
-                                                                <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
-                                                                    style="min-height: 10px;"
-                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}" alt=""
-                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    width="600" height="800">
-                                                            </a>
-
-
-                                                            <div class="box-items">
-                                                                <a class="new-box box-status"
-                                                                    href="shop/2-lg-v30-premium.html">
-                                                                    <span class="new-label">New</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="show-btn-products">
-
-                                                            <div class="control-action-buttons">
-                                                                <div class="action-button">
-                                                                    <ul>
-
-                                                                        <li class="icon-line-quickview">
-                                                                            <a href="#"
-                                                                                class="quick-view countdown-view-detail"
-                                                                                data-link-action="quickview"
-                                                                                data-toggle="tooltip" title="View detail">
-                                                                                <i class="material-icons">&#xE8B6;</i>
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="right-block">
-                                                        <div class="product-cate"><span>Shop</span></div>
-
-                                                        <h5 class="product-title-item" itemprop="name"><a
-                                                                href="shop/2-7-lg-v30-premium.html#/1-storage-16gb/11-color-black"
-                                                                class="product-name">LG V30 Premium</a></h5>
-
-                                                        <div class="review-price-product">
-                                                            <div class="hook-reviews">
-
-                                                                <div class="comments_note">
-                                                                    <div class="star_content clearfix">
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                    </div>
-                                                                    <div class="dor-num-reviews hidden">
-                                                                        <span>0 Review</span>
-                                                                        <i>/</i><a href="#" class="add-your-review">Add Your
-                                                                            Review</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="dor-show-value-product clearfix">
-
-                                                                <div class="content_price">
-                                                                    <div class="product-price-and-shipping">
-
-
-                                                                        <span itemprop="price" class="price">$990.00</span>
-
-
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="highlighted-informations hidden-sm-down">
-
-                                                                    <div class="variant-links">
-                                                                        <a href="shop/2-8-lg-v30-premium.html#/1-storage-16gb/8-color-white"
-                                                                            class="color" title="White"
-                                                                            style="background-color: #ffffff"><span
-                                                                                class="sr-only">White</span></a>
-                                                                        <a href="shop/2-7-lg-v30-premium.html#/1-storage-16gb/11-color-black"
-                                                                            class="color" title="Black"
-                                                                            style="background-color: #434A54"><span
-                                                                                class="sr-only">Black</span></a>
-                                                                        <span class="js-count count"></span>
-                                                                    </div>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="product-description-short hidden"
-                                                            itemprop="description">
-                                                            <p>Apple takes a complete product life cycle approach to
-                                                                determining our environmental impact.</p>
-                                                            <p style="font-size:14px;font-weight:400;"><strong>LG V30
-                                                                    embodies Apple’s continuing environmental progress. It
-                                                                    is designed with the following features to reduce
-                                                                    environmental impact:</strong></p>
-                                                            <ul>
-                                                                <li>Mercury-free</li>
-                                                                <li>Arsenic-free display glass</li>
-                                                                <li>Brominated flame retardant–free</li>
-                                                                <li>PVC-free</li>
-                                                                <li>Beryllium-free</li>
-                                                                <li>Highly recyclable stainless steel</li>
-                                                            </ul>
-                                                        </div>
-
-                                                    </div>
-
-                                                    <ul class="product-flags hidden">
-                                                        <li class="new">New</li>
-                                                    </ul>
-
-                                                </div>
-                                                <div class="product-more-options">
-                                                    <form action="http://bionic.doradothemes.com/en/cart" method="post"
-                                                        class="dor-addcart-button">
-                                                        <div class="add">
-                                                            <input type="hidden" name="token"
-                                                                value="34b11c3ac3b44ecd83062701f9ddcf1b">
-                                                            <input name="id_product" value="2" type="hidden">
-                                                            <input type="hidden" name="id_customization" value="0">
-                                                            <a href="cart.html"
-                                                                class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
-                                                                data-button-action="add-to-cart" data-title="Add to cart">
-                                                                <i class="material-icons shopping-cart">&#xE547;</i>
-                                                                <span class="hidden">Add to cart</span>
-                                                            </a>
-                                                        </div>
-                                                    </form>
-                                                    <div class="option-quick-add">
-                                                        <div class="icon-line-wishlist-fel">
-                                                            <div class="dor-wishlist">
-                                                                <a class="addToDorWishlist" href="#"
-                                                                    onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
-                                                                    data-toggle="tooltip" data-placement="top" title=""
-                                                                    data-original-title="Add to Wishlist">
-                                                                    <i class="material-icons">&#xE87E;</i>
-                                                                    <span class="wishlist-txt">Wishlist</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="icon-line-compare-fel">
-                                                            <div class="compare">
-                                                                <a class="add_to_compare" href="shop/2-lg-v30-premium.html"
-                                                                    data-productid="2" data-toggle="tooltip" title=""
-                                                                    data-original-title="Add compare"><i
-                                                                        class="fa fa-random"></i><span
-                                                                        class="compare-button-txt">Compare</span></a>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-
-
-
-
-                                        <article class="col-md-3 ajax_block_product product-miniature js-product-miniature"
-                                            data-id-product="3" data-id-product-attribute="85" itemscope
-                                            itemtype="http://schema.org/Product">
-                                            <div class="product-container">
-                                                <div class="dor-display-product-info">
-                                                    <div class="left-block">
-                                                        <div class="product-image-container">
-
-                                                            <a href="shop/3-85-samsung-galaxy-note8.html#/8-color-white/25-storage-128gb"
-                                                                class="thumbnail product-thumbnail product_img_link">
-                                                                <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
-                                                                    style="min-height: 10px;"
-                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    alt=""
-                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    width="600" height="800">
-                                                                <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
-                                                                    style="min-height: 10px;"
-                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    alt=""
-                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    width="600" height="800">
-                                                            </a>
-
-
-                                                            <div class="box-items">
-                                                                <a class="new-box box-status"
-                                                                    href="shop/3-85-samsung-galaxy-note8.html">
-                                                                    <span class="new-label">New</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="show-btn-products">
-
-                                                            <div class="control-action-buttons">
-                                                                <div class="action-button">
-                                                                    <ul>
-
-                                                                        <li class="icon-line-quickview">
-                                                                            <a href="#"
-                                                                                class="quick-view countdown-view-detail"
-                                                                                data-link-action="quickview"
-                                                                                data-toggle="tooltip" title="View detail">
-                                                                                <i class="material-icons">&#xE8B6;</i>
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="right-block">
-                                                        <div class="product-cate"><span>Shop</span></div>
-
-                                                        <h5 class="product-title-item" itemprop="name"><a
-                                                                href="shop/3-85-samsung-galaxy-note8.html#/8-color-white/25-storage-128gb"
-                                                                class="product-name">Samsung Galaxy Note8</a></h5>
-
-                                                        <div class="review-price-product">
-                                                            <div class="hook-reviews">
-
-                                                                <div class="comments_note">
-                                                                    <div class="star_content clearfix">
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                    </div>
-                                                                    <div class="dor-num-reviews hidden">
-                                                                        <span>0 Review</span>
-                                                                        <i>/</i><a href="#" class="add-your-review">Add Your
-                                                                            Review</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="dor-show-value-product clearfix">
-
-                                                                <div class="content_price">
-                                                                    <div class="product-price-and-shipping">
-
-
-                                                                        <span itemprop="price" class="price">$890.00</span>
-
-
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="highlighted-informations hidden-sm-down">
-
-                                                                    <div class="variant-links">
-                                                                        <a href="shop/3-78-samsung-galaxy-note8.html#/3-storage-64gb/5-color-grey"
-                                                                            class="color" title="Grey"
-                                                                            style="background-color: #AAB2BD"><span
-                                                                                class="sr-only">Grey</span></a>
-                                                                        <a href="shop/3-79-samsung-galaxy-note8.html#/3-storage-64gb/8-color-white"
-                                                                            class="color" title="White"
-                                                                            style="background-color: #ffffff"><span
-                                                                                class="sr-only">White</span></a>
-                                                                        <a href="shop/3-77-samsung-galaxy-note8.html#/3-storage-64gb/11-color-black"
-                                                                            class="color" title="Black"
-                                                                            style="background-color: #434A54"><span
-                                                                                class="sr-only">Black</span></a>
-                                                                        <span class="js-count count"></span>
-                                                                    </div>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="product-description-short hidden"
-                                                            itemprop="description">
-                                                            <p>Samsung takes a complete product life cycle approach to
-                                                                determining our environmental impact.</p>
-                                                            <p style="font-size:14px;font-weight:400;"><strong>Note8
-                                                                    embodies Samsung’s continuing environmental progress. It
-                                                                    is designed with the following features to reduce
-                                                                    environmental impact:</strong></p>
-                                                            <ul>
-                                                                <li>Mercury-free</li>
-                                                                <li>Arsenic-free display glass</li>
-                                                                <li>Brominated flame retardant–free</li>
-                                                                <li>PVC-free</li>
-                                                                <li>Beryllium-free</li>
-                                                                <li>Highly recyclable stainless steel</li>
-                                                            </ul>
-                                                        </div>
-
-                                                    </div>
-
-                                                    <ul class="product-flags hidden">
-                                                        <li class="new">New</li>
-                                                    </ul>
-
-                                                </div>
-                                                <div class="product-more-options">
-                                                    <form action="http://bionic.doradothemes.com/en/cart" method="post"
-                                                        class="dor-addcart-button">
-                                                        <div class="add">
-                                                            <input type="hidden" name="token"
-                                                                value="34b11c3ac3b44ecd83062701f9ddcf1b">
-                                                            <input name="id_product" value="3" type="hidden">
-                                                            <input type="hidden" name="id_customization" value="0">
-                                                            <a href="cart.html"
-                                                                class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
-                                                                data-button-action="add-to-cart" data-title="Add to cart">
-                                                                <i class="material-icons shopping-cart">&#xE547;</i>
-                                                                <span class="hidden">Add to cart</span>
-                                                            </a>
-                                                        </div>
-                                                    </form>
-                                                    <div class="option-quick-add">
-                                                        <div class="icon-line-wishlist-fel">
-                                                            <div class="dor-wishlist">
-                                                                <a class="addToDorWishlist" href="#"
-                                                                    onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
-                                                                    data-toggle="tooltip" data-placement="top" title=""
-                                                                    data-original-title="Add to Wishlist">
-                                                                    <i class="material-icons">&#xE87E;</i>
-                                                                    <span class="wishlist-txt">Wishlist</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="icon-line-compare-fel">
-                                                            <div class="compare">
-                                                                <a class="add_to_compare"
-                                                                    href="shop/3-85-samsung-galaxy-note8.html"
-                                                                    data-productid="3" data-toggle="tooltip" title=""
-                                                                    data-original-title="Add compare"><i
-                                                                        class="fa fa-random"></i><span
-                                                                        class="compare-button-txt">Compare</span></a>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-
-
-
-
-                                        <article class="col-md-3 ajax_block_product product-miniature js-product-miniature"
-                                            data-id-product="4" data-id-product-attribute="43" itemscope
-                                            itemtype="http://schema.org/Product">
-                                            <div class="product-container">
-                                                <div class="dor-display-product-info">
-                                                    <div class="left-block">
-                                                        <div class="product-image-container">
-
-                                                            <a href="shop/4-43-apple-iphone8.html#/1-storage-16gb/24-color-pink"
-                                                                class="thumbnail product-thumbnail product_img_link">
-                                                                <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
-                                                                    style="min-height: 10px;"
-                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}" alt=""
-                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    width="600" height="800">
-                                                                <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
-                                                                    style="min-height: 10px;"
-                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}" alt=""
-                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    width="600" height="800">
-                                                            </a>
-
-
-                                                            <div class="box-items">
-                                                                <a class="new-box box-status"
-                                                                    href="shop/4-43-apple-iphone8.html">
-                                                                    <span class="new-label">New</span>
-                                                                </a>
-                                                                <a class="sale-box box-status"
-                                                                    href="shop/4-43-apple-iphone8.html">
-                                                                    <span class="sale-label">Sale!</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="show-btn-products">
-
-                                                            <div class="control-action-buttons">
-                                                                <div class="action-button">
-                                                                    <ul>
-
-                                                                        <li class="icon-line-quickview">
-                                                                            <a href="#"
-                                                                                class="quick-view countdown-view-detail"
-                                                                                data-link-action="quickview"
-                                                                                data-toggle="tooltip" title="View detail">
-                                                                                <i class="material-icons">&#xE8B6;</i>
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="right-block">
-                                                        <div class="product-cate"><span>Shop</span></div>
-
-                                                        <h5 class="product-title-item" itemprop="name"><a
-                                                                href="shop/4-43-apple-iphone8.html#/1-storage-16gb/24-color-pink"
-                                                                class="product-name">Apple iPhone8</a></h5>
-
-                                                        <div class="review-price-product">
-                                                            <div class="hook-reviews">
-
-                                                                <div class="comments_note">
-                                                                    <div class="star_content clearfix">
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                    </div>
-                                                                    <div class="dor-num-reviews hidden">
-                                                                        <span>0 Review</span>
-                                                                        <i>/</i><a href="#" class="add-your-review">Add Your
-                                                                            Review</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="dor-show-value-product clearfix">
-
-                                                                <div class="content_price">
-                                                                    <div class="product-price-and-shipping">
-
-
-                                                                        <span itemprop="price" class="price">$899.00</span>
-
-
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="highlighted-informations hidden-sm-down">
-
-                                                                    <div class="variant-links">
-                                                                        <a href="shop/4-56-apple-iphone8.html#/8-color-white/25-storage-128gb"
-                                                                            class="color" title="White"
-                                                                            style="background-color: #ffffff"><span
-                                                                                class="sr-only">White</span></a>
-                                                                        <a href="shop/4-55-apple-iphone8.html#/11-color-black/25-storage-128gb"
-                                                                            class="color" title="Black"
-                                                                            style="background-color: #434A54"><span
-                                                                                class="sr-only">Black</span></a>
-                                                                        <a href="shop/4-43-apple-iphone8.html#/1-storage-16gb/24-color-pink"
-                                                                            class="color" title="Pink"
-                                                                            style="background-color: #FCCACD"><span
-                                                                                class="sr-only">Pink</span></a>
-                                                                        <span class="js-count count"></span>
-                                                                    </div>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="product-description-short hidden"
-                                                            itemprop="description">
-                                                            <p>Apple takes a complete product life cycle approach to
-                                                                determining our environmental impact.</p>
-                                                            <p style="font-size:14px;font-weight:400;"><strong>iPhone X
-                                                                    embodies Apple’s continuing environmental progress. It
-                                                                    is designed with the following features to reduce
-                                                                    environmental impact:</strong></p>
-                                                            <ul>
-                                                                <li>Mercury-free</li>
-                                                                <li>Arsenic-free display glass</li>
-                                                                <li>Brominated flame retardant–free</li>
-                                                                <li>PVC-free</li>
-                                                                <li>Beryllium-free</li>
-                                                                <li>Highly recyclable stainless steel</li>
-                                                            </ul>
-                                                        </div>
-
-                                                    </div>
-
-                                                    <ul class="product-flags hidden">
-                                                        <li class="on-sale">On sale!</li>
-                                                        <li class="new">New</li>
-                                                    </ul>
-
-                                                </div>
-                                                <div class="product-more-options">
-                                                    <form action="http://bionic.doradothemes.com/en/cart" method="post"
-                                                        class="dor-addcart-button">
-                                                        <div class="add">
-                                                            <input type="hidden" name="token"
-                                                                value="34b11c3ac3b44ecd83062701f9ddcf1b">
-                                                            <input name="id_product" value="4" type="hidden">
-                                                            <input type="hidden" name="id_customization" value="0">
-                                                            <a href="cart.html"
-                                                                class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
-                                                                data-button-action="add-to-cart" data-title="Add to cart">
-                                                                <i class="material-icons shopping-cart">&#xE547;</i>
-                                                                <span class="hidden">Add to cart</span>
-                                                            </a>
-                                                        </div>
-                                                    </form>
-                                                    <div class="option-quick-add">
-                                                        <div class="icon-line-wishlist-fel">
-                                                            <div class="dor-wishlist">
-                                                                <a class="addToDorWishlist" href="#"
-                                                                    onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
-                                                                    data-toggle="tooltip" data-placement="top" title=""
-                                                                    data-original-title="Add to Wishlist">
-                                                                    <i class="material-icons">&#xE87E;</i>
-                                                                    <span class="wishlist-txt">Wishlist</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="icon-line-compare-fel">
-                                                            <div class="compare">
-                                                                <a class="add_to_compare"
-                                                                    href="shop/4-43-apple-iphone8.html" data-productid="4"
-                                                                    data-toggle="tooltip" title=""
-                                                                    data-original-title="Add compare"><i
-                                                                        class="fa fa-random"></i><span
-                                                                        class="compare-button-txt">Compare</span></a>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-
-
-
-
-
-
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div aria-labelledby="feature_product-tab" id="feature_product" class="tab-pane fade in row">
-                                <div id="js-product-list">
-                                    <div class="products row">
-
-
-                                        <article class="col-md-3 ajax_block_product product-miniature js-product-miniature"
-                                            data-id-product="1" data-id-product-attribute="195" itemscope
-                                            itemtype="http://schema.org/Product">
-                                            <div class="product-container">
-                                                <div class="dor-display-product-info">
-                                                    <div class="left-block">
-                                                        <div class="product-image-container">
-
-                                                            <a href="shop/1-195-apple-iphone-x-2017.html#/8-color-white/25-storage-128gb"
-                                                                class="thumbnail product-thumbnail product_img_link">
-                                                                <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
-                                                                    style="min-height: 10px;"
-                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    alt=""
-                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    width="600" height="800">
-                                                                <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
-                                                                    style="min-height: 10px;"
-                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    alt=""
-                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    width="600" height="800">
-                                                            </a>
-
-
-                                                            <div class="box-items">
-                                                                <a class="new-box box-status"
-                                                                    href="shop/1-195-apple-iphone-x-2017.html">
-                                                                    <span class="new-label">New</span>
-                                                                </a>
-                                                                <a class="sale-box box-status"
-                                                                    href="shop/1-195-apple-iphone-x-2017.html">
-                                                                    <span class="sale-label">Sale!</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="show-btn-products">
-
-                                                            <div class="control-action-buttons">
-                                                                <div class="action-button">
-                                                                    <ul>
-
-                                                                        <li class="icon-line-quickview">
-                                                                            <a href="#"
-                                                                                class="quick-view countdown-view-detail"
-                                                                                data-link-action="quickview"
-                                                                                data-toggle="tooltip" title="View detail">
-                                                                                <i class="material-icons">&#xE8B6;</i>
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="right-block">
-                                                        <div class="product-cate"><span>Shop</span></div>
-
-                                                        <h5 class="product-title-item" itemprop="name"><a
-                                                                href="shop/1-195-apple-iphone-x-2017.html#/8-color-white/25-storage-128gb"
-                                                                class="product-name">Apple iPhone X 2017</a></h5>
-
-                                                        <div class="review-price-product">
-                                                            <div class="hook-reviews">
-
-                                                                <div class="comments_note">
-                                                                    <div class="star_content clearfix">
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                    </div>
-                                                                    <div class="dor-num-reviews hidden">
-                                                                        <span>0 Review</span>
-                                                                        <i>/</i><a href="#" class="add-your-review">Add Your
-                                                                            Review</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="dor-show-value-product clearfix">
-
-                                                                <div class="content_price">
-                                                                    <div class="product-price-and-shipping">
-
-
-                                                                        <span itemprop="price"
-                                                                            class="price">$1,100.00</span>
-
-
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="highlighted-informations hidden-sm-down">
-
-                                                                    <div class="variant-links">
-                                                                        <a href="shop/1-195-apple-iphone-x-2017.html#/8-color-white/25-storage-128gb"
-                                                                            class="color" title="White"
-                                                                            style="background-color: #ffffff"><span
-                                                                                class="sr-only">White</span></a>
-                                                                        <a href="shop/1-194-apple-iphone-x-2017.html#/11-color-black/25-storage-128gb"
-                                                                            class="color" title="Black"
-                                                                            style="background-color: #434A54"><span
-                                                                                class="sr-only">Black</span></a>
-                                                                        <a href="shop/1-196-apple-iphone-x-2017.html#/24-color-pink/25-storage-128gb"
-                                                                            class="color" title="Pink"
-                                                                            style="background-color: #FCCACD"><span
-                                                                                class="sr-only">Pink</span></a>
-                                                                        <span class="js-count count"></span>
-                                                                    </div>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="product-description-short hidden"
-                                                            itemprop="description">
-                                                            <p>Apple takes a complete product life cycle approach to
-                                                                determining our environmental impact.</p>
-                                                            <p style="font-size:14px;font-weight:400;"><strong>iPhone X
-                                                                    embodies Apple’s continuing environmental progress. It
-                                                                    is designed with the following features to reduce
-                                                                    environmental impact:</strong></p>
-                                                            <ul>
-                                                                <li>Mercury-free</li>
-                                                                <li>Arsenic-free display glass</li>
-                                                                <li>Brominated flame retardant–free</li>
-                                                                <li>PVC-free</li>
-                                                                <li>Beryllium-free</li>
-                                                                <li>Highly recyclable stainless steel</li>
-                                                            </ul>
-                                                        </div>
-
-                                                    </div>
-
-                                                    <ul class="product-flags hidden">
-                                                        <li class="on-sale">On sale!</li>
-                                                        <li class="new">New</li>
-                                                    </ul>
-
-                                                </div>
-                                                <div class="product-more-options">
-                                                    <form action="http://bionic.doradothemes.com/en/cart" method="post"
-                                                        class="dor-addcart-button">
-                                                        <div class="add">
-                                                            <input type="hidden" name="token"
-                                                                value="34b11c3ac3b44ecd83062701f9ddcf1b">
-                                                            <input name="id_product" value="1" type="hidden">
-                                                            <input type="hidden" name="id_customization" value="0">
-                                                            <a href="cart.html"
-                                                                class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
-                                                                data-button-action="add-to-cart" data-title="Add to cart">
-                                                                <i class="material-icons shopping-cart">&#xE547;</i>
-                                                                <span class="hidden">Add to cart</span>
-                                                            </a>
-                                                        </div>
-                                                    </form>
-                                                    <div class="option-quick-add">
-                                                        <div class="icon-line-wishlist-fel">
-                                                            <div class="dor-wishlist">
-                                                                <a class="addToDorWishlist" href="#"
-                                                                    onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
-                                                                    data-toggle="tooltip" data-placement="top" title=""
-                                                                    data-original-title="Add to Wishlist">
-                                                                    <i class="material-icons">&#xE87E;</i>
-                                                                    <span class="wishlist-txt">Wishlist</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="icon-line-compare-fel">
-                                                            <div class="compare">
-                                                                <a class="add_to_compare"
-                                                                    href="shop/1-195-apple-iphone-x-2017.html"
-                                                                    data-productid="1" data-toggle="tooltip" title=""
-                                                                    data-original-title="Add compare"><i
-                                                                        class="fa fa-random"></i><span
-                                                                        class="compare-button-txt">Compare</span></a>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-
-
-
-
-                                        <article class="col-md-3  ajax_block_product product-miniature js-product-miniature"
-                                            data-id-product="2" data-id-product-attribute="7" itemscope
-                                            itemtype="http://schema.org/Product">
-                                            <div class="product-container">
-                                                <div class="dor-display-product-info">
-                                                    <div class="left-block">
-                                                        <div class="product-image-container">
-
-                                                            <a href="shop/2-7-lg-v30-premium.html#/1-storage-16gb/11-color-black"
-                                                                class="thumbnail product-thumbnail product_img_link">
-                                                                <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
-                                                                    style="min-height: 10px;"
-                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}" alt=""
-                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    width="600" height="800">
-                                                                <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
-                                                                    style="min-height: 10px;"
-                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}" alt=""
-                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    width="600" height="800">
-                                                            </a>
-
-
-                                                            <div class="box-items">
-                                                                <a class="new-box box-status"
-                                                                    href="shop/2-lg-v30-premium.html">
-                                                                    <span class="new-label">New</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="show-btn-products">
-
-                                                            <div class="control-action-buttons">
-                                                                <div class="action-button">
-                                                                    <ul>
-
-                                                                        <li class="icon-line-quickview">
-                                                                            <a href="#"
-                                                                                class="quick-view countdown-view-detail"
-                                                                                data-link-action="quickview"
-                                                                                data-toggle="tooltip" title="View detail">
-                                                                                <i class="material-icons">&#xE8B6;</i>
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="right-block">
-                                                        <div class="product-cate"><span>Shop</span></div>
-
-                                                        <h5 class="product-title-item" itemprop="name"><a
-                                                                href="shop/2-7-lg-v30-premium.html#/1-storage-16gb/11-color-black"
-                                                                class="product-name">LG V30 Premium</a></h5>
-
-                                                        <div class="review-price-product">
-                                                            <div class="hook-reviews">
-
-                                                                <div class="comments_note">
-                                                                    <div class="star_content clearfix">
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                    </div>
-                                                                    <div class="dor-num-reviews hidden">
-                                                                        <span>0 Review</span>
-                                                                        <i>/</i><a href="#" class="add-your-review">Add Your
-                                                                            Review</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="dor-show-value-product clearfix">
-
-                                                                <div class="content_price">
-                                                                    <div class="product-price-and-shipping">
-
-
-                                                                        <span itemprop="price" class="price">$990.00</span>
-
-
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="highlighted-informations hidden-sm-down">
-
-                                                                    <div class="variant-links">
-                                                                        <a href="shop/2-8-lg-v30-premium.html#/1-storage-16gb/8-color-white"
-                                                                            class="color" title="White"
-                                                                            style="background-color: #ffffff"><span
-                                                                                class="sr-only">White</span></a>
-                                                                        <a href="shop/2-7-lg-v30-premium.html#/1-storage-16gb/11-color-black"
-                                                                            class="color" title="Black"
-                                                                            style="background-color: #434A54"><span
-                                                                                class="sr-only">Black</span></a>
-                                                                        <span class="js-count count"></span>
-                                                                    </div>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="product-description-short hidden"
-                                                            itemprop="description">
-                                                            <p>Apple takes a complete product life cycle approach to
-                                                                determining our environmental impact.</p>
-                                                            <p style="font-size:14px;font-weight:400;"><strong>LG V30
-                                                                    embodies Apple’s continuing environmental progress. It
-                                                                    is designed with the following features to reduce
-                                                                    environmental impact:</strong></p>
-                                                            <ul>
-                                                                <li>Mercury-free</li>
-                                                                <li>Arsenic-free display glass</li>
-                                                                <li>Brominated flame retardant–free</li>
-                                                                <li>PVC-free</li>
-                                                                <li>Beryllium-free</li>
-                                                                <li>Highly recyclable stainless steel</li>
-                                                            </ul>
-                                                        </div>
-
-                                                    </div>
-
-                                                    <ul class="product-flags hidden">
-                                                        <li class="new">New</li>
-                                                    </ul>
-
-                                                </div>
-                                                <div class="product-more-options">
-                                                    <form action="http://bionic.doradothemes.com/en/cart" method="post"
-                                                        class="dor-addcart-button">
-                                                        <div class="add">
-                                                            <input type="hidden" name="token"
-                                                                value="34b11c3ac3b44ecd83062701f9ddcf1b">
-                                                            <input name="id_product" value="2" type="hidden">
-                                                            <input type="hidden" name="id_customization" value="0">
-                                                            <a href="cart.html"
-                                                                class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
-                                                                data-button-action="add-to-cart" data-title="Add to cart">
-                                                                <i class="material-icons shopping-cart">&#xE547;</i>
-                                                                <span class="hidden">Add to cart</span>
-                                                            </a>
-                                                        </div>
-                                                    </form>
-                                                    <div class="option-quick-add">
-                                                        <div class="icon-line-wishlist-fel">
-                                                            <div class="dor-wishlist">
-                                                                <a class="addToDorWishlist" href="#"
-                                                                    onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
-                                                                    data-toggle="tooltip" data-placement="top" title=""
-                                                                    data-original-title="Add to Wishlist">
-                                                                    <i class="material-icons">&#xE87E;</i>
-                                                                    <span class="wishlist-txt">Wishlist</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="icon-line-compare-fel">
-                                                            <div class="compare">
-                                                                <a class="add_to_compare" href="shop/2-lg-v30-premium.html"
-                                                                    data-productid="2" data-toggle="tooltip" title=""
-                                                                    data-original-title="Add compare"><i
-                                                                        class="fa fa-random"></i><span
-                                                                        class="compare-button-txt">Compare</span></a>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-
-
-
-
-                                        <article class="col-md-3 ajax_block_product product-miniature js-product-miniature"
-                                            data-id-product="3" data-id-product-attribute="85" itemscope
-                                            itemtype="http://schema.org/Product">
-                                            <div class="product-container">
-                                                <div class="dor-display-product-info">
-                                                    <div class="left-block">
-                                                        <div class="product-image-container">
-
-                                                            <a href="shop/3-85-samsung-galaxy-note8.html#/8-color-white/25-storage-128gb"
-                                                                class="thumbnail product-thumbnail product_img_link">
-                                                                <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
-                                                                    style="min-height: 10px;"
-                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    alt=""
-                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    width="600" height="800">
-                                                                <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
-                                                                    style="min-height: 10px;"
-                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    alt=""
-                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    width="600" height="800">
-                                                            </a>
-
-
-                                                            <div class="box-items">
-                                                                <a class="new-box box-status"
-                                                                    href="shop/3-85-samsung-galaxy-note8.html">
-                                                                    <span class="new-label">New</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="show-btn-products">
-
-                                                            <div class="control-action-buttons">
-                                                                <div class="action-button">
-                                                                    <ul>
-
-                                                                        <li class="icon-line-quickview">
-                                                                            <a href="#"
-                                                                                class="quick-view countdown-view-detail"
-                                                                                data-link-action="quickview"
-                                                                                data-toggle="tooltip" title="View detail">
-                                                                                <i class="material-icons">&#xE8B6;</i>
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="right-block">
-                                                        <div class="product-cate"><span>Shop</span></div>
-
-                                                        <h5 class="product-title-item" itemprop="name"><a
-                                                                href="shop/3-85-samsung-galaxy-note8.html#/8-color-white/25-storage-128gb"
-                                                                class="product-name">Samsung Galaxy Note8</a></h5>
-
-                                                        <div class="review-price-product">
-                                                            <div class="hook-reviews">
-
-                                                                <div class="comments_note">
-                                                                    <div class="star_content clearfix">
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                    </div>
-                                                                    <div class="dor-num-reviews hidden">
-                                                                        <span>0 Review</span>
-                                                                        <i>/</i><a href="#" class="add-your-review">Add Your
-                                                                            Review</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="dor-show-value-product clearfix">
-
-                                                                <div class="content_price">
-                                                                    <div class="product-price-and-shipping">
-
-
-                                                                        <span itemprop="price" class="price">$890.00</span>
-
-
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="highlighted-informations hidden-sm-down">
-
-                                                                    <div class="variant-links">
-                                                                        <a href="shop/3-78-samsung-galaxy-note8.html#/3-storage-64gb/5-color-grey"
-                                                                            class="color" title="Grey"
-                                                                            style="background-color: #AAB2BD"><span
-                                                                                class="sr-only">Grey</span></a>
-                                                                        <a href="shop/3-79-samsung-galaxy-note8.html#/3-storage-64gb/8-color-white"
-                                                                            class="color" title="White"
-                                                                            style="background-color: #ffffff"><span
-                                                                                class="sr-only">White</span></a>
-                                                                        <a href="shop/3-77-samsung-galaxy-note8.html#/3-storage-64gb/11-color-black"
-                                                                            class="color" title="Black"
-                                                                            style="background-color: #434A54"><span
-                                                                                class="sr-only">Black</span></a>
-                                                                        <span class="js-count count"></span>
-                                                                    </div>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="product-description-short hidden"
-                                                            itemprop="description">
-                                                            <p>Samsung takes a complete product life cycle approach to
-                                                                determining our environmental impact.</p>
-                                                            <p style="font-size:14px;font-weight:400;"><strong>Note8
-                                                                    embodies Samsung’s continuing environmental progress. It
-                                                                    is designed with the following features to reduce
-                                                                    environmental impact:</strong></p>
-                                                            <ul>
-                                                                <li>Mercury-free</li>
-                                                                <li>Arsenic-free display glass</li>
-                                                                <li>Brominated flame retardant–free</li>
-                                                                <li>PVC-free</li>
-                                                                <li>Beryllium-free</li>
-                                                                <li>Highly recyclable stainless steel</li>
-                                                            </ul>
-                                                        </div>
-
-                                                    </div>
-
-                                                    <ul class="product-flags hidden">
-                                                        <li class="new">New</li>
-                                                    </ul>
-
-                                                </div>
-                                                <div class="product-more-options">
-                                                    <form action="http://bionic.doradothemes.com/en/cart" method="post"
-                                                        class="dor-addcart-button">
-                                                        <div class="add">
-                                                            <input type="hidden" name="token"
-                                                                value="34b11c3ac3b44ecd83062701f9ddcf1b">
-                                                            <input name="id_product" value="3" type="hidden">
-                                                            <input type="hidden" name="id_customization" value="0">
-                                                            <a href="cart.html"
-                                                                class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
-                                                                data-button-action="add-to-cart" data-title="Add to cart">
-                                                                <i class="material-icons shopping-cart">&#xE547;</i>
-                                                                <span class="hidden">Add to cart</span>
-                                                            </a>
-                                                        </div>
-                                                    </form>
-                                                    <div class="option-quick-add">
-                                                        <div class="icon-line-wishlist-fel">
-                                                            <div class="dor-wishlist">
-                                                                <a class="addToDorWishlist" href="#"
-                                                                    onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
-                                                                    data-toggle="tooltip" data-placement="top" title=""
-                                                                    data-original-title="Add to Wishlist">
-                                                                    <i class="material-icons">&#xE87E;</i>
-                                                                    <span class="wishlist-txt">Wishlist</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="icon-line-compare-fel">
-                                                            <div class="compare">
-                                                                <a class="add_to_compare"
-                                                                    href="shop/3-85-samsung-galaxy-note8.html"
-                                                                    data-productid="3" data-toggle="tooltip" title=""
-                                                                    data-original-title="Add compare"><i
-                                                                        class="fa fa-random"></i><span
-                                                                        class="compare-button-txt">Compare</span></a>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-
-
-
-
-                                        <article class="col-md-3 ajax_block_product product-miniature js-product-miniature"
-                                            data-id-product="4" data-id-product-attribute="43" itemscope
-                                            itemtype="http://schema.org/Product">
-                                            <div class="product-container">
-                                                <div class="dor-display-product-info">
-                                                    <div class="left-block">
-                                                        <div class="product-image-container">
-
-                                                            <a href="shop/4-43-apple-iphone8.html#/1-storage-16gb/24-color-pink"
-                                                                class="thumbnail product-thumbnail product_img_link">
-                                                                <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
-                                                                    style="min-height: 10px;"
-                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}" alt=""
-                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    width="600" height="800">
-                                                                <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
-                                                                    style="min-height: 10px;"
-                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}" alt=""
-                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    width="600" height="800">
-                                                            </a>
-
-
-                                                            <div class="box-items">
-                                                                <a class="new-box box-status"
-                                                                    href="shop/4-43-apple-iphone8.html">
-                                                                    <span class="new-label">New</span>
-                                                                </a>
-                                                                <a class="sale-box box-status"
-                                                                    href="shop/4-43-apple-iphone8.html">
-                                                                    <span class="sale-label">Sale!</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="show-btn-products">
-
-                                                            <div class="control-action-buttons">
-                                                                <div class="action-button">
-                                                                    <ul>
-
-                                                                        <li class="icon-line-quickview">
-                                                                            <a href="#"
-                                                                                class="quick-view countdown-view-detail"
-                                                                                data-link-action="quickview"
-                                                                                data-toggle="tooltip" title="View detail">
-                                                                                <i class="material-icons">&#xE8B6;</i>
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="right-block">
-                                                        <div class="product-cate"><span>Shop</span></div>
-
-                                                        <h5 class="product-title-item" itemprop="name"><a
-                                                                href="shop/4-43-apple-iphone8.html#/1-storage-16gb/24-color-pink"
-                                                                class="product-name">Apple iPhone8</a></h5>
-
-                                                        <div class="review-price-product">
-                                                            <div class="hook-reviews">
-
-                                                                <div class="comments_note">
-                                                                    <div class="star_content clearfix">
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                    </div>
-                                                                    <div class="dor-num-reviews hidden">
-                                                                        <span>0 Review</span>
-                                                                        <i>/</i><a href="#" class="add-your-review">Add Your
-                                                                            Review</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="dor-show-value-product clearfix">
-
-                                                                <div class="content_price">
-                                                                    <div class="product-price-and-shipping">
-
-
-                                                                        <span itemprop="price" class="price">$899.00</span>
-
-
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="highlighted-informations hidden-sm-down">
-
-                                                                    <div class="variant-links">
-                                                                        <a href="shop/4-56-apple-iphone8.html#/8-color-white/25-storage-128gb"
-                                                                            class="color" title="White"
-                                                                            style="background-color: #ffffff"><span
-                                                                                class="sr-only">White</span></a>
-                                                                        <a href="shop/4-55-apple-iphone8.html#/11-color-black/25-storage-128gb"
-                                                                            class="color" title="Black"
-                                                                            style="background-color: #434A54"><span
-                                                                                class="sr-only">Black</span></a>
-                                                                        <a href="shop/4-43-apple-iphone8.html#/1-storage-16gb/24-color-pink"
-                                                                            class="color" title="Pink"
-                                                                            style="background-color: #FCCACD"><span
-                                                                                class="sr-only">Pink</span></a>
-                                                                        <span class="js-count count"></span>
-                                                                    </div>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="product-description-short hidden"
-                                                            itemprop="description">
-                                                            <p>Apple takes a complete product life cycle approach to
-                                                                determining our environmental impact.</p>
-                                                            <p style="font-size:14px;font-weight:400;"><strong>iPhone X
-                                                                    embodies Apple’s continuing environmental progress. It
-                                                                    is designed with the following features to reduce
-                                                                    environmental impact:</strong></p>
-                                                            <ul>
-                                                                <li>Mercury-free</li>
-                                                                <li>Arsenic-free display glass</li>
-                                                                <li>Brominated flame retardant–free</li>
-                                                                <li>PVC-free</li>
-                                                                <li>Beryllium-free</li>
-                                                                <li>Highly recyclable stainless steel</li>
-                                                            </ul>
-                                                        </div>
-
-                                                    </div>
-
-                                                    <ul class="product-flags hidden">
-                                                        <li class="on-sale">On sale!</li>
-                                                        <li class="new">New</li>
-                                                    </ul>
-
-                                                </div>
-                                                <div class="product-more-options">
-                                                    <form action="http://bionic.doradothemes.com/en/cart" method="post"
-                                                        class="dor-addcart-button">
-                                                        <div class="add">
-                                                            <input type="hidden" name="token"
-                                                                value="34b11c3ac3b44ecd83062701f9ddcf1b">
-                                                            <input name="id_product" value="4" type="hidden">
-                                                            <input type="hidden" name="id_customization" value="0">
-                                                            <a href="cart.html"
-                                                                class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
-                                                                data-button-action="add-to-cart" data-title="Add to cart">
-                                                                <i class="material-icons shopping-cart">&#xE547;</i>
-                                                                <span class="hidden">Add to cart</span>
-                                                            </a>
-                                                        </div>
-                                                    </form>
-                                                    <div class="option-quick-add">
-                                                        <div class="icon-line-wishlist-fel">
-                                                            <div class="dor-wishlist">
-                                                                <a class="addToDorWishlist" href="#"
-                                                                    onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
-                                                                    data-toggle="tooltip" data-placement="top" title=""
-                                                                    data-original-title="Add to Wishlist">
-                                                                    <i class="material-icons">&#xE87E;</i>
-                                                                    <span class="wishlist-txt">Wishlist</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="icon-line-compare-fel">
-                                                            <div class="compare">
-                                                                <a class="add_to_compare"
-                                                                    href="shop/4-43-apple-iphone8.html" data-productid="4"
-                                                                    data-toggle="tooltip" title=""
-                                                                    data-original-title="Add compare"><i
-                                                                        class="fa fa-random"></i><span
-                                                                        class="compare-button-txt">Compare</span></a>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-
-
-
-
-
-
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div aria-labelledby="special_product-tab" id="special_product" class="tab-pane fade in row">
-                                <div id="js-product-list">
-                                    <div class="products row">
-
-
-                                        <article class="col-md-3 ajax_block_product product-miniature js-product-miniature"
-                                            data-id-product="1" data-id-product-attribute="195" itemscope
-                                            itemtype="http://schema.org/Product">
-                                            <div class="product-container">
-                                                <div class="dor-display-product-info">
-                                                    <div class="left-block">
-                                                        <div class="product-image-container">
-
-                                                            <a href="shop/1-195-apple-iphone-x-2017.html#/8-color-white/25-storage-128gb"
-                                                                class="thumbnail product-thumbnail product_img_link">
-                                                                <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
-                                                                    style="min-height: 10px;"
-                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    alt=""
-                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    width="600" height="800">
-                                                                <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
-                                                                    style="min-height: 10px;"
-                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    alt=""
-                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    width="600" height="800">
-                                                            </a>
-
-
-                                                            <div class="box-items">
-                                                                <a class="new-box box-status"
-                                                                    href="shop/1-195-apple-iphone-x-2017.html">
-                                                                    <span class="new-label">New</span>
-                                                                </a>
-                                                                <a class="sale-box box-status"
-                                                                    href="shop/1-195-apple-iphone-x-2017.html">
-                                                                    <span class="sale-label">Sale!</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="show-btn-products">
-
-                                                            <div class="control-action-buttons">
-                                                                <div class="action-button">
-                                                                    <ul>
-
-                                                                        <li class="icon-line-quickview">
-                                                                            <a href="#"
-                                                                                class="quick-view countdown-view-detail"
-                                                                                data-link-action="quickview"
-                                                                                data-toggle="tooltip" title="View detail">
-                                                                                <i class="material-icons">&#xE8B6;</i>
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="right-block">
-                                                        <div class="product-cate"><span>Shop</span></div>
-
-                                                        <h5 class="product-title-item" itemprop="name"><a
-                                                                href="shop/1-195-apple-iphone-x-2017.html#/8-color-white/25-storage-128gb"
-                                                                class="product-name">Apple iPhone X 2017</a></h5>
-
-                                                        <div class="review-price-product">
-                                                            <div class="hook-reviews">
-
-                                                                <div class="comments_note">
-                                                                    <div class="star_content clearfix">
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                    </div>
-                                                                    <div class="dor-num-reviews hidden">
-                                                                        <span>0 Review</span>
-                                                                        <i>/</i><a href="#" class="add-your-review">Add Your
-                                                                            Review</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="dor-show-value-product clearfix">
-
-                                                                <div class="content_price">
-                                                                    <div class="product-price-and-shipping">
-
-
-                                                                        <span itemprop="price"
-                                                                            class="price">$1,100.00</span>
-
-
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="highlighted-informations hidden-sm-down">
-
-                                                                    <div class="variant-links">
-                                                                        <a href="shop/1-195-apple-iphone-x-2017.html#/8-color-white/25-storage-128gb"
-                                                                            class="color" title="White"
-                                                                            style="background-color: #ffffff"><span
-                                                                                class="sr-only">White</span></a>
-                                                                        <a href="shop/1-194-apple-iphone-x-2017.html#/11-color-black/25-storage-128gb"
-                                                                            class="color" title="Black"
-                                                                            style="background-color: #434A54"><span
-                                                                                class="sr-only">Black</span></a>
-                                                                        <a href="shop/1-196-apple-iphone-x-2017.html#/24-color-pink/25-storage-128gb"
-                                                                            class="color" title="Pink"
-                                                                            style="background-color: #FCCACD"><span
-                                                                                class="sr-only">Pink</span></a>
-                                                                        <span class="js-count count"></span>
-                                                                    </div>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="product-description-short hidden"
-                                                            itemprop="description">
-                                                            <p>Apple takes a complete product life cycle approach to
-                                                                determining our environmental impact.</p>
-                                                            <p style="font-size:14px;font-weight:400;"><strong>iPhone X
-                                                                    embodies Apple’s continuing environmental progress. It
-                                                                    is designed with the following features to reduce
-                                                                    environmental impact:</strong></p>
-                                                            <ul>
-                                                                <li>Mercury-free</li>
-                                                                <li>Arsenic-free display glass</li>
-                                                                <li>Brominated flame retardant–free</li>
-                                                                <li>PVC-free</li>
-                                                                <li>Beryllium-free</li>
-                                                                <li>Highly recyclable stainless steel</li>
-                                                            </ul>
-                                                        </div>
-
-                                                    </div>
-
-                                                    <ul class="product-flags hidden">
-                                                        <li class="on-sale">On sale!</li>
-                                                        <li class="new">New</li>
-                                                    </ul>
-
-                                                </div>
-                                                <div class="product-more-options">
-                                                    <form action="http://bionic.doradothemes.com/en/cart" method="post"
-                                                        class="dor-addcart-button">
-                                                        <div class="add">
-                                                            <input type="hidden" name="token"
-                                                                value="34b11c3ac3b44ecd83062701f9ddcf1b">
-                                                            <input name="id_product" value="1" type="hidden">
-                                                            <input type="hidden" name="id_customization" value="0">
-                                                            <a href="cart.html"
-                                                                class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
-                                                                data-button-action="add-to-cart" data-title="Add to cart">
-                                                                <i class="material-icons shopping-cart">&#xE547;</i>
-                                                                <span class="hidden">Add to cart</span>
-                                                            </a>
-                                                        </div>
-                                                    </form>
-                                                    <div class="option-quick-add">
-                                                        <div class="icon-line-wishlist-fel">
-                                                            <div class="dor-wishlist">
-                                                                <a class="addToDorWishlist" href="#"
-                                                                    onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
-                                                                    data-toggle="tooltip" data-placement="top" title=""
-                                                                    data-original-title="Add to Wishlist">
-                                                                    <i class="material-icons">&#xE87E;</i>
-                                                                    <span class="wishlist-txt">Wishlist</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="icon-line-compare-fel">
-                                                            <div class="compare">
-                                                                <a class="add_to_compare"
-                                                                    href="shop/1-195-apple-iphone-x-2017.html"
-                                                                    data-productid="1" data-toggle="tooltip" title=""
-                                                                    data-original-title="Add compare"><i
-                                                                        class="fa fa-random"></i><span
-                                                                        class="compare-button-txt">Compare</span></a>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-
-
-
-
-                                        <article class="col-md-3  ajax_block_product product-miniature js-product-miniature"
-                                            data-id-product="2" data-id-product-attribute="7" itemscope
-                                            itemtype="http://schema.org/Product">
-                                            <div class="product-container">
-                                                <div class="dor-display-product-info">
-                                                    <div class="left-block">
-                                                        <div class="product-image-container">
-
-                                                            <a href="shop/2-7-lg-v30-premium.html#/1-storage-16gb/11-color-black"
-                                                                class="thumbnail product-thumbnail product_img_link">
-                                                                <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
-                                                                    style="min-height: 10px;"
-                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}" alt=""
-                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    width="600" height="800">
-                                                                <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
-                                                                    style="min-height: 10px;"
-                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}" alt=""
-                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    width="600" height="800">
-                                                            </a>
-
-
-                                                            <div class="box-items">
-                                                                <a class="new-box box-status"
-                                                                    href="shop/2-lg-v30-premium.html">
-                                                                    <span class="new-label">New</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="show-btn-products">
-
-                                                            <div class="control-action-buttons">
-                                                                <div class="action-button">
-                                                                    <ul>
-
-                                                                        <li class="icon-line-quickview">
-                                                                            <a href="#"
-                                                                                class="quick-view countdown-view-detail"
-                                                                                data-link-action="quickview"
-                                                                                data-toggle="tooltip" title="View detail">
-                                                                                <i class="material-icons">&#xE8B6;</i>
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="right-block">
-                                                        <div class="product-cate"><span>Shop</span></div>
-
-                                                        <h5 class="product-title-item" itemprop="name"><a
-                                                                href="shop/2-7-lg-v30-premium.html#/1-storage-16gb/11-color-black"
-                                                                class="product-name">LG V30 Premium</a></h5>
-
-                                                        <div class="review-price-product">
-                                                            <div class="hook-reviews">
-
-                                                                <div class="comments_note">
-                                                                    <div class="star_content clearfix">
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                    </div>
-                                                                    <div class="dor-num-reviews hidden">
-                                                                        <span>0 Review</span>
-                                                                        <i>/</i><a href="#" class="add-your-review">Add Your
-                                                                            Review</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="dor-show-value-product clearfix">
-
-                                                                <div class="content_price">
-                                                                    <div class="product-price-and-shipping">
-
-
-                                                                        <span itemprop="price" class="price">$990.00</span>
-
-
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="highlighted-informations hidden-sm-down">
-
-                                                                    <div class="variant-links">
-                                                                        <a href="shop/2-8-lg-v30-premium.html#/1-storage-16gb/8-color-white"
-                                                                            class="color" title="White"
-                                                                            style="background-color: #ffffff"><span
-                                                                                class="sr-only">White</span></a>
-                                                                        <a href="shop/2-7-lg-v30-premium.html#/1-storage-16gb/11-color-black"
-                                                                            class="color" title="Black"
-                                                                            style="background-color: #434A54"><span
-                                                                                class="sr-only">Black</span></a>
-                                                                        <span class="js-count count"></span>
-                                                                    </div>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="product-description-short hidden"
-                                                            itemprop="description">
-                                                            <p>Apple takes a complete product life cycle approach to
-                                                                determining our environmental impact.</p>
-                                                            <p style="font-size:14px;font-weight:400;"><strong>LG V30
-                                                                    embodies Apple’s continuing environmental progress. It
-                                                                    is designed with the following features to reduce
-                                                                    environmental impact:</strong></p>
-                                                            <ul>
-                                                                <li>Mercury-free</li>
-                                                                <li>Arsenic-free display glass</li>
-                                                                <li>Brominated flame retardant–free</li>
-                                                                <li>PVC-free</li>
-                                                                <li>Beryllium-free</li>
-                                                                <li>Highly recyclable stainless steel</li>
-                                                            </ul>
-                                                        </div>
-
-                                                    </div>
-
-                                                    <ul class="product-flags hidden">
-                                                        <li class="new">New</li>
-                                                    </ul>
-
-                                                </div>
-                                                <div class="product-more-options">
-                                                    <form action="http://bionic.doradothemes.com/en/cart" method="post"
-                                                        class="dor-addcart-button">
-                                                        <div class="add">
-                                                            <input type="hidden" name="token"
-                                                                value="34b11c3ac3b44ecd83062701f9ddcf1b">
-                                                            <input name="id_product" value="2" type="hidden">
-                                                            <input type="hidden" name="id_customization" value="0">
-                                                            <a href="cart.html"
-                                                                class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
-                                                                data-button-action="add-to-cart" data-title="Add to cart">
-                                                                <i class="material-icons shopping-cart">&#xE547;</i>
-                                                                <span class="hidden">Add to cart</span>
-                                                            </a>
-                                                        </div>
-                                                    </form>
-                                                    <div class="option-quick-add">
-                                                        <div class="icon-line-wishlist-fel">
-                                                            <div class="dor-wishlist">
-                                                                <a class="addToDorWishlist" href="#"
-                                                                    onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
-                                                                    data-toggle="tooltip" data-placement="top" title=""
-                                                                    data-original-title="Add to Wishlist">
-                                                                    <i class="material-icons">&#xE87E;</i>
-                                                                    <span class="wishlist-txt">Wishlist</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="icon-line-compare-fel">
-                                                            <div class="compare">
-                                                                <a class="add_to_compare" href="shop/2-lg-v30-premium.html"
-                                                                    data-productid="2" data-toggle="tooltip" title=""
-                                                                    data-original-title="Add compare"><i
-                                                                        class="fa fa-random"></i><span
-                                                                        class="compare-button-txt">Compare</span></a>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-
-
-
-
-                                        <article class="col-md-3 ajax_block_product product-miniature js-product-miniature"
-                                            data-id-product="3" data-id-product-attribute="85" itemscope
-                                            itemtype="http://schema.org/Product">
-                                            <div class="product-container">
-                                                <div class="dor-display-product-info">
-                                                    <div class="left-block">
-                                                        <div class="product-image-container">
-
-                                                            <a href="shop/3-85-samsung-galaxy-note8.html#/8-color-white/25-storage-128gb"
-                                                                class="thumbnail product-thumbnail product_img_link">
-                                                                <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
-                                                                    style="min-height: 10px;"
-                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    alt=""
-                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    width="600" height="800">
-                                                                <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
-                                                                    style="min-height: 10px;"
-                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    alt=""
-                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    width="600" height="800">
-                                                            </a>
-
-
-                                                            <div class="box-items">
-                                                                <a class="new-box box-status"
-                                                                    href="shop/3-85-samsung-galaxy-note8.html">
-                                                                    <span class="new-label">New</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="show-btn-products">
-
-                                                            <div class="control-action-buttons">
-                                                                <div class="action-button">
-                                                                    <ul>
-
-                                                                        <li class="icon-line-quickview">
-                                                                            <a href="#"
-                                                                                class="quick-view countdown-view-detail"
-                                                                                data-link-action="quickview"
-                                                                                data-toggle="tooltip" title="View detail">
-                                                                                <i class="material-icons">&#xE8B6;</i>
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="right-block">
-                                                        <div class="product-cate"><span>Shop</span></div>
-
-                                                        <h5 class="product-title-item" itemprop="name"><a
-                                                                href="shop/3-85-samsung-galaxy-note8.html#/8-color-white/25-storage-128gb"
-                                                                class="product-name">Samsung Galaxy Note8</a></h5>
-
-                                                        <div class="review-price-product">
-                                                            <div class="hook-reviews">
-
-                                                                <div class="comments_note">
-                                                                    <div class="star_content clearfix">
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                    </div>
-                                                                    <div class="dor-num-reviews hidden">
-                                                                        <span>0 Review</span>
-                                                                        <i>/</i><a href="#" class="add-your-review">Add Your
-                                                                            Review</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="dor-show-value-product clearfix">
-
-                                                                <div class="content_price">
-                                                                    <div class="product-price-and-shipping">
-
-
-                                                                        <span itemprop="price" class="price">$890.00</span>
-
-
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="highlighted-informations hidden-sm-down">
-
-                                                                    <div class="variant-links">
-                                                                        <a href="shop/3-78-samsung-galaxy-note8.html#/3-storage-64gb/5-color-grey"
-                                                                            class="color" title="Grey"
-                                                                            style="background-color: #AAB2BD"><span
-                                                                                class="sr-only">Grey</span></a>
-                                                                        <a href="shop/3-79-samsung-galaxy-note8.html#/3-storage-64gb/8-color-white"
-                                                                            class="color" title="White"
-                                                                            style="background-color: #ffffff"><span
-                                                                                class="sr-only">White</span></a>
-                                                                        <a href="shop/3-77-samsung-galaxy-note8.html#/3-storage-64gb/11-color-black"
-                                                                            class="color" title="Black"
-                                                                            style="background-color: #434A54"><span
-                                                                                class="sr-only">Black</span></a>
-                                                                        <span class="js-count count"></span>
-                                                                    </div>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="product-description-short hidden"
-                                                            itemprop="description">
-                                                            <p>Samsung takes a complete product life cycle approach to
-                                                                determining our environmental impact.</p>
-                                                            <p style="font-size:14px;font-weight:400;"><strong>Note8
-                                                                    embodies Samsung’s continuing environmental progress. It
-                                                                    is designed with the following features to reduce
-                                                                    environmental impact:</strong></p>
-                                                            <ul>
-                                                                <li>Mercury-free</li>
-                                                                <li>Arsenic-free display glass</li>
-                                                                <li>Brominated flame retardant–free</li>
-                                                                <li>PVC-free</li>
-                                                                <li>Beryllium-free</li>
-                                                                <li>Highly recyclable stainless steel</li>
-                                                            </ul>
-                                                        </div>
-
-                                                    </div>
-
-                                                    <ul class="product-flags hidden">
-                                                        <li class="new">New</li>
-                                                    </ul>
-
-                                                </div>
-                                                <div class="product-more-options">
-                                                    <form action="http://bionic.doradothemes.com/en/cart" method="post"
-                                                        class="dor-addcart-button">
-                                                        <div class="add">
-                                                            <input type="hidden" name="token"
-                                                                value="34b11c3ac3b44ecd83062701f9ddcf1b">
-                                                            <input name="id_product" value="3" type="hidden">
-                                                            <input type="hidden" name="id_customization" value="0">
-                                                            <a href="cart.html"
-                                                                class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
-                                                                data-button-action="add-to-cart" data-title="Add to cart">
-                                                                <i class="material-icons shopping-cart">&#xE547;</i>
-                                                                <span class="hidden">Add to cart</span>
-                                                            </a>
-                                                        </div>
-                                                    </form>
-                                                    <div class="option-quick-add">
-                                                        <div class="icon-line-wishlist-fel">
-                                                            <div class="dor-wishlist">
-                                                                <a class="addToDorWishlist" href="#"
-                                                                    onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
-                                                                    data-toggle="tooltip" data-placement="top" title=""
-                                                                    data-original-title="Add to Wishlist">
-                                                                    <i class="material-icons">&#xE87E;</i>
-                                                                    <span class="wishlist-txt">Wishlist</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="icon-line-compare-fel">
-                                                            <div class="compare">
-                                                                <a class="add_to_compare"
-                                                                    href="shop/3-85-samsung-galaxy-note8.html"
-                                                                    data-productid="3" data-toggle="tooltip" title=""
-                                                                    data-original-title="Add compare"><i
-                                                                        class="fa fa-random"></i><span
-                                                                        class="compare-button-txt">Compare</span></a>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-
-
-
-
-                                        <article class="col-md-3 ajax_block_product product-miniature js-product-miniature"
-                                            data-id-product="4" data-id-product-attribute="43" itemscope
-                                            itemtype="http://schema.org/Product">
-                                            <div class="product-container">
-                                                <div class="dor-display-product-info">
-                                                    <div class="left-block">
-                                                        <div class="product-image-container">
-
-                                                            <a href="shop/4-43-apple-iphone8.html#/1-storage-16gb/24-color-pink"
-                                                                class="thumbnail product-thumbnail product_img_link">
-                                                                <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
-                                                                    style="min-height: 10px;"
-                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}" alt=""
-                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    width="600" height="800">
-                                                                <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
-                                                                    style="min-height: 10px;"
-                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}" alt=""
-                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    width="600" height="800">
-                                                            </a>
-
-
-                                                            <div class="box-items">
-                                                                <a class="new-box box-status"
-                                                                    href="shop/4-43-apple-iphone8.html">
-                                                                    <span class="new-label">New</span>
-                                                                </a>
-                                                                <a class="sale-box box-status"
-                                                                    href="shop/4-43-apple-iphone8.html">
-                                                                    <span class="sale-label">Sale!</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="show-btn-products">
-
-                                                            <div class="control-action-buttons">
-                                                                <div class="action-button">
-                                                                    <ul>
-
-                                                                        <li class="icon-line-quickview">
-                                                                            <a href="#"
-                                                                                class="quick-view countdown-view-detail"
-                                                                                data-link-action="quickview"
-                                                                                data-toggle="tooltip" title="View detail">
-                                                                                <i class="material-icons">&#xE8B6;</i>
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="right-block">
-                                                        <div class="product-cate"><span>Shop</span></div>
-
-                                                        <h5 class="product-title-item" itemprop="name"><a
-                                                                href="shop/4-43-apple-iphone8.html#/1-storage-16gb/24-color-pink"
-                                                                class="product-name">Apple iPhone8</a></h5>
-
-                                                        <div class="review-price-product">
-                                                            <div class="hook-reviews">
-
-                                                                <div class="comments_note">
-                                                                    <div class="star_content clearfix">
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                    </div>
-                                                                    <div class="dor-num-reviews hidden">
-                                                                        <span>0 Review</span>
-                                                                        <i>/</i><a href="#" class="add-your-review">Add Your
-                                                                            Review</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="dor-show-value-product clearfix">
-
-                                                                <div class="content_price">
-                                                                    <div class="product-price-and-shipping">
-
-
-                                                                        <span itemprop="price" class="price">$899.00</span>
-
-
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="highlighted-informations hidden-sm-down">
-
-                                                                    <div class="variant-links">
-                                                                        <a href="shop/4-56-apple-iphone8.html#/8-color-white/25-storage-128gb"
-                                                                            class="color" title="White"
-                                                                            style="background-color: #ffffff"><span
-                                                                                class="sr-only">White</span></a>
-                                                                        <a href="shop/4-55-apple-iphone8.html#/11-color-black/25-storage-128gb"
-                                                                            class="color" title="Black"
-                                                                            style="background-color: #434A54"><span
-                                                                                class="sr-only">Black</span></a>
-                                                                        <a href="shop/4-43-apple-iphone8.html#/1-storage-16gb/24-color-pink"
-                                                                            class="color" title="Pink"
-                                                                            style="background-color: #FCCACD"><span
-                                                                                class="sr-only">Pink</span></a>
-                                                                        <span class="js-count count"></span>
-                                                                    </div>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="product-description-short hidden"
-                                                            itemprop="description">
-                                                            <p>Apple takes a complete product life cycle approach to
-                                                                determining our environmental impact.</p>
-                                                            <p style="font-size:14px;font-weight:400;"><strong>iPhone X
-                                                                    embodies Apple’s continuing environmental progress. It
-                                                                    is designed with the following features to reduce
-                                                                    environmental impact:</strong></p>
-                                                            <ul>
-                                                                <li>Mercury-free</li>
-                                                                <li>Arsenic-free display glass</li>
-                                                                <li>Brominated flame retardant–free</li>
-                                                                <li>PVC-free</li>
-                                                                <li>Beryllium-free</li>
-                                                                <li>Highly recyclable stainless steel</li>
-                                                            </ul>
-                                                        </div>
-
-                                                    </div>
-
-                                                    <ul class="product-flags hidden">
-                                                        <li class="on-sale">On sale!</li>
-                                                        <li class="new">New</li>
-                                                    </ul>
-
-                                                </div>
-                                                <div class="product-more-options">
-                                                    <form action="http://bionic.doradothemes.com/en/cart" method="post"
-                                                        class="dor-addcart-button">
-                                                        <div class="add">
-                                                            <input type="hidden" name="token"
-                                                                value="34b11c3ac3b44ecd83062701f9ddcf1b">
-                                                            <input name="id_product" value="4" type="hidden">
-                                                            <input type="hidden" name="id_customization" value="0">
-                                                            <a href="cart.html"
-                                                                class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
-                                                                data-button-action="add-to-cart" data-title="Add to cart">
-                                                                <i class="material-icons shopping-cart">&#xE547;</i>
-                                                                <span class="hidden">Add to cart</span>
-                                                            </a>
-                                                        </div>
-                                                    </form>
-                                                    <div class="option-quick-add">
-                                                        <div class="icon-line-wishlist-fel">
-                                                            <div class="dor-wishlist">
-                                                                <a class="addToDorWishlist" href="#"
-                                                                    onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
-                                                                    data-toggle="tooltip" data-placement="top" title=""
-                                                                    data-original-title="Add to Wishlist">
-                                                                    <i class="material-icons">&#xE87E;</i>
-                                                                    <span class="wishlist-txt">Wishlist</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="icon-line-compare-fel">
-                                                            <div class="compare">
-                                                                <a class="add_to_compare"
-                                                                    href="shop/4-43-apple-iphone8.html" data-productid="4"
-                                                                    data-toggle="tooltip" title=""
-                                                                    data-original-title="Add compare"><i
-                                                                        class="fa fa-random"></i><span
-                                                                        class="compare-button-txt">Compare</span></a>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-
-
-
-
-
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div aria-labelledby="mostview_product-tab" id="mostview_product" class="tab-pane fade in row">
-                                <div id="js-product-list">
-                                    <div class="products row">
-
-
-                                        <article class="col-md-3 ajax_block_product product-miniature js-product-miniature"
-                                            data-id-product="1" data-id-product-attribute="195" itemscope
-                                            itemtype="http://schema.org/Product">
-                                            <div class="product-container">
-                                                <div class="dor-display-product-info">
-                                                    <div class="left-block">
-                                                        <div class="product-image-container">
-
-                                                            <a href="shop/1-195-apple-iphone-x-2017.html#/8-color-white/25-storage-128gb"
-                                                                class="thumbnail product-thumbnail product_img_link">
-                                                                <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
-                                                                    style="min-height: 10px;"
-                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    alt=""
-                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    width="600" height="800">
-                                                                <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
-                                                                    style="min-height: 10px;"
-                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    alt=""
-                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    width="600" height="800">
-                                                            </a>
-
-
-                                                            <div class="box-items">
-                                                                <a class="new-box box-status"
-                                                                    href="shop/1-195-apple-iphone-x-2017.html">
-                                                                    <span class="new-label">New</span>
-                                                                </a>
-                                                                <a class="sale-box box-status"
-                                                                    href="shop/1-195-apple-iphone-x-2017.html">
-                                                                    <span class="sale-label">Sale!</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="show-btn-products">
-
-                                                            <div class="control-action-buttons">
-                                                                <div class="action-button">
-                                                                    <ul>
-
-                                                                        <li class="icon-line-quickview">
-                                                                            <a href="#"
-                                                                                class="quick-view countdown-view-detail"
-                                                                                data-link-action="quickview"
-                                                                                data-toggle="tooltip" title="View detail">
-                                                                                <i class="material-icons">&#xE8B6;</i>
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="right-block">
-                                                        <div class="product-cate"><span>Shop</span></div>
-
-                                                        <h5 class="product-title-item" itemprop="name"><a
-                                                                href="shop/1-195-apple-iphone-x-2017.html#/8-color-white/25-storage-128gb"
-                                                                class="product-name">Apple iPhone X 2017</a></h5>
-
-                                                        <div class="review-price-product">
-                                                            <div class="hook-reviews">
-
-                                                                <div class="comments_note">
-                                                                    <div class="star_content clearfix">
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                    </div>
-                                                                    <div class="dor-num-reviews hidden">
-                                                                        <span>0 Review</span>
-                                                                        <i>/</i><a href="#" class="add-your-review">Add Your
-                                                                            Review</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="dor-show-value-product clearfix">
-
-                                                                <div class="content_price">
-                                                                    <div class="product-price-and-shipping">
-
-
-                                                                        <span itemprop="price"
-                                                                            class="price">$1,100.00</span>
-
-
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="highlighted-informations hidden-sm-down">
-
-                                                                    <div class="variant-links">
-                                                                        <a href="shop/1-195-apple-iphone-x-2017.html#/8-color-white/25-storage-128gb"
-                                                                            class="color" title="White"
-                                                                            style="background-color: #ffffff"><span
-                                                                                class="sr-only">White</span></a>
-                                                                        <a href="shop/1-194-apple-iphone-x-2017.html#/11-color-black/25-storage-128gb"
-                                                                            class="color" title="Black"
-                                                                            style="background-color: #434A54"><span
-                                                                                class="sr-only">Black</span></a>
-                                                                        <a href="shop/1-196-apple-iphone-x-2017.html#/24-color-pink/25-storage-128gb"
-                                                                            class="color" title="Pink"
-                                                                            style="background-color: #FCCACD"><span
-                                                                                class="sr-only">Pink</span></a>
-                                                                        <span class="js-count count"></span>
-                                                                    </div>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="product-description-short hidden"
-                                                            itemprop="description">
-                                                            <p>Apple takes a complete product life cycle approach to
-                                                                determining our environmental impact.</p>
-                                                            <p style="font-size:14px;font-weight:400;"><strong>iPhone X
-                                                                    embodies Apple’s continuing environmental progress. It
-                                                                    is designed with the following features to reduce
-                                                                    environmental impact:</strong></p>
-                                                            <ul>
-                                                                <li>Mercury-free</li>
-                                                                <li>Arsenic-free display glass</li>
-                                                                <li>Brominated flame retardant–free</li>
-                                                                <li>PVC-free</li>
-                                                                <li>Beryllium-free</li>
-                                                                <li>Highly recyclable stainless steel</li>
-                                                            </ul>
-                                                        </div>
-
-                                                    </div>
-
-                                                    <ul class="product-flags hidden">
-                                                        <li class="on-sale">On sale!</li>
-                                                        <li class="new">New</li>
-                                                    </ul>
-
-                                                </div>
-                                                <div class="product-more-options">
-                                                    <form action="http://bionic.doradothemes.com/en/cart" method="post"
-                                                        class="dor-addcart-button">
-                                                        <div class="add">
-                                                            <input type="hidden" name="token"
-                                                                value="34b11c3ac3b44ecd83062701f9ddcf1b">
-                                                            <input name="id_product" value="1" type="hidden">
-                                                            <input type="hidden" name="id_customization" value="0">
-                                                            <a href="cart.html"
-                                                                class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
-                                                                data-button-action="add-to-cart" data-title="Add to cart">
-                                                                <i class="material-icons shopping-cart">&#xE547;</i>
-                                                                <span class="hidden">Add to cart</span>
-                                                            </a>
-                                                        </div>
-                                                    </form>
-                                                    <div class="option-quick-add">
-                                                        <div class="icon-line-wishlist-fel">
-                                                            <div class="dor-wishlist">
-                                                                <a class="addToDorWishlist" href="#"
-                                                                    onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
-                                                                    data-toggle="tooltip" data-placement="top" title=""
-                                                                    data-original-title="Add to Wishlist">
-                                                                    <i class="material-icons">&#xE87E;</i>
-                                                                    <span class="wishlist-txt">Wishlist</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="icon-line-compare-fel">
-                                                            <div class="compare">
-                                                                <a class="add_to_compare"
-                                                                    href="shop/1-195-apple-iphone-x-2017.html"
-                                                                    data-productid="1" data-toggle="tooltip" title=""
-                                                                    data-original-title="Add compare"><i
-                                                                        class="fa fa-random"></i><span
-                                                                        class="compare-button-txt">Compare</span></a>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-
-
-
-
-                                        <article class="col-md-3  ajax_block_product product-miniature js-product-miniature"
-                                            data-id-product="2" data-id-product-attribute="7" itemscope
-                                            itemtype="http://schema.org/Product">
-                                            <div class="product-container">
-                                                <div class="dor-display-product-info">
-                                                    <div class="left-block">
-                                                        <div class="product-image-container">
-
-                                                            <a href="shop/2-7-lg-v30-premium.html#/1-storage-16gb/11-color-black"
-                                                                class="thumbnail product-thumbnail product_img_link">
-                                                                <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
-                                                                    style="min-height: 10px;"
-                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}" alt=""
-                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    width="600" height="800">
-                                                                <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
-                                                                    style="min-height: 10px;"
-                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}" alt=""
-                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    width="600" height="800">
-                                                            </a>
-
-
-                                                            <div class="box-items">
-                                                                <a class="new-box box-status"
-                                                                    href="shop/2-lg-v30-premium.html">
-                                                                    <span class="new-label">New</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="show-btn-products">
-
-                                                            <div class="control-action-buttons">
-                                                                <div class="action-button">
-                                                                    <ul>
-
-                                                                        <li class="icon-line-quickview">
-                                                                            <a href="#"
-                                                                                class="quick-view countdown-view-detail"
-                                                                                data-link-action="quickview"
-                                                                                data-toggle="tooltip" title="View detail">
-                                                                                <i class="material-icons">&#xE8B6;</i>
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="right-block">
-                                                        <div class="product-cate"><span>Shop</span></div>
-
-                                                        <h5 class="product-title-item" itemprop="name"><a
-                                                                href="shop/2-7-lg-v30-premium.html#/1-storage-16gb/11-color-black"
-                                                                class="product-name">LG V30 Premium</a></h5>
-
-                                                        <div class="review-price-product">
-                                                            <div class="hook-reviews">
-
-                                                                <div class="comments_note">
-                                                                    <div class="star_content clearfix">
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                    </div>
-                                                                    <div class="dor-num-reviews hidden">
-                                                                        <span>0 Review</span>
-                                                                        <i>/</i><a href="#" class="add-your-review">Add Your
-                                                                            Review</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="dor-show-value-product clearfix">
-
-                                                                <div class="content_price">
-                                                                    <div class="product-price-and-shipping">
-
-
-                                                                        <span itemprop="price" class="price">$990.00</span>
-
-
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="highlighted-informations hidden-sm-down">
-
-                                                                    <div class="variant-links">
-                                                                        <a href="shop/2-8-lg-v30-premium.html#/1-storage-16gb/8-color-white"
-                                                                            class="color" title="White"
-                                                                            style="background-color: #ffffff"><span
-                                                                                class="sr-only">White</span></a>
-                                                                        <a href="shop/2-7-lg-v30-premium.html#/1-storage-16gb/11-color-black"
-                                                                            class="color" title="Black"
-                                                                            style="background-color: #434A54"><span
-                                                                                class="sr-only">Black</span></a>
-                                                                        <span class="js-count count"></span>
-                                                                    </div>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="product-description-short hidden"
-                                                            itemprop="description">
-                                                            <p>Apple takes a complete product life cycle approach to
-                                                                determining our environmental impact.</p>
-                                                            <p style="font-size:14px;font-weight:400;"><strong>LG V30
-                                                                    embodies Apple’s continuing environmental progress. It
-                                                                    is designed with the following features to reduce
-                                                                    environmental impact:</strong></p>
-                                                            <ul>
-                                                                <li>Mercury-free</li>
-                                                                <li>Arsenic-free display glass</li>
-                                                                <li>Brominated flame retardant–free</li>
-                                                                <li>PVC-free</li>
-                                                                <li>Beryllium-free</li>
-                                                                <li>Highly recyclable stainless steel</li>
-                                                            </ul>
-                                                        </div>
-
-                                                    </div>
-
-                                                    <ul class="product-flags hidden">
-                                                        <li class="new">New</li>
-                                                    </ul>
-
-                                                </div>
-                                                <div class="product-more-options">
-                                                    <form action="http://bionic.doradothemes.com/en/cart" method="post"
-                                                        class="dor-addcart-button">
-                                                        <div class="add">
-                                                            <input type="hidden" name="token"
-                                                                value="34b11c3ac3b44ecd83062701f9ddcf1b">
-                                                            <input name="id_product" value="2" type="hidden">
-                                                            <input type="hidden" name="id_customization" value="0">
-                                                            <a href="cart.html"
-                                                                class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
-                                                                data-button-action="add-to-cart" data-title="Add to cart">
-                                                                <i class="material-icons shopping-cart">&#xE547;</i>
-                                                                <span class="hidden">Add to cart</span>
-                                                            </a>
-                                                        </div>
-                                                    </form>
-                                                    <div class="option-quick-add">
-                                                        <div class="icon-line-wishlist-fel">
-                                                            <div class="dor-wishlist">
-                                                                <a class="addToDorWishlist" href="#"
-                                                                    onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
-                                                                    data-toggle="tooltip" data-placement="top" title=""
-                                                                    data-original-title="Add to Wishlist">
-                                                                    <i class="material-icons">&#xE87E;</i>
-                                                                    <span class="wishlist-txt">Wishlist</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="icon-line-compare-fel">
-                                                            <div class="compare">
-                                                                <a class="add_to_compare" href="shop/2-lg-v30-premium.html"
-                                                                    data-productid="2" data-toggle="tooltip" title=""
-                                                                    data-original-title="Add compare"><i
-                                                                        class="fa fa-random"></i><span
-                                                                        class="compare-button-txt">Compare</span></a>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-
-
-
-
-                                        <article class="col-md-3 ajax_block_product product-miniature js-product-miniature"
-                                            data-id-product="3" data-id-product-attribute="85" itemscope
-                                            itemtype="http://schema.org/Product">
-                                            <div class="product-container">
-                                                <div class="dor-display-product-info">
-                                                    <div class="left-block">
-                                                        <div class="product-image-container">
-
-                                                            <a href="shop/3-85-samsung-galaxy-note8.html#/8-color-white/25-storage-128gb"
-                                                                class="thumbnail product-thumbnail product_img_link">
-                                                                <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
-                                                                    style="min-height: 10px;"
-                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    alt=""
-                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    width="600" height="800">
-                                                                <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
-                                                                    style="min-height: 10px;"
-                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    alt=""
-                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    width="600" height="800">
-                                                            </a>
-
-
-                                                            <div class="box-items">
-                                                                <a class="new-box box-status"
-                                                                    href="shop/3-85-samsung-galaxy-note8.html">
-                                                                    <span class="new-label">New</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="show-btn-products">
-
-                                                            <div class="control-action-buttons">
-                                                                <div class="action-button">
-                                                                    <ul>
-
-                                                                        <li class="icon-line-quickview">
-                                                                            <a href="#"
-                                                                                class="quick-view countdown-view-detail"
-                                                                                data-link-action="quickview"
-                                                                                data-toggle="tooltip" title="View detail">
-                                                                                <i class="material-icons">&#xE8B6;</i>
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="right-block">
-                                                        <div class="product-cate"><span>Shop</span></div>
-
-                                                        <h5 class="product-title-item" itemprop="name"><a
-                                                                href="shop/3-85-samsung-galaxy-note8.html#/8-color-white/25-storage-128gb"
-                                                                class="product-name">Samsung Galaxy Note8</a></h5>
-
-                                                        <div class="review-price-product">
-                                                            <div class="hook-reviews">
-
-                                                                <div class="comments_note">
-                                                                    <div class="star_content clearfix">
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                    </div>
-                                                                    <div class="dor-num-reviews hidden">
-                                                                        <span>0 Review</span>
-                                                                        <i>/</i><a href="#" class="add-your-review">Add Your
-                                                                            Review</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="dor-show-value-product clearfix">
-
-                                                                <div class="content_price">
-                                                                    <div class="product-price-and-shipping">
-
-
-                                                                        <span itemprop="price" class="price">$890.00</span>
-
-
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="highlighted-informations hidden-sm-down">
-
-                                                                    <div class="variant-links">
-                                                                        <a href="shop/3-78-samsung-galaxy-note8.html#/3-storage-64gb/5-color-grey"
-                                                                            class="color" title="Grey"
-                                                                            style="background-color: #AAB2BD"><span
-                                                                                class="sr-only">Grey</span></a>
-                                                                        <a href="shop/3-79-samsung-galaxy-note8.html#/3-storage-64gb/8-color-white"
-                                                                            class="color" title="White"
-                                                                            style="background-color: #ffffff"><span
-                                                                                class="sr-only">White</span></a>
-                                                                        <a href="shop/3-77-samsung-galaxy-note8.html#/3-storage-64gb/11-color-black"
-                                                                            class="color" title="Black"
-                                                                            style="background-color: #434A54"><span
-                                                                                class="sr-only">Black</span></a>
-                                                                        <span class="js-count count"></span>
-                                                                    </div>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="product-description-short hidden"
-                                                            itemprop="description">
-                                                            <p>Samsung takes a complete product life cycle approach to
-                                                                determining our environmental impact.</p>
-                                                            <p style="font-size:14px;font-weight:400;"><strong>Note8
-                                                                    embodies Samsung’s continuing environmental progress. It
-                                                                    is designed with the following features to reduce
-                                                                    environmental impact:</strong></p>
-                                                            <ul>
-                                                                <li>Mercury-free</li>
-                                                                <li>Arsenic-free display glass</li>
-                                                                <li>Brominated flame retardant–free</li>
-                                                                <li>PVC-free</li>
-                                                                <li>Beryllium-free</li>
-                                                                <li>Highly recyclable stainless steel</li>
-                                                            </ul>
-                                                        </div>
-
-                                                    </div>
-
-                                                    <ul class="product-flags hidden">
-                                                        <li class="new">New</li>
-                                                    </ul>
-
-                                                </div>
-                                                <div class="product-more-options">
-                                                    <form action="http://bionic.doradothemes.com/en/cart" method="post"
-                                                        class="dor-addcart-button">
-                                                        <div class="add">
-                                                            <input type="hidden" name="token"
-                                                                value="34b11c3ac3b44ecd83062701f9ddcf1b">
-                                                            <input name="id_product" value="3" type="hidden">
-                                                            <input type="hidden" name="id_customization" value="0">
-                                                            <a href="cart.html"
-                                                                class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
-                                                                data-button-action="add-to-cart" data-title="Add to cart">
-                                                                <i class="material-icons shopping-cart">&#xE547;</i>
-                                                                <span class="hidden">Add to cart</span>
-                                                            </a>
-                                                        </div>
-                                                    </form>
-                                                    <div class="option-quick-add">
-                                                        <div class="icon-line-wishlist-fel">
-                                                            <div class="dor-wishlist">
-                                                                <a class="addToDorWishlist" href="#"
-                                                                    onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
-                                                                    data-toggle="tooltip" data-placement="top" title=""
-                                                                    data-original-title="Add to Wishlist">
-                                                                    <i class="material-icons">&#xE87E;</i>
-                                                                    <span class="wishlist-txt">Wishlist</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="icon-line-compare-fel">
-                                                            <div class="compare">
-                                                                <a class="add_to_compare"
-                                                                    href="shop/3-85-samsung-galaxy-note8.html"
-                                                                    data-productid="3" data-toggle="tooltip" title=""
-                                                                    data-original-title="Add compare"><i
-                                                                        class="fa fa-random"></i><span
-                                                                        class="compare-button-txt">Compare</span></a>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-
-
-
-
-                                        <article class="col-md-3 ajax_block_product product-miniature js-product-miniature"
-                                            data-id-product="4" data-id-product-attribute="43" itemscope
-                                            itemtype="http://schema.org/Product">
-                                            <div class="product-container">
-                                                <div class="dor-display-product-info">
-                                                    <div class="left-block">
-                                                        <div class="product-image-container">
-
-                                                            <a href="shop/4-43-apple-iphone8.html#/1-storage-16gb/24-color-pink"
-                                                                class="thumbnail product-thumbnail product_img_link">
-                                                                <img class="img-responsive thumbnail-image-1 lazy owl-lazy"
-                                                                    style="min-height: 10px;"
-                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}" alt=""
-                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    width="600" height="800">
-                                                                <img class="img-responsive thumbnail-image-2 lazy owl-lazy"
-                                                                    style="min-height: 10px;"
-                                                                    data-lazy="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    data-src="https://picsum.photos/600/800?random={{mt_rand(1,100)}}" alt=""
-                                                                    data-full-size-image-url="https://picsum.photos/600/800?random={{mt_rand(1,100)}}"
-                                                                    width="600" height="800">
-                                                            </a>
-
-
-                                                            <div class="box-items">
-                                                                <a class="new-box box-status"
-                                                                    href="shop/4-43-apple-iphone8.html">
-                                                                    <span class="new-label">New</span>
-                                                                </a>
-                                                                <a class="sale-box box-status"
-                                                                    href="shop/4-43-apple-iphone8.html">
-                                                                    <span class="sale-label">Sale!</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="show-btn-products">
-
-                                                            <div class="control-action-buttons">
-                                                                <div class="action-button">
-                                                                    <ul>
-
-                                                                        <li class="icon-line-quickview">
-                                                                            <a href="#"
-                                                                                class="quick-view countdown-view-detail"
-                                                                                data-link-action="quickview"
-                                                                                data-toggle="tooltip" title="View detail">
-                                                                                <i class="material-icons">&#xE8B6;</i>
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="right-block">
-                                                        <div class="product-cate"><span>Shop</span></div>
-
-                                                        <h5 class="product-title-item" itemprop="name"><a
-                                                                href="shop/4-43-apple-iphone8.html#/1-storage-16gb/24-color-pink"
-                                                                class="product-name">Apple iPhone8</a></h5>
-
-                                                        <div class="review-price-product">
-                                                            <div class="hook-reviews">
-
-                                                                <div class="comments_note">
-                                                                    <div class="star_content clearfix">
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                        <div class="star"></div>
-                                                                    </div>
-                                                                    <div class="dor-num-reviews hidden">
-                                                                        <span>0 Review</span>
-                                                                        <i>/</i><a href="#" class="add-your-review">Add Your
-                                                                            Review</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="dor-show-value-product clearfix">
-
-                                                                <div class="content_price">
-                                                                    <div class="product-price-and-shipping">
-
-
-                                                                        <span itemprop="price" class="price">$899.00</span>
-
-
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="highlighted-informations hidden-sm-down">
-
-                                                                    <div class="variant-links">
-                                                                        <a href="shop/4-56-apple-iphone8.html#/8-color-white/25-storage-128gb"
-                                                                            class="color" title="White"
-                                                                            style="background-color: #ffffff"><span
-                                                                                class="sr-only">White</span></a>
-                                                                        <a href="shop/4-55-apple-iphone8.html#/11-color-black/25-storage-128gb"
-                                                                            class="color" title="Black"
-                                                                            style="background-color: #434A54"><span
-                                                                                class="sr-only">Black</span></a>
-                                                                        <a href="shop/4-43-apple-iphone8.html#/1-storage-16gb/24-color-pink"
-                                                                            class="color" title="Pink"
-                                                                            style="background-color: #FCCACD"><span
-                                                                                class="sr-only">Pink</span></a>
-                                                                        <span class="js-count count"></span>
-                                                                    </div>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="product-description-short hidden"
-                                                            itemprop="description">
-                                                            <p>Apple takes a complete product life cycle approach to
-                                                                determining our environmental impact.</p>
-                                                            <p style="font-size:14px;font-weight:400;"><strong>iPhone X
-                                                                    embodies Apple’s continuing environmental progress. It
-                                                                    is designed with the following features to reduce
-                                                                    environmental impact:</strong></p>
-                                                            <ul>
-                                                                <li>Mercury-free</li>
-                                                                <li>Arsenic-free display glass</li>
-                                                                <li>Brominated flame retardant–free</li>
-                                                                <li>PVC-free</li>
-                                                                <li>Beryllium-free</li>
-                                                                <li>Highly recyclable stainless steel</li>
-                                                            </ul>
-                                                        </div>
-
-                                                    </div>
-
-                                                    <ul class="product-flags hidden">
-                                                        <li class="on-sale">On sale!</li>
-                                                        <li class="new">New</li>
-                                                    </ul>
-
-                                                </div>
-                                                <div class="product-more-options">
-                                                    <form action="http://bionic.doradothemes.com/en/cart" method="post"
-                                                        class="dor-addcart-button">
-                                                        <div class="add">
-                                                            <input type="hidden" name="token"
-                                                                value="34b11c3ac3b44ecd83062701f9ddcf1b">
-                                                            <input name="id_product" value="4" type="hidden">
-                                                            <input type="hidden" name="id_customization" value="0">
-                                                            <a href="cart.html"
-                                                                class="cart-button button ajax_add_to_cart_button btn btn-default add-to-cart"
-                                                                data-button-action="add-to-cart" data-title="Add to cart">
-                                                                <i class="material-icons shopping-cart">&#xE547;</i>
-                                                                <span class="hidden">Add to cart</span>
-                                                            </a>
-                                                        </div>
-                                                    </form>
-                                                    <div class="option-quick-add">
-                                                        <div class="icon-line-wishlist-fel">
-                                                            <div class="dor-wishlist">
-                                                                <a class="addToDorWishlist" href="#"
-                                                                    onclick="WishlistCart('wishlist_block_list', 'add', jQuery(this).closest('.js-product-miniature').attr('data-id-product'), jQuery(this).closest('.js-product-miniature').attr('data-id-product-attribute'), 1, 0); return false;"
-                                                                    data-toggle="tooltip" data-placement="top" title=""
-                                                                    data-original-title="Add to Wishlist">
-                                                                    <i class="material-icons">&#xE87E;</i>
-                                                                    <span class="wishlist-txt">Wishlist</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="icon-line-compare-fel">
-                                                            <div class="compare">
-                                                                <a class="add_to_compare"
-                                                                    href="shop/4-43-apple-iphone8.html" data-productid="4"
-                                                                    data-toggle="tooltip" title=""
-                                                                    data-original-title="Add compare"><i
-                                                                        class="fa fa-random"></i><span
-                                                                        class="compare-button-txt">Compare</span></a>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-
-
-
-
-
-
-
-                                    </div>
-                                </div>
-                            </div>
-
-
+                <!-- /End Single Banner  -->
+                <!-- Single Banner  -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="single-banner">
+                        <img src="https://via.placeholder.com/600x370" alt="#">
+                        <div class="content">
+                            <p>Bag Collectons</p>
+                            <h3>Awesome Bag <br> 2020</h3>
+                            <a href="#">Shop Now</a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="blockDorGroups clearfix">
-        <div class="container">
-            <div class="row">
-                <div id="countdown-data" class="gst-row row-carbon-fiber ovh col-lg-9 col-sm-9 col-xs-12"
-                    data-ajaxurl="http://bionic.doradothemes.com/modules/dor_dailydeals/dailydeals-ajax.php">
-                    <div class="dailydeal-content">
-                    </div>
-                </div>
-
-                <div class="dor-banner-deal col-lg-3 col-sm-3 col-xs-12">
-                    <div class="dor-banner-deal-item">
-                        <div class="dor-banner-deal-item-inner">
-                            <div class="dor-banner-deal-item-wrapper">
-                                <div class="item-deal-banner"><a href="#'"><img
-                                            data-src="http://bionic.doradothemes.com/img/cms/dorado/Banner-main-01.jpg"
-                                            alt="" class="owl-lazy" width="450" height="699" /></a></div>
-                                <div class="item-deal-banner"><a href="#'"><img
-                                            data-src="http://bionic.doradothemes.com/img/cms/dorado/Banner-main-02.jpg"
-                                            alt="" class="owl-lazy" width="450" height="699" /></a></div>
-                            </div>
+                <!-- /End Single Banner  -->
+                <!-- Single Banner  -->
+                <div class="col-lg-4 col-12">
+                    <div class="single-banner tab-height">
+                        <img src="https://via.placeholder.com/600x370" alt="#">
+                        <div class="content">
+                            <p>Flash Sale</p>
+                            <h3>Mid Season <br> Up to <span>40%</span> Off</h3>
+                            <a href="#">Discover Now</a>
                         </div>
                     </div>
                 </div>
-
+                <!-- /End Single Banner  -->
             </div>
         </div>
-    </div>
-    <div class="blockDorado7 blockPosition dor-bg-white">
+    </section>
+    <!-- End Small Banner -->
+
+    <!-- Start Product Area -->
+    <div class="product-area section">
         <div class="container">
             <div class="row">
-                <div class="dor-banner-small">
-                    <div class="dor-banner-small-inner">
-                        <div class="dor-banner-small-wrapper">
-                            <div class="dor-banner-small-item"><a href="#"><img
-                                        data-src="http://bionic.doradothemes.com/img/cms/dorado/Banner-Small-02.jpg" alt=""
-                                        class="lazy" width="630" height="180" /></a></div>
-                            <div class="dor-banner-small-item"><a href="#"><img
-                                        data-src="http://bionic.doradothemes.com/img/cms/dorado/Banner-Small-01.jpg" alt=""
-                                        class="lazy" width="630" height="180" /></a></div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <div id="dorTopProductCategory" class="dorTopProductCategory clearfix show-hover2"
-        data-defaulttab="http://bionic.doradothemes.com/modules/dor_topproductcategory/topproductcategory-ajax.php"
-        data-cateId="4">
-        <div class="container">
-            <div class="row">
-                <div class="dorTopProductCategoryData">
-                    <div class="fancy-heading text-left top-list-title">
-                        <h3><span>Top Cellphones</span></h3>
-                    </div>
-                    <div class="dor-topproduct-category-inner">
-                        <div class="dor-topproduct-category-wrapper">
-                            <div class="protab-contents">
-                                <div class="image-banner-top col-lg-4 col-sm-4 col-xs-12">
-                                    <div class="image-banner-top-inner">
-                                        <div class="image-banner-top-wrapper">
-                                            <ul>
-                                                <li>
-                                                    <div class="image-top-banner"><img
-                                                            data-src="http://bionic.doradothemes.com/img/cms/dorado/category/banner-cate-1-3.jpg"
-                                                            alt="" class="owl-lazy"></div>
-                                                </li>
-                                                <li>
-                                                    <div class="image-top-banner"><img
-                                                            data-src="http://bionic.doradothemes.com/img/cms/dorado/category/banner-cate-1.jpg"
-                                                            alt="" class="owl-lazy"></div>
-                                                </li>
-                                                <li>
-                                                    <div class="image-top-banner"><img
-                                                            data-src="http://bionic.doradothemes.com/img/cms/dorado/category/banner-cate-1-2.jpg"
-                                                            alt="" class="owl-lazy"></div>
-                                                </li>
-                                            </ul>
-                                            <a href="4-cellphone.html" title="Cellphone" class="shopall"><span>Shop
-                                                    all products</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="dor-topproduct-category-data col-lg-8 col-sm-8 col-xs-12">
-                                    <div class="dor-topproduct-cate-inner">
-                                        <div class="dor-topproduct-cate-wrapper">
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-12">
+                    <div class="section-title">
+                        <h2>Trending Item</h2>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div id="dorTopProductCategory2" class="dorTopProductCategory clearfix show-hover2"
-        data-defaulttab="http://bionic.doradothemes.com/modules/dor_topproductcategory2/topproductcategory-ajax.php"
-        data-cateId="8">
-        <div class="container">
             <div class="row">
-                <div class="dorTopProductCategoryData">
-                    <div class="fancy-heading text-right top-list-title">
-                        <h3><span>Top Computers</span></h3>
-                    </div>
-                    <div class="dor-topproduct-category-inner">
-                        <div class="dor-topproduct-category-wrapper">
-                            <div class="protab-contents">
-                                <div class="image-banner-top col-lg-4 col-sm-4 col-xs-12 pull-right">
-                                    <div class="image-banner-top-inner">
-                                        <div class="image-banner-top-wrapper">
-                                            <ul>
-                                                <li>
-                                                    <div class="image-top-banner"><img
-                                                            data-src="http://bionic.doradothemes.com/img/cms/dorado/category/banner-cate-2.jpg"
-                                                            alt="" class="owl-lazy"></div>
-                                                </li>
-                                                <li>
-                                                    <div class="image-top-banner"><img
-                                                            data-src="http://bionic.doradothemes.com/img/cms/dorado/category/banner-cate-2-3.jpg"
-                                                            alt="" class="owl-lazy"></div>
-                                                </li>
-                                                <li>
-                                                    <div class="image-top-banner"><img
-                                                            data-src="http://bionic.doradothemes.com/img/cms/dorado/category/banner-cate-2-2.jpg"
-                                                            alt="" class="owl-lazy"></div>
-                                                </li>
-                                            </ul>
-                                            <a href="8-computers-tablets.html" title="Computers &amp; Tablets"
-                                                class="shopall"><span>Shop all products</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="dor-topproduct-category-data col-lg-8 col-sm-8 col-xs-12">
-                                    <div class="dor-topproduct-cate-inner">
-                                        <div class="dor-topproduct-cate-wrapper">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="dorListCategory blockPosition dor-bg-white">
-        <div class="container">
-            <div class="row">
-                <div class="tab-category-container-sliderx">
-                    <div class="container-inner row-categories dor-tab-list-category-wrapper">
-                        <div class="categories-head-name">
-                            <h3 class="category-lists-title">
-                                <span> Popular Categories</span>
-                            </h3>
-                        </div>
-                        <div class="tab_category_container dor-nav-dots dorButtonArrow" data-ajaxload="1"
-                            data-ajaxurl="http://bionic.doradothemes.com/modules/dor_categories/ajax.php">
-                        </div> <!-- .tab_container -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="dor-tab-product-category-pro" class="clearfix show-hover2">
-        <div class="container">
-            <div class="row">
-                <div class="dor-pro-tabcontent clearfix">
-                    <div class="dor-tabpro-product-category-wrapper" data-tab-id="3">
-                        <h3 class="pro-list-title"><span class="tab-title-pro"><span>Hot Best Sellers</span></span>
-                        </h3>
-                        <div class="row-item-protab">
-                            <div class="protab-lists">
-                                <div class="pro-tab-head">
-                                    <ul role="tablist" class="nav nav-tabs" id="dorTabAjaxPro"
-                                        data-ajaxurl="http://bionic.doradothemes.com/modules/dor_tabproductcategory_pro/productcategory-ajax.php">
-                                        <li><a class="first_item " aria-expanded="false" data-toggle="tab"
-                                                id="cate-tab-data-pro-4-tab"
-                                                href="#cate-tab-data-pro-4"><span>Cellphone</span></a></li>
-                                        <li><a class=" " aria-expanded="false" data-toggle="tab"
-                                                id="cate-tab-data-pro-5-tab"
-                                                href="#cate-tab-data-pro-5"><span>Smartwatch</span></a></li>
-                                        <li><a class=" " aria-expanded="false" data-toggle="tab"
-                                                id="cate-tab-data-pro-7-tab"
-                                                href="#cate-tab-data-pro-7"><span>Accessories</span></a></li>
-                                        <li><a class="  active " aria-expanded="false" data-toggle="tab"
-                                                id="cate-tab-data-pro-8-tab" href="#cate-tab-data-pro-8"><span>Computers
-                                                    &amp; Tablets</span></a>
-                                        </li>
-                                        <li><a class=" " aria-expanded="false" data-toggle="tab"
-                                                id="cate-tab-data-pro-12-tab"
-                                                href="#cate-tab-data-pro-12"><span>Televisions</span></a></li>
-                                        <li><a class="last_item " aria-expanded="false" data-toggle="tab"
-                                                id="cate-tab-data-pro-13-tab"
-                                                href="#cate-tab-data-pro-13"><span>Headphones</span></a></li>
-
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="protab-contents">
-                                <div class="tab-content dorTabProductCategoryContentPro"
-                                    id="dorTabProductCategoryContentPro">
-                                    <div data-aria-labelledby="cate-tab-data-pro-besseller_product-tab"
-                                        id="cate-tab-data-pro-besseller_product" class="tab-pane fade  in">
-                                        <div class="productTabContentPro_besseller_product dor-content-items">
-                                            <div class="row-items">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div data-aria-labelledby="cate-tab-data-pro-4-tab" id="cate-tab-data-pro-4"
-                                        class="tab-pane fade  in">
-                                        <div class="productTabContentPro_4 dor-content-items">
-                                            <div class="row-items">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div data-aria-labelledby="cate-tab-data-pro-5-tab" id="cate-tab-data-pro-5"
-                                        class="tab-pane fade  in">
-                                        <div class="productTabContentPro_5 dor-content-items">
-                                            <div class="row-items">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div data-aria-labelledby="cate-tab-data-pro-7-tab" id="cate-tab-data-pro-7"
-                                        class="tab-pane fade  in">
-                                        <div class="productTabContentPro_7 dor-content-items">
-                                            <div class="row-items">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div data-aria-labelledby="cate-tab-data-pro-8-tab" id="cate-tab-data-pro-8"
-                                        class="tab-pane fade  active  in">
-                                        <div class="productTabContentPro_8 dor-content-items">
-                                            <div class="row-items">
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div data-aria-labelledby="cate-tab-data-pro-12-tab" id="cate-tab-data-pro-12"
-                                        class="tab-pane fade  in">
-                                        <div class="productTabContentPro_12 dor-content-items">
-                                            <div class="row-items">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div data-aria-labelledby="cate-tab-data-pro-13-tab" id="cate-tab-data-pro-13"
-                                        class="tab-pane fade  in">
-                                        <div class="productTabContentPro_13 dor-content-items">
-                                            <div class="row-items">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="dor-biz-product" class="product-biz list-products arrowStyleDot1">
-        <div class="container">
-            <div class="row">
-                <div class="dor-biz-inner">
-                    <div class="dor-biz-product">
-                        <div class="biz-contents row"
-                            data-ajaxurl="http://bionic.doradothemes.com/modules/dor_bizproduct/bizproduct-ajax.php">
-                            <ul class="tab-biz-control hidden-lg hidden-sm hidden-md col-sm-12 col-sx-12">
-                                <li><a href="#bizData-toprated_product"
-                                        class="biz-tabtitle dor-underline-from-center active"><span>Top
-                                            Rated</span></a></li>
-                                <li><a href="#bizData-besseller_product"
-                                        class="biz-tabtitle dor-underline-from-center "><span>Best Seller</span></a>
-                                </li>
-                                <li><a href="#bizData-feature_product"
-                                        class="biz-tabtitle dor-underline-from-center "><span>Featured</span></a>
-                                </li>
+                <div class="col-12">
+                    <div class="product-info">
+                        <div class="nav-main">
+                            <!-- Tab Nav -->
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#man"
+                                        role="tab">Man</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#women"
+                                        role="tab">Woman</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#kids"
+                                        role="tab">Kids</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#accessories"
+                                        role="tab">Accessories</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#essential"
+                                        role="tab">Essential</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#prices"
+                                        role="tab">Prices</a></li>
                             </ul>
-                            <div id="bizData-toprated_product"
-                                class="biz-group col-lg-4 col-sm-4 col-sx-4 col-md-4 wow fadeInUp" data-wow-delay="100ms">
-                                <div>
-                                    <h3 class="biz-tabtitle"><span>Top Rated</span></h3>
-                                    <div id="bizTab-toprated_product" class="biz-group-content">
-
+                            <!--/ End Tab Nav -->
+                        </div>
+                        <div class="tab-content" id="myTabContent">
+                            <!-- Start Single Tab -->
+                            <div class="tab-pane fade show active" id="man" role="tabpanel">
+                                <div class="tab-single">
+                                    <div class="row">
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Women Hot Collection</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Awesome Pink Show</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Awesome Bags Collection</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                        <span class="new">New</span>
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Women Pant Collectons</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Awesome Bags Collection</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                        <span class="price-dec">30% Off</span>
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Awesome Cap For Women</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Polo Dress For Women</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                        <span class="out-of-stock">Hot</span>
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Black Sunglass For Women</a></h3>
+                                                    <div class="product-price">
+                                                        <span class="old">$60.00</span>
+                                                        <span>$50.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="view-more-cat-link clearfix"><a href="index.html?controller=/">View
-                                            more<i class="fa fa-long-arrow-right"></i></a></div>
                                 </div>
                             </div>
-                            <div id="bizData-besseller_product"
-                                class="biz-group col-lg-4 col-sm-4 col-sx-4 col-md-4 wow fadeInUp" data-wow-delay="200ms">
-                                <div>
-                                    <h3 class="biz-tabtitle"><span>Best Seller</span></h3>
-                                    <div id="bizTab-besseller_product" class="biz-group-content">
-
+                            <!--/ End Single Tab -->
+                            <!-- Start Single Tab -->
+                            <div class="tab-pane fade" id="women" role="tabpanel">
+                                <div class="tab-single">
+                                    <div class="row">
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Women Hot Collection</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Awesome Pink Show</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Awesome Bags Collection</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                        <span class="new">New</span>
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Women Pant Collectons</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Awesome Bags Collection</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                        <span class="price-dec">30% Off</span>
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Awesome Cap For Women</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Polo Dress For Women</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                        <span class="out-of-stock">Hot</span>
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Black Sunglass For Women</a></h3>
+                                                    <div class="product-price">
+                                                        <span class="old">$60.00</span>
+                                                        <span>$50.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="view-more-cat-link clearfix"><a href="best-sales.html">View more<i
-                                                class="fa fa-long-arrow-right"></i></a></div>
                                 </div>
                             </div>
-                            <div id="bizData-feature_product"
-                                class="biz-group col-lg-4 col-sm-4 col-sx-4 col-md-4 wow fadeInUp" data-wow-delay="300ms">
-                                <div>
-                                    <h3 class="biz-tabtitle"><span>Featured</span></h3>
-                                    <div id="bizTab-feature_product" class="biz-group-content">
-
+                            <!--/ End Single Tab -->
+                            <!-- Start Single Tab -->
+                            <div class="tab-pane fade" id="kids" role="tabpanel">
+                                <div class="tab-single">
+                                    <div class="row">
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Women Hot Collection</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Awesome Pink Show</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Awesome Bags Collection</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                        <span class="new">New</span>
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Women Pant Collectons</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Awesome Bags Collection</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                        <span class="price-dec">30% Off</span>
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Awesome Cap For Women</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Polo Dress For Women</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                        <span class="out-of-stock">Hot</span>
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Black Sunglass For Women</a></h3>
+                                                    <div class="product-price">
+                                                        <span class="old">$60.00</span>
+                                                        <span>$50.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="view-more-cat-link clearfix"><a href="index.html?controller=/">View
-                                            more<i class="fa fa-long-arrow-right"></i></a></div>
                                 </div>
                             </div>
-
+                            <!--/ End Single Tab -->
+                            <!-- Start Single Tab -->
+                            <div class="tab-pane fade" id="accessories" role="tabpanel">
+                                <div class="tab-single">
+                                    <div class="row">
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Women Hot Collection</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Awesome Pink Show</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Awesome Bags Collection</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                        <span class="new">New</span>
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Women Pant Collectons</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Awesome Bags Collection</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                        <span class="price-dec">30% Off</span>
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Awesome Cap For Women</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Polo Dress For Women</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                        <span class="out-of-stock">Hot</span>
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Black Sunglass For Women</a></h3>
+                                                    <div class="product-price">
+                                                        <span class="old">$60.00</span>
+                                                        <span>$50.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/ End Single Tab -->
+                            <!-- Start Single Tab -->
+                            <div class="tab-pane fade" id="essential" role="tabpanel">
+                                <div class="tab-single">
+                                    <div class="row">
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Women Hot Collection</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Awesome Pink Show</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Awesome Bags Collection</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                        <span class="new">New</span>
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Women Pant Collectons</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Awesome Bags Collection</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                        <span class="price-dec">30% Off</span>
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Awesome Cap For Women</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Polo Dress For Women</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                        <span class="out-of-stock">Hot</span>
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Black Sunglass For Women</a></h3>
+                                                    <div class="product-price">
+                                                        <span class="old">$60.00</span>
+                                                        <span>$50.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/ End Single Tab -->
+                            <!-- Start Single Tab -->
+                            <div class="tab-pane fade" id="prices" role="tabpanel">
+                                <div class="tab-single">
+                                    <div class="row">
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Women Hot Collection</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Awesome Pink Show</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Awesome Bags Collection</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                        <span class="new">New</span>
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Women Pant Collectons</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Awesome Bags Collection</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                        <span class="price-dec">30% Off</span>
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Awesome Cap For Women</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Polo Dress For Women</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://via.placeholder.com/550x750" alt="#">
+                                                        <img class="hover-img" src="https://via.placeholder.com/550x750"
+                                                            alt="#">
+                                                        <span class="out-of-stock">Hot</span>
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" href="#">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Black Sunglass For Women</a></h3>
+                                                    <div class="product-price">
+                                                        <span class="old">$60.00</span>
+                                                        <span>$50.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/ End Single Tab -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- End Product Area -->
 
-    <div class="blockDorado9 blockPosition dor-bg-white">
+    <!-- Start Midium Banner  -->
+    <section class="midium-banner">
         <div class="container">
             <div class="row">
-                <div class="dor-top-brands">
-                    <div class="brands-lists">
-                        <div class="brands-lists-inner">
-                            <ul>
-                                <li class="brand-item"><a href="#"><img
-                                            data-src="http://bionic.doradothemes.com/img/cms/dorado/brand/brands-1.png"
-                                            alt="" class="owl-lazy" width="130" height="26" /></a></li>
-                                <li class="brand-item"><a href="#"><img
-                                            data-src="http://bionic.doradothemes.com/img/cms/dorado/brand/brands-2.png"
-                                            alt="" class="owl-lazy" width="130" height="29" /></a></li>
-                                <li class="brand-item"><a href="#"><img
-                                            data-src="http://bionic.doradothemes.com/img/cms/dorado/brand/brands-3.png"
-                                            alt="" class="owl-lazy" width="130" height="32" /></a></li>
-                                <li class="brand-item"><a href="#"><img
-                                            data-src="http://bionic.doradothemes.com/img/cms/dorado/brand/brands-4.png"
-                                            alt="" class="owl-lazy" width="130" height="24" /></a></li>
-                                <li class="brand-item"><a href="#"><img
-                                            data-src="http://bionic.doradothemes.com/img/cms/dorado/brand/brands-5.png"
-                                            alt="" class="owl-lazy" width="130" height="16" /></a></li>
-                                <li class="brand-item"><a href="#"><img
-                                            data-src="http://bionic.doradothemes.com/img/cms/dorado/brand/brands-6.png"
-                                            alt="" class="owl-lazy" width="130" height="33" /></a></li>
-                                <li class="brand-item"><a href="#"><img
-                                            data-src="http://bionic.doradothemes.com/img/cms/dorado/brand/brands-7.png"
-                                            alt="" class="owl-lazy" width="130" height="34" /></a></li>
-                                <li class="brand-item"><a href="#"><img
-                                            data-src="http://bionic.doradothemes.com/img/cms/dorado/brand/brands-8.png"
-                                            alt="" class="owl-lazy" width="140" height="18" /></a></li>
-                            </ul>
+                <!-- Single Banner  -->
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="single-banner">
+                        <img src="https://via.placeholder.com/600x370" alt="#">
+                        <div class="content">
+                            <p>Man's Collectons</p>
+                            <h3>Man's items <br>Up to<span> 50%</span></h3>
+                            <a href="#">Shop Now</a>
                         </div>
                     </div>
                 </div>
+                <!-- /End Single Banner  -->
+                <!-- Single Banner  -->
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="single-banner">
+                        <img src="https://via.placeholder.com/600x370" alt="#">
+                        <div class="content">
+                            <p>shoes women</p>
+                            <h3>mid season <br> up to <span>70%</span></h3>
+                            <a href="#" class="btn">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /End Single Banner  -->
+            </div>
+        </div>
+    </section>
+    <!-- End Midium Banner -->
 
+    <!-- Start Most Popular -->
+    <div class="product-area most-popular section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h2>Hot Item</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="owl-carousel popular-slider">
+                        <!-- Start Single Product -->
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a href="product-details.html">
+                                    <img class="default-img" src="https://via.placeholder.com/550x750" alt="#">
+                                    <img class="hover-img" src="https://via.placeholder.com/550x750" alt="#">
+                                    <span class="out-of-stock">Hot</span>
+                                </a>
+                                <div class="button-head">
+                                    <div class="product-action">
+                                        <a data-toggle="modal" data-target="#exampleModal" title="Quick View"
+                                            href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+                                        <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to
+                                                Wishlist</span></a>
+                                        <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to
+                                                Compare</span></a>
+                                    </div>
+                                    <div class="product-action-2">
+                                        <a title="Add to cart" href="#">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h3><a href="product-details.html">Black Sunglass For Women</a></h3>
+                                <div class="product-price">
+                                    <span class="old">$60.00</span>
+                                    <span>$50.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Product -->
+                        <!-- Start Single Product -->
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a href="product-details.html">
+                                    <img class="default-img" src="https://via.placeholder.com/550x750" alt="#">
+                                    <img class="hover-img" src="https://via.placeholder.com/550x750" alt="#">
+                                </a>
+                                <div class="button-head">
+                                    <div class="product-action">
+                                        <a data-toggle="modal" data-target="#exampleModal" title="Quick View"
+                                            href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+                                        <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to
+                                                Wishlist</span></a>
+                                        <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to
+                                                Compare</span></a>
+                                    </div>
+                                    <div class="product-action-2">
+                                        <a title="Add to cart" href="#">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h3><a href="product-details.html">Women Hot Collection</a></h3>
+                                <div class="product-price">
+                                    <span>$50.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Product -->
+                        <!-- Start Single Product -->
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a href="product-details.html">
+                                    <img class="default-img" src="https://via.placeholder.com/550x750" alt="#">
+                                    <img class="hover-img" src="https://via.placeholder.com/550x750" alt="#">
+                                    <span class="new">New</span>
+                                </a>
+                                <div class="button-head">
+                                    <div class="product-action">
+                                        <a data-toggle="modal" data-target="#exampleModal" title="Quick View"
+                                            href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+                                        <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to
+                                                Wishlist</span></a>
+                                        <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to
+                                                Compare</span></a>
+                                    </div>
+                                    <div class="product-action-2">
+                                        <a title="Add to cart" href="#">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h3><a href="product-details.html">Awesome Pink Show</a></h3>
+                                <div class="product-price">
+                                    <span>$50.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Product -->
+                        <!-- Start Single Product -->
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a href="product-details.html">
+                                    <img class="default-img" src="https://via.placeholder.com/550x750" alt="#">
+                                    <img class="hover-img" src="https://via.placeholder.com/550x750" alt="#">
+                                </a>
+                                <div class="button-head">
+                                    <div class="product-action">
+                                        <a data-toggle="modal" data-target="#exampleModal" title="Quick View"
+                                            href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+                                        <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to
+                                                Wishlist</span></a>
+                                        <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to
+                                                Compare</span></a>
+                                    </div>
+                                    <div class="product-action-2">
+                                        <a title="Add to cart" href="#">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h3><a href="product-details.html">Awesome Bags Collection</a></h3>
+                                <div class="product-price">
+                                    <span>$50.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Product -->
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <!-- End Most Popular Area -->
 
-    <section id="dor_homeviewed" class="clearfix show-hover2 dor_viewed_products">
-        <div class="dor_homeviewed_inner">
-            <div class="container">
-                <div class="row">
-                    <h3 class="title-dor-viewed"><span>Recently viewed products</span></h3>
-                    <div class="dor-home-viewed-products dor-viewedproducts-inner"
-                        data-ajaxurl="http://bionic.doradothemes.com/modules/dor_viewedproducts/viewedproducts-ajax.php">
-                        <div class="dor-home-viewed-products-inner">
-                            <div class="dor-home-viewed-products-wrapper dor-viewedproducts-data">
-                            </div>
+    <section class="section free-version-banner">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8 offset-md-2 col-xs-12">
+                    <div class="section-title mb-60">
+                        <span class="text-white wow fadeInDown" data-wow-delay=".2s"
+                            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;">Eshop Free
+                            Lite version</span>
+                        <h2 class="text-white wow fadeInUp" data-wow-delay=".4s"
+                            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Currently You
+                            are using free<br> lite Version of Eshop.</h2>
+                        <p class="text-white wow fadeInUp" data-wow-delay=".6s"
+                            style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">Please,
+                            purchase full version of the template to get all pages,<br> features and commercial license.
+                        </p>
+
+                        <div class="button">
+                            <a href="https://wpthemesgrid.com/downloads/eshop-ecommerce-html5-template/" target="_blank"
+                                rel="nofollow" class="btn wow fadeInUp" data-wow-delay=".8s">Purchase Now</a>
                         </div>
                     </div>
                 </div>
@@ -3479,90 +1993,257 @@
         </div>
     </section>
 
-    <div class="DorHomeLatestNews blockPosition dor-bg-white">
+    <!-- Start Shop Home List  -->
+    <section class="shop-home-list section">
         <div class="container">
             <div class="row">
-                <div class="dorblogHomeAjax"
-                    data-url="http://bionic.doradothemes.com/modules/smartbloghomelatestnews/ajax.php">
-
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="shop-section-title">
+                                <h1>On sale</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Start Single List  -->
+                    <div class="single-list">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="list-image overlay">
+                                    <img src="https://via.placeholder.com/115x140" alt="#">
+                                    <a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 no-padding">
+                                <div class="content">
+                                    <h4 class="title"><a href="#">Licity jelly leg flat Sandals</a></h4>
+                                    <p class="price with-discount">$59</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single List  -->
+                    <!-- Start Single List  -->
+                    <div class="single-list">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="list-image overlay">
+                                    <img src="https://via.placeholder.com/115x140" alt="#">
+                                    <a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 no-padding">
+                                <div class="content">
+                                    <h5 class="title"><a href="#">Licity jelly leg flat Sandals</a></h5>
+                                    <p class="price with-discount">$44</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single List  -->
+                    <!-- Start Single List  -->
+                    <div class="single-list">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="list-image overlay">
+                                    <img src="https://via.placeholder.com/115x140" alt="#">
+                                    <a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 no-padding">
+                                <div class="content">
+                                    <h5 class="title"><a href="#">Licity jelly leg flat Sandals</a></h5>
+                                    <p class="price with-discount">$89</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single List  -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="shop-section-title">
+                                <h1>Best Seller</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Start Single List  -->
+                    <div class="single-list">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="list-image overlay">
+                                    <img src="https://via.placeholder.com/115x140" alt="#">
+                                    <a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 no-padding">
+                                <div class="content">
+                                    <h5 class="title"><a href="#">Licity jelly leg flat Sandals</a></h5>
+                                    <p class="price with-discount">$65</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single List  -->
+                    <!-- Start Single List  -->
+                    <div class="single-list">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="list-image overlay">
+                                    <img src="https://via.placeholder.com/115x140" alt="#">
+                                    <a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 no-padding">
+                                <div class="content">
+                                    <h5 class="title"><a href="#">Licity jelly leg flat Sandals</a></h5>
+                                    <p class="price with-discount">$33</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single List  -->
+                    <!-- Start Single List  -->
+                    <div class="single-list">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="list-image overlay">
+                                    <img src="https://via.placeholder.com/115x140" alt="#">
+                                    <a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 no-padding">
+                                <div class="content">
+                                    <h5 class="title"><a href="#">Licity jelly leg flat Sandals</a></h5>
+                                    <p class="price with-discount">$77</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single List  -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="shop-section-title">
+                                <h1>Top viewed</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Start Single List  -->
+                    <div class="single-list">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="list-image overlay">
+                                    <img src="https://via.placeholder.com/115x140" alt="#">
+                                    <a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 no-padding">
+                                <div class="content">
+                                    <h5 class="title"><a href="#">Licity jelly leg flat Sandals</a></h5>
+                                    <p class="price with-discount">$22</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single List  -->
+                    <!-- Start Single List  -->
+                    <div class="single-list">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="list-image overlay">
+                                    <img src="https://via.placeholder.com/115x140" alt="#">
+                                    <a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 no-padding">
+                                <div class="content">
+                                    <h5 class="title"><a href="#">Licity jelly leg flat Sandals</a></h5>
+                                    <p class="price with-discount">$35</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single List  -->
+                    <!-- Start Single List  -->
+                    <div class="single-list">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="list-image overlay">
+                                    <img src="https://via.placeholder.com/115x140" alt="#">
+                                    <a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 no-padding">
+                                <div class="content">
+                                    <h5 class="title"><a href="#">Licity jelly leg flat Sandals</a></h5>
+                                    <p class="price with-discount">$99</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single List  -->
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <!-- End Shop Home List  -->
 
-    <div class="dorHomepageBar blockPosition dor-bg-white">
+    <!-- Start Shop Blog  -->
+    <section class="shop-blog section">
         <div class="container">
             <div class="row">
-                <div class="service-layout-box clearfix">
-                    <div class="service-box-item">
-                        <div class="service-feature-box">
-                            <div class="service-feature-inner">
-                                <div class="service-feature-wrapper">
-                                    <div class="feature-img"><i class="fa fa-truck"> </i></div>
-                                    <div class="feature-content">
-                                        <div class="flex-content">
-                                            <h3>Free Shipping</h3>
-                                            <p>All orders over $99</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="service-box-item">
-                        <div class="service-feature-box">
-                            <div class="service-feature-inner">
-                                <div class="service-feature-wrapper">
-                                    <div class="feature-img"><i class="fa fa-money"> </i></div>
-                                    <div class="feature-content">
-                                        <div class="flex-content">
-                                            <h3>Money Back Guarantee</h3>
-                                            <p>100% money back guarantee</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="service-box-item">
-                        <div class="service-feature-box">
-                            <div class="service-feature-inner">
-                                <div class="service-feature-wrapper">
-                                    <div class="feature-img"><i class="fa fa-gift"> </i></div>
-                                    <div class="feature-content">
-                                        <div class="flex-content">
-                                            <h3>Member Gift</h3>
-                                            <p>In hac habitasse platea dictum</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="service-box-item">
-                        <div class="service-feature-box">
-                            <div class="service-feature-inner">
-                                <div class="service-feature-wrapper">
-                                    <div class="feature-img"><i class="fa fa-life-ring"> </i></div>
-                                    <div class="feature-content">
-                                        <div class="flex-content">
-                                            <h3>Online Support 24/7</h3>
-                                            <p>Lorem ipsum dolor sit amet.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-12">
+                    <div class="section-title">
+                        <h2>From Our Blog</h2>
                     </div>
                 </div>
-
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Blog  -->
+                    <div class="shop-single-blog">
+                        <img src="https://via.placeholder.com/370x300" alt="#">
+                        <div class="content">
+                            <p class="date">22 July , 2020. Monday</p>
+                            <a href="#" class="title">Sed adipiscing ornare.</a>
+                            <a href="#" class="more-btn">Continue Reading</a>
+                        </div>
+                    </div>
+                    <!-- End Single Blog  -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Blog  -->
+                    <div class="shop-single-blog">
+                        <img src="https://via.placeholder.com/370x300" alt="#">
+                        <div class="content">
+                            <p class="date">22 July, 2020. Monday</p>
+                            <a href="#" class="title">Man’s Fashion Winter Sale</a>
+                            <a href="#" class="more-btn">Continue Reading</a>
+                        </div>
+                    </div>
+                    <!-- End Single Blog  -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Blog  -->
+                    <div class="shop-single-blog">
+                        <img src="https://via.placeholder.com/370x300" alt="#">
+                        <div class="content">
+                            <p class="date">22 July, 2020. Monday</p>
+                            <a href="#" class="title">Women Fashion Festive</a>
+                            <a href="#" class="more-btn">Continue Reading</a>
+                        </div>
+                    </div>
+                    <!-- End Single Blog  -->
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+    <!-- End Shop Blog  -->
 @endsection
 
 @section('js')
-    <script>
 
-    </script>
 @endsection
