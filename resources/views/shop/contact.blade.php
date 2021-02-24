@@ -4,137 +4,116 @@
     <link href="{{ asset('css/contact-form.css') }}" rel="stylesheet" type="text/css" />
 @endpush
 
+@endsection
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div id="content-wrapper" class="left-column col-md-12">
-            <section id="main">
-                <section id="content" class="page-content card card-block">
+	<!-- Breadcrumbs -->
+	<div class="breadcrumbs">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="bread-inner">
+						<ul class="bread-list">
+							<li><a href="index1.html">Home<i class="ti-arrow-right"></i></a></li>
+							<li class="active"><a href="blog-single.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Breadcrumbs -->
 
-                    <section id="contact-form-v1" class="contact-form">
-                        <h1 class="h1">Contact Us</h1>
-                        <div id="contact-form-style1">
-                            <form action="http:localhost:8000/contact-us" method="post" enctype="multipart/form-data"
-                                onsubmit="return contact_us_form()">
-                                <fieldset>
+	<!-- Start Contact -->
+	<section id="contact-us" class="contact-us section">
+		<div class="container">
+				<div class="contact-head">
+					<div class="row">
+						<div class="col-lg-8 col-12">
+							<div class="form-main">
+								<div class="title">
+									<h4>Get in touch</h4>
+									<h3>Write us a message</h3>
+								</div>
+								<form class="form" method="post" action="mail/mail.php">
+									<div class="row">
+										<div class="col-lg-6 col-12">
+											<div class="form-group">
+												<label>Your Name<span>*</span></label>
+												<input name="name" type="text" placeholder="">
+											</div>
+										</div>
+										<div class="col-lg-6 col-12">
+											<div class="form-group">
+												<label>Your Subjects<span>*</span></label>
+												<input name="subject" type="text" placeholder="">
+											</div>
+										</div>
+										<div class="col-lg-6 col-12">
+											<div class="form-group">
+												<label>Your Email<span>*</span></label>
+												<input name="email" type="email" placeholder="">
+											</div>
+										</div>
+										<div class="col-lg-6 col-12">
+											<div class="form-group">
+												<label>Your Phone<span>*</span></label>
+												<input name="company_name" type="text" placeholder="">
+											</div>
+										</div>
+										<div class="col-12">
+											<div class="form-group message">
+												<label>your message<span>*</span></label>
+												<textarea name="message" placeholder=""></textarea>
+											</div>
+										</div>
+										<div class="col-12">
+											<div class="form-group button">
+												<button type="submit" class="btn ">Send Message</button>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="col-lg-4 col-12">
+							<div class="single-head">
+								<div class="single-info">
+									<i class="fa fa-phone"></i>
+									<h4 class="title">Call us Now:</h4>
+									<ul>
+										<li>+123 456-789-1120</li>
+										<li>+522 672-452-1120</li>
+									</ul>
+								</div>
+								<div class="single-info">
+									<i class="fa fa-envelope-open"></i>
+									<h4 class="title">Email:</h4>
+									<ul>
+										<li><a href="mailto:info@yourwebsite.com">info@yourwebsite.com</a></li>
+										<li><a href="mailto:info@yourwebsite.com">support@yourwebsite.com</a></li>
+									</ul>
+								</div>
+								<div class="single-info">
+									<i class="fa fa-location-arrow"></i>
+									<h4 class="title">Our Address:</h4>
+									<ul>
+										<li>KA-62/1, Travel Agency, 45 Grand Central Terminal, New York.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+	<!--/ End Contact -->
 
-                                    <div class="clearfix row">
-                                        <label class="hidden">
-                                            <span>Subject Heading</span>
-                                            <select name="id_contact">
-                                                <option value="2">Customer service</option>
-                                                <option value="1">Webmaster</option>
-                                            </select>
-                                        </label>
-                                        <div class="group-contact-form col-xs-12 col-sm-6 col-md-6">
-                                            <div class="text-info-contact">
-                                                <h3 class="page-subheading">Send Message</h3>
-                                            </div>
-                                            <div class="form-info-contact">
-                                                <p>If you have any questions, requests or suggestions? Please let us
-                                                    know using the form below. We will reply as soon as possible to you.
-                                                </p>
-                                                <div class="form-group-input">
-
-                                                    <div class="form-group">
-                                                        <label for="contactname">Your name</label>
-                                                        <input class="form-control grey" type="text" id="contactname"
-                                                            name="contactname" value="" placeholder="" />
-                                                        <div class="text-danger" id="contactname_error"> </div>
-
-                                                    </div>
-
-                                                    <div class="form-group">
-                                                        <label class="form-control-label">Email address</label>
-                                                        <input class="form-control" name="from" type="text" value=""
-                                                            id="email" placeholder="">
-                                                        <div class="text-danger" id="email_error"></div>
-                                                    </div>
-
-                                                    <div class="form-group">
-                                                        <label for="contactweb">Website</label>
-                                                        <input class="form-control grey" type="text" id="contactweb"
-                                                            name="contactweb" value="" placeholder="" />
-                                                    </div>
-                                                </div>
-                                                <div class="form-group-area">
-                                                    <div class="form-group">
-                                                        <label class="form-control-label">Message</label>
-                                                        <textarea id="message" class="form-control" name="message"
-                                                            placeholder="" rows="7"></textarea>
-                                                        <div id="message_error" class="text-danger"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="submit">
-                                                    <button type="submit" name="submitMessage" id="submitMessage"
-                                                        class="button btn btn-default button-medium"><span>Post
-                                                            Comment<i
-                                                                class="icon-chevron-right right hidden"></i></span></button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="contact-map col-xs-12 col-sm-6 col-md-6">
-                                            <div id="mapContact"
-                                                style="width:100%; height:350px; margin: auto; margin-top: 20px;"></div>
-                                            <ul class="list-contact-info">
-                                                <li>
-                                                    <i class="material-icons">&#xE55F;</i>
-                                                    <div>
-                                                        <h3>Address</h3>
-                                                        <p>PO Box 16122 Collins Street West Victoria 8007 Australia</p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <i class="material-icons">&#xE551;</i>
-                                                    <div>
-                                                        <h3>Phone</h3>
-                                                        <p>Hotline: <strong>1900 585 888</strong></p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <i class="material-icons">&#xE0E1;</i>
-                                                    <div>
-                                                        <h3>Email</h3>
-                                                        <p><a href="#">sale@bionic.com</a></p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <i class="material-icons">&#xE192;</i>
-                                                    <div>
-                                                        <p>Monday to Friday: 8h00 am - 17h00 pm</p>
-                                                        <p>Saturday to Sunday: 9h00 am - 15h30 pm</p>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </fieldset>
-                            </form>
-                        </div>
-                    </section>
-
-
-                </section>
-
-
-
-                <footer class="page-footer">
-
-                    <!-- Footer content -->
-
-                </footer>
-
-
-            </section>
-
-
-        </div>
-
-
-
-    </div>
-</div>
+	<!-- Map Section -->
+	<div class="map-section">
+		<div id="myMap"></div>
+	</div>
+	<!--/ End Map Section -->
 @endsection
 
 @push('js')

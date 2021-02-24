@@ -282,10 +282,10 @@
                                     <div class="navbar-collapse">
                                         <div class="nav-inner">
                                             <ul class="nav main-menu menu navbar-nav">
-                                                <li class="active"><a href="#">Home</a></li>
+                                                <li class="active"><a href="{{route('home')}}">Home</a></li>
                                                 <li><a href="#">Category</a></li>
                                                 <li><a href="#">Brand</a></li>
-                                                <li><a href="contact.html">Contact Us</a></li>
+                                                <li><a href="{{route('contact')}}">Contact Us</a></li>
                                                 @guest
                                                 <li><a href="{{route('login')}}">Login</a></li>
                                                 <li><a href="{{route('register')}}">Register</a></li>
@@ -577,6 +577,8 @@
     <script src="{{ asset('js/easing.js') }}"></script>
     <!-- Active JS -->
     <script src="{{ asset('js/active.js') }}"></script>
+
+
 
     <script type="text/javascript">
     function logout() {
