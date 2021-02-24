@@ -21,7 +21,8 @@ Route::get('/contact-us', [HomeController::class, 'contact'])->name('contact');
 
 //shop routes for products
 Route::get('/product', [HomeController::class, 'product'])->name('product');
-
+Route::get('/cart' , [HomeController::class , 'cart'])->name('cart');
+Route::get('/checkout' , [HomeController::class ,'show_checkout_page'])->name('checkout_name');
 Auth::routes();
 
 // Shop Module Auth Routes
