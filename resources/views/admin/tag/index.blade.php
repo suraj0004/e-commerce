@@ -1,12 +1,12 @@
 @extends('layouts.admin.app')
 
-@section('css')
+@push('css')
     {{-- <link rel="stylesheet" href="{{ asset('admin/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
     <link rel="stylesheet" href="{{ asset('admin/plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
     <link rel="stylesheet" href="{{ asset('admin/plugins/datatables-buttons/css/buttons.bootstrap4.min.css') }}"> --}}
 
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
-@endsection
+@endpush
 
 
 @section('content')
@@ -162,7 +162,7 @@
 @endsection
 
 
-@section('js')
+@push('js')
     <!-- DataTables  & Plugins -->
 
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js">
@@ -183,4 +183,4 @@
 
     </script>
 
-@endsection
+@endpush

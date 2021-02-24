@@ -1,8 +1,8 @@
 @extends('layouts.shop.app')
 
-@section('css')
+@push('css')
 
-@endsection
+@endpush
 
 @section('content')
 
@@ -2193,6 +2193,6 @@
 
 @endsection
 
-@section('js')
+@push('js')
 
-@endsection
+@endpush

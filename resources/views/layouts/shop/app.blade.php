@@ -46,7 +46,7 @@
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
 
 
-    @yield('css')
+    @stack('css')
 </head>
 
 <body class="js">
@@ -585,7 +585,7 @@
     }
     </script>
 
-    @yield('js')
+    @stack('js')
 </body>
 
 </html>

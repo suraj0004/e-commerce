@@ -7,6 +7,7 @@ use App\Http\Controllers\AdminModule\BrandController;
 use App\Http\Controllers\AdminModule\ImageController;
 use App\Http\Controllers\AdminModule\CategoryController;
 use App\Http\Controllers\AdminModule\ProductController;
+use App\Http\Controllers\AdminModule\AjaxController;
 
 /*
 |--------------------------------------------------------------------------
@@ -62,4 +63,12 @@ Route::group(["middleware"=>["auth","admin"]],function () {
     Route::post('/product/{id}', [ProductController::class, 'destroy'])->name('product.destroy');
 
     Route::post('/update-product', [ProductController::class, 'update'])->name('product.update');
+
+
+
+    Route::group(['prefix' => 'ajax', 'as' => 'ajax.'],function () {
+        Route::get('getImages',[AjaxController::class, 'getImages'])->name('getImages');
+    });
+
+
 });

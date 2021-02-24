@@ -1,11 +1,11 @@
 @extends('layouts.admin.app')
 
-@section('css')
+@push('css')
 
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
-@endsection
+@endpush
 
 
 @section('content')
@@ -256,10 +256,12 @@
         </div>
     </div>
 
+    @include('admin.components.images-modal',["type" => "checkbox"])
+
 @endsection
 
 
-@section('js')
+@push('js')
     <!-- DataTables  & Plugins -->
 
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js">
@@ -291,4 +293,4 @@
         }
     </script>
 
-@endsection
+@endpush

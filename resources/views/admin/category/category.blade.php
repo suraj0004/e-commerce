@@ -1,12 +1,12 @@
 @extends('layouts.admin.app')
 
-@section('css')
+@push('css')
     {{-- <link rel="stylesheet" href="{{ asset('admin/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
     <link rel="stylesheet" href="{{ asset('admin/plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
     <link rel="stylesheet" href="{{ asset('admin/plugins/datatables-buttons/css/buttons.bootstrap4.min.css') }}"> --}}
 
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
-@endsection
+@endpush
 
 
 @section('content')
@@ -259,7 +259,7 @@
     {{-- Images modal for add category --}}
 
     <div class="modal fade" id="images-modal-for-add-category" style="display: none;" aria-hidden="true">
-        <div class="modal-dialog images-modal-for-add-category modal-xl">
+        <div class="modal-dialog images-modal-for-add-category" style="max-width: 1500px !important;">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Images</h4>
@@ -298,7 +298,7 @@
       {{-- Images modal for edi category --}}
 
       <div class="modal fade" id="images-modal-for-edit-category" style="display: none;" aria-hidden="true">
-        <div class="modal-dialog images-modal-for-edit-category modal-xl">
+        <div class="modal-dialog images-modal-for-edit-category modal-xxl">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Images</h4>
@@ -337,7 +337,7 @@
 @endsection
 
 
-@section('js')
+@push('js')
     <!-- DataTables  & Plugins -->
 
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js">
@@ -379,4 +379,4 @@
 
     </script>
 
-@endsection
+@endpush

@@ -1,8 +1,8 @@
 @extends('layouts.shop.app')
 
-@section('css')
+@push('css')
     <link href="{{ asset('css/contact-form.css') }}" rel="stylesheet" type="text/css" />
-@endsection
+@endpush
 
 
 @section('content')
@@ -137,7 +137,7 @@
 </div>
 @endsection
 
-@section('js')
+@push('js')
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMH_Sh8EdCWkG1OFhAih3FFhbkRYuo-0U"></script>
     <script src="{{ asset('js/jquery.googlemap.js') }}"></script>
     <script type="text/javascript">
@@ -226,4 +226,4 @@
         }
 
     </script>
-@endsection
+@endpush
