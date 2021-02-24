@@ -98,7 +98,7 @@ class ProductController extends Controller
             $request->session()->flash('status', 'Deleted Successfully');
             return redirect()->back();
         } catch (\Exception $th) {
-            $request->session()->flash('status', 'Cannot Delete the product');
+            $request->session()->flash('error', 'Cannot Delete the product');
             return redirect()->back();
         }
     }
