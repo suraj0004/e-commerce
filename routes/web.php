@@ -20,6 +20,7 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/contact-us', [HomeController::class, 'contact'])->name('contact');
 
 //shop routes for products
+Route::get('/product', [HomeController::class, 'product'])->name('product');
 
 Auth::routes();
 
