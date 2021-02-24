@@ -118,6 +118,11 @@
             <div class="modal-content">
                 <form method="POST" action="{{ route('admin.product.store') }}">
                     @csrf
+
+                    <div class="modal-header">
+                        <button type="button" onclick="showImageModal('checkbox',selectedImages)">Select Image</button>
+                    </div>
+
                     <div class="modal-header">
                         <h5 class="modal-title" id="product_title">Add Product </h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -256,7 +261,7 @@
         </div>
     </div>
 
-    @include('admin.components.images-modal',["type" => "checkbox"])
+    @include('admin.components.images-modal',["id"=> "images-modal-for-product"])
 
 @endsection
 
@@ -291,6 +296,10 @@
             document.getElementById("edit_weight_type").value = weight_type;
             document.getElementById("edit_product_price").value = price;
         }
+        function selectedImages(response) {
+           console.log(response);
+        }
+
     </script>
 
 @endpush
