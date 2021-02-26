@@ -1,7 +1,11 @@
 @extends('layouts.shop.app')
 
 @push('css')
-
+<style>
+    div.single-slider{
+        display: none;
+    }
+</style>
 @endpush
 
 @section('content')

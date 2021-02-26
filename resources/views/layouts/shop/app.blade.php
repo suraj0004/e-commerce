@@ -283,8 +283,8 @@
                                         <div class="nav-inner">
                                             <ul class="nav main-menu menu navbar-nav">
                                                 <li class="active"><a href="{{route('home')}}">Home</a></li>
-                                                <li><a href="#">Category</a></li>
-                                                <li><a href="#">Brand</a></li>
+                                                <li><a href="{{route('category')}}">Category</a></li>
+                                                <li><a href="{{route('brand')}}">Brand</a></li>
                                                 <li><a href="{{route('contact')}}">Contact Us</a></li>
                                                 @guest
                                                 <li><a href="{{route('login')}}">Login</a></li>
