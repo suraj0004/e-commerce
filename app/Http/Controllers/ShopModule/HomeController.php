@@ -4,6 +4,8 @@ namespace App\Http\Controllers\ShopModule;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Category;
+use App\Models\Image;
 
 class HomeController extends Controller
 {
@@ -30,5 +32,21 @@ class HomeController extends Controller
    public function show_checkout_page()
    {
        return view('shop.checkout');
+   }
+   public function category()
+   {
+       $categories = Category::with([
+            'image', 'parent'
+       ])->get();
+       $images = Image::all();
+       return view('shop.category')->with([
+           'categories'=>$categories,
+           'images'=>$images,
+
+       ]);
+   }
+   public function brand()
+   {
+       return view('shop.brand');
    }
 }
