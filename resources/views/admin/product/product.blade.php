@@ -238,8 +238,11 @@
 
 
                                 <div class="form-group">
-                                    <button type="button" onclick="showImageModal('checkbox',selectedFeatureImage)">Select
-                                        Image</button>
+                                    <label for="weight_type">Product Images</label>
+                                    <button class="btn btn-default btn-block" type="button" onclick="showImageModal('checkbox',selectedImages)">Select Images</button>
+                                    <div class="row m-2" id="product_images_preview">
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -350,13 +353,26 @@
         }
 
         function selectedImages(response) {
-            console.log(response);
+            var html = "";
+            response.forEach(element => {
+                html += `
+                <div class="border p-2">
+                <img src="${element.src}" height="100" width="160" />
+                 </div>
+                `;
+            });
+            $("#product_images_preview").html(html);
+            reopenModal();
         }
 
         function selectedFeatureImage(response) {
             console.log(response.id);
             $("#feature_image_id").val(response.id);
             $("#feature_image_preview").attr("src",response.src)
+            reopenModal();
+        }
+
+        function reopenModal(){
             $('#addProduct').modal('hide');
             setTimeout(()=>{
                 $('#addProduct').modal('show');

@@ -15,7 +15,7 @@
         <figure class="card card-product-grid">
 
             <div class="img-wrap">
-                <img src="{{Storage::disk('dynamic_images')->url($category->image->image)}}">
+                <img src="{{Storage::disk('dynamic_images')->url($category->image->image)}}" style="width: 24vw; height:250px">
             </div>
             <figcaption class="info-wrap border-top text-center">
                 <a href="#" class="title ">{{$category->name}}</a>

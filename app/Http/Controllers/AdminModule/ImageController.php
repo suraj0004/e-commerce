@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
 use Storage;
+use App\Http\Resources\ImageCollection;
 
 class ImageController extends Controller
 {
@@ -39,6 +40,8 @@ class ImageController extends Controller
             $row->save();
 
         }
+
+        return "ok";
 
         return back()
             ->with('status', 'You have successfully upload image/images.');
@@ -87,5 +90,14 @@ class ImageController extends Controller
         $request->session()->flash('status', 'image updated successfully');
         return redirect()->back();
 
+    }
+
+    public function getImages()
+    {
+        $images = Image::latest()->get();
+        return (new ImageCollection($images))->additional([
+            "success" => true,
+            "message" => "Images get successfully",
+        ]);
     }
 }
