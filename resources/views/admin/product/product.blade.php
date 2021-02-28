@@ -128,7 +128,7 @@
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
             <div class="modal-content">
-                <form method="POST" action="{{ route('admin.product.store') }}">
+                <form method="POST" action="{{ route('admin.product.store') }}" onsubmit="event.preventDefault(); addProductFormSubmit()">
                     @csrf
 
                     <div class="modal-header">
@@ -264,7 +264,7 @@
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-                <form method="POST" action="{{ route('admin.product.update') }}">
+                <form method="POST" action="{{ route('admin.product.update') }}" >
                     @csrf
                     <div class="modal-header">
                         <h5 class="modal-title" id="product_title">Edit Product Name</h5>
@@ -328,6 +328,8 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script>
+
+        var product_images = null, product_feature_image = null;
         $(document).ready(function() {
             $('#product_table').DataTable();
             $('#category_id').select2({
@@ -353,6 +355,7 @@
         }
 
         function selectedImages(response) {
+            console.log(response);
             var html = "";
             response.forEach(element => {
                 html += `
@@ -363,6 +366,12 @@
             });
             $("#product_images_preview").html(html);
             reopenModal();
+
+            product_images = response.map(function(element){
+                return element.id;
+
+            })
+            console.log(product_images);
         }
 
         function selectedFeatureImage(response) {
@@ -370,6 +379,8 @@
             $("#feature_image_id").val(response.id);
             $("#feature_image_preview").attr("src",response.src)
             reopenModal();
+
+            product_feature_image = response.id;
         }
 
         function reopenModal(){
@@ -377,6 +388,51 @@
             setTimeout(()=>{
                 $('#addProduct').modal('show');
             },1000)
+        }
+
+        function addProductFormSubmit(){
+            // event.preventDefault();
+            var name = document.getElementById('product_name');
+            var brand = document.getElementById('brand_id');
+            var price = document.getElementById('product_price');
+            var weight = document.getElementById('product_weight');
+            var weight_type = document.getElementById('weight_type');
+            var categories = $('#category_id');
+            var tags = document.getElementById('tag_id');
+            var quantity = document.getElementById('product_quantity');
+            const payload = {
+                product_name: name.value,
+                brand_id: brand.value,
+                product_price: price.value,
+                product_weight: weight.value,
+                weight_type: weight_type.value,
+                category_id: categories.value,
+                tag_id: tags.value,
+                product_quantity: quantity.value,
+                feature_image: product_feature_image,
+                images: product_images
+            }
+
+            $.ajax({
+                type: "POST",
+                url: "{{ route('admin.product.store') }}",
+                data: payload,
+                success: function (response) {
+                    console.log(response)
+                },
+                error: function (response) {
+                    console.log(response.responseJSON.error)
+                    var error = '';
+                    for(var i = 0; i < response.responseJSON.error.length; i++){
+                        error = error + response.responseJSON.error[i]  + '\n';
+                    }
+
+                    alert(error)
+
+                }
+            });
+
+
         }
 
     </script>
