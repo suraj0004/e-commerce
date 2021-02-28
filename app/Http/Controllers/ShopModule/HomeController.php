@@ -11,7 +11,9 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return view("shop.home");
+        return view("shop.home")->with([
+            "page" => "home"
+        ]);
     }
 
     public function contact()

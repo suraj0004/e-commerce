@@ -200,13 +200,15 @@
                 </div>
             </div>
         </div>
+
+
         <!-- Header Inner -->
         <div class="header-inner">
             <div class="container">
                 <div class="cat-nav-head">
                     <div class="row">
-                      @if (false)
-                      <div class="col-lg-3">
+                      @if (isset($page) && $page == 'home')
+                      <div class="col-md-3">
                         <div class="all-category">
                             <h3 class="cat-heading"><i class="fa fa-bars" aria-hidden="true"></i>CATEGORIES</h3>
                             <ul class="main-category">
@@ -277,7 +279,7 @@
                         </div>
                     </div>
                       @endif
-                        <div class="col-lg-9 col-12">
+                        <div class=" @if (isset($page) && $page == 'home') col-md-9 @else offset-3 col-md-9  @endif">
                             <div class="menu-area">
                                 <!-- Main Menu -->
                                 <nav class="navbar navbar-expand-lg">
