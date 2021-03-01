@@ -397,20 +397,21 @@
             var price = document.getElementById('product_price');
             var weight = document.getElementById('product_weight');
             var weight_type = document.getElementById('weight_type');
-            var categories = $('#category_id');
-            var tags = document.getElementById('tag_id');
+            var categories = $('#category_id').val();
+            console.log(categories);
+            var tags = $('#tag_id').val();
             var quantity = document.getElementById('product_quantity');
             const payload = {
-                product_name: name.value,
+                name: name.value,
                 brand_id: brand.value,
-                product_price: price.value,
-                product_weight: weight.value,
+                price: price.value,
+                weight: weight.value,
                 weight_type: weight_type.value,
-                category_id: categories.value,
-                tag_id: tags.value,
-                product_quantity: quantity.value,
-                feature_image: product_feature_image,
-                images: product_images
+                categories: categories,
+                tags: tags,
+                quantity: quantity.value,
+                feature_image_id: product_feature_image,
+                image_ids: product_images
             }
 
             $.ajax({

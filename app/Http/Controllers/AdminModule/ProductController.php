@@ -39,15 +39,18 @@ class ProductController extends Controller
     {
        $validator =  Validator::make($request->all(), [
             'brand_id'=>'required|numeric|exists:brands,id',
-            'category_id'=>'required|array',
-            'category_id.*'=>'required|numeric|exists:categories,id',
-            'tag_id'=>'required|array',
-            'tag_id.*'=>'required|numeric|exists:tags,id',
-            'product_name'=> 'required|string|max:250|unique:products,name',
-            'product_quantity'=>'required|numeric',
-            'product_weight'=>'required|numeric',
+            'categories'=>'required|array',
+            'categories.*'=>'required|numeric|exists:categories,id',
+            'tags'=>'required|array',
+            'tags.*'=>'required|numeric|exists:tags,id',
+            'name'=> 'required|string|max:250|unique:products,name',
+            'quantity'=>'required|numeric',
+            'weight'=>'required|numeric',
             'weight_type'=>'required',
-            'product_price'=>'required|numeric'
+            'price'=>'required|numeric',
+            'feature_image_id' => 'required|numeric|exists:images,id',
+            'image_ids' => 'required|array',
+            'image_ids.*' => 'required|numeric|exists:images,id',
         ]);
 
         if ($validator->fails()) {
@@ -60,16 +63,19 @@ class ProductController extends Controller
 
         $product = new Product();
         $product->brand_id = $request->brand_id;
-        $product->name = $request->product_name;
-        $product->slug = Str::slug($request->product_name);
-        $product->quantity = $request->product_quantity;
-        $product->weight = $request->product_weight;
+        $product->name = $request->name;
+        $product->slug = Str::slug($request->name);
+        $product->quantity = $request->quantity;
+        $product->weight = $request->weight;
         $product->weight_type = $request->weight_type;
-        $product->price = $request->product_price;
+        $product->price = $request->price;
+        $product->image_id = $request->feature_image_id;
 
         $product->save();
-        $product->categories()->sync($request->category_id);
-        $product->tags()->sync($request->tag_id);
+        $product->categories()->sync($request->categories);
+        $product->tags()->sync($request->tags);
+        $product->gallery()->sync($request->image_ids);
+
         return response()->json([
             'success' => true,
             'message' => 'Product Added Successfully'

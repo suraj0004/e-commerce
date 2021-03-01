@@ -41,8 +41,6 @@ class ImageController extends Controller
 
         }
 
-        return "ok";
-
         return back()
             ->with('status', 'You have successfully upload image/images.');
     }
