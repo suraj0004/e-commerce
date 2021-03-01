@@ -28,35 +28,14 @@ class CategoryController extends Controller
     {
         Validator::make($request->all(), [
             'category_name'=> 'required|string|max:250|unique:categories,name',
-            'select_image' => 'nullable|numeric|exists:images,id',
-            'upload_image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:5120',
+            'category_image_id' => 'required|numeric|exists:images,id',
             'parent_id' => "nullable|numeric|exists:categories,id"
         ])->validate();
 
         $category = new Category();
         $category->name = $request->category_name;
         $category->slug = Str::slug($request->category_name);
-
-        if($request->has('select_image') && !empty($request->select_image)){
-
-            $category->image_id = $request->select_image;
-
-        }else if($request->has('upload_image') && !empty($request->upload_image)){
-
-            $imageName = generateRandomString() . '.' . $request->upload_image->extension();
-            Storage::disk('dynamic_images')->putFileAs(null, $request->upload_image, $imageName);
-            $row = new Image();
-            $row->image = $imageName;
-            $row->save();
-            $category->image_id = $row->id;
-
-        }else{
-
-            return redirect()->back()->withErrors([
-                "error" => "Either Select Image of Upload Image.",
-            ]);
-
-        }
+        $category->image_id = $request->category_image_id;
 
         if($request->has("parent_id") && !empty($request->parent_id)){
             $category->parent_id = $request->parent_id;
@@ -72,14 +51,21 @@ class CategoryController extends Controller
         Validator::make($request->all(), [
             'edit_category_id'=> 'required|numeric|exists:categories,id',
             'edit_category_name' => 'required|string|max:250|unique:categories,name,'.$request->edit_category_id.',id',
-            'edit_select_image' => 'nullable|numeric|exists:images,id',
-            'edit_upload_image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:5120',
+            'edit_category_image_id' => 'required|numeric|exists:images,id',
             'edit_parent_id' => "nullable|numeric|exists:categories,id"
         ])->validate();
 
         $category = Category::find($request->edit_category_id);
         $category->name = $request->edit_category_name;
         $category->slug = Str::slug($request->edit_category_name);
+
+        if($request->has("edit_parent_id") && !empty($request->edit_parent_id)){
+            $category->parent_id = $request->edit_parent_id;
+        }else{
+            $category->parent_id = 0;
+        }
+        $category->image_id = $request->edit_category_image_id;
+
         $category->save();
         $request->session()->flash('status', 'Category Updated Successfully');
         return redirect()->back();

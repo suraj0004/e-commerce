@@ -72,7 +72,10 @@
 
                                             <td class="img-responsive text-center">
                                                 @if ($category->image)
-                                                    <img src="{{ Storage::disk('dynamic_images')->url($category->image->image) }}"
+                                                @php
+                                                    $image = Storage::disk('dynamic_images')->url($category->image->image);
+                                                @endphp
+                                                    <img src="{{ $image }}"
                                                         alt="Image" class="img-fluid" width="100" height="100">
                                                 @else
                                                     No Image
@@ -81,7 +84,7 @@
 
                                             <td class="text-center">
                                                 <button type="button" class="btn btn-primary"
-                                                    onclick="showEditModal({{ $category->id, }},'{{ $category->name }}',@if(!is_null($category->parent))'{{ $category->parent->id}}' @else '' @endif)">
+                                                    onclick="showEditModal({{ $category->id, }},'{{ $category->name }}',@if(!is_null($category->parent))'{{ $category->parent->id}}' @else '' @endif,@if($category->image) {{$category->image->id}}, '{{$image}}' @endif )">
                                                     <i class="icon fas fa-pen"></i>
                                                 </button>
                                                 <form class="d-inline"
@@ -111,6 +114,7 @@
         </div>
         <!-- /.container-fluid -->
     </section>
+
 
 
     <!--Add Modal -->
@@ -144,31 +148,14 @@
                                 placeholder="Enter Category Name">
                         </div>
 
-                        <div class="form-group">
-                            <label for="category_image">Category Logo/Image</label>
-                            <div id="category_image_option">
-                                <button type="button" class="btn btn-default btn-block" data-toggle="modal"
-                                    data-target="#images-modal-for-add-category">
-                                    Select from images
-                                </button>
-                                <input type="text" style="display: none;" name="select_image" id="select_image">
-                                <div class="text-center">
-                                    <strong>or</strong>
-                                </div>
-                                <label for="upload_image">Upload from your device </label> &nbsp; <input type="file"
-                                    name="upload_image" id="upload_image">
+                        <div class="form-group" >
+                            <div class="form-row">
+                                <label>Category Logo/Image</label>
+                                <input type="hidden" name="category_image_id" id="category_image_id">
                             </div>
-
-                            <div id="img_preview_div" class="col-md-12 pt-2 text-center img-responsive"
-                                style="min-height: 200px;display: none;">
-                                <img id="img_preview" alt="Image" class="img-fluid " height="150" width="150">
-                                <button type="button" class="btn btn-default btn-block mt-2" data-toggle="modal"
-                                    data-target="#images-modal-for-add-category">
-                                    Change images
-                                </button>
-                            </div>
-
-
+                           <div class="form-row" style="overflow: scroll">
+                            <img id="category_image_preview" height="200" src="https://via.placeholder.com/200x200" class="" alt="Category Logo" role="button"  onclick="showImageModal('radio',selectedCategoryImage)">
+                           </div>
                         </div>
 
                     </div>
@@ -217,31 +204,14 @@
 
                         </div>
 
-                        <div class="form-group">
-                            <label for="edit_category_image">Category Logo/Image</label>
-                            <div id="edit_category_image_option">
-                                <button type="button" class="btn btn-default btn-block" data-toggle="modal"
-                                    data-target="#images-modal-for-add-category">
-                                    Select from images
-                                </button>
-                                <input type="text" style="display: none;" name="edit_select_image" id="edit_select_image">
-                                <div class="text-center">
-                                    <strong>or</strong>
-                                </div>
-                                <label for="edit_upload_image">Upload from your device </label> &nbsp; <input type="file"
-                                    name="edit_upload_image" id="edit_upload_image">
+                        <div class="form-group" >
+                            <div class="form-row">
+                                <label>Category Logo/Image</label>
+                                <input type="hidden" name="edit_category_image_id" id="edit_category_image_id">
                             </div>
-
-                            <div id="edi_img_preview_div" class="col-md-12 pt-2 text-center img-responsive"
-                                style="min-height: 200px;display: none;">
-                                <img id="edit_img_preview" alt="Image" class="img-fluid " height="150" width="150">
-                                <button type="button" class="btn btn-default btn-block mt-2" data-toggle="modal"
-                                    data-target="#images-modal-for-add-category">
-                                    Change images
-                                </button>
-                            </div>
-
-
+                           <div class="form-row" style="overflow: scroll">
+                            <img id="edit_category_image_preview" height="200" src="https://via.placeholder.com/200x200" class="" alt="Category Logo" role="button"  onclick="showImageModal('radio',selectedEditCategoryImage)">
+                           </div>
                         </div>
 
                     </div>
@@ -256,83 +226,8 @@
     </div>
 
 
-    {{-- Images modal for add category --}}
 
-    <div class="modal fade" id="images-modal-for-add-category" style="display: none;" aria-hidden="true">
-        <div class="modal-dialog images-modal-for-add-category" style="max-width: 1500px !important;">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Images</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="row" style="height: 500px; overflow:scroll">
-                        @foreach ($images as $image)
-                            <div class="col-md-3 text-center mt-2 p-3 ">
-                                <div class="border">
-                                    <div class="pt-2 img-responsive" style="min-height: 200px">
-                                        <img id="image_{{ $image->id }}"
-                                            src="{{ Storage::disk('dynamic_images')->url($image->image) }}" alt="Image"
-                                            class="img-fluid " height="150" width="150">
-                                    </div>
-                                    <hr>
-                                    Select: <input type="radio" name="image" value="{{ $image->id }}">
-                                </div>
-                            </div>
-                        @endforeach
-                    </div>
-                </div>
-                <div class="modal-footer justify-content-between">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancle</button>
-                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="imageSelectedForAddCategory()"> Confirm
-                    </button>
-                </div>
-            </div>
-            <!-- /.modal-content -->
-        </div>
-        <!-- /.modal-dialog -->
-    </div>
-
-      {{-- Images modal for edi category --}}
-
-      <div class="modal fade" id="images-modal-for-edit-category" style="display: none;" aria-hidden="true">
-        <div class="modal-dialog images-modal-for-edit-category modal-xxl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Images</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="row" style="height: 500px; overflow:scroll">
-                        @foreach ($images as $image)
-                            <div class="col-md-3 text-center mt-2 p-3 ">
-                                <div class="border">
-                                    <div class="pt-2 img-responsive" style="min-height: 200px">
-                                        <img id="edit_image_{{ $image->id }}"
-                                            src="{{ Storage::disk('dynamic_images')->url($image->image) }}" alt="Image"
-                                            class="img-fluid " height="150" width="150">
-                                    </div>
-                                    <hr>
-                                    Select: <input type="radio" name="edit_image" value="{{ $image->id }}">
-                                </div>
-                            </div>
-                        @endforeach
-                    </div>
-                </div>
-                <div class="modal-footer justify-content-between">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancle</button>
-                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="imageSelectedForEditCategory()"> Confirm
-                    </button>
-                </div>
-            </div>
-            <!-- /.modal-content -->
-        </div>
-        <!-- /.modal-dialog -->
-    </div>
+    @include('admin.components.images-modal',["id"=> "images-modal-for-category"])
 
 @endsection
 
@@ -349,32 +244,27 @@
 
         });
 
-        function showEditModal(id, name, parent_id = '') {
+        function showEditModal(id, name, parent_id = '', image_id = '', image_src = '') {
 
             $('#editTag').modal('show');
             document.getElementById("edit_category_id").value = id;
             document.getElementById("edit_category_name").value = name;
             $("#edit_parent_id").val(parent_id);
+            if (image_id && image_src) {
+                $("#edit_category_image_id").val(image_id);
+                $("#edit_category_image_preview").attr("src",image_src)
+            }
 
         }
 
-        function imageSelectedForAddCategory() {
-            var id = $('input[name="image"]:checked').val();
-            $("#category_image_option").hide();
-            $("#img_preview_div").show();
-            $('#img_preview').prop('src', $('#image_' + id).attr('src'));
-            $('input[name="image"]').prop('checked', false);
-            $("#select_image").val(id);
+        function selectedCategoryImage(response) {
+            $("#category_image_id").val(response.id);
+            $("#category_image_preview").attr("src",response.src)
         }
 
-
-        function imageSelectedForEditCategory() {
-            var id = $('input[name="edit_image"]:checked').val();
-            $("#edit_category_image_option").hide();
-            $("#edit_img_preview_div").show();
-            $('#edit_img_preview').prop('src', $('#edit_image_' + id).attr('src'));
-            $('input[name="edit_image"]').prop('checked', false);
-            $("#edit_select_image").val(id);
+        function selectedEditCategoryImage(response) {
+            $("#edit_category_image_id").val(response.id);
+            $("#edit_category_image_preview").attr("src",response.src)
         }
 
     </script>
