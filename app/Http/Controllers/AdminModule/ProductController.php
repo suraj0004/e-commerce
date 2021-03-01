@@ -37,7 +37,7 @@ class ProductController extends Controller
 
     public function store(Request $request)
     {
-        Validator::make($request->all(), [
+       $validator =  Validator::make($request->all(), [
             'brand_id'=>'required|numeric|exists:brands,id',
             'category_id'=>'required|array',
             'category_id.*'=>'required|numeric|exists:categories,id',
@@ -48,7 +48,16 @@ class ProductController extends Controller
             'product_weight'=>'required|numeric',
             'weight_type'=>'required',
             'product_price'=>'required|numeric'
-        ])->validate();
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json([
+                'success' => false,
+                'error' => $validator->errors()->all(),
+                'message' => 'validation error'
+            ], 422);
+        }
+
         $product = new Product();
         $product->brand_id = $request->brand_id;
         $product->name = $request->product_name;
@@ -61,8 +70,10 @@ class ProductController extends Controller
         $product->save();
         $product->categories()->sync($request->category_id);
         $product->tags()->sync($request->tag_id);
-        $request->session()->flash('status', 'Product Added Successfully');
-        return redirect()->back();
+        return response()->json([
+            'success' => true,
+            'message' => 'Product Added Successfully'
+        ], 201);
     }
 
     public function update(Request $request)
