@@ -5,6 +5,8 @@ namespace App\Http\Controllers\ShopModule;
 use App\Http\Controllers\Controller;
 use App\Models\Brand;
 use App\Models\Category;
+use App\Models\Product;
+
 
 class HomeController extends Controller
 {
@@ -49,19 +51,11 @@ class HomeController extends Controller
     public function brand()
     {
         $brands = Brand::with([
-            'image'
-        ])->get();
-
-        $counts = Brand::withCount('image')->get();
-
-        // foreach ($counts as $count) {
-        //     return $count->count();
-        // }
-        // return $brands->count();
+            'image', 'products'
+        ])->withCount('products')->get();
 
         return view('shop.brand')->with([
-            'brands' => $brands,
-            'counts' => $counts
+            'brands' => $brands
         ]);
     }
 }

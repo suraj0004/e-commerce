@@ -18,4 +18,14 @@ class Brand extends Model
     {
         return $this->belongsTo(Image::class);
     }
+
+    /**
+     * Get all of the products for the Brand
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function products()
+    {
+        return $this->hasMany(Product::class);
+    }
 }
