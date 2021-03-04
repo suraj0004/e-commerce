@@ -9,17 +9,16 @@
 @endpush
 
 @section('content')
-<div class="row">
+<div class="row p-5">
     @foreach ($categories as $category)
     <div class="col-md-3 col-sm-6">
         <figure class="card card-product-grid">
 
             <div class="img-wrap">
-                <img src="{{Storage::disk('dynamic_images')->url($category->image->image)}}" style="width: 24vw; height:250px">
+                <img src="{{Storage::disk('dynamic_images')->url($category->image->image)}}">
             </div>
             <figcaption class="info-wrap border-top text-center">
                 <a href="#" class="title ">{{$category->name}}</a>
-                <div class="price mt-2">Free</div> <!-- price-wrap.// -->
             </figcaption>
 		</figure> <!-- card // -->
 	</div> <!-- col.// -->

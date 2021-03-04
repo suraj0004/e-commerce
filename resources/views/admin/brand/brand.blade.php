@@ -48,6 +48,7 @@
                                         <th>Sno.</th>
                                         <th>Brand Name</th>
                                         <th>Slug</th>
+                                        <th>Logo / Image</th>
                                         <th class="text-center">Action(s)</th>
                                     </tr>
                                 </thead>
@@ -57,16 +58,29 @@
                                             <td>{{ $loop->iteration }}</td>
                                             <td>{{ $brand->name }}</td>
                                             <td>{{ $brand->slug }}</td>
+                                            <td class="img-responsive text-center">
+                                                @if($brand->image)
+                                                @php
+                                                    $image = Storage::disk('dynamic_images')->url($brand->image->image)
+                                                @endphp
+
+                                                <img src="{{ $image }}" alt="Image" class="img-fluid" height="100" width="100">
+
+                                                @else
+                                                    No Image
+                                                @endif
+                                            </td>
                                             <td class="text-center">
                                                 <button type="button" class="btn btn-primary"
-                                                    onclick="showEditModal({{ $brand->id }},'{{ $brand->name }}', '{{$brand->slug}}') ">
+                                                    onclick="showEditModal({{ $brand->id }},'{{ $brand->name }}', '{{ $brand->slug }}',@if($brand->image){{$brand->image->id}}, '{{$image}}'@endif)">
                                                     <i class="icon fas fa-pen"></i>
                                                 </button>
                                                 <form class="d-inline"
                                                     action="{{ route('admin.brand.delete', ['id' => $brand->id]) }}"
                                                     method="post">
                                                     @csrf
-                                                    <button class="btn btn-danger" type="submit"> <i class="icon fas fa-trash"></i></button>
+                                                    <button class="btn btn-danger" type="submit"> <i
+                                                            class="icon fas fa-trash"></i></button>
                                                 </form>
                                             </td>
                                         </tr>
@@ -104,6 +118,7 @@
                     </div>
                     <div class="modal-body">
 
+
                         <div class="form-group">
                             <label for="brand_name">Brand Name</label>
                             <input type="text" class="form-control" id="brand_name" name="brand_name"
@@ -115,6 +130,16 @@
                                 placeholder="Enter slug Name">
                         </div>
 
+                        <div class="form-group">
+                            <div class="form-row">
+                                <label for="feature_brand_image">Feature Image</label>
+                            </div>
+                            <div class="form-row" style="overflow: scroll">
+                                <input type="hidden" name="brand_image_id" id="brand_image_id">
+                                <img id="feature_image_preview" height="300" src="https://via.placeholder.com/500x300"
+                                    class="" alt="" role="button" onclick="showImageModal('radio',select_brand_feature_image)">
+                            </div>
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <div class="col-12 text-center">
@@ -150,6 +175,17 @@
                             <input type="text" class="form-control" id="edit_slug_name" name="edit_slug_name">
                         </div>
 
+                        <div class="form-group">
+                            <div class="form-row">
+                                <label for="feature_brand_image">Feature Image</label>
+                            </div>
+                            <div class="form-row" style="overflow: scroll">
+                                <input type="hidden" name="edit_brand_image_id" id="edit_brand_image_id">
+                                <img id="edit_brand_image_preview" height="300" src="https://via.placeholder.com/500x300"
+                                    class="" alt="" role="button" onclick="showImageModal('radio',editSelectedBrandImagePreview)">
+                            </div>
+                        </div>
+
                     </div>
                     <div class="modal-footer">
                         <div class="col-12 text-center">
@@ -161,6 +197,7 @@
         </div>
     </div>
 
+    @include('admin.components.images-modal', ['id' => "images-modal-for-brand"]);
 @endsection
 
 
@@ -175,12 +212,43 @@
             $('#brand_table').DataTable();
         });
 
-        function showEditModal(id, name, slug) {
+        function showEditModal(id, name, slug, image_id = '', image_src = '') {
             $('#editBrand').modal('show');
             document.getElementById("edit_brand_id").value = id;
             document.getElementById("edit_brand_name").value = name;
             document.getElementById("edit_slug_name").value = slug;
+            if(image_id && image_src){
+                $('#edit_brand_image_id').val(image_id);
+                $('#edit_brand_image_preview').attr("src", image_src);
+            }
+
+            console.log(image_src);
         }
+
+
+        function select_brand_feature_image(response) {
+            console.log(response);
+            $('#brand_image_id').val(response.id);
+            $('#feature_image_preview').attr('src', response.src);
+            reopenModal();
+
+        }
+
+        function reopenModal() {
+            $('#addBrand').modal('hide');
+            setTimeout(() => {
+                $('#addBrand').modal('show');
+            }, 1000);
+        }
+
+        function editSelectedBrandImagePreview(response){
+            $('#edit_brand_image_id').val(response.id);
+            $('#edit_brand_image_preview').attr('src', response.src);
+
+        }
+
+
+
     </script>
 
 @endpush

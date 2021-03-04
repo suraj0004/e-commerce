@@ -128,7 +128,7 @@
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
             <div class="modal-content">
-                <form method="POST" action="{{ route('admin.product.store') }}" onsubmit="event.preventDefault(); addProductFormSubmit()">
+                <form method="POST" action="{{ route('admin.product.store') }}" onsubmit="event.preventDefault(); addProductFormSubmit()" id="addProductForm">
                     @csrf
 
                     <div class="modal-header">
@@ -432,6 +432,8 @@
 
                 }
             });
+
+            document.getElementById('addProductForm').reset();
 
 
         }
