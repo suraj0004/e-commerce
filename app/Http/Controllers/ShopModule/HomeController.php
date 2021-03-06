@@ -48,8 +48,9 @@ class HomeController extends Controller
     {
         $categories = Category::with([
             'image', 'parent',
-        ])->get();
+        ])->withCount('products')->get();
 
+        // return $categories;
         return view('shop.category')->with([
             'categories' => $categories,
             "page" => "categories",
