@@ -51,8 +51,8 @@ class DatabaseSeeder extends Seeder
             ->create();
 
         // Brand
-        Brand::factory()
-            ->count(20)
-            ->create();
+        // Brand::factory()
+        //     ->count(20)
+        //     ->create();
     }
 }

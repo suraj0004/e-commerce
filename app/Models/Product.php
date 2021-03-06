@@ -28,4 +28,26 @@ class Product extends Model
     {
         return $this->belongsToMany(Tag::class, 'product_tags', 'product_id', 'tag_id');
     }
+
+    /**
+     * Get the image that owns the Product
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function image()
+    {
+        return $this->belongsTo(Image::class);
+    }
+
+     /**
+    * The images that belong to the Product
+    *
+    * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+    */
+    public function gallery()
+    {
+        return $this->belongsToMany(Image::class, 'product_images', 'product_id', 'image_id');
+    }
+
+
 }

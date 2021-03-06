@@ -13,7 +13,7 @@
 @endpush
 
 @section('content')
-<div class="row">
+<div class="row p-5">
     @foreach ($categories as $category)
     <div class="col-md-3 col-sm-6">
         <figure class="card card-product-grid">
@@ -23,7 +23,6 @@
             </div>
             <figcaption class="info-wrap border-top text-center">
                 <a href="#" class="title ">{{$category->name}}</a>
-                <div class="price mt-2">Free</div> <!-- price-wrap.// -->
             </figcaption>
 		</figure> <!-- card // -->
 	</div> <!-- col.// -->
