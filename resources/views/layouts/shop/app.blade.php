@@ -45,7 +45,9 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
 
-
+    {{-- <style>
+         background-color:#F8F9FA;
+    </style> --}}
     @stack('css')
 </head>
 

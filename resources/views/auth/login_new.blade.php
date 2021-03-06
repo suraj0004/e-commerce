@@ -5,6 +5,14 @@
     div.single-slider{
         display: none;
     }
+    .card-header{
+       background-color: white;
+       border-bottom: none;
+       color: #F7941D; font-size:1.5rem ;
+   }
+   .card{
+    box-shadow: 0px 0px 15px #0000001a;
+   }
 </style>
 @endpush
 
@@ -15,7 +23,7 @@
 
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header text-center" style="color: #F7941D; font-size:1.5rem ">{{ __('Login') }}</div>
+                <div class="card-header text-center">{{ __('Login') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
