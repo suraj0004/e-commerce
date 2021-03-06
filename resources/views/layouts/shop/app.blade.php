@@ -94,8 +94,8 @@
                                 </li>
                                 @endauth
                                 @guest
-                                <li><i class="ti-power-off"></i><a href="{{route('login_new')}}">Login</a></li>
-                                <li><i class="fa fa-user-plus" aria-hidden="true"></i><a href="{{route('registration_new')}}">Register</a></li>
+                                <li><i class="ti-power-off"></i><a href="{{route('login')}}">Login</a></li>
+                                <li><i class="fa fa-user-plus" aria-hidden="true"></i><a href="{{route('registration')}}">Register</a></li>
                                 @endguest
                             </ul>
                         </div>
@@ -156,7 +156,7 @@
                               @endauth
 
                               @guest
-                              <a href="{{route('login_new')}}" class="single-icon"><i class="fa fa-sign-in"
+                              <a href="{{route('login')}}" class="single-icon"><i class="fa fa-sign-in"
                                 aria-hidden="true"></i></a>
                               @endguest
                             </div>
