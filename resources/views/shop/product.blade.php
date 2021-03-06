@@ -72,7 +72,7 @@
                                         <span style="color:#9F9F9F">132 reviews</span>
                                        </div>
                                        <div class="col-md-2">
-                                        <span style="color:#00B517">154 orders</span>
+                                        <span style="color:#00B517"><i class="fa fa-briefcase"></i> 154 orders</span>
                                        </div>
                                   </div>
                                   <br>
