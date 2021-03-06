@@ -22,4 +22,21 @@ class ProductController extends Controller
             "products" => $products
         ]);
     }
+    public function showCategoryProducts($category_id)
+    {
+        $products= Product::with([
+            'categories',
+            'tags',
+            'image',
+            'gallery'
+        ])
+        ->whereHas('categories',function($query)use($category_id){
+            $query->where('categories.id','=',$category_id);
+        })->get();
+        return view("shop.product.index")->with([
+            "products"=>$products
+        ]);
+
+        //
+    }
 }
