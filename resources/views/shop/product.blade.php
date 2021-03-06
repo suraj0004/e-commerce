@@ -30,95 +30,106 @@
                 <div class="col-lg-8 col-12">
                     <div class="blog-single-main">
                         <div class="row">
-                            {{-- <div class="col-12">
-									<div class="image">
-										<img src="https://via.placeholder.com/950x460" alt="#">
-									</div>
-									{{-- <div class="blog-detail">
-										<h2 class="blog-title">What are the secrets to start- up success?</h2>
-										<div class="blog-meta">
-											<span class="author"><a href="#"><i class="fa fa-user"></i>By Admin</a><a href="#"><i class="fa fa-calendar"></i>Dec 24, 2018</a><a href="#"><i class="fa fa-comments"></i>Comment (15)</a></span>
-										</div>
-										<div class="content">
-											<p>What a crazy time. I have five children in colleghigh school graduates.jpge or pursing post graduate studies  Each of my children attends college far from home, the closest of which is more than 800 miles away. While I miss being with my older children, I know that a college experience can be the source of great growth and experience can be the source of source of great growth and can provide them with even greater in future.</p>
-											<blockquote> <i class="fa fa-quote-left"></i> Do what you love to do and give it your very best. Whether it's business or baseball, or the theater, or any field. If you don't love what you're doing and you can't give it your best, get out of it. Life is too short. You'll be an old man before you know it. risus. Ut tincidunt, erat eget feugiat eleifend, eros magna dapibus diam.</blockquote>
-											<p>What a crazy time. I have five children in colleghigh school graduates.jpge or pursing post graduate studies  Each of my children attends college far from home, the closest of which is more than 800 miles away. While I miss being with my older children, I know that a college experience can be the source of great growth and experience can be the source of source of great growth and can provide them with even greater in future.</p>
-											<p>What a crazy time. I have five children in colleghigh school graduates.jpge or pursing post graduate studies  Each of my children attends college far from home, the closest of which is more than 800 miles away. While I miss being with my older children, I know that a college experience can be the source of great growth and experience can be the source of source of great growth and can provide them with even greater in future.</p>
-										</div>
-									</div> --}}
-                            {{-- <div class="share-social">
 
-										<div class="row">
-											<div class="col-12">
-												<div class="content-tags">
-													<h4>Tags:</h4>
-													<ul class="tag-inner">
-														<li><a href="#">Glass</a></li>
-														<li><a href="#">Pant</a></li>
-														<li><a href="#">t-shirt</a></li>
-														<li><a href="#">swater</a></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
+                          <div class="col-12">
+                            <div class="card">
+                                <div class="row no-gutters">
+                                    <aside class="col-md-6">
+                            <article class="gallery-wrap">
+                            <div class="img-big-wrap">
+                              <div> <a href="#"><img src="bootstrap-ecommerce-html/images/items/12.jpg"></a></div>
+                            </div> <!-- slider-product.// -->
+                            <div class="thumbs-wrap">
+                              <a href="#" class="item-thumb"> <img src="bootstrap-ecommerce-html/images/items/12.jpg"></a>
+                              <a href="#" class="item-thumb"> <img src="bootstrap-ecommerce-html/images/items/12-1.jpg"></a>
+                              <a href="#" class="item-thumb"> <img src="bootstrap-ecommerce-html/images/items/12-2.jpg"></a>
+                            </div> <!-- slider-nav.// -->
+                            </article> <!-- gallery-wrap .end// -->
+                                    </aside>
+                                    <main class="col-md-6 border-left">
+                            <article class="content-body">
 
-								</div> --}}
-                            @foreach ($brands as $brand)
+                            <h2 class="title">Off-White Odsy-1000 Low-Top Sneakers</h2>
 
-                                <div class="col-md-3 col-sm-6">
-                                <figure class="card card-product-grid">
-                                    <div class="img-wrap"> <img src="{{ Storage::disk('dynamic_images')->url($brand->image->image) }}"> </div>
-                                    <figcaption class="info-wrap border-top">
-                                        <a href="#" class="title">Bell &amp; Ross Nightlum</a>
-                                        <div class="price mt-2">$299.00</div> <!-- price-wrap.// -->
-                                    </figcaption>
-                                </figure> <!-- card // -->
-                            </div> <!-- col.// -->
-                             @endforeach
-                            {{-- <div class="col-md-3 col-sm-6">
-                                <figure class="card card-product-grid">
-                                    <div class="img-wrap">
-                                        <img src="{{ asset('img/1.jpg') }}">
-                                        <span class="topbar">
-                                            <a href="#" class="float-right"><i class="fa fa-heart"></i></a>
-                                        </span>
-                                        <a class="btn-overlay" href="#"><i class="fa fa-search-plus"></i> Quick view</a>
-                                    </div>
-                                    <figcaption class="info-wrap border-top">
-                                        <a href="#" class="title">Leather Sleeve - Macbook 13’’</a>
-                                        <div class="price mt-2">$3753.00</div> <!-- price-wrap.// -->
-                                    </figcaption>
-                                </figure> <!-- card // -->
-                            </div> <!-- col.// -->
-                            <div class="col-md-3 col-sm-6">
-                                <figure class="card card-product-grid">
-                                    <div class="img-wrap">
-                                        <span class="topbar">
-                                            <span class="badge badge-success"> NEW </span>
-                                        </span>
-                                        <img src="{{ asset('img/1.jpg') }}">
-                                    </div>
-                                    <figcaption class="info-wrap border-top">
-                                        <a href="#" class="title">H&amp;M Polo Shirt Slim Fit</a>
-                                        <div class="price-wrap mt-2">
-                                            <span class="price">$12.99</span>
-                                            <small class="price-old">$14.99</small>
-                                        </div> <!-- price-wrap.// -->
-                                    </figcaption>
-                                </figure> <!-- card // -->
-                            </div> <!-- col.// -->
-                            <div class="col-md-3 col-sm-6">
-                                <figure class="card card-product-grid">
-                                    <div class="img-wrap">
-                                        <img src="{{ asset('img/1.jpg') }}">
-                                    </div>
-                                    <figcaption class="info-wrap border-top text-center">
-                                        <small class="text-uppercase font-weight-bolder text-warning">ELECTRONICS</small>
-                                        <p><a href="#" class="title">IKEA Poäng Swivel Chair</a></p>
-                                    </figcaption>
-                                </figure> <!-- card // -->
-                            </div> <!-- col.// --> --}}
+                            <div class="rating-wrap my-3">
+                                <ul class="rating-stars">
+                                    <li style="width:80%" class="stars-active">
+                                        <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </li>
+                                </ul>
+                                <small class="label-rating text-muted">132 reviews</small>
+                                <small class="label-rating text-success"> <i class="fa fa-clipboard-check"></i> 154 orders </small>
+                            </div> <!-- rating-wrap.// -->
+
+                            <div class="mb-3">
+                                <var class="price h4">$815.00</var>
+                                <span class="text-muted">/per kg</span>
+                            </div> <!-- price-detail-wrap .// -->
+
+                            <p>Virgil Abloh’s Off-White is a streetwear-inspired collection that continues to break away from the conventions of mainstream fashion. Made in Italy, these black and brown Odsy-1000 low-top sneakers.</p>
+
+
+                            <dl class="row">
+                              <dt class="col-sm-3">Model#</dt>
+                              <dd class="col-sm-9">Odsy-1000</dd>
+
+                              <dt class="col-sm-3">Color</dt>
+                              <dd class="col-sm-9">Brown</dd>
+
+                              <dt class="col-sm-3">Delivery</dt>
+                              <dd class="col-sm-9">Russia, USA, and Europe </dd>
+                            </dl>
+
+                            <hr>
+                                <div class="form-row">
+                                    <div class="form-group col-md flex-grow-0">
+                                        <label>Quantity</label>
+                                        <div class="input-group mb-3 input-spinner">
+                                          <div class="input-group-prepend">
+                                            <button class="btn btn-light" type="button" id="button-plus"> + </button>
+                                          </div>
+                                          <input type="text" class="form-control" value="1">
+                                          <div class="input-group-append">
+                                            <button class="btn btn-light" type="button" id="button-minus"> − </button>
+                                          </div>
+                                        </div>
+                                    </div> <!-- col.// -->
+                                    <div class="form-group col-md">
+                                            <label>Select size</label>
+                                            <div class="mt-1">
+                                                <label class="custom-control custom-radio custom-control-inline">
+                                                  <input type="radio" name="select_size" checked="" class="custom-control-input">
+                                                  <div class="custom-control-label">Small</div>
+                                                </label>
+
+                                                <label class="custom-control custom-radio custom-control-inline">
+                                                  <input type="radio" name="select_size" class="custom-control-input">
+                                                  <div class="custom-control-label">Medium</div>
+                                                </label>
+
+                                                <label class="custom-control custom-radio custom-control-inline">
+                                                  <input type="radio" name="select_size" class="custom-control-input">
+                                                  <div class="custom-control-label">Large</div>
+                                                </label>
+
+                                            </div>
+                                    </div> <!-- col.// -->
+                                </div> <!-- row.// -->
+
+                                <a href="#" class="btn  btn-primary"> Buy now </a>
+                                <a href="#" class="btn  btn-outline-primary"> <span class="text">Add to cart</span> <i class="fas fa-shopping-cart"></i>  </a>
+                            </article> <!-- product-info-aside .// -->
+                                    </main> <!-- col.// -->
+                                </div> <!-- row.// -->
+                            </div> <!-- card.// -->
+                          </div>
 
                             <div class="col-12">
                                 <div class="comments">

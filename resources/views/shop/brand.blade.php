@@ -11,28 +11,34 @@
 
 @section('content')
 
-    <div class="row p-3">
+<section class="shop-home-list section">
+    <div class="container">
+        <div class="row">
 
-        @foreach ($brands as $brand)
-            <div class="col-md-3 col-sm-6">
-                <figure class="card card-product-grid">
-                    @if ($brand->products->count() > 0)
-                        <p class="font-weight-bold text-danger">Total Products:{{ $brand->name }}
-                            {{ $brand->products->count() }}
-                        </p>
-                        @else
-                        <p class="font-weight-bold text-danger">Total Products:No Products</p>
-                    @endif
-                    <div class="img-wrap"> <img src="{{ Storage::disk('dynamic_images')->url($brand->image->image) }}">
+            @foreach ($brands as $brand)
+            <div class="col-md-4" >
+                <div class="single-list" style="height: 300px;">
+                    <div class="row p-2">
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="list-image overlay">
+                                <img src="{{ Storage::disk('dynamic_images')->url($brand->image->image) }}" height="150" width="150" alt="#">
+                                <a href="{{route('brand_product',['brand_id' =>$brand->id ])}}" class="buy"><i class="fa fa-shopping-bag"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12 no-padding">
+                            <div class="content">
+                                <h6 class="title">{{ $brand->name }}</h6>
+                                <p class="price with-discount"> Products ( {{ $brand->products->count() }} ) </p>
+                            </div>
+                        </div>
                     </div>
-                    <figcaption class="info-wrap border-top">
-                        <a href="{{asset('product')}}" class="title">{{ $brand->name }}</a>
-                    </figcaption>
-                </figure> <!-- card // -->
-            </div> <!-- col.// -->
-        @endforeach
+                </div>
+            </div>
+            @endforeach
 
-    </div><!-- row.// -->
+        </div>
+    </div>
+</section>
 @endsection
 
 @push('js')
