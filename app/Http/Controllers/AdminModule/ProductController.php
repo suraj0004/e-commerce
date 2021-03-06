@@ -70,7 +70,6 @@ class ProductController extends Controller
         $product->weight_type = $request->weight_type;
         $product->price = $request->price;
         $product->image_id = $request->feature_image_id;
-
         $product->save();
         $product->categories()->sync($request->categories);
         $product->tags()->sync($request->tags);

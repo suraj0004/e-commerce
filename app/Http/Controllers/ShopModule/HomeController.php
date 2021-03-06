@@ -19,22 +19,29 @@ class HomeController extends Controller
 
     public function contact()
     {
-        return view("shop.contact");
+        return view("shop.contact")->with([
+            "page" => "contact",
+        ]);
     }
 
     //products fn
-
     public function product()
     {
-        return view('shop.product');
+        return view('shop.product')->with([
+            "page" => "product",
+        ]);
     }
     public function cart()
     {
-        return view('shop.cart');
+        return view('shop.cart')->with([
+            "page" => "cart",
+        ]);
     }
     public function show_checkout_page()
     {
-        return view('shop.checkout');
+        return view('shop.checkout')->with([
+            "page" => "show_checkout_page",
+        ]);
     }
 
     public function category()
@@ -45,6 +52,7 @@ class HomeController extends Controller
 
         return view('shop.category')->with([
             'categories' => $categories,
+            "page" => "categories",
         ]);
     }
 
@@ -55,15 +63,8 @@ class HomeController extends Controller
         ])->withCount('products')->get();
 
         return view('shop.brand')->with([
-            'brands' => $brands
+            'brands' => $brands,
+            "page" => "brands",
         ]);
-    }
-    public function login_new()
-    {
-        return view('auth.login_new');
-    }
-    public function registration_new()
-    {
-        return view('auth.registration_new');
     }
 }

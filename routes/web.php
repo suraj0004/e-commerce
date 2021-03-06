@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ShopModule\HomeController;
+use App\Http\Controllers\ShopModule\ProductController;
 Use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
@@ -20,13 +21,12 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/contact-us', [HomeController::class, 'contact'])->name('contact');
 
 //shop routes for products
+Route::get('/brand/{brand_id}/product', [ProductController::class, 'showBrandProducts'])->name('brand_product');
 Route::get('/product', [HomeController::class, 'product'])->name('product');
 Route::get('/cart' , [HomeController::class , 'cart'])->name('cart');
 Route::get('/checkout' , [HomeController::class ,'show_checkout_page'])->name('checkout_name');
 Route::get('/category' , [HomeController::class , 'category'])->name('category');
 Route::get('/brand' ,[HomeController::class , 'brand'])->name('brand');
-Route::get('/login_new',[HomeController::class , 'login_new'])->name('login_new');
-Route::get('/registration_new',[HomeController::class , 'registration_new'])->name('registration_new');
 Auth::routes();
 
 // Shop Module Auth Routes

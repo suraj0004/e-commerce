@@ -288,16 +288,16 @@
                                     <div class="navbar-collapse">
                                         <div class="nav-inner">
                                             <ul class="nav main-menu menu navbar-nav">
-                                                <li class="active"><a href="{{route('home')}}">Home</a></li>
-                                                <li><a href="{{route('category')}}">Category</a></li>
-                                                <li><a href="{{route('brand')}}">Brand</a></li>
-                                                <li><a href="{{route('contact')}}">Contact Us</a></li>
+                                                <li class="@if(isset($page) && $page == 'home') active @endif"><a href="{{route('home')}}">Home</a></li>
+                                                <li class="@if(isset($page) && $page == 'categories') active @endif"><a href="{{route('category')}}">Category</a></li>
+                                                <li class="@if(isset($page) && $page == 'brands') active @endif"><a href="{{route('brand')}}">Brand</a></li>
+                                                <li class="@if(isset($page) && $page == 'contact') active @endif"><a href="{{route('contact')}}">Contact Us</a></li>
                                                 @guest
-                                                <li><a href="{{route('login_new')}}">Login</a></li>
-                                                <li><a href="{{route('registration_new')}}">Register</a></li>
+                                                <li class="@if(isset($page) && $page == 'login') active @endif"><a href="{{route('login')}}">Login</a></li>
+                                                <li class="@if(isset($page) && $page == 'register') active @endif"><a href="{{route('register')}}">Register</a></li>
                                                 @endguest
                                                 @auth
-                                                <li><a href="{{route('logout')}}" onclick="logout()">Logout</a></li>
+                                                <li class="@if(isset($page) && $page == 'logout') active @endif"><a href="{{route('logout')}}" onclick="logout()">Logout</a></li>
                                                 @endauth
                                             </ul>
                                         </div>
