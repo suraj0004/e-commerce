@@ -23,10 +23,16 @@ class HomeController extends Controller
     }
 
     //products fn
-
     public function product()
     {
-        return view('shop.product');
+        $brands = Brand::with([
+            'image', 'products'
+        ])->get();
+
+        return $brands;
+        return view('shop.product')->with([
+            'brands' => $brands
+        ]);
     }
     public function cart()
     {

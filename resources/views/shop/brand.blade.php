@@ -11,15 +11,6 @@
 
 @section('content')
 
-    {{-- @foreach ($brands as $count)
-        @if ($count->products->count() > 0)
-            <div class="col-md-3 col-sm-6">
-                <p class="font-weight-bold text-danger">Total Products:{{ $count->name }} {{ $count->products->count() }}
-                </p>
-            </div>
-        @endif
-    @endforeach --}}
-
     <div class="row p-3">
 
         @foreach ($brands as $brand)
@@ -29,11 +20,13 @@
                         <p class="font-weight-bold text-danger">Total Products:{{ $brand->name }}
                             {{ $brand->products->count() }}
                         </p>
+                        @else
+                        <p class="font-weight-bold text-danger">Total Products:No Products</p>
                     @endif
                     <div class="img-wrap"> <img src="{{ Storage::disk('dynamic_images')->url($brand->image->image) }}">
                     </div>
                     <figcaption class="info-wrap border-top">
-                        <a href="#" class="title">{{ $brand->name }}</a>
+                        <a href="{{asset('product')}}" class="title">{{ $brand->name }}</a>
                     </figcaption>
                 </figure> <!-- card // -->
             </div> <!-- col.// -->
