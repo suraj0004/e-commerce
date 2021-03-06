@@ -25,7 +25,6 @@ class HomeController extends Controller
     }
 
     //products fn
-
     public function product()
     {
         return view('shop.product')->with([

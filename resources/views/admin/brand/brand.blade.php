@@ -124,11 +124,11 @@
                             <input type="text" class="form-control" id="brand_name" name="brand_name"
                                 placeholder="Enter Brand Name">
                         </div>
-                        <div class="form-group">
+                        {{-- <div class="form-group">
                             <label for="slug_name">Slug Name</label>
                             <input type="text" class="form-control" id="slug_name" name="slug_name"
                                 placeholder="Enter slug Name">
-                        </div>
+                        </div> --}}
 
                         <div class="form-group">
                             <div class="form-row">
@@ -168,11 +168,6 @@
                         <div class="form-group">
                             <label for="edit_brand_name">Brand Name</label>
                             <input type="text" class="form-control" id="edit_brand_name" name="edit_brand_name">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="edit_slug_name">Slug Name</label>
-                            <input type="text" class="form-control" id="edit_slug_name" name="edit_slug_name">
                         </div>
 
                         <div class="form-group">
