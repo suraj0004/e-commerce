@@ -1,11 +1,29 @@
-@extends('layouts.app')
+@extends('layouts.shop.app')
+
+@push('css')
+<style>
+    div.single-slider {
+        display: none;
+    }
+   .card-header{
+       background-color: white;
+       border-bottom: none;
+       color: #F7941D; font-size:1.5rem ;
+   }
+   .card{
+    box-shadow: 0px 0px 15px #0000001a;
+   }
+</style>
+
+@endpush
 
 @section('content')
+<br>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+                <div class="card-header text-center">{{ __('Register') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
@@ -74,4 +92,9 @@
         </div>
     </div>
 </div>
+<br>
 @endsection
+
+@push('js')
+
+@endpush

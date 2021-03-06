@@ -45,7 +45,9 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
 
-
+    {{-- <style>
+         background-color:#F8F9FA;
+    </style> --}}
     @stack('css')
 </head>
 
@@ -92,8 +94,8 @@
                                 </li>
                                 @endauth
                                 @guest
-                                <li><i class="ti-power-off"></i><a href="{{route('login')}}">Login</a></li>
-                                <li><i class="fa fa-user-plus" aria-hidden="true"></i><a href="{{route('register')}}">Register</a></li>
+                                <li><i class="ti-power-off"></i><a href="{{route('login_new')}}">Login</a></li>
+                                <li><i class="fa fa-user-plus" aria-hidden="true"></i><a href="{{route('registration_new')}}">Register</a></li>
                                 @endguest
                             </ul>
                         </div>
@@ -154,7 +156,7 @@
                               @endauth
 
                               @guest
-                              <a href="{{route('login')}}" class="single-icon"><i class="fa fa-sign-in"
+                              <a href="{{route('login_new')}}" class="single-icon"><i class="fa fa-sign-in"
                                 aria-hidden="true"></i></a>
                               @endguest
                             </div>
@@ -373,7 +375,7 @@
                     <!-- Start Single Service -->
                     <div class="single-service">
                         <i class="ti-lock"></i>
-                        <h4>Sucure Payment</h4>
+                        <h4>Secure Payment</h4>
                         <p>100% secure payment</p>
                     </div>
                     <!-- End Single Service -->
