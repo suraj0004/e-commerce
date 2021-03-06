@@ -585,7 +585,6 @@
     <script src="{{ asset('js/active.js') }}"></script>
 
 
-
     <script type="text/javascript">
     function logout() {
         event.preventDefault();
