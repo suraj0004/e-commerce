@@ -1,68 +1,45 @@
 @extends('layouts.shop.app')
 
 @push('css')
-<style>
-    div.single-slider{
-        display: none;
-    }
-</style>
+    <style>
+        div.single-slider {
+            display: none;
+        }
+
+    </style>
 @endpush
 
 @section('content')
-<div class="row">
-	<div class="col-md-3 col-sm-6">
-		<figure class="card card-product-grid">
-			<div class="img-wrap"> <img src="bootstrap-ecommerce-html/images/items/1.jpg"> </div>
-			<figcaption class="info-wrap border-top">
-				<a href="#" class="title">Bell &amp; Ross Nightlum</a>
-				<div class="price mt-2">$299.00</div> <!-- price-wrap.// -->
-			</figcaption>
-		</figure> <!-- card // -->
-	</div> <!-- col.// -->
-	<div class="col-md-3 col-sm-6">
-		<figure class="card card-product-grid">
-			<div class="img-wrap">
-				<img src="bootstrap-ecommerce-html/images/items/2.jpg">
-				<span class="topbar">
-					<a href="#" class="float-right"><i class="fa fa-heart"></i></a>
-				</span>
-				<a class="btn-overlay" href="#"><i class="fa fa-search-plus"></i> Quick view</a>
-			</div>
-			<figcaption class="info-wrap border-top">
-				<a href="#" class="title">Leather Sleeve - Macbook 13’’</a>
-				<div class="price mt-2">$3753.00</div> <!-- price-wrap.// -->
-			</figcaption>
-		</figure> <!-- card // -->
-	</div> <!-- col.// -->
-	<div class="col-md-3 col-sm-6">
-		<figure class="card card-product-grid">
-			<div class="img-wrap">
-				<span class="topbar">
-					<span class="badge badge-success"> NEW </span>
-				</span>
-				<img src="bootstrap-ecommerce-html/images/items/3.jpg">
-			</div>
-			<figcaption class="info-wrap border-top">
-				<a href="#" class="title">H&amp;M Polo Shirt Slim Fit</a>
-					<div class="price-wrap mt-2">
-						<span class="price">$12.99</span>
-						<small class="price-old">$14.99</small>
-					</div> <!-- price-wrap.// -->
-			</figcaption>
-		</figure> <!-- card // -->
-	</div> <!-- col.// -->
-	<div class="col-md-3 col-sm-6">
-		<figure class="card card-product-grid">
-			<div class="img-wrap">
-				<img src="bootstrap-ecommerce-html/images/items/4.jpg">
-			</div>
-			<figcaption class="info-wrap border-top text-center">
-				<small class="text-uppercase font-weight-bolder text-warning">ELECTRONICS</small>
-				<p><a href="#" class="title">IKEA Poäng Swivel Chair</a></p>
-			</figcaption>
-		</figure> <!-- card // -->
-	</div> <!-- col.// -->
-</div><!-- row.// -->
+
+    {{-- @foreach ($brands as $count)
+        @if ($count->products->count() > 0)
+            <div class="col-md-3 col-sm-6">
+                <p class="font-weight-bold text-danger">Total Products:{{ $count->name }} {{ $count->products->count() }}
+                </p>
+            </div>
+        @endif
+    @endforeach --}}
+
+    <div class="row p-3">
+
+        @foreach ($brands as $brand)
+            <div class="col-md-3 col-sm-6">
+                <figure class="card card-product-grid">
+                    @if ($brand->products->count() > 0)
+                        <p class="font-weight-bold text-danger">Total Products:{{ $brand->name }}
+                            {{ $brand->products->count() }}
+                        </p>
+                    @endif
+                    <div class="img-wrap"> <img src="{{ Storage::disk('dynamic_images')->url($brand->image->image) }}">
+                    </div>
+                    <figcaption class="info-wrap border-top">
+                        <a href="#" class="title">{{ $brand->name }}</a>
+                    </figcaption>
+                </figure> <!-- card // -->
+            </div> <!-- col.// -->
+        @endforeach
+
+    </div><!-- row.// -->
 @endsection
 
 @push('js')

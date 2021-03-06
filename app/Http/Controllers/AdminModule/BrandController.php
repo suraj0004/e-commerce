@@ -5,6 +5,7 @@ namespace App\Http\Controllers\AdminModule;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Brand;
+use App\Models\Image;
 use Illuminate\Support\Facades\Validator;
 
 class BrandController extends Controller
@@ -12,9 +13,11 @@ class BrandController extends Controller
     public function index()
     {
         $brand = Brand::all();
+        $images = Image::all();
         return view('admin.brand.brand')->with([
             'brands'=>$brand,
-            'page'=> 'brand'
+            'page'=> 'brand',
+            'image'=>$images
         ]);
     }
 
@@ -22,11 +25,13 @@ class BrandController extends Controller
     {
         Validator::make($request->all(), [
             'brand_name' => 'required|string|max:250',
-            'slug_name' => 'required|string|max:250'
+            'slug_name' => 'required|string|max:250',
+            'brand_image_id'=>'required|numeric|exists:images,id'
         ])->validate();
         $brand = new Brand();
         $brand->name = $request->brand_name;
         $brand->slug = $request->slug_name;
+        $brand->image_id = $request->brand_image_id;
         $brand->save();
         $request->session()->flash('status', 'Brand Added Successfully');
         return redirect()->back();
@@ -44,11 +49,13 @@ class BrandController extends Controller
         Validator::make($request->all(), [
             'edit_brand_id'=> 'required|numeric|exists:brands,id',
             'edit_brand_name' => 'required|string|max:250',
-            'edit_slug_name' => 'required|string|max:250'
+            'edit_slug_name' => 'required|string|max:250',
+            'edit_brand_image_id'=>'required|numeric|exists:images,id'
         ])->validate();
         $brand = Brand::find($request->edit_brand_id);
         $brand->name = $request->edit_brand_name;
         $brand->slug = $request->edit_slug_name;
+        $brand->image_id = $request->edit_brand_image_id;
         $brand->save();
 
         $request->session()->flash('status', 'Brand Updated Succcessfully');

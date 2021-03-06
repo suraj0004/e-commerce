@@ -253,6 +253,7 @@
             if (image_id && image_src) {
                 $("#edit_category_image_id").val(image_id);
                 $("#edit_category_image_preview").attr("src",image_src)
+
             }
 
         }
