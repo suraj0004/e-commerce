@@ -5,6 +5,10 @@
     div.single-slider{
         display: none;
     }
+	.img{
+		height: 100px;
+		width:23vw;
+	}
 </style>
 @endpush
 
@@ -15,7 +19,7 @@
         <figure class="card card-product-grid">
 
             <div class="img-wrap">
-                <img src="{{Storage::disk('dynamic_images')->url($category->image->image)}}">
+                <img src="{{Storage::disk('dynamic_images')->url($category->image->image)}}" class="img">
             </div>
             <figcaption class="info-wrap border-top text-center">
                 <a href="#" class="title ">{{$category->name}}</a>

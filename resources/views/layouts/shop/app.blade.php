@@ -92,8 +92,8 @@
                                 </li>
                                 @endauth
                                 @guest
-                                <li><i class="ti-power-off"></i><a href="{{route('login')}}">Login</a></li>
-                                <li><i class="fa fa-user-plus" aria-hidden="true"></i><a href="{{route('register')}}">Register</a></li>
+                                <li><i class="ti-power-off"></i><a href="{{route('login_new')}}">Login</a></li>
+                                <li><i class="fa fa-user-plus" aria-hidden="true"></i><a href="{{route('registration_new')}}">Register</a></li>
                                 @endguest
                             </ul>
                         </div>
@@ -154,7 +154,7 @@
                               @endauth
 
                               @guest
-                              <a href="{{route('login')}}" class="single-icon"><i class="fa fa-sign-in"
+                              <a href="{{route('login_new')}}" class="single-icon"><i class="fa fa-sign-in"
                                 aria-hidden="true"></i></a>
                               @endguest
                             </div>
@@ -287,8 +287,8 @@
                                                 <li><a href="{{route('brand')}}">Brand</a></li>
                                                 <li><a href="{{route('contact')}}">Contact Us</a></li>
                                                 @guest
-                                                <li><a href="{{route('login')}}">Login</a></li>
-                                                <li><a href="{{route('register')}}">Register</a></li>
+                                                <li><a href="{{route('login_new')}}">Login</a></li>
+                                                <li><a href="{{route('registration_new')}}">Register</a></li>
                                                 @endguest
                                                 @auth
                                                 <li><a href="{{route('logout')}}" onclick="logout()">Logout</a></li>
@@ -369,7 +369,7 @@
                     <!-- Start Single Service -->
                     <div class="single-service">
                         <i class="ti-lock"></i>
-                        <h4>Sucure Payment</h4>
+                        <h4>Secure Payment</h4>
                         <p>100% secure payment</p>
                     </div>
                     <!-- End Single Service -->

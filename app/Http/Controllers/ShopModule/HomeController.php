@@ -49,4 +49,12 @@ class HomeController extends Controller
    {
        return view('shop.brand');
    }
+   public function login_new()
+   {
+       return view('auth.login_new');
+   }
+   public function registration_new()
+   {
+       return view('auth.registration_new');
+   }
 }
