@@ -11,35 +11,32 @@
 
 @section('content')
 
-    {{-- @foreach ($brands as $count)
-        @if ($count->products->count() > 0)
-            <div class="col-md-3 col-sm-6">
-                <p class="font-weight-bold text-danger">Total Products:{{ $count->name }} {{ $count->products->count() }}
-                </p>
-            </div>
-        @endif
-    @endforeach --}}
+<section class="shop-home-list section">
+    <div class="container">
+        <div class="row">
 
-    <div class="row p-3">
-
-        @foreach ($brands as $brand)
-            <div class="col-md-3 col-sm-6">
-                <figure class="card card-product-grid">
-                    @if ($brand->products->count() > 0)
-                        <p class="font-weight-bold text-danger">Total Products:{{ $brand->name }}
-                            {{ $brand->products->count() }}
-                        </p>
-                    @endif
-                    <div class="img-wrap"> <img src="{{ Storage::disk('dynamic_images')->url($brand->image->image) }}">
+            @foreach ($brands as $brand)
+            <div class="col-md-3 col-12 single-list">
+                <div class="row p-2">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="list-image overlay">
+                            <img src="{{ Storage::disk('dynamic_images')->url($brand->image->image) }}" height="150" width="150" alt="#">
+                            <a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
+                        </div>
                     </div>
-                    <figcaption class="info-wrap border-top">
-                        <a href="#" class="title">{{ $brand->name }}</a>
-                    </figcaption>
-                </figure> <!-- card // -->
-            </div> <!-- col.// -->
-        @endforeach
+                    <div class="col-lg-6 col-md-6 col-12 no-padding">
+                        <div class="content">
+                            <h4 class="title"><a href="#">{{ $brand->name }}</a></h4>
+                            <p class="price with-discount"> {{ $brand->products->count() }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @endforeach
 
-    </div><!-- row.// -->
+        </div>
+    </div>
+</section>
 @endsection
 
 @push('js')
