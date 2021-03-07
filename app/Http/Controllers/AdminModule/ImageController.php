@@ -27,7 +27,7 @@ class ImageController extends Controller
     {
         Validator::make($request->all(), [
             'images' => "required|array",
-            'images.*' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:5120',
+            'images.*' => 'required|image|mimes:jpeg,png,jpg|max:5120',
         ])->validate();
 
         foreach ($request->images as $image) {
