@@ -106,8 +106,11 @@
                 <div class="modal-body">
 
                     <div class="form-group">
-                        <label for="images[]">Images</label>
+                        <label for="images[]">Images  </label>
                         <input type="file" name="images[]" id="images[]" class="form-control" multiple >
+                        <p class="text-secondary">
+                            <i>images should be of same dimensions eg. 500 x 500</i>
+                        </p>
                     </div>
 
 
@@ -139,6 +142,9 @@
                     <div class="form-group">
                         <label for="edit_image">New Image</label>
                         <input type="file" class="form-control" id="edit_image" name="edit_image" >
+                        <p class="text-secondary">
+                            <i>images should be of same dimensions eg. 500 x 500</i>
+                        </p>
                     </div>
 
 
