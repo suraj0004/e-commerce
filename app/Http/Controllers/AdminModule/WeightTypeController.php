@@ -3,10 +3,9 @@
 namespace App\Http\Controllers\AdminModule;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 use App\Models\WeightType;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
-
 
 class WeightTypeController extends Controller
 {
@@ -20,7 +19,7 @@ class WeightTypeController extends Controller
         $weight = WeightType::all();
         return view('admin.weight.weight_type')->with([
             'weights' => $weight,
-            'page' => 'weight'
+            'page' => 'weight',
         ]);
     }
 
@@ -43,14 +42,30 @@ class WeightTypeController extends Controller
     public function store(Request $request)
     {
 
-        Validator::make($request->all(), [
-            'weight' => 'required|string|max:250'
-        ])->validate();
+        $validator = Validator::make($request->all(), [
+            'weight' => 'required|string|max:250',
+        ]);
+
+
+        if ($validator->fails()) {
+            return response()->json([
+                'success' => false,
+                'error' => $validator->errors()->all(),
+                'message' => 'validation Error',
+            ], 422);
+        }
+
         $weight = new WeightType();
         $weight->type = $request->weight;
         $weight->save();
         $request->session()->flash('status', 'Weight Added Successfully');
-        return redirect()->back();
+        // return redirect()->back();
+
+        return response()->json([
+            'success' => true,
+            'message' => 'Weight Added Successfully'
+        ], 200);
+
     }
 
     /**
@@ -86,7 +101,7 @@ class WeightTypeController extends Controller
     {
         Validator::make($request->all(), [
             'edit_weight_id' => 'required|integer|exists:weight_types,id',
-            'edit_weight' => 'required|string|max:250'
+            'edit_weight' => 'required|string|max:250',
         ])->validate();
         $weight = WeightType::find($request->edit_weight_id);
         $weight->type = $request->edit_weight;

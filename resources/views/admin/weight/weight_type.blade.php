@@ -92,7 +92,7 @@
     <div class="modal fade" id="addWeight" tabindex="-1" role="dialog" aria-labelledby="addWeightTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-                <form method="POST" action="{{ route('admin.weight_type.store') }}">
+                <form method="POST" action="{{ route('admin.weight_type.store') }}" id="addWeightForm">
                     @csrf
                     <div class="modal-header">
                         <h5 class="modal-title" id="weight_title">Add Weight </h5>
@@ -103,8 +103,7 @@
                     <div class="modal-body">
                         <div class="form-group">
                             <label for="weight">Weight</label>
-                            <input type="text" class="form-control" id="weight" name="weight"
-                                placeholder="Enter Weight">
+                            <input type="text" class="form-control" id="weight" name="weight" placeholder="Enter Weight">
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -118,7 +117,8 @@
     </div>
 
     <!--Edit Modal -->
-    <div class="modal fade" id="editWeight" tabindex="-1" role="dialog" aria-labelledby="editWeightTitle" aria-hidden="true">
+    <div class="modal fade" id="editWeight" tabindex="-1" role="dialog" aria-labelledby="editWeightTitle"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <form method="POST" action="" id="updateForm">
@@ -161,7 +161,46 @@
     <script>
         $(document).ready(function() {
             $('#weight_table').DataTable();
+
+            $('form#addWeightForm').submit(function(e) {
+                e.preventDefault();
+
+                var weight_type = $('#weight').val();
+
+                $.ajax({
+                    type: "POST",
+                    url: "{{ route('admin.weight_type.store') }}",
+                    data: {
+                        weight: weight_type
+                    },
+                    success: function(response) {
+
+                        console.log(response);
+                        reopenModal();
+                        $('#addWeightForm').trigger('reset');
+                    },
+                    error: function(response) {
+                        // alert(response.responseJSON.error)
+
+                        var error = '';
+                        for (var i = 0; i < response.responseJSON.error.length; i++) {
+                            error = error + response.responseJSON.error[i] + '\n';
+                        }
+                        alert(error)
+                    }
+                });
+
+
+
+            });
         });
+
+        function reopenModal(){
+            $('#addWeight').modal('hide');
+            setTimeout(()=>{
+                $('#addWeight').modal('show')
+            }, 1000)
+        }
 
         function showEditModal(action, weight) {
             $('#editWeight').modal('show');
@@ -169,6 +208,7 @@
             // document.getElementById("edit_weight_id").value = id;
             document.getElementById("edit_weight").value = weight;
         }
+
     </script>
 
 @endpush

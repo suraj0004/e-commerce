@@ -440,7 +440,7 @@
                 }
             });
 
-            document.getElementById('addProductForm').reset();
+            $('#addProductForm').trigger('reset');
 
 
         }
