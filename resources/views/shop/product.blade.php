@@ -234,7 +234,7 @@
                         <!--/ End Single Widget -->
                         <!-- Single Widget -->
                         <div class="single-widget category">
-                            <h3 class="title">Blog Categories</h3>
+                            <h3 class="title"> Categories</h3>
                             <ul class="categor-list">
                                 <li><a href="#">Men's Apparel</a></li>
                                 <li><a href="#">Women's Apparel</a></li>
@@ -246,7 +246,7 @@
                         <!--/ End Single Widget -->
                         <!-- Single Widget -->
                         <div class="single-widget recent-post">
-                            <h3 class="title">Recent post</h3>
+                            <h3 class="title">Recently viewed</h3>
                             <!-- Single Post -->
                             <div class="single-post">
                                 <div class="image">

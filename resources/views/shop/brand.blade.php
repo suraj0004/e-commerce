@@ -5,6 +5,10 @@
         div.single-slider {
             display: none;
         }
+        p.price:hover a{
+            color: white !important;
+            font-weight: bold
+        }
 
     </style>
 @endpush
@@ -27,8 +31,8 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-12 no-padding">
                             <div class="content">
-                                <h6 class="title">{{ $brand->name }}</h6>
-                                <p class="price with-discount"> Products ( {{ $brand->products->count() }} ) </p>
+                                <h6 class="title"> <a href="{{route('brand_product',['brand_id' =>$brand->id ])}}">{{ $brand->name }}</a> </h6>
+                                <p class="price with-discount"> <a href="{{route('brand_product',['brand_id' =>$brand->id ])}}">Products ( {{ $brand->products->count() }} )</a> </p>
                             </div>
                         </div>
                     </div>

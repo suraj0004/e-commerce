@@ -29,8 +29,8 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-12 no-padding">
                             <div class="content">
-                                <h6 class="title">{{ $category->name }}</h6>
-                                <p class="price with-discount"> Products ( {{ $category->products_count }} ) </p>
+                                <h6 class="title"> <a  href="{{route('category_product',['category_id' =>$category->id ])}}"> {{ $category->name }} </a> </h6>
+                                <p class="price with-discount"> <a  href="{{route('category_product',['category_id' =>$category->id ])}}"> Products ( {{ $category->products_count }} ) </a> </p>
                             </div>
                         </div>
                     </div>
