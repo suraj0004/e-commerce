@@ -420,7 +420,8 @@
                 url: "{{ route('admin.product.store') }}",
                 data: payload,
                 success: function (response) {
-                    console.log(response)
+                    console.log(response);
+                    window.location.reload();
                 },
                 error: function (response) {
                     console.log(response.responseJSON.error)

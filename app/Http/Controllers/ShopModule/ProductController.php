@@ -8,7 +8,7 @@ use App\Models\Product;
 
 class ProductController extends Controller
 {
-    public function showBrandProducts($brand_id)
+    public function showBrandProducts($slug)
     {
         $products = Product::with([
             'categories',
@@ -16,13 +16,15 @@ class ProductController extends Controller
             'image',
             'gallery'
         ])
-        ->where('brand_id','=',$brand_id)->get();
+        ->whereHas('brand',function($query)use($slug){
+            $query->where('brands.slug','=',$slug);
+        })->get();
 
         return view("shop.product.index")->with([
             "products" => $products
         ]);
     }
-    public function showCategoryProducts($category_id)
+    public function showCategoryProducts($slug)
     {
         $products= Product::with([
             'categories',
@@ -30,8 +32,8 @@ class ProductController extends Controller
             'image',
             'gallery'
         ])
-        ->whereHas('categories',function($query)use($category_id){
-            $query->where('categories.id','=',$category_id);
+        ->whereHas('categories',function($query)use($slug){
+            $query->where('categories.slug','=',$slug);
         })->get();
         return view("shop.product.index")->with([
             "products"=>$products

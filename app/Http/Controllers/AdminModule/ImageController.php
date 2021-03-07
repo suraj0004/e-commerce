@@ -27,16 +27,12 @@ class ImageController extends Controller
     {
         Validator::make($request->all(), [
             'images' => "required|array",
-            'images.*' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:5120',
+            'images.*' => 'required|image|mimes:jpeg,png,jpg|max:5120',
         ])->validate();
 
         foreach ($request->images as $image) {
-
-            $imageName = generateRandomString() . '.' . $image->extension();
-            Storage::disk('dynamic_images')->putFileAs(null, $image, $imageName);
-
             $row = new Image();
-            $row->image = $imageName;
+            $row->image = saveDynamicImage($image);
             $row->save();
 
         }
@@ -55,9 +51,7 @@ class ImageController extends Controller
             ]);
         }
 
-        if (Storage::disk('dynamic_images')->exists($row->image)) {
-            Storage::disk('dynamic_images')->delete($row->image);
-        }
+        deleteDynamicImage($row->image);
         $row->delete();
         $request->session()->flash('status', 'deleted successfully');
         return redirect()->back();
@@ -73,16 +67,11 @@ class ImageController extends Controller
         $row = Image::find($request->edit_image_id);
 
         // deleting existing image for this ID
-        if (Storage::disk('dynamic_images')->exists($row->image)) {
-            Storage::disk('dynamic_images')->delete($row->image);
-        }
+        deleteDynamicImage($row->image);
 
         // Upload new image for this ID
-        $imageName = generateRandomString() . '.' . $request->edit_image->extension();
-        Storage::disk('dynamic_images')->putFileAs(null, $request->edit_image, $imageName);
-
         // Updating image name in DB for this ID
-        $row->image = $imageName;
+        $row->image = saveDynamicImage($request->edit_image);;
         $row->save();
 
         $request->session()->flash('status', 'image updated successfully');

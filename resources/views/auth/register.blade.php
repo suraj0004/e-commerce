@@ -18,11 +18,10 @@
 @endpush
 
 @section('content')
-<br>
-<div class="container">
+<div class="container"  style="min-height: 500px">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            <div class="card"  style="margin-top: 10%;">
                 <div class="card-header text-center">{{ __('Register') }}</div>
 
                 <div class="card-body">

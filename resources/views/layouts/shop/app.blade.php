@@ -45,9 +45,28 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
 
-    {{-- <style>
-         background-color:#F8F9FA;
-    </style> --}}
+    <style>
+        .main-category{
+            opacity: 0;
+            visibility: hidden;
+        }
+        .text-primary{
+            color: #F7941D !important;
+        }
+        .bg-primary{
+            background: #F7941D !important;
+        }
+        .btn-primary{
+            background: #F7941D !important;
+            color: #fff !important;
+            font-size: 14px;
+            text-align: center;
+            line-height: 30px;
+            text-transform: uppercase;
+            font-weight: 500;
+            border: none;
+        }
+    </style>
     @stack('css')
 </head>
 
@@ -211,9 +230,9 @@
                     <div class="row">
                       @if (isset($page) && $page == 'home')
                       <div class="col-md-3">
-                        <div class="all-category">
-                            <h3 class="cat-heading"><i class="fa fa-bars" aria-hidden="true"></i>CATEGORIES</h3>
-                            <ul class="main-category">
+                        <div class="all-category" onmouseout="toggleCategoryMenu('0','hidden')" >
+                            <h3 class="cat-heading" onmouseover="toggleCategoryMenu('1','visible')" ><i class="fa fa-bars" aria-hidden="true"></i>CATEGORIES</h3>
+                            <ul class="main-category" onmouseover="toggleCategoryMenu('1','visible')" >
                                 <li><a href="#">New Arrivals <i class="fa fa-angle-right"
                                             aria-hidden="true"></i></a>
                                     <ul class="sub-category">
@@ -315,6 +334,23 @@
     <!--/ End Header -->
     <div>
 
+        @if (isset($page) && $page != "home")
+
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="bread-inner">
+                            <ul class="bread-list">
+                                <li><a href="index1.html">Home<i class="ti-arrow-right"></i></a></li>
+                                <li class="active"><a href="blog-single.html"> {{ucfirst($page)}} </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @endif
         @yield('content')
     </div>
 
@@ -350,51 +386,53 @@
 
 
     <!-- Start Shop Services Area -->
-    <section class="shop-services section home">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-12">
-                    <!-- Start Single Service -->
-                    <div class="single-service">
-                        <i class="ti-rocket"></i>
-                        <h4>Free shiping</h4>
-                        <p>Orders over $100</p>
-                    </div>
-                    <!-- End Single Service -->
+   @if (isset($page) && $page != "login" && $page != "register")
+   <section class="shop-services section home">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-12">
+                <!-- Start Single Service -->
+                <div class="single-service">
+                    <i class="ti-rocket"></i>
+                    <h4>Free shiping</h4>
+                    <p>Orders over $100</p>
                 </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <!-- Start Single Service -->
-                    <div class="single-service">
-                        <i class="ti-reload"></i>
-                        <h4>Free Return</h4>
-                        <p>Within 30 days returns</p>
-                    </div>
-                    <!-- End Single Service -->
+                <!-- End Single Service -->
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <!-- Start Single Service -->
+                <div class="single-service">
+                    <i class="ti-reload"></i>
+                    <h4>Free Return</h4>
+                    <p>Within 30 days returns</p>
                 </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <!-- Start Single Service -->
-                    <div class="single-service">
-                        <i class="ti-lock"></i>
-                        <h4>Secure Payment</h4>
-                        <p>100% secure payment</p>
-                    </div>
-                    <!-- End Single Service -->
+                <!-- End Single Service -->
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <!-- Start Single Service -->
+                <div class="single-service">
+                    <i class="ti-lock"></i>
+                    <h4>Secure Payment</h4>
+                    <p>100% secure payment</p>
                 </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <!-- Start Single Service -->
-                    <div class="single-service">
-                        <i class="ti-tag"></i>
-                        <h4>Best Peice</h4>
-                        <p>Guaranteed price</p>
-                    </div>
-                    <!-- End Single Service -->
+                <!-- End Single Service -->
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <!-- Start Single Service -->
+                <div class="single-service">
+                    <i class="ti-tag"></i>
+                    <h4>Best Peice</h4>
+                    <p>Guaranteed price</p>
                 </div>
+                <!-- End Single Service -->
             </div>
         </div>
-    </section>
+    </div>
+</section>
+   @endif
     <!-- End Shop Services Area -->
 
-    <!-- Start Shop Newsletter  -->
+    @guest
     <section class="shop-newsletter section">
         <div class="container">
             <div class="inner-top">
@@ -415,39 +453,9 @@
             </div>
         </div>
     </section>
-    <!-- End Shop Newsletter -->
+    @endguest
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ti-close"
-                            aria-hidden="true"></span></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row no-gutters">
-                        <div class="col-lg-6 offset-lg-3 col-12">
-                            <h4
-                                style="margin-top:100px;font-size:14px; font-weight:500; color:#F7941D; display:block; margin-bottom:5px;">
-                                Eshop Free Lite</h4>
-                            <h3 style="font-size:30px;color:#333;">Currently You are using free lite Version of Eshop.
-                                <h3>
-                                    <p
-                                        style="display:block; margin-top:20px; color:#888; font-size:14px; font-weight:400;">
-                                        Please, purchase full version of the template to get all pages, features and
-                                        commercial license</p>
-                                    <div class="button" style="margin-top:30px;">
-                                        <a href="https://wpthemesgrid.com/downloads/eshop-ecommerce-html5-template/"
-                                            target="_blank" class="btn" style="color:#fff;">Buy Now!</a>
-                                    </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal end -->
+
 
     <!-- Start Footer Area -->
     <footer class="footer">
@@ -559,8 +567,7 @@
     <script src="{{ asset('js/popper.min.js') }}"></script>
     <!-- Bootstrap JS -->
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <!-- Color JS -->
-    <script src="{{ asset('js/colors.js') }}"></script>
+
     <!-- Slicknav JS -->
     <script src="{{ asset('js/slicknav.min.js') }}"></script>
     <!-- Owl Carousel JS -->
@@ -589,6 +596,9 @@
     function logout() {
         event.preventDefault();
         document.getElementById('logout-form').submit();
+    }
+    function toggleCategoryMenu(opacity,visibility) {
+        $('.main-category').css({'opacity':opacity,'visibility':visibility})
     }
     </script>
 

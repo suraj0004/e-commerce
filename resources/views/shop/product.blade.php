@@ -27,22 +27,6 @@
 
 @section('content')
 
-    <!-- Breadcrumbs -->
-    <div class="breadcrumbs">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="bread-inner">
-                        <ul class="bread-list">
-                            <li><a href="index1.html">Home<i class="ti-arrow-right"></i></a></li>
-                            <li class="active"><a href="blog-single.html">Blog Single Sidebar</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Breadcrumbs -->
 
 
     <section class="blog-single section">
@@ -52,9 +36,30 @@
                     <div class="blog-single-main">
                         <div class="row">
                             <div class="col-12">
-                                <div class="image">
-                                    <img src="https://via.placeholder.com/950x460" alt="#">
-                                </div>
+                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner text-center">
+                                      <div class="carousel-item active">
+                                        <img class=" " src="https://via.placeholder.com/300x300" alt="First slide">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class=" " src="https://via.placeholder.com/300x300" alt="Second slide">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class=" " src="https://via.placeholder.com/300x300" alt="Third slide">
+                                      </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                        <i class="fa fa-chevron-left text-primary"></i>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                      <i class="fa fa-chevron-right text-primary"></i>
+                                    </a>
+                                  </div>
 
                                 <div>{{-- main --}}
                                     <div class="blog-detail">
@@ -62,23 +67,20 @@
                                     </div>
                                   <div class="row">
                                     <div class="col-md-2">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star text-primary"></i>
+                                        <i class="fa fa-star text-primary"></i>
+                                        <i class="fa fa-star text-primary"></i>
+                                        <i class="fa fa-star text-primary"></i>
                                         <i class="fa fa-star-o"></i>
                                     </div>
                                     <div class="col-md-2">
-                                        <span style="color:#9F9F9F">132 reviews</span>
-                                       </div>
-                                       <div class="col-md-2">
-                                        <span style="color:#00B517"><i class="fa fa-briefcase"></i> 154 orders</span>
+                                        <span style="color:#9F9F9F">132 views</span>
                                        </div>
                                   </div>
                                   <br>
                                   <div class="row">
                                       <div class="col-md-7">
-                                          <span style="font-weight:500;font-size:1.5rem;">$815.00</span><span style="color:#9F9F9F">/per kg</span>
+                                          <span style="font-weight:500;font-size:1.5rem;">$815.00</span><span style="color:#9F9F9F"></span>
                                       </div>
                                   </div>
                                   <br>
@@ -104,137 +106,60 @@
                                         <div class="col-md-4 text-center">
                                          <label style="display: block;">Quantity</label>
                                          <div class="btn-group btn-group-sm button_group" role="group">
-                                            <button type="button" class="btn">+</button>
-                                            <button type="button" class="btn">1</button>
-                                            <button type="button" class="btn">-</button>
+                                            <button type="button" class="btn" onclick="addQuantity()">+</button>
+                                            <button type="button" class="btn" disabled> <span id="quantity_preview">1</span> <input type="hidden" name="quantity" id="quantity" value="1"> </button>
+                                            <button type="button" class="btn" onclick="subQuantity()">-</button>
                                           </div>
                                         </div>
-                                        <div class="col-md-8 text-center">
-                                            <label style="display: block;">Select Size</label>
-                                            <input type="radio">Small
-                                            <input type="radio">Medium
-                                            <input type="radio">Large
+                                        @auth
+                                        <div class="col-md-4 text-center">
+                                            <button type="button" class="btn btn-primary"> Buy now </button>
                                         </div>
-                                    </div>
-                                    <br>
-                                    <div class="text-center button">
-                                    <a href="#" class="btn btn-primary"> Buy now </a>
-	                                <a href="#" class="btn btn-primary">Add to cart <i class="fa fa-shopping-cart"></i></a>
+                                        <div class="col-md-4 text-center">
+                                            <button type="button" class="btn btn-primary">Add to cart <i class="fa fa-shopping-cart"></i></button>
+                                        </div>
+                                        @endauth
+                                        @guest
+                                            <div class="col-md-8 text-center">
+                                                <a href="{{route('login')}}" class="btn btn-primary"> Login </a>
+                                            </div>
+                                        @endguest
                                     </div>
                                 </div>
                                 <hr>
-                                {{-- <div class="blog-detail">
-                                    <h2 class="blog-title">Title</h2>
-                                </div> --}}
-                                <div class="share-social">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="content-tags">
-                                                <h4>Tags:</h4>
-                                                <ul class="tag-inner">
-                                                    <li><a href="#">Glass</a></li>
-                                                    <li><a href="#">Pant</a></li>
-                                                    <li><a href="#">t-shirt</a></li>
-                                                    <li><a href="#">swater</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+
                             </div>
                             <div class="col-12">
                                 <div class="comments">
-                                    <h3 class="comment-title">Comments (3)</h3>
+                                    <h3 class="comment-title">Reviews (3)</h3>
                                     <!-- Single Comment -->
                                     <div class="single-comment">
                                         <img src="https://via.placeholder.com/80x80" alt="#">
                                         <div class="content">
-                                            <h4>Alisa harm <span>At 8:59 pm On Feb 28, 2018</span></h4>
+                                            <h4>Alisa harm
+                                                <span >
+                                                <i class="fa fa-star text-primary"></i>
+                                                <i class="fa fa-star text-primary"></i>
+                                                <i class="fa fa-star text-primary"></i>
+                                                <i class="fa fa-star text-primary"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                 </span>
+                                            <span>At 8:59 pm On Feb 28, 2018</span></h4>
                                             <p>Enthusiastically leverage existing premium quality vectors with enterprise-wide innovation collaboration Phosfluorescently leverage others enterprisee  Phosfluorescently leverage.</p>
-                                            <div class="button">
-                                                <a href="#" class="btn"><i class="fa fa-reply" aria-hidden="true"></i>Reply</a>
-                                            </div>
+
                                         </div>
-                                    </div>
-                                    <!-- End Single Comment -->
-                                    <!-- Single Comment -->
-                                    <div class="single-comment left">
-                                        <img src="https://via.placeholder.com/80x80" alt="#">
-                                        <div class="content">
-                                            <h4>john deo <span>Feb 28, 2018 at 8:59 pm</span></h4>
-                                            <p>Enthusiastically leverage existing premium quality vectors with enterprise-wide innovation collaboration Phosfluorescently leverage others enterprisee  Phosfluorescently leverage.</p>
-                                            <div class="button">
-                                                <a href="#" class="btn"><i class="fa fa-reply" aria-hidden="true"></i>Reply</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Single Comment -->
-                                    <!-- Single Comment -->
-                                    <div class="single-comment">
-                                        <img src="https://via.placeholder.com/80x80" alt="#">
-                                        <div class="content">
-                                            <h4>megan mart <span>Feb 28, 2018 at 8:59 pm</span></h4>
-                                            <p>Enthusiastically leverage existing premium quality vectors with enterprise-wide innovation collaboration Phosfluorescently leverage others enterprisee  Phosfluorescently leverage.</p>
-                                            <div class="button">
-                                                <a href="#" class="btn"><i class="fa fa-reply" aria-hidden="true"></i>Reply</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Single Comment -->
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="reply">
-                                    <div class="reply-head">
-                                        <h2 class="reply-title">Leave a Comment</h2>
-                                        <!-- Comment Form -->
-                                        <form class="form" action="#">
-                                            <div class="row">
-                                                <div class="col-lg-6 col-md-6 col-12">
-                                                    <div class="form-group">
-                                                        <label>Your Name<span>*</span></label>
-                                                        <input type="text" name="name" placeholder="" required="required">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6 col-12">
-                                                    <div class="form-group">
-                                                        <label>Your Email<span>*</span></label>
-                                                        <input type="email" name="email" placeholder="" required="required">
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="form-group">
-                                                        <label>Your Message<span>*</span></label>
-                                                        <textarea name="message" placeholder=""></textarea>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="form-group button">
-                                                        <button type="submit" class="btn">Post comment</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                        <!-- End Comment Form -->
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-12">
                     <div class="main-sidebar">
-                        <!-- Single Widget -->
-                        <div class="single-widget search">
-                            <div class="form">
-                                <input type="email" placeholder="Search Here...">
-                                <a class="button" href="#"><i class="fa fa-search"></i></a>
-                            </div>
-                        </div>
-                        <!--/ End Single Widget -->
-                        <!-- Single Widget -->
+
                         <div class="single-widget category">
-                            <h3 class="title">Blog Categories</h3>
+                            <h3 class="title"> Categories</h3>
                             <ul class="categor-list">
                                 <li><a href="#">Men's Apparel</a></li>
                                 <li><a href="#">Women's Apparel</a></li>
@@ -243,10 +168,21 @@
                                 <li><a href="#">Sun Glasses</a></li>
                             </ul>
                         </div>
-                        <!--/ End Single Widget -->
-                        <!-- Single Widget -->
+
+                        <div class="single-widget side-tags">
+                            <h3 class="title">Tags</h3>
+                            <ul class="tag">
+                                <li><a href="#">business</a></li>
+                                <li><a href="#">wordpress</a></li>
+                                <li><a href="#">html</a></li>
+                                <li><a href="#">multipurpose</a></li>
+                                <li><a href="#">education</a></li>
+                                <li><a href="#">template</a></li>
+                                <li><a href="#">Ecommerce</a></li>
+                            </ul>
+                        </div>
                         <div class="single-widget recent-post">
-                            <h3 class="title">Recent post</h3>
+                            <h3 class="title">Recently viewed</h3>
                             <!-- Single Post -->
                             <div class="single-post">
                                 <div class="image">
@@ -290,35 +226,6 @@
                             </div>
                             <!-- End Single Post -->
                         </div>
-                        <!--/ End Single Widget -->
-                        <!-- Single Widget -->
-                        <!--/ End Single Widget -->
-                        <!-- Single Widget -->
-                        <div class="single-widget side-tags">
-                            <h3 class="title">Tags</h3>
-                            <ul class="tag">
-                                <li><a href="#">business</a></li>
-                                <li><a href="#">wordpress</a></li>
-                                <li><a href="#">html</a></li>
-                                <li><a href="#">multipurpose</a></li>
-                                <li><a href="#">education</a></li>
-                                <li><a href="#">template</a></li>
-                                <li><a href="#">Ecommerce</a></li>
-                            </ul>
-                        </div>
-                        <!--/ End Single Widget -->
-                        <!-- Single Widget -->
-                        <div class="single-widget newsletter">
-                            <h3 class="title">Newslatter</h3>
-                            <div class="letter-inner">
-                                <h4>Subscribe & get news <br> latest updates.</h4>
-                                <div class="form-inner">
-                                    <input type="email" placeholder="Enter your email">
-                                    <a href="#">Submit</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/ End Single Widget -->
                     </div>
                 </div>
             </div>
@@ -333,4 +240,18 @@
 <script src="js/facnybox.min.js"></script>
 
 <script src="js/ytplayer.min.js"></script>
+<script>
+    function addQuantity() {
+        var quantity = document.getElementById("quantity");
+        quantity.value = Number(quantity.value) + 1;
+        document.getElementById("quantity_preview").innerHTML = quantity.value;
+    }
+    function subQuantity() {
+        var quantity = document.getElementById("quantity");
+        if( Number(quantity.value) > 1){
+            quantity.value = Number(quantity.value) - 1;
+        }
+        document.getElementById("quantity_preview").innerHTML = quantity.value;
+    }
+</script>
 @endpush
