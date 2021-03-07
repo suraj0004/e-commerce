@@ -24,7 +24,7 @@ Route::get('/contact-us', [HomeController::class, 'contact'])->name('contact');
 Route::get('/brand/{brand_id}/product', [ProductController::class, 'showBrandProducts'])->name('brand_product');
 Route::get('/category/{category_id}/product', [ProductController::class, 'showCategoryProducts'])->name('category_product');
 
-Route::get('/product/{product_id}', [HomeController::class, 'product'])->name('product');
+Route::get('/product', [HomeController::class, 'product'])->name('product');
 Route::get('/cart' , [HomeController::class , 'cart'])->name('cart');
 Route::get('/checkout' , [HomeController::class ,'show_checkout_page'])->name('checkout_name');
 Route::get('/category' , [HomeController::class , 'category'])->name('category');
