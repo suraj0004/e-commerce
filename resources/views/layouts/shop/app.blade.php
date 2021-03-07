@@ -50,6 +50,22 @@
             opacity: 0;
             visibility: hidden;
         }
+        .text-primary{
+            color: #F7941D !important;
+        }
+        .bg-primary{
+            background: #F7941D !important;
+        }
+        .btn-primary{
+            background: #F7941D !important;
+            color: #fff !important;
+            font-size: 14px;
+            text-align: center;
+            line-height: 30px;
+            text-transform: uppercase;
+            font-weight: 500;
+            border: none;
+        }
     </style>
     @stack('css')
 </head>
@@ -397,7 +413,7 @@
     </section>
     <!-- End Shop Services Area -->
 
-    <!-- Start Shop Newsletter  -->
+    @guest
     <section class="shop-newsletter section">
         <div class="container">
             <div class="inner-top">
@@ -418,39 +434,9 @@
             </div>
         </div>
     </section>
-    <!-- End Shop Newsletter -->
+    @endguest
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ti-close"
-                            aria-hidden="true"></span></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row no-gutters">
-                        <div class="col-lg-6 offset-lg-3 col-12">
-                            <h4
-                                style="margin-top:100px;font-size:14px; font-weight:500; color:#F7941D; display:block; margin-bottom:5px;">
-                                Eshop Free Lite</h4>
-                            <h3 style="font-size:30px;color:#333;">Currently You are using free lite Version of Eshop.
-                                <h3>
-                                    <p
-                                        style="display:block; margin-top:20px; color:#888; font-size:14px; font-weight:400;">
-                                        Please, purchase full version of the template to get all pages, features and
-                                        commercial license</p>
-                                    <div class="button" style="margin-top:30px;">
-                                        <a href="https://wpthemesgrid.com/downloads/eshop-ecommerce-html5-template/"
-                                            target="_blank" class="btn" style="color:#fff;">Buy Now!</a>
-                                    </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal end -->
+
 
     <!-- Start Footer Area -->
     <footer class="footer">
