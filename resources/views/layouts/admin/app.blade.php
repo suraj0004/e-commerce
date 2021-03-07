@@ -142,7 +142,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="{{ route('admin.weight.weight_type') }}" class="nav-link @if(isset($page) && $page=='weight') active @endif ">
+                            <a href="{{ route('admin.weight_type.index') }}" class="nav-link @if(isset($page) && $page=='weight') active @endif ">
                                 <i class="fas fa-building"></i>
                                 <p>
                                     Weights

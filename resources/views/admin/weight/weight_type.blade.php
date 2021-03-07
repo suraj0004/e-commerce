@@ -53,13 +53,17 @@
                                             <td>{{ $loop->iteration }}</td>
                                             <td>{{ $weight->type }}</td>
                                             <td class="text-center">
+                                                @php
+                                                    $route = route('admin.weight_type.update', ['weight_type' => $weight->id]);
+                                                @endphp
                                                 <button type="button" class="btn btn-primary"
-                                                    onclick="showEditModal({{ $weight->id }},'{{ $weight->type }}')">
+                                                    onclick="showEditModal('{{ $route }}','{{ $weight->type }}')">
                                                     <i class="icon fas fa-pen"></i>
                                                 </button>
                                                 <form class="d-inline"
-                                                    action="{{ route('admin.weight.delete', ['id' => $weight->id]) }}"
+                                                    action="{{ route('admin.weight_type.destroy', ['weight_type' => $weight->id]) }}"
                                                     method="post">
+                                                    @method('DELETE')
                                                     @csrf
                                                     <button class="btn btn-danger" type="submit"> <i
                                                             class="icon fas fa-trash"></i></button>
@@ -74,8 +78,6 @@
                         <!-- /.card-body -->
                     </div>
                     <!-- /.card -->
-
-
                     <!-- /.card -->
                 </div>
                 <!-- /.col -->
@@ -90,7 +92,7 @@
     <div class="modal fade" id="addWeight" tabindex="-1" role="dialog" aria-labelledby="addWeightTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-                <form method="POST" action="{{ route('admin.weight.add') }}">
+                <form method="POST" action="{{ route('admin.weight_type.store') }}">
                     @csrf
                     <div class="modal-header">
                         <h5 class="modal-title" id="weight_title">Add Weight </h5>
@@ -119,7 +121,8 @@
     <div class="modal fade" id="editWeight" tabindex="-1" role="dialog" aria-labelledby="editWeightTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-                <form method="POST" action="{{ route('admin.weight.update') }}">
+                <form method="POST" action="" id="updateForm">
+                    @method('PUT')
                     @csrf
                     <div class="modal-header">
                         <h5 class="modal-title" id="weight_title">Edit Weight</h5>
@@ -160,9 +163,10 @@
             $('#weight_table').DataTable();
         });
 
-        function showEditModal(id, weight) {
+        function showEditModal(action, weight) {
             $('#editWeight').modal('show');
-            document.getElementById("edit_weight_id").value = id;
+            $('#updateForm').attr('action', action);
+            // document.getElementById("edit_weight_id").value = id;
             document.getElementById("edit_weight").value = weight;
         }
     </script>

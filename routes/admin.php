@@ -26,11 +26,13 @@ Route::group(["middleware"=>["auth","admin"]],function () {
 
     Route::get('/table',  [HomeController::class, 'showTablePage'])->name('tablePage');
 
-    //weight route
+    // weight route
     Route::get('/weight_type', [WeightTypeController::class, 'index'])->name('weight.weight_type');
     Route::post('/add-weight', [WeightTypeController::class, 'store'])->name('weight.add');
     Route::post('/update-weight', [WeightTypeController::class, 'update'])->name('weight.update');
     Route::post('/delete-weight/{id}', [WeightTypeController::class, 'destroy'])->name('weight.delete');
+
+    Route::resource('weight_type', WeightTypeController::class);
 
     //tag routes
     Route::get("/tags",[TagController::class, 'index'])->name("tag.show");
