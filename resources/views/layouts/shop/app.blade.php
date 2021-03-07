@@ -111,7 +111,7 @@
                     <div class="col-lg-2 col-md-2 col-12">
                         <!-- Logo -->
                         <div class="logo">
-                            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                            <a href="index.html"><img src="https://picsum.photos/70/70?random={{mt_rand(1, 1000)}}" alt="logo"></a>
                         </div>
                         <!--/ End Logo -->
                         <!-- Search Form -->
@@ -173,7 +173,7 @@
                                         <li>
                                             <a href="#" class="remove" title="Remove this item"><i
                                                     class="fa fa-remove"></i></a>
-                                            <a class="cart-img" href="#"><img src="https://via.placeholder.com/70x70"
+                                            <a class="cart-img" href="#"><img src="https://picsum.photos/70/70?random={{mt_rand(1, 1000)}}"
                                                     alt="#"></a>
                                             <h4><a href="#">Woman Ring</a></h4>
                                             <p class="quantity">1x - <span class="amount">$99.00</span></p>
@@ -181,7 +181,7 @@
                                         <li>
                                             <a href="#" class="remove" title="Remove this item"><i
                                                     class="fa fa-remove"></i></a>
-                                            <a class="cart-img" href="#"><img src="https://via.placeholder.com/70x70"
+                                            <a class="cart-img" href="#"><img src="https://picsum.photos/70/70?random={{mt_rand(1, 1000)}}"
                                                     alt="#"></a>
                                             <h4><a href="#">Woman Necklace</a></h4>
                                             <p class="quantity">1x - <span class="amount">$35.00</span></p>
@@ -234,7 +234,7 @@
                                         <li class="single-menu">
                                             <a href="#" class="title-link">Shop Kid's</a>
                                             <div class="image">
-                                                <img src="https://via.placeholder.com/225x155" alt="#">
+                                                <img src="https://picsum.photos/225/155?random={{mt_rand(1, 1000)}}" alt="#">
                                             </div>
                                             <div class="inner-link">
                                                 <a href="#">Kids Toys</a>
@@ -246,7 +246,7 @@
                                         <li class="single-menu">
                                             <a href="#" class="title-link">Shop Men's</a>
                                             <div class="image">
-                                                <img src="https://via.placeholder.com/225x155" alt="#">
+                                                <img src="https://picsum.photos/225/155?random={{mt_rand(1, 1000)}}" alt="#">
                                             </div>
                                             <div class="inner-link">
                                                 <a href="#">Watch</a>
@@ -258,7 +258,7 @@
                                         <li class="single-menu">
                                             <a href="#" class="title-link">Shop Women's</a>
                                             <div class="image">
-                                                <img src="https://via.placeholder.com/225x155" alt="#">
+                                                <img src="https://picsum.photos/225/155?random={{mt_rand(1, 1000)}}" alt="#">
                                             </div>
                                             <div class="inner-link">
                                                 <a href="#">Ladies Shirt</a>
@@ -459,7 +459,7 @@
                         <!-- Single Widget -->
                         <div class="single-footer about">
                             <div class="logo">
-                                <a href="index.html"><img src="images/logo2.png" alt="#"></a>
+                                <a href="index.html"><img src="https://picsum.photos/70/70?random={{mt_rand(1, 1000)}}" alt="#"></a>
                             </div>
                             <p class="text">Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, magna
                                 eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
@@ -536,7 +536,7 @@
                         </div>
                         <div class="col-lg-6 col-12">
                             <div class="right">
-                                <img src="images/payments.png" alt="#">
+                                <img src="https://picsum.photos/70/70?random={{mt_rand(1, 1000)}}" alt="#">
                             </div>
                         </div>
                     </div>

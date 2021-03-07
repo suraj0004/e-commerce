@@ -36,7 +36,7 @@ class ProductController extends Controller
         return view("shop.product.index")->with([
             "products"=>$products
         ]);
-
-        //
     }
+
+
 }
