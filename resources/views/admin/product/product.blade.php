@@ -47,8 +47,8 @@
                     <div class="card">
                         <div class="card-header">
                             <h3 class="card-title">You can Add/Edit/Delete Products from here.</h3>
-                            <button id="add_product_modal_open_btn" type="button" class="btn btn-primary float-right" data-toggle="modal"
-                                data-target="#addProduct">
+                            <button id="add_product_modal_open_btn" type="button" class="btn btn-primary float-right"
+                                data-toggle="modal" data-target="#addProduct">
                                 <i class="icon fas fa-plus"></i> Add Product
                             </button>
                         </div>
@@ -124,16 +124,17 @@
 
 
     <!--Add Modal -->
-    <div class="modal fade" id="addProduct"  role="dialog" aria-labelledby="addProductTitle"
-        aria-hidden="true">
+    <div class="modal fade" id="addProduct" role="dialog" aria-labelledby="addProductTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
             <div class="modal-content">
-                <form method="POST" action="{{ route('admin.product.store') }}" onsubmit="event.preventDefault(); addProductFormSubmit()" id="addProductForm">
+                <form method="POST" action="{{ route('admin.product.store') }}"
+                    onsubmit="event.preventDefault(); addProductFormSubmit()" id="addProductForm">
                     @csrf
 
                     <div class="modal-header">
                         <h5 class="modal-title" id="product_title">Add Product </h5>
-                        <button id="add_product_modal_close_btn" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <button id="add_product_modal_close_btn" type="button" class="close" data-dismiss="modal"
+                            aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
@@ -178,14 +179,16 @@
                                         placeholder="Enter Weight">
                                 </div>
 
-                                <div class="form-group" >
+                                <div class="form-group">
                                     <div class="form-row">
                                         <label for="product_weight">Feature Image</label>
                                     </div>
-                                   <div class="form-row" style="overflow: scroll">
-                                    <input type="hidden" name="feature_image_id" id="feature_image_id">
-                                    <img id="feature_image_preview" height="300" src="https://via.placeholder.com/500x300" class="" alt="" role="button"  onclick="showImageModal('radio',selectedFeatureImage)">
-                                   </div>
+                                    <div class="form-row" style="overflow: scroll">
+                                        <input type="hidden" name="feature_image_id" id="feature_image_id">
+                                        <img id="feature_image_preview" height="300"
+                                            src="https://via.placeholder.com/500x300" class="" alt="" role="button"
+                                            onclick="showImageModal('radio',selectedFeatureImage)">
+                                    </div>
                                 </div>
 
 
@@ -229,8 +232,9 @@
 
                                         <select name="weight_type" id="weight_type" class="form-control">
                                             <option value="">Select Value</option>
-                                        @foreach ($weights as $weight)
-                                            <option class="dropdown-item" value="{{$weight->type}}">{{$weight->type}}</option>
+                                            @foreach ($weights as $weight)
+                                                <option class="dropdown-item" value="{{ $weight->type }}">
+                                                    {{ $weight->type }}</option>
                                             @endforeach
                                         </select>
                                     </div>
@@ -240,7 +244,8 @@
 
                                 <div class="form-group">
                                     <label for="weight_type">Product Images</label>
-                                    <button class="btn btn-default btn-block" type="button" onclick="showImageModal('checkbox',selectedImages)">Select Images</button>
+                                    <button class="btn btn-default btn-block" type="button"
+                                        onclick="showImageModal('checkbox',selectedImages)">Select Images</button>
                                     <div class="row m-2" id="product_images_preview">
 
                                     </div>
@@ -265,7 +270,7 @@
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-                <form method="POST" action="{{ route('admin.product.update') }}" >
+                <form method="POST" action="{{ route('admin.product.update') }}">
                     @csrf
                     <div class="modal-header">
                         <h5 class="modal-title" id="product_title">Edit Product Name</h5>
@@ -329,8 +334,8 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script>
-
-        var product_images = null, product_feature_image = null;
+        var product_images = null,
+            product_feature_image = null;
         $(document).ready(function() {
             $('#product_table').DataTable();
             $('#category_id').select2({
@@ -360,15 +365,15 @@
             var html = "";
             response.forEach(element => {
                 html += `
-                <div class="border p-2">
-                <img src="${element.src}" height="100" width="160" />
-                 </div>
-                `;
+                    <div class="border p-2">
+                    <img src="${element.src}" height="100" width="160" />
+                     </div>
+                    `;
             });
             $("#product_images_preview").html(html);
             reopenModal();
 
-            product_images = response.map(function(element){
+            product_images = response.map(function(element) {
                 return element.id;
 
             })
@@ -378,20 +383,20 @@
         function selectedFeatureImage(response) {
             console.log(response.id);
             $("#feature_image_id").val(response.id);
-            $("#feature_image_preview").attr("src",response.src)
+            $("#feature_image_preview").attr("src", response.src)
             reopenModal();
 
             product_feature_image = response.id;
         }
 
-        function reopenModal(){
+        function reopenModal() {
             $('#addProduct').modal('hide');
-            setTimeout(()=>{
+            setTimeout(() => {
                 $('#addProduct').modal('show');
-            },1000)
+            }, 1000)
         }
 
-        function addProductFormSubmit(){
+        function addProductFormSubmit() {
             // event.preventDefault();
             var name = document.getElementById('product_name');
             var brand = document.getElementById('brand_id');
@@ -419,15 +424,15 @@
                 type: "POST",
                 url: "{{ route('admin.product.store') }}",
                 data: payload,
-                success: function (response) {
+                success: function(response) {
                     console.log(response);
                     window.location.reload();
                 },
-                error: function (response) {
+                error: function(response) {
                     console.log(response.responseJSON.error)
                     var error = '';
-                    for(var i = 0; i < response.responseJSON.error.length; i++){
-                        error = error + response.responseJSON.error[i]  + '\n';
+                    for (var i = 0; i < response.responseJSON.error.length; i++) {
+                        error = error + response.responseJSON.error[i] + '\n';
                     }
 
                     alert(error)
