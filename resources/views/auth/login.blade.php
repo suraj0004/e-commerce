@@ -17,7 +17,7 @@
 @endpush
 
 @section('content')
-<br>
+
 <div class="container" style="min-height: 500px">
     <div class="row justify-content-center">
 
