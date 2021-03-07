@@ -13,13 +13,13 @@
 @endpush
 
 @section('content')
-<section class="shop-home-list section">
+<section class="shop-home-list section ">
     <div class="container">
         <div class="row">
 
             @foreach ($categories as $category)
             <div class="col-md-4" >
-                <div class="single-list" style="height: 300px;">
+                <div class="single-list">
                     <div class="row p-2">
                         <div class="col-lg-6 col-md-6 col-12">
                             <div class="list-image overlay">
