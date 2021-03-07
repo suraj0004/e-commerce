@@ -2,7 +2,7 @@
 
 @push('css')
 <style>
-    div.single-slider {
+    div.single-slider, .shop-services, .shop-newsletter{
         display: none;
     }
    .card-header{
