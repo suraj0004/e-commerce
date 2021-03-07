@@ -205,7 +205,7 @@
 
 
                                 <div class="form-group">
-                                    <label for="tag_id">Tag's</label>
+                                    <label for="tag_id">Tags</label>
                                     <div class="row p-2">
                                         <select name="tag_id[]" id="tag_id" class="" multiple="multiple"
                                             style="width: 100%">
@@ -226,11 +226,12 @@
                                 <div class="form-group">
                                     <div class="dropdown">
                                         <label for="weight_type">Weight Type</label>
+
                                         <select name="weight_type" id="weight_type" class="form-control">
-                                            <option class="dropdown-item" value="kg">KilloGram(kg)</option>
-                                            <option class="dropdown-item" value="mg">Milligrams(mg)</option>
-                                            <option class="dropdown-item" value="l">Liter</option>
-                                            <option class="dropdown-item" value="gm">Grams(g)</option>
+                                            <option value="">Select Value</option>
+                                        @foreach ($weights as $weight)
+                                            <option class="dropdown-item" value="{{$weight->type}}">{{$weight->type}}</option>
+                                            @endforeach
                                         </select>
                                     </div>
                                 </div>

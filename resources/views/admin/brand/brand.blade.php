@@ -124,11 +124,6 @@
                             <input type="text" class="form-control" id="brand_name" name="brand_name"
                                 placeholder="Enter Brand Name">
                         </div>
-                        {{-- <div class="form-group">
-                            <label for="slug_name">Slug Name</label>
-                            <input type="text" class="form-control" id="slug_name" name="slug_name"
-                                placeholder="Enter slug Name">
-                        </div> --}}
 
                         <div class="form-group">
                             <div class="form-row">

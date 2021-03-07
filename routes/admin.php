@@ -7,6 +7,7 @@ use App\Http\Controllers\AdminModule\BrandController;
 use App\Http\Controllers\AdminModule\ImageController;
 use App\Http\Controllers\AdminModule\CategoryController;
 use App\Http\Controllers\AdminModule\ProductController;
+use App\Http\Controllers\AdminModule\WeightTypeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +26,11 @@ Route::group(["middleware"=>["auth","admin"]],function () {
 
     Route::get('/table',  [HomeController::class, 'showTablePage'])->name('tablePage');
 
+    //weight route
+    Route::get('/weight_type', [WeightTypeController::class, 'index'])->name('weight.weight_type');
+    Route::post('/add-weight', [WeightTypeController::class, 'store'])->name('weight.add');
+    Route::post('/update-weight', [WeightTypeController::class, 'update'])->name('weight.update');
+    Route::post('/delete-weight/{id}', [WeightTypeController::class, 'destroy'])->name('weight.delete');
 
     //tag routes
     Route::get("/tags",[TagController::class, 'index'])->name("tag.show");
@@ -62,8 +68,6 @@ Route::group(["middleware"=>["auth","admin"]],function () {
     Route::post('/product/{id}', [ProductController::class, 'destroy'])->name('product.destroy');
 
     Route::post('/update-product', [ProductController::class, 'update'])->name('product.update');
-
-
 
     Route::group(['prefix' => 'ajax', 'as' => 'ajax.'],function () {
         Route::get('getImages',[ImageController::class, 'getImages'])->name('getImages');
