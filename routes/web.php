@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ShopModule\HomeController;
 use App\Http\Controllers\ShopModule\ProductController;
+use App\Http\Controllers\ShopModule\ContactController;
 Use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +19,10 @@ Use Illuminate\Support\Facades\Auth;
 // Shop Module Guest/Auth Routes
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/home', [HomeController::class, 'index'])->name('home');
-Route::get('/contact-us', [HomeController::class, 'contact'])->name('contact');
+// Route::get('/contact-us', [HomeController::class, 'contact'])->name('contact');
+
+//Contact Route
+Route::resource('contact', ContactController::class);
 
 //shop routes for products
 Route::get('/brand/{brand_id}/product', [ProductController::class, 'showBrandProducts'])->name('brand_product');

@@ -97,17 +97,29 @@ class WeightTypeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request)
+    public function update(Request $request, $id)
     {
-        Validator::make($request->all(), [
-            'edit_weight_id' => 'required|integer|exists:weight_types,id',
+       $validator = Validator::make($request->all(), [
             'edit_weight' => 'required|string|max:250',
-        ])->validate();
-        $weight = WeightType::find($request->edit_weight_id);
+        ]);
+
+        if($validator->fails()){
+            return response()->json([
+                'success' => false,
+                'message' => 'Validation Error',
+                'error' => $validator->errors()->all()
+            ], 422);
+        }
+
+        $weight = WeightType::find($id);
         $weight->type = $request->edit_weight;
         $weight->save();
         $request->session()->flash('status', "Weight Updated Successfully");
-        return redirect()->back();
+
+        return response()->json([
+            'success' => true,
+            'message' => 'Weight Updated Successfully'
+        ], 200);
     }
 
     /**

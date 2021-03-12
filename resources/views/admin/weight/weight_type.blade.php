@@ -121,7 +121,7 @@
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-                <form method="POST" action="" id="updateForm">
+                <form method="POST" id="updateForm">
                     @method('PUT')
                     @csrf
                     <div class="modal-header">
@@ -189,9 +189,25 @@
                         alert(error)
                     }
                 });
+            });
 
+            $('#updateForm').submit(function (e) {
+                e.preventDefault();
+                var edit_weights = $('#edit_weight').val();
 
-
+                $.ajax({
+                    type: "post",
+                    url: $('#updateForm').attr('action'),
+                    data: {
+                        edit_weight: edit_weights
+                    },
+                    success: function (response) {
+                        console.log(response);
+                    },
+                    error: function(response){
+                        alert(response.responseJSON.error);
+                    }
+                });
             });
         });
 
