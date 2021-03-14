@@ -27,6 +27,7 @@ Route::group(["middleware"=>["auth","admin"]],function () {
     Route::get('/table',  [HomeController::class, 'showTablePage'])->name('tablePage');
 
     // weight route
+    Route::post('weight_type/get-datatable',[ WeightTypeController::class, 'getData'])->name('weight_type.get_datatable');
     Route::resource('weight_type', WeightTypeController::class);
 
     //tag routes

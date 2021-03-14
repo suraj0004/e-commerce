@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Tag;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use Str;
 
 class TagController extends Controller
 {
@@ -26,6 +27,7 @@ class TagController extends Controller
 
         $tag = new Tag();
         $tag->name = $request->tag_name;
+        $tag->slug = Str::slug($request->tag_name);
         $tag->save();
 
         $request->session()->flash('status', 'Tag Added successful!');
@@ -42,6 +44,7 @@ class TagController extends Controller
 
         $tag = Tag::find($request->edit_tag_id);
         $tag->name = $request->edit_tag_name;
+        $tag->slug = Str::slug($request->edit_tag_name);
         $tag->save();
 
         $request->session()->flash('status', 'Tag Updated successful!');

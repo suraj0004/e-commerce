@@ -12,7 +12,6 @@ class ProductController extends Controller
     {
         $products = Product::with([
             'categories',
-            'tags',
             'image',
             'gallery'
         ])
@@ -24,11 +23,11 @@ class ProductController extends Controller
             "products" => $products
         ]);
     }
+
     public function showCategoryProducts($slug)
     {
         $products= Product::with([
             'categories',
-            'tags',
             'image',
             'gallery'
         ])
@@ -40,16 +39,44 @@ class ProductController extends Controller
         ]);
     }
 
-    public function showProducts($product_id)
+    public function showTagProducts($slug)
     {
-        $products = Product::with([
+        $products= Product::with([
             'categories',
-            'tags',
             'image',
             'gallery'
-        ])->get();
+        ])
+        ->whereHas('tags',function($query)use($slug){
+            $query->where('tags.slug','=',$slug);
+        })->get();
+        return view("shop.product.index")->with([
+            "products"=>$products
+        ]);
+    }
 
-        return $products;
+    public function showSingleProduct($slug)
+    {
+        $product = Product::with([
+            'categories',
+            'tags',
+            'gallery'
+        ])->where('slug',$slug)
+        ->first();
+
+        $product->gallery->prepend($product->image()->first()); // insert primary image at the first position in the image gallery
+
+        $similar_products = Product::with(['image'])
+                            ->where('id','!=',$product->id)
+                            ->whereHas('categories',function($query)use($product){
+                                $query->whereIn('categories.id',$product->categories->pluck('id'));
+                            })
+                            ->get();
+
+        return view('shop.product')->with([
+            "page" => "product",
+            "product" => $product,
+            "similar_products" => $similar_products
+        ]);
     }
 
 

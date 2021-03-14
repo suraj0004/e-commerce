@@ -61,10 +61,10 @@
                                             <td class="img-responsive text-center">
                                                 @if($brand->image)
                                                 @php
-                                                    $image = Storage::disk('dynamic_images')->url($brand->image->image)
+                                                    $image = getImageUrl($brand->image->image)
                                                 @endphp
 
-                                                <img src="{{ $image }}" alt="Image" class="img-fluid" height="100" width="100">
+                                                <img src="{{ $image }}" alt="Brand Image" class="img-fluid" height="100" width="100">
 
                                                 @else
                                                     No Image

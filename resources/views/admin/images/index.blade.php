@@ -55,7 +55,7 @@
                                 @foreach ($images as $image)
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
-                                        <td class="img-responsive text-center"><img src="{{Storage::disk('dynamic_images')->url($image->image)}}" alt="Image" class="img-fluid" width="300"></td>
+                                        <td class="img-responsive text-center"><img src="{{getImageUrl($image->image)}}" alt="Image" class="img-fluid" width="300"></td>
 
                                         <td class="text-center">
                                             <button type="button" class="btn btn-primary"

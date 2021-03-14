@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateWeightTypesTable extends Migration
+class AddSlugColumnInTagsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class CreateWeightTypesTable extends Migration
      */
     public function up()
     {
-        Schema::create('weight_types', function (Blueprint $table) {
-            $table->id();
-            $table->string('type')->unique();
-            $table->timestamps();
+        \App\Models\Tag::where('id','!=',0)->delete();
+        Schema::table('tags', function (Blueprint $table) {
+            $table->string('slug')->unique();
         });
     }
 
@@ -27,6 +26,8 @@ class CreateWeightTypesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('weight_types');
+        Schema::table('tags', function (Blueprint $table) {
+            //
+        });
     }
 }

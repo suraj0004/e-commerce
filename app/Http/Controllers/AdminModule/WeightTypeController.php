@@ -7,6 +7,8 @@ use App\Models\WeightType;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
+use App\Http\Requests\Admin\WeightType\FilterWeightTypeRequest;
+
 class WeightTypeController extends Controller
 {
     /**
@@ -16,21 +18,73 @@ class WeightTypeController extends Controller
      */
     public function index()
     {
-        $weight = WeightType::all();
         return view('admin.weight.weight_type')->with([
-            'weights' => $weight,
             'page' => 'weight',
         ]);
     }
 
-    /**
-     * Show the form for creating a new resource.
+     /**
+     * Displays weight type information on datatable
      *
-     * @return \Illuminate\Http\Response
+     * @param FilterWeightTypeRequest $request
+     * @return void
      */
-    public function create()
+    public function getData(FilterWeightTypeRequest $request)
     {
-        //
+
+        $totalData = WeightType::count();
+
+        $totalFiltered = $totalData;
+
+        $limit = $request->input('length');
+        $start = $request->input('start');
+        $order = $request->getOrderColumn();
+        $dir = $request->getDir();
+        $searchValue = $request->input('search.value');
+
+        if (empty($searchValue)) {
+            $weight_types = WeightType::offset($start)
+                ->limit($limit)
+                ->orderBy($order, $dir)
+                ->get();
+        } else {
+            $search = $searchValue;
+
+            $weight_types = WeightType::where('type', 'LIKE', "%{$search}%")
+                ->offset($start)
+                ->limit($limit)
+                ->orderBy($order, $dir)
+                ->get();
+
+            $totalFiltered = WeightType::where('type', 'LIKE', "%{$search}%")
+                ->count();
+        }
+
+        $data = array();
+
+        if (!empty($weight_types)) {
+
+            foreach ($weight_types as $key => $weight_type) {
+                $nestedData['id'] = $key + $start + 1; // Sno.
+                $nestedData['weight_type'] = $weight_type->type;
+                $nestedData['actions'] = [
+                    "edit_action" => route('admin.weight_type.update',['weight_type'=>$weight_type->id]),
+                    "delete_action" => route('admin.weight_type.destroy',["weight_type" => $weight_type->id]),
+                    "data" => [
+                        "weight_type" => $weight_type->type,
+                    ]
+                ];
+                $data[] = $nestedData;
+            }
+        }
+
+        $json_data = array(
+            "draw" => intval($request->input('draw')),
+            "recordsTotal" => intval($totalData),
+            "recordsFiltered" => intval($totalFiltered),
+            "data" => $data,
+        );
+        return response()->json($json_data, 200);
     }
 
     /**
@@ -43,7 +97,7 @@ class WeightTypeController extends Controller
     {
 
         $validator = Validator::make($request->all(), [
-            'weight' => 'required|string|max:250',
+            'weight' => 'required|string|max:250|unique:weight_types,type',
         ]);
 
 
@@ -58,8 +112,6 @@ class WeightTypeController extends Controller
         $weight = new WeightType();
         $weight->type = $request->weight;
         $weight->save();
-        $request->session()->flash('status', 'Weight Added Successfully');
-        // return redirect()->back();
 
         return response()->json([
             'success' => true,
@@ -100,7 +152,7 @@ class WeightTypeController extends Controller
     public function update(Request $request, $id)
     {
        $validator = Validator::make($request->all(), [
-            'edit_weight' => 'required|string|max:250',
+            'edit_weight' => 'required|string|max:250|unique:weight_types,type,'.$id,
         ]);
 
         if($validator->fails()){
@@ -114,7 +166,6 @@ class WeightTypeController extends Controller
         $weight = WeightType::find($id);
         $weight->type = $request->edit_weight;
         $weight->save();
-        $request->session()->flash('status', "Weight Updated Successfully");
 
         return response()->json([
             'success' => true,
@@ -131,7 +182,9 @@ class WeightTypeController extends Controller
     public function destroy(Request $request, $id)
     {
         WeightType::where('id', $id)->delete();
-        $request->session()->flash('status', "Weight Deleted Successfully");
-        return redirect()->back();
+        return response()->json([
+            'success' => true,
+            'message' => 'Weight Deleted Successfully'
+        ], 200);
     }
 }
