@@ -8,6 +8,7 @@
     <meta name='copyright' content=''>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
     <!-- Title Tag  -->
     <title>Eshop - eCommerce HTML5 Template.</title>
     <!-- Favicon -->
@@ -46,17 +47,20 @@
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
 
     <style>
-        .main-category{
+        .main-category {
             opacity: 0;
             visibility: hidden;
         }
-        .text-primary{
+
+        .text-primary {
             color: #F7941D !important;
         }
-        .bg-primary{
+
+        .bg-primary {
             background: #F7941D !important;
         }
-        .btn-primary{
+
+        .btn-primary {
             background: #F7941D !important;
             color: #fff !important;
             font-size: 14px;
@@ -66,6 +70,7 @@
             font-weight: 500;
             border: none;
         }
+
     </style>
     @stack('css')
 </head>
@@ -106,15 +111,16 @@
                             <ul class="list-main">
                                 <li><i class="ti-location-pin"></i> Store location</li>
                                 @auth
-                                <li><i class="ti-user"></i> <a href="#">My account</a></li>
-                                <li>
-                                    <i class="ti-power-off"></i>
-                                    <a href="{{route('logout')}}" onclick="logout()" >Logout</a>
-                                </li>
+                                    <li><i class="ti-user"></i> <a href="#">My account</a></li>
+                                    <li>
+                                        <i class="ti-power-off"></i>
+                                        <a href="{{ route('logout') }}" onclick="logout()">Logout</a>
+                                    </li>
                                 @endauth
                                 @guest
-                                <li><i class="ti-power-off"></i><a href="{{route('login')}}">Login</a></li>
-                                <li><i class="fa fa-user-plus" aria-hidden="true"></i><a href="{{route('register')}}">Register</a></li>
+                                    <li><i class="ti-power-off"></i><a href="{{ route('login') }}">Login</a></li>
+                                    <li><i class="fa fa-user-plus" aria-hidden="true"></i><a
+                                            href="{{ route('register') }}">Register</a></li>
                                 @endguest
                             </ul>
                         </div>
@@ -130,7 +136,8 @@
                     <div class="col-lg-2 col-md-2 col-12">
                         <!-- Logo -->
                         <div class="logo">
-                            <a href="index.html"><img src="https://picsum.photos/70/70?random={{mt_rand(1, 1000)}}" alt="logo"></a>
+                            <a href="index.html"><img src="https://picsum.photos/70/70?random={{ mt_rand(1, 1000) }}"
+                                    alt="logo"></a>
                         </div>
                         <!--/ End Logo -->
                         <!-- Search Form -->
@@ -169,15 +176,15 @@
                             <!-- Search Form -->
 
                             <div class="sinlge-bar">
-                              @auth
-                              <a href="#" class="single-icon"><i class="fa fa-user-circle-o"
-                                aria-hidden="true"></i></a>
-                              @endauth
+                                @auth
+                                    <a href="#" class="single-icon"><i class="fa fa-user-circle-o"
+                                            aria-hidden="true"></i></a>
+                                @endauth
 
-                              @guest
-                              <a href="{{route('login')}}" class="single-icon"><i class="fa fa-sign-in"
-                                aria-hidden="true"></i></a>
-                              @endguest
+                                @guest
+                                    <a href="{{ route('login') }}" class="single-icon"><i class="fa fa-sign-in"
+                                            aria-hidden="true"></i></a>
+                                @endguest
                             </div>
                             <div class="sinlge-bar shopping">
                                 <a href="#" class="single-icon"><i class="ti-bag"></i> <span
@@ -192,7 +199,8 @@
                                         <li>
                                             <a href="#" class="remove" title="Remove this item"><i
                                                     class="fa fa-remove"></i></a>
-                                            <a class="cart-img" href="#"><img src="https://picsum.photos/70/70?random={{mt_rand(1, 1000)}}"
+                                            <a class="cart-img" href="#"><img
+                                                    src="https://picsum.photos/70/70?random={{ mt_rand(1, 1000) }}"
                                                     alt="#"></a>
                                             <h4><a href="#">Woman Ring</a></h4>
                                             <p class="quantity">1x - <span class="amount">$99.00</span></p>
@@ -200,7 +208,8 @@
                                         <li>
                                             <a href="#" class="remove" title="Remove this item"><i
                                                     class="fa fa-remove"></i></a>
-                                            <a class="cart-img" href="#"><img src="https://picsum.photos/70/70?random={{mt_rand(1, 1000)}}"
+                                            <a class="cart-img" href="#"><img
+                                                    src="https://picsum.photos/70/70?random={{ mt_rand(1, 1000) }}"
                                                     alt="#"></a>
                                             <h4><a href="#">Woman Necklace</a></h4>
                                             <p class="quantity">1x - <span class="amount">$35.00</span></p>
@@ -211,7 +220,7 @@
                                             <span>Total</span>
                                             <span class="total-amount">$134.00</span>
                                         </div>
-                                        <a href="{{route('checkout_name')}}" class="btn animate">Checkout</a>
+                                        <a href="{{ route('checkout_name') }}" class="btn animate">Checkout</a>
                                     </div>
                                 </div>
                                 <!--/ End Shopping Item -->
@@ -228,16 +237,71 @@
             <div class="container">
                 <div class="cat-nav-head">
                     <div class="row">
-                      @if (isset($page) && $page == 'home')
-                      <div class="col-md-3">
-                        <div class="all-category" onmouseout="toggleCategoryMenu('0','hidden')" >
-                            <h3 class="cat-heading" onmouseover="toggleCategoryMenu('1','visible')" ><i class="fa fa-bars" aria-hidden="true"></i>CATEGORIES</h3>
-                            <ul class="main-category" onmouseover="toggleCategoryMenu('1','visible')" >
-                                <li><a href="#">New Arrivals <i class="fa fa-angle-right"
-                                            aria-hidden="true"></i></a>
-                                    <ul class="sub-category">
+                        @if (isset($page) && $page == 'home')
+                            <div class="col-md-3">
+                                <div class="all-category" onmouseout="toggleCategoryMenu('0','hidden')">
+                                    <h3 class="cat-heading" onmouseover="toggleCategoryMenu('1','visible')"><i
+                                            class="fa fa-bars" aria-hidden="true"></i>CATEGORIES</h3>
+                                    <ul class="main-category" onmouseover="toggleCategoryMenu('1','visible')">
+                                        <li><a href="#">New Arrivals <i class="fa fa-angle-right"
+                                                    aria-hidden="true"></i></a>
+                                            <ul class="sub-category">
+                                                <li><a href="#">accessories</a></li>
+                                                <li><a href="#">best selling</a></li>
+                                                <li><a href="#">top 100 offer</a></li>
+                                                <li><a href="#">sunglass</a></li>
+                                                <li><a href="#">watch</a></li>
+                                                <li><a href="#">man’s product</a></li>
+                                                <li><a href="#">ladies</a></li>
+                                                <li><a href="#">westrn dress</a></li>
+                                                <li><a href="#">denim </a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="main-mega"><a href="#">best selling <i class="fa fa-angle-right"
+                                                    aria-hidden="true"></i></a>
+                                            <ul class="mega-menu">
+                                                <li class="single-menu">
+                                                    <a href="#" class="title-link">Shop Kid's</a>
+                                                    <div class="image">
+                                                        <img src="https://picsum.photos/225/155?random={{ mt_rand(1, 1000) }}"
+                                                            alt="#">
+                                                    </div>
+                                                    <div class="inner-link">
+                                                        <a href="#">Kids Toys</a>
+                                                        <a href="#">Kids Travel Car</a>
+                                                        <a href="#">Kids Color Shape</a>
+                                                        <a href="#">Kids Tent</a>
+                                                    </div>
+                                                </li>
+                                                <li class="single-menu">
+                                                    <a href="#" class="title-link">Shop Men's</a>
+                                                    <div class="image">
+                                                        <img src="https://picsum.photos/225/155?random={{ mt_rand(1, 1000) }}"
+                                                            alt="#">
+                                                    </div>
+                                                    <div class="inner-link">
+                                                        <a href="#">Watch</a>
+                                                        <a href="#">T-shirt</a>
+                                                        <a href="#">Hoodies</a>
+                                                        <a href="#">Formal Pant</a>
+                                                    </div>
+                                                </li>
+                                                <li class="single-menu">
+                                                    <a href="#" class="title-link">Shop Women's</a>
+                                                    <div class="image">
+                                                        <img src="https://picsum.photos/225/155?random={{ mt_rand(1, 1000) }}"
+                                                            alt="#">
+                                                    </div>
+                                                    <div class="inner-link">
+                                                        <a href="#">Ladies Shirt</a>
+                                                        <a href="#">Ladies Frog</a>
+                                                        <a href="#">Ladies Sun Glass</a>
+                                                        <a href="#">Ladies Watch</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
                                         <li><a href="#">accessories</a></li>
-                                        <li><a href="#">best selling</a></li>
                                         <li><a href="#">top 100 offer</a></li>
                                         <li><a href="#">sunglass</a></li>
                                         <li><a href="#">watch</a></li>
@@ -246,77 +310,39 @@
                                         <li><a href="#">westrn dress</a></li>
                                         <li><a href="#">denim </a></li>
                                     </ul>
-                                </li>
-                                <li class="main-mega"><a href="#">best selling <i class="fa fa-angle-right"
-                                            aria-hidden="true"></i></a>
-                                    <ul class="mega-menu">
-                                        <li class="single-menu">
-                                            <a href="#" class="title-link">Shop Kid's</a>
-                                            <div class="image">
-                                                <img src="https://picsum.photos/225/155?random={{mt_rand(1, 1000)}}" alt="#">
-                                            </div>
-                                            <div class="inner-link">
-                                                <a href="#">Kids Toys</a>
-                                                <a href="#">Kids Travel Car</a>
-                                                <a href="#">Kids Color Shape</a>
-                                                <a href="#">Kids Tent</a>
-                                            </div>
-                                        </li>
-                                        <li class="single-menu">
-                                            <a href="#" class="title-link">Shop Men's</a>
-                                            <div class="image">
-                                                <img src="https://picsum.photos/225/155?random={{mt_rand(1, 1000)}}" alt="#">
-                                            </div>
-                                            <div class="inner-link">
-                                                <a href="#">Watch</a>
-                                                <a href="#">T-shirt</a>
-                                                <a href="#">Hoodies</a>
-                                                <a href="#">Formal Pant</a>
-                                            </div>
-                                        </li>
-                                        <li class="single-menu">
-                                            <a href="#" class="title-link">Shop Women's</a>
-                                            <div class="image">
-                                                <img src="https://picsum.photos/225/155?random={{mt_rand(1, 1000)}}" alt="#">
-                                            </div>
-                                            <div class="inner-link">
-                                                <a href="#">Ladies Shirt</a>
-                                                <a href="#">Ladies Frog</a>
-                                                <a href="#">Ladies Sun Glass</a>
-                                                <a href="#">Ladies Watch</a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">accessories</a></li>
-                                <li><a href="#">top 100 offer</a></li>
-                                <li><a href="#">sunglass</a></li>
-                                <li><a href="#">watch</a></li>
-                                <li><a href="#">man’s product</a></li>
-                                <li><a href="#">ladies</a></li>
-                                <li><a href="#">westrn dress</a></li>
-                                <li><a href="#">denim </a></li>
-                            </ul>
-                        </div>
-                    </div>
-                      @endif
-                        <div class=" @if (isset($page) && $page == 'home') col-md-9 @else offset-3 col-md-9  @endif">
+                                </div>
+                            </div>
+                        @endif
+                        <div class=" @if (isset($page) && $page=='home' ) col-md-9 @else offset-3 col-md-9 @endif">
                             <div class="menu-area">
                                 <!-- Main Menu -->
                                 <nav class="navbar navbar-expand-lg">
                                     <div class="navbar-collapse">
                                         <div class="nav-inner">
                                             <ul class="nav main-menu menu navbar-nav">
-                                                <li class="@if(isset($page) && $page == 'home') active @endif"><a href="{{route('home')}}">Home</a></li>
-                                                <li class="@if(isset($page) && $page == 'categories') active @endif"><a href="{{route('category')}}">Category</a></li>
-                                                <li class="@if(isset($page) && $page == 'brands') active @endif"><a href="{{route('brand')}}">Brand</a></li>
-                                                <li class="@if(isset($page) && $page == 'contact') active @endif"><a href="{{route('contact')}}">Contact Us</a></li>
+                                                <li class="@if (isset($page) && $page=='home' ) active @endif"><a
+                                                        href="{{ route('home') }}">Home</a></li>
+                                                <li class="@if (isset($page) &&
+                                                    $page=='categories' ) active @endif"><a
+                                                        href="{{ route('category') }}">Category</a></li>
+                                                <li class="@if (isset($page) && $page=='brands'
+                                                    ) active @endif"><a
+                                                        href="{{ route('brand') }}">Brand</a></li>
+                                                <li class="@if (isset($page) && $page=='contact'
+                                                    ) active @endif"><a
+                                                        href="{{ route('contact.index') }}">Contact Us</a></li>
                                                 @guest
-                                                <li class="@if(isset($page) && $page == 'login') active @endif"><a href="{{route('login')}}">Login</a></li>
-                                                <li class="@if(isset($page) && $page == 'register') active @endif"><a href="{{route('register')}}">Register</a></li>
+                                                    <li class="@if (isset($page) && $page=='login'
+                                                        ) active @endif"><a
+                                                            href="{{ route('login') }}">Login</a></li>
+                                                    <li class="@if (isset($page) && $page=='register'
+                                                        ) active @endif"><a
+                                                            href="{{ route('register') }}">Register</a></li>
                                                 @endguest
                                                 @auth
-                                                <li class="@if(isset($page) && $page == 'logout') active @endif"><a href="{{route('logout')}}" onclick="logout()">Logout</a></li>
+                                                    <li class="@if (isset($page) && $page=='logout'
+                                                        ) active @endif"><a
+                                                            href="{{ route('logout') }}" onclick="logout()">Logout</a></li>
                                                 @endauth
                                             </ul>
                                         </div>
@@ -334,22 +360,22 @@
     <!--/ End Header -->
     <div>
 
-        @if (isset($page) && $page != "home")
+        @if (isset($page) && $page != 'home')
 
-        <div class="breadcrumbs">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="bread-inner">
-                            <ul class="bread-list">
-                                <li><a href="index1.html">Home<i class="ti-arrow-right"></i></a></li>
-                                <li class="active"><a href="blog-single.html"> {{ucfirst($page)}} </a></li>
-                            </ul>
+            <div class="breadcrumbs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="bread-inner">
+                                <ul class="bread-list">
+                                    <li><a href="index1.html">Home<i class="ti-arrow-right"></i></a></li>
+                                    <li class="active"><a href="blog-single.html"> {{ ucfirst($page) }} </a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         @endif
         @yield('content')
     </div>
@@ -386,73 +412,73 @@
 
 
     <!-- Start Shop Services Area -->
-   @if (isset($page) && $page != "login" && $page != "register")
-   <section class="shop-services section home">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-6 col-12">
-                <!-- Start Single Service -->
-                <div class="single-service">
-                    <i class="ti-rocket"></i>
-                    <h4>Free shiping</h4>
-                    <p>Orders over $100</p>
-                </div>
-                <!-- End Single Service -->
-            </div>
-            <div class="col-lg-3 col-md-6 col-12">
-                <!-- Start Single Service -->
-                <div class="single-service">
-                    <i class="ti-reload"></i>
-                    <h4>Free Return</h4>
-                    <p>Within 30 days returns</p>
-                </div>
-                <!-- End Single Service -->
-            </div>
-            <div class="col-lg-3 col-md-6 col-12">
-                <!-- Start Single Service -->
-                <div class="single-service">
-                    <i class="ti-lock"></i>
-                    <h4>Secure Payment</h4>
-                    <p>100% secure payment</p>
-                </div>
-                <!-- End Single Service -->
-            </div>
-            <div class="col-lg-3 col-md-6 col-12">
-                <!-- Start Single Service -->
-                <div class="single-service">
-                    <i class="ti-tag"></i>
-                    <h4>Best Peice</h4>
-                    <p>Guaranteed price</p>
-                </div>
-                <!-- End Single Service -->
-            </div>
-        </div>
-    </div>
-</section>
-   @endif
-    <!-- End Shop Services Area -->
-
-    @guest
-    <section class="shop-newsletter section">
-        <div class="container">
-            <div class="inner-top">
+    @if (isset($page) && $page != 'login' && $page != 'register')
+        <section class="shop-services section home">
+            <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 offset-lg-2 col-12">
-                        <!-- Start Newsletter Inner -->
-                        <div class="inner">
-                            <h4>Newsletter</h4>
-                            <p> Subscribe to our newsletter and get <span>10%</span> off your first purchase</p>
-                            <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
-                                <input name="EMAIL" placeholder="Your email address" required="" type="email">
-                                <button class="btn">Subscribe</button>
-                            </form>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <!-- Start Single Service -->
+                        <div class="single-service">
+                            <i class="ti-rocket"></i>
+                            <h4>Free shiping</h4>
+                            <p>Orders over $100</p>
                         </div>
-                        <!-- End Newsletter Inner -->
+                        <!-- End Single Service -->
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <!-- Start Single Service -->
+                        <div class="single-service">
+                            <i class="ti-reload"></i>
+                            <h4>Free Return</h4>
+                            <p>Within 30 days returns</p>
+                        </div>
+                        <!-- End Single Service -->
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <!-- Start Single Service -->
+                        <div class="single-service">
+                            <i class="ti-lock"></i>
+                            <h4>Secure Payment</h4>
+                            <p>100% secure payment</p>
+                        </div>
+                        <!-- End Single Service -->
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <!-- Start Single Service -->
+                        <div class="single-service">
+                            <i class="ti-tag"></i>
+                            <h4>Best Peice</h4>
+                            <p>Guaranteed price</p>
+                        </div>
+                        <!-- End Single Service -->
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    @endif
+    <!-- End Shop Services Area -->
+
+    @guest
+        <section class="shop-newsletter section">
+            <div class="container">
+                <div class="inner-top">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2 col-12">
+                            <!-- Start Newsletter Inner -->
+                            <div class="inner">
+                                <h4>Newsletter</h4>
+                                <p> Subscribe to our newsletter and get <span>10%</span> off your first purchase</p>
+                                <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+                                    <input name="EMAIL" placeholder="Your email address" required="" type="email">
+                                    <button class="btn">Subscribe</button>
+                                </form>
+                            </div>
+                            <!-- End Newsletter Inner -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     @endguest
 
 
@@ -467,7 +493,8 @@
                         <!-- Single Widget -->
                         <div class="single-footer about">
                             <div class="logo">
-                                <a href="index.html"><img src="https://picsum.photos/70/70?random={{mt_rand(1, 1000)}}" alt="#"></a>
+                                <a href="index.html"><img
+                                        src="https://picsum.photos/70/70?random={{ mt_rand(1, 1000) }}" alt="#"></a>
                             </div>
                             <p class="text">Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, magna
                                 eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
@@ -544,7 +571,7 @@
                         </div>
                         <div class="col-lg-6 col-12">
                             <div class="right">
-                                <img src="https://picsum.photos/70/70?random={{mt_rand(1, 1000)}}" alt="#">
+                                <img src="https://picsum.photos/70/70?random={{ mt_rand(1, 1000) }}" alt="#">
                             </div>
                         </div>
                     </div>
@@ -593,13 +620,23 @@
 
 
     <script type="text/javascript">
-    function logout() {
-        event.preventDefault();
-        document.getElementById('logout-form').submit();
-    }
-    function toggleCategoryMenu(opacity,visibility) {
-        $('.main-category').css({'opacity':opacity,'visibility':visibility})
-    }
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+        function logout() {
+            event.preventDefault();
+            document.getElementById('logout-form').submit();
+        }
+
+        function toggleCategoryMenu(opacity, visibility) {
+            $('.main-category').css({
+                'opacity': opacity,
+                'visibility': visibility
+            })
+        }
+
     </script>
 
     @stack('js')

@@ -3,12 +3,13 @@
 namespace App\Http\Controllers\AdminModule;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
-use App\Models\Product;
-use Illuminate\Support\Facades\Validator;
 use App\Models\Brand;
 use App\Models\Category;
+use App\Models\Product;
 use App\Models\Tag;
+use App\Models\WeightType;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 use Str;
 
 class ProductController extends Controller
@@ -18,36 +19,38 @@ class ProductController extends Controller
     {
         $product = Product::with([
             'categories',
-            'tags'
+            'tags',
         ])->get();
 
         // return $product;
-
         $brands = Brand::all();
         $categories = Category::all();
         $tags = Tag::all();
+        $weights = WeightType::all();
         return view('admin.product.product')->with([
-            'products'=>$product,
-            'page'=>'product',
-            'brands'=>$brands,
-            'categories'=>$categories,
-            'tags'=>$tags
+            'products' => $product,
+            'page' => 'product',
+            'brands' => $brands,
+            'categories' => $categories,
+            'tags' => $tags,
+            'weights' => $weights,
         ]);
+
     }
 
     public function store(Request $request)
     {
-       $validator =  Validator::make($request->all(), [
-            'brand_id'=>'required|numeric|exists:brands,id',
-            'categories'=>'required|array',
-            'categories.*'=>'required|numeric|exists:categories,id',
-            'tags'=>'required|array',
-            'tags.*'=>'required|numeric|exists:tags,id',
-            'name'=> 'required|string|max:250|unique:products,name',
-            'quantity'=>'required|numeric',
-            'weight'=>'required|numeric',
-            'weight_type'=>'required',
-            'price'=>'required|numeric',
+        $validator = Validator::make($request->all(), [
+            'brand_id' => 'required|numeric|exists:brands,id',
+            'categories' => 'required|array',
+            'categories.*' => 'required|numeric|exists:categories,id',
+            'tags' => 'required|array',
+            'tags.*' => 'required|numeric|exists:tags,id',
+            'name' => 'required|string|max:250|unique:products,name',
+            'quantity' => 'required|numeric',
+            'weight' => 'required|numeric',
+            'weight_type' => 'required',
+            'price' => 'required|numeric',
             'feature_image_id' => 'required|numeric|exists:images,id',
             'image_ids' => 'required|array',
             'image_ids.*' => 'required|numeric|exists:images,id',
@@ -57,7 +60,7 @@ class ProductController extends Controller
             return response()->json([
                 'success' => false,
                 'error' => $validator->errors()->all(),
-                'message' => 'validation error'
+                'message' => 'validation error',
             ], 422);
         }
 
@@ -77,25 +80,25 @@ class ProductController extends Controller
 
         return response()->json([
             'success' => true,
-            'message' => 'Product Added Successfully'
+            'message' => 'Product Added Successfully',
         ], 201);
     }
 
     public function update(Request $request)
     {
         Validator::make($request->all(), [
-            'edit_product_id'=>'required|numeric',
-            'edit_product_name'=> 'required|string|max:250|unique:products,name,'.$request->edit_product_id.',id',
-            'edit_product_quantity'=>'required|numeric',
-            'edit_product_weight'=>'required|numeric',
-            'edit_weight_type'=>'required',
-            'edit_product_price'=>'required|numeric'
+            'edit_product_id' => 'required|numeric',
+            'edit_product_name' => 'required|string|max:250|unique:products,name,' . $request->edit_product_id . ',id',
+            'edit_product_quantity' => 'required|numeric',
+            'edit_product_weight' => 'required|numeric',
+            'edit_weight_type' => 'required',
+            'edit_product_price' => 'required|numeric',
         ])->validate();
 
         $product = Product::find($request->edit_product_id);
 
         $product->name = $request->edit_product_name;
-        $product->slug = Str::slug($request->edit_product_name) ;
+        $product->slug = Str::slug($request->edit_product_name);
         $product->quantity = $request->edit_product_quantity;
         $product->weight = $request->edit_product_weight;
         $product->weight_type = $request->edit_weight_type;

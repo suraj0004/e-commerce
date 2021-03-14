@@ -40,5 +40,17 @@ class ProductController extends Controller
         ]);
     }
 
+    public function showProducts($product_id)
+    {
+        $products = Product::with([
+            'categories',
+            'tags',
+            'image',
+            'gallery'
+        ])->get();
+
+        return $products;
+    }
+
 
 }

@@ -17,12 +17,12 @@ class HomeController extends Controller
         ]);
     }
 
-    public function contact()
-    {
-        return view("shop.contact")->with([
-            "page" => "contact",
-        ]);
-    }
+    // public function contact()
+    // {
+    //     return view("shop.contact")->with([
+    //         "page" => "contact",
+    //     ]);
+    // }
 
     //products fn
     public function product()

@@ -141,9 +141,14 @@
                             </a>
                         </li>
 
-
-
-
+                        <li class="nav-item">
+                            <a href="{{ route('admin.weight_type.index') }}" class="nav-link @if(isset($page) && $page=='weight') active @endif ">
+                                <i class="fas fa-weight"></i>
+                                <p>
+                                    Weights
+                                </p>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
