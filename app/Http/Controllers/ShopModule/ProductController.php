@@ -40,16 +40,17 @@ class ProductController extends Controller
         ]);
     }
 
-    public function showProducts($product_id)
+    public function showSingleProduct($slug)
     {
-        $products = Product::with([
+        $product = Product::with([
             'categories',
             'tags',
             'image',
             'gallery'
-        ])->get();
+        ])->where('slug',$slug)
+        ->first();
 
-        return $products;
+        return $product;
     }
 
 

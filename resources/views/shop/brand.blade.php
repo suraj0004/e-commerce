@@ -26,13 +26,13 @@
                         <div class="col-lg-6 col-md-6 col-12">
                             <div class="list-image overlay">
                                 <img src="{{ Storage::disk('dynamic_images')->url($brand->image->image) }}" height="150" width="150" alt="#">
-                                <a href="{{route('brand_product',['brand_id' =>$brand->slug ])}}" class="buy"><i class="fa fa-shopping-bag"></i></a>
+                                <a href="{{route('brand_product',['slug' =>$brand->slug ])}}" class="buy"><i class="fa fa-shopping-bag"></i></a>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-12 no-padding">
                             <div class="content">
-                                <h6 class="title"> <a href="{{route('brand_product',['brand_id' =>$brand->slug ])}}">{{ $brand->name }}</a> </h6>
-                                <p class="price with-discount"> <a href="{{route('brand_product',['brand_id' =>$brand->slug ])}}">Products ( {{ $brand->products->count() }} )</a> </p>
+                                <h6 class="title"> <a href="{{route('brand_product',['slug' =>$brand->slug ])}}">{{ $brand->name }}</a> </h6>
+                                <p class="price with-discount"> <a href="{{route('brand_product',['slug' =>$brand->slug ])}}">Products ( {{ $brand->products->count() }} )</a> </p>
                             </div>
                         </div>
                     </div>
