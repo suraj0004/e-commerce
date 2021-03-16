@@ -73,7 +73,7 @@
                                             <td class="img-responsive text-center">
                                                 @if ($category->image)
                                                 @php
-                                                    $image = Storage::disk('dynamic_images')->url($category->image->image);
+                                                    $image = getImageUrl($category->image->image);
                                                 @endphp
                                                     <img src="{{ $image }}"
                                                         alt="Image" class="img-fluid" width="100" height="100">

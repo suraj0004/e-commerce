@@ -50,3 +50,8 @@ function moneyFormatIndia($num) {
     }
     return $thecash; // writes the final format where $currency is the currency symbol.
 }
+
+function getImageUrl(string $image_name)
+{
+    return Storage::disk('dynamic_images')->url($image_name);
+}

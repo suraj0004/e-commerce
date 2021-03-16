@@ -13,8 +13,8 @@
                     <div class="single-product">
                         <div class="product-img">
                             <a href="{{route('single_product',['slug' => $product->slug])}}">
-                                <img class="default-img" src="{{ Storage::disk('dynamic_images')->url($product->image->image) }}"  alt="#">
-                                <img class="hover-img" src="{{ Storage::disk('dynamic_images')->url($product->gallery[0]->image) }}"  alt="#">
+                                <img class="default-img" src="{{ getImageUrl($product->image->image) }}"  alt="#">
+                                <img class="hover-img" src="{{ getImageUrl($product->gallery[0]->image) }}"  alt="#">
                                 <span class="price-dec"> {{$product->categories[0]->name}} </span>
                             </a>
                             <div class="button-head">

@@ -45,7 +45,7 @@
                                     <div class="carousel-inner text-center">
                                         @foreach ($product->gallery as $image)
                                             <div class="carousel-item @if($loop->index == 0) active  @endif">
-                                            <img class=" " src="{{ Storage::disk('dynamic_images')->url($image->image) }}" alt="First slide">
+                                            <img class=" " src="{{ getImageUrl($image->image) }}">
                                             </div>
                                         @endforeach
                                     </div>
@@ -177,7 +177,7 @@
                                <a href="{{ route('single_product',['slug' => $product->slug ]) }}">
                                 <div class="single-post">
                                     <div class="image">
-                                        <img src="{{ Storage::disk('dynamic_images')->url($product->image->image) }}" alt="#">
+                                        <img src="{{ getImageUrl($product->image->image) }}" alt="#">
                                     </div>
                                     <div class="content">
                                         <h5>{{ $product->name }}</h5>

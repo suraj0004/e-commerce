@@ -23,7 +23,7 @@
                     <div class="row p-2">
                         <div class="col-lg-6 col-md-6 col-12">
                             <div class="list-image overlay">
-                                <img src="{{ Storage::disk('dynamic_images')->url($category->image->image) }}" height="150" width="150" alt="#">
+                                <img src="{{ getImageUrl($category->image->image) }}" height="150" width="150" alt="#">
                                 <a href="{{route('category_product',['slug' =>$category->slug ])}}" class="buy"><i class="fa fa-shopping-bag"></i></a>
                             </div>
                         </div>
