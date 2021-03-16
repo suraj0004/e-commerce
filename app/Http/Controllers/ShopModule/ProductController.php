@@ -12,7 +12,6 @@ class ProductController extends Controller
     {
         $products = Product::with([
             'categories',
-            'tags',
             'image',
             'gallery'
         ])
@@ -24,11 +23,11 @@ class ProductController extends Controller
             "products" => $products
         ]);
     }
+
     public function showCategoryProducts($slug)
     {
         $products= Product::with([
             'categories',
-            'tags',
             'image',
             'gallery'
         ])
@@ -45,12 +44,24 @@ class ProductController extends Controller
         $product = Product::with([
             'categories',
             'tags',
-            'image',
             'gallery'
         ])->where('slug',$slug)
         ->first();
 
-        return $product;
+        $product->gallery->prepend($product->image()->first()); // insert primary image at the first position in the image gallery
+
+        $similar_products = Product::with(['image'])
+                            ->where('id','!=',$product->id)
+                            ->whereHas('categories',function($query)use($product){
+                                $query->whereIn('categories.id',$product->categories->pluck('id'));
+                            })
+                            ->get();
+
+        return view('shop.product')->with([
+            "page" => "product",
+            "product" => $product,
+            "similar_products" => $similar_products
+        ]);
     }
 
 

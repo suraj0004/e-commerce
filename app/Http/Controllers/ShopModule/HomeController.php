@@ -17,20 +17,6 @@ class HomeController extends Controller
         ]);
     }
 
-    // public function contact()
-    // {
-    //     return view("shop.contact")->with([
-    //         "page" => "contact",
-    //     ]);
-    // }
-
-    //products fn
-    public function product()
-    {
-        return view('shop.product')->with([
-            "page" => "product",
-        ]);
-    }
     public function cart()
     {
         return view('shop.cart')->with([
@@ -50,7 +36,6 @@ class HomeController extends Controller
             'image', 'parent',
         ])->withCount('products')->get();
 
-        // return $categories;
         return view('shop.category')->with([
             'categories' => $categories,
             "page" => "categories",

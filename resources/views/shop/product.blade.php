@@ -36,34 +36,30 @@
                     <div class="blog-single-main">
                         <div class="row">
                             <div class="col-12">
-                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <div id="imageGalleryCarousel" class="carousel slide" data-ride="carousel">
                                     <ol class="carousel-indicators">
-                                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                        @foreach ($product->gallery as $image)
+                                            <li data-target="#imageGalleryCarousel" data-slide-to="{{$loop->index}}" @if($loop->index == 0) class="active" @endif ></li>
+                                        @endforeach
                                     </ol>
                                     <div class="carousel-inner text-center">
-                                      <div class="carousel-item active">
-                                        <img class=" " src="https://via.placeholder.com/300x300" alt="First slide">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img class=" " src="https://via.placeholder.com/300x300" alt="Second slide">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img class=" " src="https://via.placeholder.com/300x300" alt="Third slide">
-                                      </div>
+                                        @foreach ($product->gallery as $image)
+                                            <div class="carousel-item @if($loop->index == 0) active  @endif">
+                                            <img class=" " src="{{ Storage::disk('dynamic_images')->url($image->image) }}" alt="First slide">
+                                            </div>
+                                        @endforeach
                                     </div>
-                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                    <a class="carousel-control-prev" href="#imageGalleryCarousel" role="button" data-slide="prev">
                                         <i class="fa fa-chevron-left text-primary"></i>
                                     </a>
-                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                    <a class="carousel-control-next" href="#imageGalleryCarousel" role="button" data-slide="next">
                                       <i class="fa fa-chevron-right text-primary"></i>
                                     </a>
                                   </div>
 
                                 <div>{{-- main --}}
                                     <div class="blog-detail">
-                                        <h2 class="blog-title">Title</h2>
+                                        <h2 class="blog-title"> {{$product->name}} </h2>
                                     </div>
                                   <div class="row">
                                     <div class="col-md-2">
@@ -80,7 +76,7 @@
                                   <br>
                                   <div class="row">
                                       <div class="col-md-7">
-                                          <span style="font-weight:500;font-size:1.5rem;">$815.00</span><span style="color:#9F9F9F"></span>
+                                          <span style="font-weight:500;font-size:1.5rem;">Rs. {{$product->price}}</span><span style="color:#9F9F9F"></span>
                                       </div>
                                   </div>
                                   <br>
@@ -161,70 +157,42 @@
                         <div class="single-widget category">
                             <h3 class="title"> Categories</h3>
                             <ul class="categor-list">
-                                <li><a href="#">Men's Apparel</a></li>
-                                <li><a href="#">Women's Apparel</a></li>
-                                <li><a href="#">Bags Collection</a></li>
-                                <li><a href="#">Accessories</a></li>
-                                <li><a href="#">Sun Glasses</a></li>
+                                @foreach ($product->categories as $category)
+                                    <li><a href="{{ route('category_product',['slug' => $category->slug]) }}"> {{$category->name}} </a></li>
+                                @endforeach
                             </ul>
                         </div>
 
                         <div class="single-widget side-tags">
                             <h3 class="title">Tags</h3>
                             <ul class="tag">
-                                <li><a href="#">business</a></li>
-                                <li><a href="#">wordpress</a></li>
-                                <li><a href="#">html</a></li>
-                                <li><a href="#">multipurpose</a></li>
-                                <li><a href="#">education</a></li>
-                                <li><a href="#">template</a></li>
-                                <li><a href="#">Ecommerce</a></li>
+                                @foreach ($product->tags as $tag)
+                                    <li><a href="#"> {{$tag->name}} </a></li>
+                            @endforeach
                             </ul>
                         </div>
                         <div class="single-widget recent-post">
-                            <h3 class="title">Recently viewed</h3>
-                            <!-- Single Post -->
-                            <div class="single-post">
-                                <div class="image">
-                                    <img src="https://via.placeholder.com/100x100" alt="#">
+                            <h3 class="title">Products you may like</h3>
+                            @foreach ($similar_products as $product)
+                               <a href="{{ route('single_product',['slug' => $product->slug ]) }}">
+                                <div class="single-post">
+                                    <div class="image">
+                                        <img src="{{ Storage::disk('dynamic_images')->url($product->image->image) }}" alt="#">
+                                    </div>
+                                    <div class="content">
+                                        <h5>{{ $product->name }}</h5>
+                                        <div>
+                                            <i class="fa fa-star text-primary"></i>
+                                            <i class="fa fa-star text-primary"></i>
+                                            <i class="fa fa-star text-primary"></i>
+                                            <i class="fa fa-star text-primary"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="content">
-                                    <h5><a href="#">Top 10 Beautyful Women Dress in the world</a></h5>
-                                    <ul class="comment">
-                                        <li><i class="fa fa-calendar" aria-hidden="true"></i>Jan 11, 2020</li>
-                                        <li><i class="fa fa-commenting-o" aria-hidden="true"></i>35</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- End Single Post -->
-                            <!-- Single Post -->
-                            <div class="single-post">
-                                <div class="image">
-                                    <img src="https://via.placeholder.com/100x100" alt="#">
-                                </div>
-                                <div class="content">
-                                    <h5><a href="#">Top 10 Beautyful Women Dress in the world</a></h5>
-                                    <ul class="comment">
-                                        <li><i class="fa fa-calendar" aria-hidden="true"></i>Mar 05, 2019</li>
-                                        <li><i class="fa fa-commenting-o" aria-hidden="true"></i>59</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- End Single Post -->
-                            <!-- Single Post -->
-                            <div class="single-post">
-                                <div class="image">
-                                    <img src="https://via.placeholder.com/100x100" alt="#">
-                                </div>
-                                <div class="content">
-                                    <h5><a href="#">Top 10 Beautyful Women Dress in the world</a></h5>
-                                    <ul class="comment">
-                                        <li><i class="fa fa-calendar" aria-hidden="true"></i>June 09, 2019</li>
-                                        <li><i class="fa fa-commenting-o" aria-hidden="true"></i>44</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- End Single Post -->
+                               </a>
+                            @endforeach
+
                         </div>
                     </div>
                 </div>
