@@ -76,7 +76,7 @@
                                   <br>
                                   <div class="row">
                                       <div class="col-md-7">
-                                          <span style="font-weight:500;font-size:1.5rem;">Rs. {{$product->price}}</span><span style="color:#9F9F9F"></span>
+                                          <span style="font-weight:500;font-size:1.5rem;">Rs. {{moneyFormatIndia($product->price)}}</span><span style="color:#9F9F9F"></span>
                                       </div>
                                   </div>
                                   <br>

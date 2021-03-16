@@ -30,7 +30,7 @@
                         <div class="product-content">
                             <h3><a href="{{route('single_product',['slug' => $product->slug])}}">{{$product->name}}</a></h3>
                             <div class="product-price">
-                                <span> Rs. {{ $product->price }}</span>
+                                <span> Rs. {{ moneyFormatIndia($product->price) }}</span>
                             </div>
                         </div>
                     </div>
