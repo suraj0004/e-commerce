@@ -38,7 +38,7 @@
                             </button>
                         </div>
                         <!-- /.card-header -->
-                        <div class="card-body">
+                        <div class="card-body table-responsive">
                             <table id="weight_table" class="table table-bordered table-hover">
                                 <thead>
                                     <tr>
@@ -48,29 +48,6 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($weights as $weight)
-                                        <tr>
-                                            <td>{{ $loop->iteration }}</td>
-                                            <td>{{ $weight->type }}</td>
-                                            <td class="text-center">
-                                                @php
-                                                    $route = route('admin.weight_type.update', ['weight_type' => $weight->id]);
-                                                @endphp
-                                                <button type="button" class="btn btn-primary"
-                                                    onclick="showEditModal('{{ $route }}','{{ $weight->type }}')">
-                                                    <i class="icon fas fa-pen"></i>
-                                                </button>
-                                                <form class="d-inline"
-                                                    action="{{ route('admin.weight_type.destroy', ['weight_type' => $weight->id]) }}"
-                                                    method="post">
-                                                    @method('DELETE')
-                                                    @csrf
-                                                    <button class="btn btn-danger" type="submit"> <i
-                                                            class="icon fas fa-trash"></i></button>
-                                                </form>
-                                            </td>
-                                        </tr>
-                                    @endforeach
                                 </tbody>
 
                             </table>
@@ -159,70 +136,156 @@
     </script>
 
     <script>
+        // datatable
         $(document).ready(function() {
-            $('#weight_table').DataTable();
-
-            $('form#addWeightForm').submit(function(e) {
-                e.preventDefault();
-
-                var weight_type = $('#weight').val();
-
-                $.ajax({
+            $("#weight_table").DataTable({
+                processing: true,
+                serverSide: true,
+                ajax: {
+                    url: "{{ route('admin.weight_type.get_datatable') }}",
+                    dataType: "json",
                     type: "POST",
-                    url: "{{ route('admin.weight_type.store') }}",
-                    data: {
-                        weight: weight_type
+                    headers: {
+                        "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content")
                     },
-                    success: function(response) {
+                },
 
-                        console.log(response);
-                        reopenModal();
-                        $('#addWeightForm').trigger('reset');
+                columns: [{
+                        bSortable: false,
+                        data: "id",
                     },
-                    error: function(response) {
-                        // alert(response.responseJSON.error)
-
-                        var error = '';
-                        for (var i = 0; i < response.responseJSON.error.length; i++) {
-                            error = error + response.responseJSON.error[i] + '\n';
-                        }
-                        alert(error)
-                    }
-                });
-            });
-
-            $('#updateForm').submit(function (e) {
-                e.preventDefault();
-                var edit_weights = $('#edit_weight').val();
-
-                $.ajax({
-                    type: "post",
-                    url: $('#updateForm').attr('action'),
-                    data: {
-                        edit_weight: edit_weights
+                    {
+                        data: "weight_type"
                     },
-                    success: function (response) {
-                        console.log(response);
+                    {
+                        data: "actions",
+                        bSortable: false,
+                        mRender: function(data, type, row) {
+                            return (
+                                `<div class="d-flex">
+                                    <button type="button"  title="Edit" onClick="showEditModal('${data.edit_action}','${data.data.weight_type}')"  class="btn btn-primary m-1 ">
+                                        <i class="fas fa-edit "></i>
+                                    </button>
+
+                                    <button type="button"  title="Delete" onClick="showDeleteConfirm('${data.delete_action}')"  class="btn btn-danger m-1">
+                                        <i class="fas fa-trash "></i>
+                                    </button>
+                                </div>`
+                            );
+                        },
                     },
-                    error: function(response){
-                        alert(response.responseJSON.error);
-                    }
-                });
+                ],
             });
         });
 
-        function reopenModal(){
-            $('#addWeight').modal('hide');
-            setTimeout(()=>{
-                $('#addWeight').modal('show')
-            }, 1000)
-        }
+
+        $('form#addWeightForm').submit(function(e) {
+            e.preventDefault();
+            $("#full_page_loader").show();
+
+            var weight_type = $('#weight').val();
+
+            $.ajax({
+                type: "POST",
+                url: "{{ route('admin.weight_type.store') }}",
+                data: {
+                    weight: weight_type
+                },
+                success: function(response) {
+                    $("#full_page_loader").hide();
+                    $('#addWeightForm').trigger('reset');
+                    $('#addWeight').modal('hide');
+                    $("#weight_table").DataTable().ajax.reload(null, false);
+
+
+                    Toast.fire({
+                        icon: 'success',
+                        title: response.message
+                    })
+                },
+                error: function(response) {
+                    $("#full_page_loader").hide();
+                    Toast.fire({
+                        icon: 'error',
+                        title: response.responseJSON.error.join("\n")
+                    })
+                }
+            });
+        });
+
+        $('#updateForm').submit(function(e) {
+            e.preventDefault();
+            $("#full_page_loader").show();
+            var edit_weights = $('#edit_weight').val();
+
+            $.ajax({
+                type: "PUT",
+                url: $('#updateForm').attr('action'),
+                data: {
+                    edit_weight: edit_weights
+                },
+                success: function(response) {
+                    $("#full_page_loader").hide();
+                    $('#editWeight').modal('hide');
+                    $("#weight_table").DataTable().ajax.reload(null, false);
+
+                    Toast.fire({
+                        icon: 'success',
+                        title: response.message
+                    })
+                },
+                error: function(response) {
+                    $("#full_page_loader").hide();
+                    Toast.fire({
+                        icon: 'error',
+                        title: response.responseJSON.error.join("\n")
+                    })
+                }
+            });
+        });
 
         function showEditModal(action, weight) {
-            $('#editWeight').modal('show');
             $('#updateForm').attr('action', action);
-            // document.getElementById("edit_weight_id").value = id;
             document.getElementById("edit_weight").value = weight;
+            $('#editWeight').modal('show');
+        }
+
+        function showDeleteConfirm(action) {
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "You won't be able to revert this!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $("#full_page_loader").show();
+                    $.ajax({
+                        type: "POST",
+                        url: action,
+                        data: {
+                            _method: "DELETE"
+                        },
+                        success: function(response) {
+                            $("#full_page_loader").hide();
+                            $("#weight_table").DataTable().ajax.reload(null, false);
+                            Toast.fire({
+                                icon: 'success',
+                                title: response.message
+                            })
+                        },
+                        error: function(response) {
+                            $("#full_page_loader").hide();
+                            Toast.fire({
+                                icon: 'error',
+                                title: response.responseJSON.error.join("\n")
+                            })
+                        }
+                    });
+                }
+            })
         }
 
     </script>
