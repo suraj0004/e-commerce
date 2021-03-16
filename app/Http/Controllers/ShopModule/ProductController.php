@@ -39,6 +39,21 @@ class ProductController extends Controller
         ]);
     }
 
+    public function showTagProducts($slug)
+    {
+        $products= Product::with([
+            'categories',
+            'image',
+            'gallery'
+        ])
+        ->whereHas('tags',function($query)use($slug){
+            $query->where('tags.slug','=',$slug);
+        })->get();
+        return view("shop.product.index")->with([
+            "products"=>$products
+        ]);
+    }
+
     public function showSingleProduct($slug)
     {
         $product = Product::with([

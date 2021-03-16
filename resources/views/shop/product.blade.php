@@ -167,7 +167,7 @@
                             <h3 class="title">Tags</h3>
                             <ul class="tag">
                                 @foreach ($product->tags as $tag)
-                                    <li><a href="#"> {{$tag->name}} </a></li>
+                                    <li><a href="{{ route('tag_product',['slug' => $tag->slug]) }}"> {{$tag->name}} </a></li>
                             @endforeach
                             </ul>
                         </div>
@@ -180,7 +180,7 @@
                                         <img src="{{ getImageUrl($product->image->image) }}" alt="#">
                                     </div>
                                     <div class="content">
-                                        <h5>{{ $product->name }}</h5>
+                                        <div class="font-weight-bold">{{ $product->name }}</div>
                                         <div>
                                             <i class="fa fa-star text-primary"></i>
                                             <i class="fa fa-star text-primary"></i>

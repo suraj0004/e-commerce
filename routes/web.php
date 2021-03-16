@@ -27,6 +27,7 @@ Route::resource('contact', ContactController::class);
 //shop routes for products
 Route::get('/brand/{slug}/products', [ProductController::class, 'showBrandProducts'])->name('brand_product');
 Route::get('/category/{slug}/products', [ProductController::class, 'showCategoryProducts'])->name('category_product');
+Route::get('/tag/{slug}/products', [ProductController::class, 'showTagProducts'])->name('tag_product');
 Route::get('/product/{slug}', [ProductController::class, 'showSingleProduct'])->name('single_product');
 
 Route::get('/cart' , [HomeController::class , 'cart'])->name('cart');
