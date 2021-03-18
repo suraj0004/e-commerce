@@ -51,9 +51,11 @@ class ProductController extends Controller
             'weight' => 'required|numeric',
             'weight_type' => 'required',
             'price' => 'required|numeric',
+            'showcase_price' => 'required|numeric',
             'feature_image_id' => 'required|numeric|exists:images,id',
             'image_ids' => 'required|array',
             'image_ids.*' => 'required|numeric|exists:images,id',
+            'description' => 'required'
         ]);
 
         if ($validator->fails()) {
@@ -72,6 +74,8 @@ class ProductController extends Controller
         $product->weight = $request->weight;
         $product->weight_type = $request->weight_type;
         $product->price = $request->price;
+        $product->showcase_price = $request->showcase_price;
+        $product->description = $request->description;
         $product->image_id = $request->feature_image_id;
         $product->save();
         $product->categories()->sync($request->categories);
