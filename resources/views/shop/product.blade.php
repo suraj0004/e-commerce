@@ -76,26 +76,14 @@
                                   <br>
                                   <div class="row">
                                       <div class="col-md-7">
-                                          <span style="font-weight:500;font-size:1.5rem;">Rs. {{moneyFormatIndia($product->price)}}</span><span style="color:#9F9F9F"></span>
+                                          <span style="font-weight:500;font-size:1.5rem;">Rs. {{moneyFormatIndia($product->price)}}</span><span style="color:#9F9F9F; text-decoration: line-through; padding-left:10px"> Rs. {{moneyFormatIndia($product->showcase_price)}}</span>
                                       </div>
                                   </div>
                                   <br>
-                                   <div>
-                                        Virgil Abloh’s Off-White is a streetwear-inspired collection that continues to break away from the conventions of mainstream fashion. Made in Italy, these black and brown Odsy-1000 low-top sneakers.
+                                   <div >
+                                        {!! $product->description !!}
                                    </div>
-                                   <br>
-                                   <div class="row">
-                                        <div class="col-sm-3"><b>Model#</b></div>
-                                        <div class="col-sm-9">Odsy-1000</div>
-                                   </div>
-                                   <div class="row">
-                                    <div class="col-sm-3"><b>Color</b></div>
-                                    <div class="col-sm-9">Brown</div>
-                                   </div>
-                                   <div class="row">
-                                     <div class="col-sm-3"><b>Delivery</b></div>
-                                     <div class="col-sm-9">Russia, USA, and Europe</div>
-                                    </div>
+
                                     <hr>
 
                                     <div class="row">

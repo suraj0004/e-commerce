@@ -5,6 +5,8 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
     <style>
         /* modal backdrop fix */
 
@@ -141,95 +143,81 @@
 
                     <div class="modal-body">
                         <div class="row">
-                            <div class="col-md-6">
 
-
-                                <div class="form-group">
-                                    <label for="product_name">Product Name</label>
-                                    <input type="text" class="form-control" id="product_name" name="product_name"
-                                        placeholder="Enter Product Name">
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="category_id">Categorie's</label>
-                                    <div class="row p-2">
-                                        <select name="category_id[]" id="category_id" class="" multiple="multiple"
-                                            style="width: 100%">
-                                            @foreach ($categories as $category)
-                                                <option value="{{ $category->id }}">{{ $category->name }}</option>
-                                            @endforeach
-                                        </select>
-                                    </div>
-                                </div>
-
-
-
-                                <div class="form-group">
-                                    <label for="product_quantity">Quantity</label>
-                                    <input type="number" class="form-control" id="product_quantity" name="product_quantity"
-                                        placeholder="Enter Product Quantity">
-
-                                </div>
-
-
-
-                                <div class="form-group">
-                                    <label for="product_weight">Weight</label>
-                                    <input type="number" class="form-control" id="product_weight" name="product_weight"
-                                        placeholder="Enter Weight">
-                                </div>
-
-                                <div class="form-group">
-                                    <div class="form-row">
-                                        <label for="product_weight">Feature Image</label>
-                                    </div>
-                                    <div class="form-row" style="overflow: scroll">
-                                        <input type="hidden" name="feature_image_id" id="feature_image_id">
-                                        <img id="feature_image_preview" height="300"
-                                            src="https://via.placeholder.com/500x300" class="" alt="" role="button"
-                                            onclick="showImageModal('radio',selectedFeatureImage)">
-                                    </div>
-                                </div>
-
-
+                            <div class="form-group col-md-6">
+                                <label for="product_name">Product Name</label>
+                                <input type="text" class="form-control" id="product_name" name="product_name"
+                                    placeholder="Enter Product Name">
                             </div>
-                            <div class="col-md-6">
 
-                                <div class="form-group">
-                                    <label for="brand_id">Brand</label>
-                                    <select name="brand_id" id="brand_id" class="form-control">
-                                        <option value="">Select Value</option>
-                                        @foreach ($brands as $brand)
-                                            <option value="{{ $brand->id }}">{{ $brand->name }}</option>
+                            <div class="form-group col-md-6">
+                                <label for="brand_id">Brand</label>
+                                <select name="brand_id" id="brand_id" class="form-control">
+                                    <option value="">Select Value</option>
+                                    @foreach ($brands as $brand)
+                                        <option value="{{ $brand->id }}">{{ $brand->name }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+
+
+
+                            <div class="form-group col-md-6">
+                                <label for="category_id">Categorie's</label>
+                                <div class="row p-2">
+                                    <select name="category_id[]" id="category_id" class="" multiple="multiple"
+                                        style="width: 100%">
+                                        @foreach ($categories as $category)
+                                            <option value="{{ $category->id }}">{{ $category->name }}</option>
                                         @endforeach
                                     </select>
                                 </div>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="tag_id">Tags</label>
+                                <div class="row p-2">
+                                    <select name="tag_id[]" id="tag_id" class="" multiple="multiple" style="width: 100%">
+                                        @foreach ($tags as $tag)
+                                            <option value="{{ $tag->id }}">{{ $tag->name }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group col-md-6">
+                                <label for="product_showcase_price">Showcase Price</label>
+                                <input type="number" class="form-control" id="product_showcase_price"
+                                    name="product_showcase_price" placeholder="Enter Showcase Price">
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="product_price">Price</label>
+                                <input type="number" class="form-control" id="product_price" name="product_price"
+                                    placeholder="Enter Price">
+                            </div>
+
+
+                            <div class="form-group col-md-6">
+                                <label for="product_quantity">Quantity</label>
+                                <input type="number" class="form-control" id="product_quantity" name="product_quantity"
+                                    placeholder="Enter Product Quantity">
+
+                            </div>
 
 
 
-                                <div class="form-group">
-                                    <label for="tag_id">Tags</label>
-                                    <div class="row p-2">
-                                        <select name="tag_id[]" id="tag_id" class="" multiple="multiple"
-                                            style="width: 100%">
-                                            @foreach ($tags as $tag)
-                                                <option value="{{ $tag->id }}">{{ $tag->name }}</option>
-                                            @endforeach
-                                        </select>
+
+
+                            <div class="form-group col-md-6">
+                                <label for="product_weight">Weight</label>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="number" class="form-control" id="product_weight" name="product_weight"
+                                            placeholder="Enter Weight">
                                     </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="product_price">Price</label>
-                                    <input type="number" class="form-control" id="product_price" name="product_price"
-                                        placeholder="Enter Price">
-                                </div>
-
-
-                                <div class="form-group">
-                                    <div class="dropdown">
-                                        <label for="weight_type">Weight Type</label>
-
+                                    <div class="col-md-6">
                                         <select name="weight_type" id="weight_type" class="form-control">
                                             <option value="">Select Value</option>
                                             @foreach ($weights as $weight)
@@ -240,22 +228,42 @@
                                     </div>
                                 </div>
 
+                            </div>
 
 
-                                <div class="form-group">
-                                    <label for="weight_type">Product Images</label>
-                                    <button class="btn btn-default btn-block" type="button"
-                                        onclick="showImageModal('checkbox',selectedImages)">Select Images</button>
-                                    <div class="row m-2" id="product_images_preview">
-
-                                    </div>
+                            <div class="form-group col-md-6">
+                                <div class="form-row">
+                                    <label for="product_weight">Feature Image</label>
+                                </div>
+                                <div class="form-row" style="overflow: scroll">
+                                    <input type="hidden" name="feature_image_id" id="feature_image_id">
+                                    <img id="feature_image_preview" height="300" src="https://via.placeholder.com/500x300"
+                                        class="" alt="" role="button"
+                                        onclick="showImageModal('radio',selectedFeatureImage)">
                                 </div>
                             </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="weight_type">Product Images</label>
+                                <button class="btn btn-default btn-block" type="button"
+                                    onclick="showImageModal('checkbox',selectedImages)">Select Images</button>
+                                <div class="row m-2" id="product_images_preview">
+
+                                </div>
+                            </div>
+
+                            <div class="form-group col-md-12">
+                                <label for="description">Product Description</label>
+                                <div id="description_editor">
+
+                                </div>
+                            </div>
+
                         </div>
 
 
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer mt-5 pt-5">
                         <div class="col-12 text-center">
                             <button type="submit" class="btn btn-success">Submit</button>
                         </div>
@@ -333,6 +341,7 @@
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
     <script>
         var product_images = null,
             product_feature_image = null;
@@ -365,10 +374,10 @@
             var html = "";
             response.forEach(element => {
                 html += `
-                    <div class="border p-2">
-                    <img src="${element.src}" height="100" width="160" />
-                     </div>
-                    `;
+                        <div class="border p-2">
+                        <img src="${element.src}" height="100" width="160" />
+                         </div>
+                        `;
             });
             $("#product_images_preview").html(html);
             reopenModal();
@@ -396,11 +405,25 @@
             }, 1000)
         }
 
+        function quillGetHTML(inputDelta) {
+            var tempCont = document.createElement("div");
+            (new Quill(tempCont)).setContents(inputDelta);
+            return tempCont.getElementsByClassName("ql-editor")[0].innerHTML;
+        }
+
+        var description_editor = new Quill('#description_editor', {
+            theme: 'snow'
+        });
+
+
+
         function addProductFormSubmit() {
             // event.preventDefault();
+            $("#full_page_loader").show();
             var name = document.getElementById('product_name');
             var brand = document.getElementById('brand_id');
             var price = document.getElementById('product_price');
+            var showcase_price = document.getElementById('product_showcase_price');
             var weight = document.getElementById('product_weight');
             var weight_type = document.getElementById('weight_type');
             var categories = $('#category_id').val();
@@ -410,6 +433,7 @@
             const payload = {
                 name: name.value,
                 brand_id: brand.value,
+                showcase_price: showcase_price.value,
                 price: price.value,
                 weight: weight.value,
                 weight_type: weight_type.value,
@@ -417,7 +441,8 @@
                 tags: tags,
                 quantity: quantity.value,
                 feature_image_id: product_feature_image,
-                image_ids: product_images
+                image_ids: product_images,
+                description: quillGetHTML(description_editor.getContents())
             }
 
             $.ajax({
@@ -425,25 +450,24 @@
                 url: "{{ route('admin.product.store') }}",
                 data: payload,
                 success: function(response) {
-                    console.log(response);
-                    window.location.reload();
+                    $("#full_page_loader").hide();
+                    $('#addProductForm').trigger('reset');
+                    $('#addProduct').modal('hide');
+                    Toast.fire({
+                        icon: 'success',
+                        title: response.message
+                    })
                 },
                 error: function(response) {
-                    console.log(response.responseJSON.error)
-                    var error = '';
-                    for (var i = 0; i < response.responseJSON.error.length; i++) {
-                        error = error + response.responseJSON.error[i] + '\n';
-                    }
-
-                    alert(error)
-
+                    $("#full_page_loader").hide();
+                    Toast.fire({
+                        icon: 'error',
+                        title: response.responseJSON.error.join("\n")
+                    })
                 }
             });
-
-            $('#addProductForm').trigger('reset');
-
-
         }
+
 
     </script>
 
