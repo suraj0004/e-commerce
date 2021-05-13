@@ -177,7 +177,7 @@
                             <div class="form-group col-md-6">
                                 <label for="tag_id">Tags</label>
                                 <div class="row p-2">
-                                    <select name="tag_id[]" id="tag_id" class="" multiple="multiple" style="width: 100%">
+                                    <select name="tag_id[]" id="tag_id" class="" multiple="multiple"     style="width: 100%">
                                         @foreach ($tags as $tag)
                                             <option value="{{ $tag->id }}">{{ $tag->name }}</option>
                                         @endforeach

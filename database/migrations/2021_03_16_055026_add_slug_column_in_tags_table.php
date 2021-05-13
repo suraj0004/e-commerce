@@ -15,7 +15,7 @@ class AddSlugColumnInTagsTable extends Migration
     {
         \App\Models\Tag::where('id','!=',0)->delete();
         Schema::table('tags', function (Blueprint $table) {
-            $table->string('slug')->unique();
+            $table->string('slug')->unique()->nullable();
         });
     }
 
