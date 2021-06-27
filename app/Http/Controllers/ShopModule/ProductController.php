@@ -1,9 +1,7 @@
 <?php
-
 namespace App\Http\Controllers\ShopModule;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 use App\Models\Product;
 
 class ProductController extends Controller
@@ -13,44 +11,45 @@ class ProductController extends Controller
         $products = Product::with([
             'categories',
             'image',
-            'gallery'
+            'gallery',
         ])
-        ->whereHas('brand',function($query)use($slug){
-            $query->where('brands.slug','=',$slug);
-        })->get();
+            ->whereHas('brand', function ($query) use ($slug) {
+                $query->where('brands.slug', '=', $slug);
+            })->get();
 
         return view("shop.product.index")->with([
-            "products" => $products
+            "products" => $products,
         ]);
     }
 
     public function showCategoryProducts($slug)
     {
-        $products= Product::with([
+        $products = Product::with([
             'categories',
             'image',
-            'gallery'
+            'gallery',
         ])
-        ->whereHas('categories',function($query)use($slug){
-            $query->where('categories.slug','=',$slug);
-        })->get();
+            ->whereHas('categories', function ($query) use ($slug) {
+                $query->where('categories.slug', '=', $slug);
+            })->get();
         return view("shop.product.index")->with([
-            "products"=>$products
+            "products" => $products,
         ]);
     }
 
     public function showTagProducts($slug)
     {
-        $products= Product::with([
+        $products = Product::with([
             'categories',
             'image',
-            'gallery'
+            'gallery',
         ])
-        ->whereHas('tags',function($query)use($slug){
-            $query->where('tags.slug','=',$slug);
-        })->get();
+            ->whereHas('tags', function ($query) use ($slug) {
+                $query->where('tags.slug', '=', $slug);
+            })->get();
+
         return view("shop.product.index")->with([
-            "products"=>$products
+            "products" => $products,
         ]);
     }
 
@@ -59,25 +58,24 @@ class ProductController extends Controller
         $product = Product::with([
             'categories',
             'tags',
-            'gallery'
-        ])->where('slug',$slug)
-        ->first();
+            'gallery',
+        ])->where('slug', $slug)
+            ->first();
 
         $product->gallery->prepend($product->image()->first()); // insert primary image at the first position in the image gallery
 
         $similar_products = Product::with(['image'])
-                            ->where('id','!=',$product->id)
-                            ->whereHas('categories',function($query)use($product){
-                                $query->whereIn('categories.id',$product->categories->pluck('id'));
-                            })
-                            ->get();
+            ->where('id', '!=', $product->id)
+            ->whereHas('categories', function ($query) use ($product) {
+                $query->whereIn('categories.id', $product->categories->pluck('id'));
+            })
+            ->get();
 
         return view('shop.product')->with([
             "page" => "product",
             "product" => $product,
-            "similar_products" => $similar_products
+            "similar_products" => $similar_products,
         ]);
     }
-
 
 }

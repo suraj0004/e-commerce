@@ -12,7 +12,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-4 col-12">
                     <div class="single-product">
                         <div class="product-img">
-                            <a href="{{route('single_product',['slug' => $product->slug])}}">
+                            <a href="{{route('single_product',['slug'=> $product->slug])}}">
                                 <img class="default-img" src="{{ getImageUrl($product->image->image) }}"  alt="#">
                                 <img class="hover-img" src="{{ getImageUrl($product->gallery[0]->image) }}"  alt="#">
                                 <span class="price-dec"> {{$product->categories[0]->name}} </span>

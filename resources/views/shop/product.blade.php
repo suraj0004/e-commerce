@@ -155,7 +155,7 @@
                             <h3 class="title">Tags</h3>
                             <ul class="tag">
                                 @foreach ($product->tags as $tag)
-                                    <li><a href="{{ route('tag_product',['slug' => $tag->slug]) }}"> {{$tag->name}} </a></li>
+                                    <li><a href="{{route('tag_product', ['slug' => $tag])}}"> {{$tag->name}} </a></li>
                             @endforeach
                             </ul>
                         </div>
